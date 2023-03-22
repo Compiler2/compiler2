@@ -46,16 +46,16 @@ int main_bench()
 		t=0;
 		while(c[i][t]!='\0')
 		{
-			printf("%c",c[i][t]);
+			my_printf("%c",c[i][t]);
 			t++;
 		}
-		printf(" ");
+		my_printf(" ");
 		i--;
 	}
      t=0;
 	while(c[0][t]!='\0')
 	{
-		printf("%c",c[0][t]);
+		my_printf("%c",c[0][t]);
 		t++;
 	}
 	return 0;

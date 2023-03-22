@@ -5,12 +5,12 @@ int main_bench()
 	int huiwen(int num);
 	int zhishu(int num);
 	int m,n,i,flag=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(huiwen(i)==1&&zhishu(i)==1)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			flag=1;
 			break;
 		}
@@ -22,11 +22,11 @@ int main_bench()
 		{
 			if(huiwen(i)==1&&zhishu(i)==1)
 			{
-				printf(",%d",i);
+				my_printf(",%d",i);
 			}
 		}
 	}
-	else printf("no\n");
+	else my_printf("no\n");
 }
 int huiwen(int num)
 {

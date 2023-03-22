@@ -36,7 +36,7 @@ int main_bench()
 	else if(s1[i]==')') t[i]='?';
 	else t[i]=' ';
 	t[strlen(s)]='\0';
-	printf("%s\n%s\n",s,t);
+	my_printf("%s\n%s\n",s,t);
 	}
 	return 0;
 }

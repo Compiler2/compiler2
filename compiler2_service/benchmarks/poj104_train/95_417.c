@@ -33,19 +33,19 @@ int main_bench()
 		else if(c>d)
 		{
 			e++;
-			printf(">\n");
+			my_printf(">\n");
 			break;
 		}
 		else if(c<d)
 		{
 			e++;
-			printf("<\n");
+			my_printf("<\n");
 			break;
 		}
 	}
 	if(e==0)
 	{
-		printf("=\n");
+		my_printf("=\n");
 	}
 	return 0;
 }

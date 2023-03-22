@@ -5,14 +5,14 @@ int main_bench()
   int n;
   double a,b;
   double x,y;
-  scanf("%d",&n);
-  scanf("%lf%lf",&a,&b);
+  my_scanf("%d",&n);
+  my_scanf("%lf%lf",&a,&b);
   while(--n)
   {
-    scanf("%lf%lf",&x,&y);          
-    if(b/a-y/x>0.05) printf("worse\n");
-    else if(b/a-y/x<-0.05) printf("better\n");
-         else printf("same\n");
+    my_scanf("%lf%lf",&x,&y);          
+    if(b/a-y/x>0.05) my_printf("worse\n");
+    else if(b/a-y/x<-0.05) my_printf("better\n");
+         else my_printf("same\n");
   }
  return 0;    
 }

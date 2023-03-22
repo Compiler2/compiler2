@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int r,i,j,a[505][505],m1,m2,n1,n2,sum=0;
-	scanf("%d",&r);
+	my_scanf("%d",&r);
 	m1=r;
 	n1=r;
 	m2=0;
 	n2=0;
 	for(i=0;i<r;i++){
 		for(j=0;j<r;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			if(a[i][j]==0){
 				if(i<=m1&&j<=n1){
 					m1=i;
@@ -24,6 +24,6 @@ int main_bench()
 		}
 	}
     sum=(m2-m1-1)*(n2-n1-1);
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

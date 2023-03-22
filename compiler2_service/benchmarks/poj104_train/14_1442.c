@@ -12,9 +12,9 @@ struct student
 main_bench()
 {
 	int n,i,a,b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&stu[i].num,&stu[i].chn,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].chn,&stu[i].math);
 		stu[i].score=stu[i].chn+stu[i].math;
 	}
 
@@ -67,5 +67,5 @@ main_bench()
 		}
 	}
 
-	printf("%d %d\n%d %d\n%d %d\n",stu[a].num,stu[a].score,stu[b].num,stu[b].score,stu[c].num,stu[c].score);
+	my_printf("%d %d\n%d %d\n%d %d\n",stu[a].num,stu[a].score,stu[b].num,stu[b].score,stu[c].num,stu[c].score);
 }

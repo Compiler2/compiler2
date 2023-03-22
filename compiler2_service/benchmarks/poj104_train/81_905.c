@@ -23,11 +23,11 @@ int main_bench()
 	int p,q;
 	for(p=0;p<5;p++)
 	{	for(q=0;q<5;q++)
-	{	scanf("%d",&s[p][q]);}}
-		scanf("%d %d",&n,&m);
+	{	my_scanf("%d",&s[p][q]);}}
+		my_scanf("%d %d",&n,&m);
      
 	if(Array(s,n,m)==0)
-	{	printf("error");}
+	{	my_printf("error");}
 	else
 	{
 		for(p=0;p<5;p++)
@@ -36,9 +36,9 @@ int main_bench()
 			for(q=0;q<5;q++)
 			{
 				if(q<4)
-				printf("%d ",s[p][q]);
+				my_printf("%d ",s[p][q]);
 			else
-				printf("%d\n",s[p][q]);}
+				my_printf("%d\n",s[p][q]);}
 		}
 	}
 }	

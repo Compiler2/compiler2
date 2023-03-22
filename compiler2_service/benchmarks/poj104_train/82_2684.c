@@ -9,9 +9,9 @@ int main_bench(){
 	a=0;
 	int zzd[101];
 	int hzy[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&zzd[i],&hzy[i]);
+		my_scanf("%d%d",&zzd[i],&hzy[i]);
 	}
 	for(i=0;i<n;i++){
 		if(zzd[i]>=90&&zzd[i]<=140&&hzy[i]>=60&&hzy[i]<=90){
@@ -25,10 +25,10 @@ int main_bench(){
 		}
 	}
 	if(b>a){
-	printf("%d",b);
+	my_printf("%d",b);
 	}
 	else if(b<=a){
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	return 0;
 }

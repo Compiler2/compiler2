@@ -4,7 +4,7 @@ int main_bench()
 {
      long int i,iii,temp;
      int j,m,n,a[100]={0},w=0,k=0;
-     scanf("%d %d",&m,&n);
+     my_scanf("%d %d",&m,&n);
      for(i=m;i<=n;i++)
      {
            temp=0;
@@ -30,8 +30,8 @@ int main_bench()
                  }
             }
      }
-     if(k==0)  printf("no");
-     if(k==1)  printf("%d",a[0]);
+     if(k==0)  my_printf("no");
+     if(k==1)  my_printf("%d",a[0]);
      int tt;
      if(k>1)
      {
@@ -49,9 +49,9 @@ int main_bench()
           }
           for(i=0;i<k;i++)
           {
-               printf("%d",a[i]);
+               my_printf("%d",a[i]);
                if(i!=(k-1))
-                  printf(",");
+                  my_printf(",");
           }
      }
 }

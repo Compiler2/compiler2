@@ -25,15 +25,15 @@ int main_bench()
 	
 	if (strcmp(strf,strs)<0)
 	{
-		printf("<");
+		my_printf("<");
 	}
 	else if (strcmp(strf,strs)>0)
 	{
-		printf(">");
+		my_printf(">");
 	}
     else if (strcmp(strf,strs)==0)
 	{
-		printf("=");
+		my_printf("=");
 	}
 	return 0;
 }

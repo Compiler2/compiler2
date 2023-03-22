@@ -22,11 +22,11 @@ int main_bench()
 		   if (p)
 		   {
 			   for (k=0;k<l2;k++)
-			   printf ("%c",w2[k]);
+			   my_printf ("%c",w2[k]);
 			   i = i+l1-1;
 			   p = 0;
 		   }
-	       else printf ("%c",s[i]);
+	       else my_printf ("%c",s[i]);
 	}
 	
 

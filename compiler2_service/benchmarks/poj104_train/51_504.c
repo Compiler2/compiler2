@@ -5,13 +5,13 @@ int main_bench()
 {
 	int n, i, j, k, l, a[600];
 	char s[600];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	getchar();
-	scanf("%s", &s);
+	my_scanf("%s", &s);
 	l = strlen(s);
 	if (l < n)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
 	for (i = 0; i < l; i++)
@@ -41,17 +41,17 @@ int main_bench()
 	}
 	if (max == 1)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
 	else
-		printf("%d\n", max);
+		my_printf("%d\n", max);
 	for (i = 0; i < l; i++)
 	{
 		if (a[i] == max)
 		{
 			for (j = i; j < i + n; j++)
-				printf("%c", s[j]);
+				my_printf("%c", s[j]);
 			putchar('\n');
 		}
 	}

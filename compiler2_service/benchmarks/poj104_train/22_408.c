@@ -24,6 +24,6 @@ int main_bench()
 		else if (y[i]>a&&y[i]<b)
 			a=y[i];
 	}
-	if(a==-1)printf("No");
-	else printf("%d",a);
+	if(a==-1)my_printf("No");
+	else my_printf("%d",a);
 }

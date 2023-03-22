@@ -5,17 +5,17 @@ int main_bench() {
     int x1,y1,x2,y2;
     int **a, **b, **c;
     int i,j,k;
-    scanf("%d %d", &x1, &y1);
+    my_scanf("%d %d", &x1, &y1);
     a = (int**)malloc(sizeof(int*)*x1);
     for(i=0;i<x1;++i) {
         a[i] = (int*)malloc(sizeof(int)*y1);
         for(j=0;j<y1;++j) {
-            scanf("%d", &a[i][j]);
+            my_scanf("%d", &a[i][j]);
         }
     }
-    scanf("%d %d", &x2, &y2);
+    my_scanf("%d %d", &x2, &y2);
     if(y1 != x2) {
-        printf("Wrong parameter.");
+        my_printf("Wrong parameter.");
         for(i=0;i<x1;++i) {
             free(a[i]);
         }
@@ -26,7 +26,7 @@ int main_bench() {
     for(i=0;i<x2;++i) {
         b[i] = (int*)malloc(sizeof(int)*y2);
         for(j=0;j<y2;++j) {
-            scanf("%d", &b[i][j]);
+            my_scanf("%d", &b[i][j]);
         }
     }
      
@@ -43,9 +43,9 @@ int main_bench() {
      
     for(i=0;i<x1;++i) {
         for(j=0;j<y2-1;++j) {
-            printf("%d ", c[i][j]);    
+            my_printf("%d ", c[i][j]);    
         }
-        printf("%d\n",c[i][j]);
+        my_printf("%d\n",c[i][j]);
     }
      
     

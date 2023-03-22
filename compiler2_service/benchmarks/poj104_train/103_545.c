@@ -6,7 +6,7 @@ void count(char *string)
     while(string[i]!='\0')
         {while(*(string+i)==*(string+j))
         i++;
-        printf("(%c,%d)",*(string+j),i-j);
+        my_printf("(%c,%d)",*(string+j),i-j);
         j=i;}
 }
 int main_bench()

@@ -24,7 +24,7 @@ int main_bench()
 	int r,t;
 	for (r=0;r<6;r++)
 	{
-		scanf("%d",&t);
-		printf("%d\n",reverse(t));
+		my_scanf("%d",&t);
+		my_printf("%d\n",reverse(t));
 	}
 }

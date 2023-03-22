@@ -7,15 +7,15 @@ int main_bench()
     int i, j;
     int n;
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     
     for (i = 0; i < n; i++)
-      scanf ("%d", &a[i]);
+      my_scanf ("%d", &a[i]);
 
     for (i = 0; i < n; i++)
     {
     if (i==0)
-      { printf ("%d", a[0]);
+      { my_printf ("%d", a[0]);
        continue;}
         for (j = 0; j < i; j++)
         {
@@ -28,7 +28,7 @@ int main_bench()
         }
          if (tag[i]!= 1)
 
-                printf (",%d", a[i]);
+                my_printf (",%d", a[i]);
 
     }
     }

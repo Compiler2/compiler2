@@ -3,13 +3,13 @@
 main_bench()
 {
     int n,h=0,i=0,j=0,k=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char x[n][10];
     float a[n],m[n],f[n];
     float t;
     do
     {
-        scanf("%s %f",&x[i],&a[i]);
+        my_scanf("%s %f",&x[i],&a[i]);
         i=i+1;
     }
     while(i<n);
@@ -53,13 +53,13 @@ main_bench()
             }
         }
     }
-    printf("%.2f",m[0]);
+    my_printf("%.2f",m[0]);
     if(j>1)
     {
         i=1;
         do
         {
-        printf(" %.2f",m[i]);
+        my_printf(" %.2f",m[i]);
         i=i+1;
         }
         while(i<j);
@@ -67,7 +67,7 @@ main_bench()
     i=0;
     do
     {
-        printf(" %.2f",f[i]);
+        my_printf(" %.2f",f[i]);
         i=i+1;
     }
     while(i<k);

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,y,z,s;
-	scanf("%d%d%d",&x,&y,&z);
+	my_scanf("%d%d%d",&x,&y,&z);
 	int a;
 	if(x%4==0)
 		if(x%100==0)
@@ -35,7 +35,7 @@ int main_bench()
 	{
 		s=y/2*31+(y-4)/2*30+a+z;
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }
 

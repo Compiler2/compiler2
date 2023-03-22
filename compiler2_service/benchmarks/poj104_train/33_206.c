@@ -5,31 +5,31 @@ int main_bench()
 	int n,l,i,j;
     char c[256];
 	char d[5]="ATCG";
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-        scanf("%s",c);
+        my_scanf("%s",c);
 		l=strlen(c);
 		for(j=0;j<l;j++)
 		{
 			if(c[j]==d[0])
 			{
-				printf("T");
+				my_printf("T");
 			}
             if(c[j]==d[1])
 			{
-				printf("A");
+				my_printf("A");
 			}
             if(c[j]==d[2])
 			{
-				printf("G");
+				my_printf("G");
 			}
             if(c[j]==d[3])
 			{
-				printf("C");
+				my_printf("C");
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

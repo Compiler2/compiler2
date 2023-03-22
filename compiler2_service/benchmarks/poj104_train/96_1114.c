@@ -9,7 +9,7 @@ int main_bench()
     n=strlen(A);
     r=A[0]-'0';   
     if(n==1)
-    {printf("0");printf("\n");printf("%d",r);}
+    {my_printf("0");my_printf("\n");my_printf("%d",r);}
     
     else
     {
@@ -24,19 +24,19 @@ int main_bench()
         m=c[i]*10+a[i+2];
     } 
     if(b[0]==0&&n==2)
-    printf("0");
+    my_printf("0");
     if(b[0]==0)
     {
     for(i=1;i<n-1;i++)
-    printf("%d",b[i]);
+    my_printf("%d",b[i]);
     }    
     else
      { 
     for(i=0;i<n-1;i++)
-    printf("%d",b[i]);
+    my_printf("%d",b[i]);
     }   
-    printf("\n"); 
-    printf("%d",c[n-2]); 
+    my_printf("\n"); 
+    my_printf("%d",c[n-2]); 
   }    
     
    

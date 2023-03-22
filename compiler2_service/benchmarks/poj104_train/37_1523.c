@@ -3,9 +3,9 @@
     int main_bench(){
 	int t,num,x;
 	char zf[100020];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for (int i=0;i<t;i++){
-	scanf("%s",zf);
+	my_scanf("%s",zf);
 	x=0;
 	for (int j=0;j<strlen(zf);j++){
 	          num=0;
@@ -16,13 +16,13 @@
 			           }	
 			  }
 			  if (num==0){
-			  printf("%c\n",zf[j]);
+			  my_printf("%c\n",zf[j]);
 			  x=1;
 			  break;	
 			  }
 	}
 	if (x==0){
-	printf("no\n");
+	my_printf("no\n");
 	}
 	}
 return 0;

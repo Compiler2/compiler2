@@ -15,26 +15,26 @@ int main_bench()
 					{
 						if(q>l)
 						{
-							printf("q %d\n",q*10);
+							my_printf("q %d\n",q*10);
 							if(s>l)
 							{
-								printf("s %d\n",s*10);
-								printf("l %d\n",l*10);
-								printf("z %d\n",z*10);
+								my_printf("s %d\n",s*10);
+								my_printf("l %d\n",l*10);
+								my_printf("z %d\n",z*10);
 							}
 							else
 							{
-								printf("l %d\n",l*10);
-								printf("s %d\n",s*10);
-								printf("z %d\n",z*10);
+								my_printf("l %d\n",l*10);
+								my_printf("s %d\n",s*10);
+								my_printf("z %d\n",z*10);
 							}
 						}
 						else
 						{
-							printf("l %d\n",l*10);
-							printf("q %d\n",q*10);
-							printf("z %d\n",z*10);
-							printf("s %d\n",s*10);
+							my_printf("l %d\n",l*10);
+							my_printf("q %d\n",q*10);
+							my_printf("z %d\n",z*10);
+							my_printf("s %d\n",s*10);
 						}
 					}
 				}

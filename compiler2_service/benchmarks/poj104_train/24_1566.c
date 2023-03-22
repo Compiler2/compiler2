@@ -38,10 +38,10 @@ int main_bench(){
 		}
 	}
 	if(l!=num){
-        printf("%s\n%s\n",max,min);
+        my_printf("%s\n%s\n",max,min);
 	}
 	else{
-	    printf("%s\n%s\n",fz[0],fz[0]);
+	    my_printf("%s\n%s\n",fz[0],fz[0]);
 	}
 	return 0;
 }

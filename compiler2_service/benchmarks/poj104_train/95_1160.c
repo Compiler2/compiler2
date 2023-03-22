@@ -39,9 +39,9 @@ int main_bench()
    while((t[i]==1)&&(i<=l-2))
    i++;
    
-   if(t[i]==1) printf("=");
-   else if(t[i]==2) printf(">");
-   else if(t[i]==3) printf("<");
+   if(t[i]==1) my_printf("=");
+   else if(t[i]==2) my_printf(">");
+   else if(t[i]==3) my_printf("<");
       
    
    return 0;

@@ -18,6 +18,6 @@ g=g+c[j-i];
 b[g]=' ';
 g++;}
 for (i=0;i<e;i++)
-printf("%c",b[i]);
+my_printf("%c",b[i]);
 return 0;
 } 

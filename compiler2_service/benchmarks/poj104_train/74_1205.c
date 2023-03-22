@@ -25,19 +25,19 @@ int g(int n)
 main_bench()
 {
       int a,b,i,count=0;
-      scanf("%d %d",&a,&b);
+      my_scanf("%d %d",&a,&b);
       for(i=a;i<=b;i++)
       {
        if(f(i)==i&&g(i)==1)
        {count++;
          if(count==1)
-         printf("%d",i);
+         my_printf("%d",i);
          else
-         printf(",%d",i);
+         my_printf(",%d",i);
        }
       }
       if(count==0)
-      printf("no");
+      my_printf("no");
       getchar();
       getchar();
       return 0;

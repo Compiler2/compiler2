@@ -19,14 +19,14 @@ int main_bench()
        if (((sub[i] == ' ') || (sub[i]==0)) && (mark==0) )
        {
           sub[i] = 0;
-          printf("%d",strlen(sub));
+          my_printf("%d",strlen(sub));
           mark=1;
           break;
        }
        if(((sub[i] == ' ') || (sub[i]==0)) && (mark!=0))
        {
           sub[i] = 0;
-          printf(",%d",strlen(sub));
+          my_printf(",%d",strlen(sub));
           break;
        }  
   }

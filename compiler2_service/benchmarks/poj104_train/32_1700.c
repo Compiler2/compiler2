@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,l,m,j,k,p,q=0;
 	char a[100][100],b[100][100],c[100],d[100],e[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<=n-2;i++)
 	{
 		gets(a[i]);
 		gets(b[i]);
-        scanf("\n");
+        my_scanf("\n");
 
 	}
 	gets(a[n-1]);
@@ -55,9 +55,9 @@ int main_bench()
 			  break;
 		  }
 		  for(j=k;j<=l-1;j++)
-			  printf("%c",d[j]);
+			  my_printf("%c",d[j]);
 		  if(i!=n-1)
-		  printf("\n");
+		  my_printf("\n");
           for(j=0;j<=99;j++)
 			  d[j]='0';
 	}

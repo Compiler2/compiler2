@@ -10,12 +10,12 @@ main_bench()
     for ( j=0;j<103;j++)
     {c[j]='0';}
    
-    scanf("%s",a);
+    my_scanf("%s",a);
     len=strlen(a);
     if(len==1)
-    {printf("0\n%d",(a[0]-48)%10);}
+    {my_printf("0\n%d",(a[0]-48)%10);}
     else if(len==2&&(a[0]==49)&&(a[1]-48)<=2)
-    {printf("0\n%d",(a[1]-38));}
+    {my_printf("0\n%d",(a[1]-38));}
     else
     {mod=a[0]-48;
          for(i=1;i<len;i++)
@@ -26,12 +26,12 @@ main_bench()
          
          
          if(c[0]!=48){for(l=0;l<k;l++)
-         {printf("%c",c[l]);}
-         printf("\n%d",mod);}
+         {my_printf("%c",c[l]);}
+         my_printf("\n%d",mod);}
          if(c[0]==48)
          {for(l=1;l<k;l++)
-         {printf("%c",c[l]);}
-         printf("\n%d",mod);}
+         {my_printf("%c",c[l]);}
+         my_printf("\n%d",mod);}
     
     }
   

@@ -21,16 +21,16 @@ int f(struct stu*q)
 int main_bench()
 {struct stu* p;
  int n,i,m=0,t=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  p=(struct stu*)malloc(n*sizeof(struct stu));
  for(i=0;i<n;i++)
- {scanf("%s %d %d %c %c %d",(p+i)->name,&(p+i)->score,&(p+i)->ass,&(p+i)->pos,&(p+i)->west,&(p+i)->paper);
+ {my_scanf("%s %d %d %c %c %d",(p+i)->name,&(p+i)->score,&(p+i)->ass,&(p+i)->pos,&(p+i)->west,&(p+i)->paper);
   (p+i)->fel=f(p+i);
    t=t+(p+i)->fel;
   }
  for(i=1;i<n;i++)
   if( (p+i)->fel > (p+m)->fel ) m=i;
- printf("%s\n%d\n%d",(p+m)->name,(p+m)->fel,t);
+ my_printf("%s\n%d\n%d",(p+m)->name,(p+m)->fel,t);
 }
  
  

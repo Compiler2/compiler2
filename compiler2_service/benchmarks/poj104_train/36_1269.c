@@ -8,10 +8,10 @@ int main_bench()
 	int p=1;
 	for(i=0;i<100;i++)
 		a[i]=b[i]='\0';
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	s1=strlen(a);
 	s2=strlen(b);
-	if(s1!=s2) printf("NO");
+	if(s1!=s2) my_printf("NO");
 	else
 	{
 		for(i=0;i<s1;i++)
@@ -25,8 +25,8 @@ int main_bench()
 		for(i=0;i<s1;i++)
 			if(a[i]!='\0')
 				p=0;
-		if(p) printf("YES");
-		else printf("NO");
+		if(p) my_printf("YES");
+		else my_printf("NO");
 	}
 	return 0;
 }

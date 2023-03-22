@@ -4,10 +4,10 @@ int main_bench(){
    int n;
    int s=1;
    int qj[50000][2];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(int i=0;i<n;i++){
        for(int t=0;t<2;t++){
-	       scanf("%d",&qj[i][t]);
+	       my_scanf("%d",&qj[i][t]);
 	   } 
    }
    for(int k=1;k<=n;k++){
@@ -31,9 +31,9 @@ int main_bench(){
 		   }
 	   }
    }
-   if(s==0){printf("no");}
+   if(s==0){my_printf("no");}
    else{
-	   printf("%d ",qj[0][0]);
+	   my_printf("%d ",qj[0][0]);
 	   for(int q=1;q<=n;q++){
 	       int f;
 		   for(int u=0;u<n-q;u++){
@@ -46,7 +46,7 @@ int main_bench(){
 		   }
 
 	   }
-	   printf("%d",qj[0][1]);
+	   my_printf("%d",qj[0][1]);
    }
    return 0;
 

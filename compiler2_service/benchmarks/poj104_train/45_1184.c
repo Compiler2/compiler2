@@ -24,7 +24,7 @@ int main_bench()
                }
                if(k==m)
                {
-                   printf("%d",j-m-1);
+                   my_printf("%d",j-m-1);
                    break;
                 }
           }

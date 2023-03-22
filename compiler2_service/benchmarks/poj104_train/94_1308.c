@@ -5,10 +5,10 @@ int main_bench()
 	int a[10000];
 	int n,w,m;
 	int i,j,k,t,e,x,y;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	n=0;
 	for(i=0;i<w;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(k=0;k<w;k++){
 		if((a[k]%2)!=0){
@@ -27,9 +27,9 @@ int main_bench()
 		}
 	}
 	for(t=w-n;t<w-1;t++){
-		printf("%d,",a[t]);
+		my_printf("%d,",a[t]);
 	}
-	printf("%d",a[w-1]);
+	my_printf("%d",a[w-1]);
 
 
 

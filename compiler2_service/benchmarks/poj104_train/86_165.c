@@ -4,21 +4,21 @@
 int main_bench()
 {  
 	int n,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	int i,j;
 	int a[100];  int b[100]={0};  int c[100]={0};
 	int d[100]={0};
 	int e,f,h;
 	for(i=0;i<n;i++)
 	{ 
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
-			printf("60\n");
+			my_printf("60\n");
 		else
 		{
 		for(j=0;j<m;j++)
 		{
-        scanf("%d",&a[j]);
+        my_scanf("%d",&a[j]);
         e=a[j]+3*j;
 		h=e+3;
         
@@ -45,7 +45,7 @@ int main_bench()
 
 			
 		}
-		printf("%d\n",f);
+		my_printf("%d\n",f);
 			
 
 		

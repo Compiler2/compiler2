@@ -11,10 +11,10 @@ int main_bench()
 		char writer[27];
 		int len;
 	}book[999];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&book[i].num);
+		my_scanf("%d",&book[i].num);
 		gets(book[i].writer);
 		book[i].len=strlen(book[i].writer);
 	}
@@ -69,8 +69,8 @@ int main_bench()
 		else
 		{
 			prname=i+65;
-			printf("%c\n",prname);
-			printf("%d\n",max);
+			my_printf("%c\n",prname);
+			my_printf("%d\n",max);
 			for(j=0;j<m;j++)
 			{
 				for(k=0;k<book[j].len;k++)
@@ -79,7 +79,7 @@ int main_bench()
 						continue;
 					else
 					{
-						printf("%d\n",book[j].num);
+						my_printf("%d\n",book[j].num);
 						break;
 					}
 				}

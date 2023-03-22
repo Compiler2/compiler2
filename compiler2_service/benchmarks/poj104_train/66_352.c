@@ -21,30 +21,30 @@ int Dijitian(int a,int b,int c){
 int main_bench()
 {
 	int a,b,c;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	int m,sum;
 	int result;
 	m=(a-1)*365+(a-1)/4-(a-1)/100+(a-1)/400;
 	sum=m+Dijitian(a,b,c);
 	result=sum%7;
 	if(a==1111111111 && b==11 && c==11){
-		printf("Sat.");
+		my_printf("Sat.");
 	}else{
 	
 	if(result==0){
-		printf("Sun.");
+		my_printf("Sun.");
 	}else if(result==1){
-		printf("Mon.");
+		my_printf("Mon.");
 	}else if(result==2){
-		printf("Tue.");
+		my_printf("Tue.");
 	}else if(result==3){
-		printf("Wed.");
+		my_printf("Wed.");
 	}else if(result==4){
-		printf("Thu.");
+		my_printf("Thu.");
 	}else if(result==5){
-		printf("Fri.");
+		my_printf("Fri.");
 	}else{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	}
 	return 0;

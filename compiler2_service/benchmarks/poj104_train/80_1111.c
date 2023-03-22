@@ -4,8 +4,8 @@ int main_bench()
 {
     int month[12]={31,28,31,30,31,30,31,31,30,31,30,31};
     int i,j,k,sum,startyear,startmonth,startday,endyear,endmonth,endday;
-    scanf("%d %d %d",&startyear,&startmonth,&startday);
-    scanf("%d %d %d",&endyear,&endmonth,&endday);
+    my_scanf("%d %d %d",&startyear,&startmonth,&startday);
+    my_scanf("%d %d %d",&endyear,&endmonth,&endday);
     sum=0;
     if ( (startyear%4==0&&startyear%100!=0)||(startyear%400==0)){
          month[1]=29;
@@ -50,6 +50,6 @@ int main_bench()
              sum=sum+1;
              }
          }
-    printf("%d",sum);
+    my_printf("%d",sum);
     return 0;       
 }

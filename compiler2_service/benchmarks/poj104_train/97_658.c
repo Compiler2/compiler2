@@ -3,7 +3,7 @@
 int main_bench(){
    int n,a,b,c,d,e;
    int sz[6];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    sz[0]=n/100;
    a=n%100;
    sz[1]=a/50;
@@ -15,6 +15,6 @@ int main_bench(){
    sz[4]=d/5;
    e=d%5;
    sz[5]=e;
-   printf("%d\n%d\n%d\n%d\n%d\n%d\n",sz[0],sz[1],sz[2],sz[3],sz[4],sz[5]);
+   my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",sz[0],sz[1],sz[2],sz[3],sz[4],sz[5]);
 	return 0;
 }

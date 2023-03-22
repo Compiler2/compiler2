@@ -15,13 +15,13 @@ int main_bench()
 {
 	int n,i,sum=0,max=0;
 	int sz[101]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s ",&stu[i].name);
-		scanf("%d %d ",&stu[i].qimo,&stu[i].banji);
-		scanf("%c %c ",&stu[i].ganbu,&stu[i].xibu);
-		scanf("%d",&stu[i].paper);
+		my_scanf("%s ",&stu[i].name);
+		my_scanf("%d %d ",&stu[i].qimo,&stu[i].banji);
+		my_scanf("%c %c ",&stu[i].ganbu,&stu[i].xibu);
+		my_scanf("%d",&stu[i].paper);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -54,9 +54,9 @@ int main_bench()
 		}
 		sum=sum+sz[i];
 	}
-	printf("%s\n",stu[max].name);
-	printf("%d\n",sz[max]);
-	printf("%d",sum);
+	my_printf("%s\n",stu[max].name);
+	my_printf("%d\n",sz[max]);
+	my_printf("%d",sum);
     return 0;
 }
 

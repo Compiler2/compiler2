@@ -4,7 +4,7 @@ int main_bench()
 {
 	char zfc[301];
 	int szx[26]={0},szd[26]={0},flag=0,i,j,k;
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	for(i=0;zfc[i]!='\0';i++)
 	{
 		if(zfc[i]>='a'&&zfc[i]<='z')
@@ -20,7 +20,7 @@ int main_bench()
 	}
 	if(flag==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else 
 	{
@@ -28,14 +28,14 @@ int main_bench()
 		{
 			if(szd[j]!=0)
 			{
-				printf("%c=%d\n",'A'+j,szd[j]);
+				my_printf("%c=%d\n",'A'+j,szd[j]);
 			}
 		}
 		for(k=0;k<26;k++)
 		{
 		    if(szx[k]!=0)
 			{
-				printf("%c=%d\n",'a'+k,szx[k]);
+				my_printf("%c=%d\n",'a'+k,szx[k]);
 			}
 		}
 	}

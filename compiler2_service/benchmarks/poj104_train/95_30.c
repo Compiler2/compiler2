@@ -20,10 +20,10 @@ int main_bench()
         str2[i]-='a'-'A'; 
 	}
 	if(strcmp(str1,str2)>0)
-		printf(">\n");
+		my_printf(">\n");
 	if(strcmp(str1,str2)<0)
-		printf("<\n");
+		my_printf("<\n");
 	if(strcmp(str1,str2)==0)
-		printf("=\n");
+		my_printf("=\n");
 	return 0;
 }

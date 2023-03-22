@@ -11,8 +11,8 @@ int main_bench()
 		else n++;
 	}
 	n++;
-	for(i=0;i<n-1;i++) scanf("%d,",&y[i]);
-	scanf("%d",&y[n-1]);
+	for(i=0;i<n-1;i++) my_scanf("%d,",&y[i]);
+	my_scanf("%d",&y[n-1]);
 	for(i=0;i<n-1;i++)
 	{
 		for(j=0;j<n-1-i;j++)
@@ -54,6 +54,6 @@ int main_bench()
 		}
 		if(p>max) max=p;
 	}
-	printf("%d %d\n",n,max);
+	my_printf("%d %d\n",n,max);
 	return 0;
 }

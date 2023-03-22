@@ -4,10 +4,10 @@ int main_bench()
 {
 	char m[100][20];
 	int b=0,n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
-	scanf("%s",m[i]);
+	my_scanf("%s",m[i]);
 
 	for(i=0;i<n;i++)
 	{for(j=0;j<strlen(m[i]);j++)
@@ -25,10 +25,10 @@ int main_bench()
 	break;}
 	}
 	if(b==0)
-	{printf("yes\n");
+	{my_printf("yes\n");
 	continue;}
 	else
-	{printf("no\n");
+	{my_printf("no\n");
 	b=0;
      continue;
 	}

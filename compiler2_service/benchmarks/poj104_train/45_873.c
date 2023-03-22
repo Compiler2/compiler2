@@ -4,14 +4,14 @@ main_bench()
 {
 	char a[50],b[50];
 	int x,y,c;
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
 	x=strlen(a);
 	y=strlen(b);
 	for(int i=0;i<y;i++)
 	{
 		if(a[0]-'0'==b[i]-'0')
 		{	
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 			for(int j=0;j<x;j++)
 			{

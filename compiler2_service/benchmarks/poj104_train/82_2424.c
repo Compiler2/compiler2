@@ -3,12 +3,12 @@
 
 int main_bench(){
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct press{
 		int a,b;
 	}press[100];
 	for(i=0;i<n;i++){
-		scanf("%d%d",&(press[i].a),&(press[i].b));
+		my_scanf("%d%d",&(press[i].a),&(press[i].b));
 	}
 	int normal=0,max=0;
 	for(i=0;i<n;i++){
@@ -24,6 +24,6 @@ int main_bench(){
 	if(normal>max){
 		max=normal;
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

@@ -9,7 +9,7 @@ int i,len,noprint=1;
             {
           sz[i]=0;
              }
-scanf("%s",str);
+my_scanf("%s",str);
 len=strlen(str);
       for(i=0;i<len;i++)
          {
@@ -23,10 +23,10 @@ len=strlen(str);
      if(sz[i]>0)
            {
             noprint=0;
-            printf("%c=%d\n",i+97,sz[i]);
+            my_printf("%c=%d\n",i+97,sz[i]);
             }
       }
-    if(noprint){printf("No");}
+    if(noprint){my_printf("No");}
 return 0;
 }
        

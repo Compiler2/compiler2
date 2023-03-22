@@ -4,7 +4,7 @@ int main_bench()
 {
 	char n[100];
 	int b[100],a[100],i,sa,c,k=0;
-    scanf("%s",n);
+    my_scanf("%s",n);
     sa=strlen(n);
 	for(i=0;i<sa;i++)
 	{
@@ -18,12 +18,12 @@ int main_bench()
 	}
     if (sa==1)
 	{
-		printf("0\n%d",a[0]);
+		my_printf("0\n%d",a[0]);
 		k=1;
 	}
 	if ((sa==2)&&(a[0]*10+a[1]<13))
 	{
-		printf("0\n%d",10*a[0]+a[1]);
+		my_printf("0\n%d",10*a[0]+a[1]);
 		k=1;
 	}
 	if (k==0)
@@ -32,17 +32,17 @@ int main_bench()
 	{
 		for(i=1;i<sa-1;i++)
 		{
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		}
-		printf("\n%d",c);
+		my_printf("\n%d",c);
 	}
 	else 
 	{
 		for (i=0;i<sa-1;i++)
 		{
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		}
-		printf("\n%d",c);
+		my_printf("\n%d",c);
 	}}
 	return 0;
 }

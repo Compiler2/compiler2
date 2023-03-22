@@ -3,7 +3,7 @@
 main_bench()
 {
       int t;
-      scanf("%d",&t);
+      my_scanf("%d",&t);
       char a[100000];
       int b[100000];
       for(int i=0;i<t;i++)
@@ -13,7 +13,7 @@ main_bench()
                       a[x]=0;
                       b[x]=0;
               }
-              scanf("%s",a);
+              my_scanf("%s",a);
               int len=strlen(a);
               int j;
               for(j=0;j<len;j++)
@@ -28,12 +28,12 @@ main_bench()
                       }
                       if(b[j]==0)
                       {
-                                         printf("%c\n",a[j]);
+                                         my_printf("%c\n",a[j]);
                                          break;  
                       }
               }
               if(j==len)
-              printf("no\n");
+              my_printf("no\n");
       }
 }    
 

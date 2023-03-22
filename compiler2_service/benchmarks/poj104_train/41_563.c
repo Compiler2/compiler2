@@ -36,7 +36,7 @@ int main_bench()
 					else		{if(0==fd(c))	continue;}
 					if(e==1)	  {	if(fe(d))	continue;}
 					else		{if(0==fe(d))	continue;}
-					printf("%d %d %d %d %d",a,b,c,d,e);
+					my_printf("%d %d %d %d %d",a,b,c,d,e);
 					return;
 				}
 			}

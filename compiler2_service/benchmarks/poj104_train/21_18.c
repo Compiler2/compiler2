@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,j,q;
 	float sum,ave,p1,p2,k1,k2;
 	float a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	sum=0;
 	for(i=0;i<=n-1;i++)
 		sum=sum+a[i];
@@ -39,9 +39,9 @@ int main_bench()
 		if(q==1)break;
 	}
 	
-	if(k1>k2)printf("%.0f",p1);
-	else if(k1<k2)printf("%.0f",p2);
-	else printf("%.0f,%.0f",p1,p2);
+	if(k1>k2)my_printf("%.0f",p1);
+	else if(k1<k2)my_printf("%.0f",p2);
+	else my_printf("%.0f,%.0f",p1,p2);
 	
 
 }

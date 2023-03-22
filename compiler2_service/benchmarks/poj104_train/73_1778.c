@@ -11,7 +11,7 @@ int main_bench()
   
   for(i=1;i<=5;i++){
                     for(j=1;j<=5;j++){
-                                      scanf("%d",&a[i][j]);
+                                      my_scanf("%d",&a[i][j]);
                                       }
                     } 
 
@@ -31,11 +31,11 @@ int main_bench()
                     for(k=1;k<=5;k++) {
                                      if(a[k][col]<max){flag=1;break;}
                                      } 
-                    if(flag==0){printf("%d %d %d\n",row,col,max);n++;}
+                    if(flag==0){my_printf("%d %d %d\n",row,col,max);n++;}
                     else{flag=0;}
                                                      
                     } 
-  if(n==0){printf("not found\n");}                                
+  if(n==0){my_printf("not found\n");}                                
 	
   return 0;
 }

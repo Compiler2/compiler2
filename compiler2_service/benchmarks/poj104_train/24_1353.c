@@ -46,6 +46,6 @@ int main_bench()
       h[o]='\0';
    }
   
-   printf("%s\n%s",k,h);
+   my_printf("%s\n%s",k,h);
    return 0;
 }

@@ -3,12 +3,12 @@
 int main_bench()
 {
    int n;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int i=1;
    int x,y,z=0,max;
    max=z;
    while(i<=n){
-     scanf("%d %d",&x,&y);
+     my_scanf("%d %d",&x,&y);
      if(x>=90&&x<=140&&y>=60&&y<=90){
        z=z+1;
         if(z>max){
@@ -21,6 +21,6 @@ int main_bench()
      }
        i++;
    }
-   printf("%d",max);
+   my_printf("%d",max);
    return 0;
 }

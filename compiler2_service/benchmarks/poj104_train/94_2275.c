@@ -2,10 +2,10 @@
 
 int main_bench(){
     int N;
-    scanf("%d\n",&N);
+    my_scanf("%d\n",&N);
     int A[N],t=0;
     for(int a=0;a<N;a++){
-        scanf("%d",&A[a]);
+        my_scanf("%d",&A[a]);
     }                        
     for(int b=0;b<N;b++){
         if(A[b]%2!=0){
@@ -32,8 +32,8 @@ int main_bench(){
     }
     int e=0;
     for(;e<t-1;e++)
-       printf("%d,",B[e]);
-    printf("%d",B[e]);
+       my_printf("%d,",B[e]);
+    my_printf("%d",B[e]);
     return 0;
 }
 

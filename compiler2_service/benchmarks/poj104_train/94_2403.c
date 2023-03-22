@@ -5,9 +5,9 @@ int main_bench()
     int m,i,a,r;
     
     int sz[500],hz[500];
-    scanf("%d\n",&m);
+    my_scanf("%d\n",&m);
     for(i=0;i<m;i++){
-        scanf("%d",&(sz[i]));
+        my_scanf("%d",&(sz[i]));
        
     } 
     int j;
@@ -31,9 +31,9 @@ int main_bench()
         
     
     for(i=1;i<=j-1;i++){
-        printf("%d,",hz[i-1]);
+        my_printf("%d,",hz[i-1]);
     }
-    printf("%d",hz[i-1]);
+    my_printf("%d",hz[i-1]);
     return 0;
 }
 

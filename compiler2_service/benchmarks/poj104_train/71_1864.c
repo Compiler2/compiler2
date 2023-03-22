@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,i,j,a,b,c,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int month[13]={0,3,0,3,2,3,2,3,3,2,3,2,3};
     for(i=0;i<n;i++){
-         scanf("%d %d %d",&a,&b,&c);
+         my_scanf("%d %d %d",&a,&b,&c);
          int d=0;
          if(b>c){
                e=b;
@@ -20,10 +20,10 @@ int main_bench()
                d++;
          }
          if(d%7==0){
-               printf("YES\n");
+               my_printf("YES\n");
          }
          else{
-               printf("NO\n");
+               my_printf("NO\n");
          }
     }
     return 0;

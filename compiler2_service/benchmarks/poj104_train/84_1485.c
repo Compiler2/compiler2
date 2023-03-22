@@ -6,10 +6,10 @@ int main_bench()
   int n,i,a;
   int max=0,min=0,temp=0;
   
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=1; i<=n; i++)
   {
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     if(i<=1)
     { 
            
@@ -25,7 +25,7 @@ int main_bench()
     min=a;
     
    }
-   printf("%d\n%d",max,min);
+   my_printf("%d\n%d",max,min);
   
    return 0;
 }

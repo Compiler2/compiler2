@@ -6,9 +6,9 @@ int main_bench()
 	int i,n;
 	double a[100];
 	double g,f,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%lf %lf",&g,&f);
+		my_scanf("%lf %lf",&g,&f);
 		a[i]=f/g;
 		x=a[0];
 	}
@@ -16,15 +16,15 @@ int main_bench()
 	{
 		if((a[i]-x)>0.05)
 		{
-				printf("better\n");
+				my_printf("better\n");
 		}
 		if((x-a[i])>0.05)
 		{
-                printf("worse\n");
+                my_printf("worse\n");
 		}
 		else if((a[i]-x<=0.05)&&(x-a[i]<=0.05))
 		{
-				printf("same\n");
+				my_printf("same\n");
 		}
 	}
 	return 0;

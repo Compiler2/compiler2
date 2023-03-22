@@ -14,7 +14,7 @@ int main_bench(){
 		if(xulie[i]!=' '){
 			l++;
 		}else if(xulie[i]==' '&&xulie[i-1]!=' '){
-			printf("%d",l);
+			my_printf("%d",l);
 			l=0;
 			break;
 		}
@@ -24,7 +24,7 @@ int main_bench(){
 		if(xulie[i]!=' '){
 			l++;
 		}else if(xulie[i]==' '&&xulie[i-1]!=' '){
-			printf(",%d",l);
+			my_printf(",%d",l);
 			l=0;
 		}
 		i++;

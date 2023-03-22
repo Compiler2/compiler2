@@ -3,14 +3,14 @@
 main_bench()
 {
 	int n,i,score;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[n];
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	double b[n];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&score);
+		my_scanf("%d",&score);
 		if(score>=90)
 			b[i]=4.0;
 		else if(score>=85)
@@ -43,6 +43,6 @@ main_bench()
 	}
 	double ave;
 	ave=sum/x;
-	printf("%.2lf",ave);
+	my_printf("%.2lf",ave);
 	return 0;
 }

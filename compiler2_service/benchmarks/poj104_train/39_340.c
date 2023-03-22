@@ -9,10 +9,10 @@ struct p
 int main_bench()
 {
 	int i,j,k,l,m=0,n;
-	scanf ("%d\n",&n);
+	my_scanf ("%d\n",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%s %d %d %c %c %d",stu[i].name,&stu[i].fen,&stu[i].ban,&stu[i].leader,&stu[i].xibu,&stu[i].lun);
+		my_scanf ("%s %d %d %c %c %d",stu[i].name,&stu[i].fen,&stu[i].ban,&stu[i].leader,&stu[i].xibu,&stu[i].lun);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -50,7 +50,7 @@ int main_bench()
 		}
 		if (j==n)
 		{
-			printf ("%s\n%d\n%d",stu[i].name,stu[i].scho,m);
+			my_printf ("%s\n%d\n%d",stu[i].name,stu[i].scho,m);
 			break;
 		}
 	}

@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 float sum=0;
 int a;
 double m=0;
@@ -14,7 +14,7 @@ double d;
 int score[100];
 while(i<=n)
 {
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	score[i]=a;
     m+=a;
 	i++;
@@ -22,7 +22,7 @@ while(i<=n)
    int j=1;
 while(j<=n)
 {
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	if(b>89){c=4.0;}
 	else if(b>84){c=3.7;}
 else if(b>81){c=3.3;}
@@ -37,6 +37,6 @@ sum+=c*score[j];
 j++;
 }
 d=sum/m;
-printf("%.2lf",d);
+my_printf("%.2lf",d);
 return 0;
 }

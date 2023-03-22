@@ -7,7 +7,7 @@ int main_bench()
 	int n;
 	int j,i;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(j=0;j<=n;j++)
 	{
 
@@ -35,7 +35,7 @@ int main_bench()
 	   }
 
 	   puts(jj);
-	   printf("\n");
+	   my_printf("\n");
 	   
 	}
 

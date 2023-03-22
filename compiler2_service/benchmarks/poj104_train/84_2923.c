@@ -3,10 +3,10 @@
 int main_bench()
 {
    int n,i,max,next,temp;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int a[100];
    for(i=0;i<n;i++)
-   { scanf("%d\n",&a[i]);
+   { my_scanf("%d\n",&a[i]);
     }
    if(a[0]>a[1])
     {max=a[0];
@@ -25,6 +25,6 @@ int main_bench()
      else if(a[i]<max&&a[i]>next)
       next=a[i];
     }
-    printf("%d\n%d",max,next);
+    my_printf("%d\n%d",max,next);
     return 0;
 }     

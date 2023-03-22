@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,nl;
 	int nld[4]={0,0,0,0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&nl);
+		my_scanf("%d",&nl);
 		if(nl<=18)
 			nld[0]++;
 		   
@@ -21,9 +21,9 @@ int main_bench()
 			nld[3]++;
 		   
 	}
-    printf("1-18: %.2lf%%\n",(100.0*nld[0])/n);
-	 printf("19-35: %.2lf%%\n",(100.0*nld[1])/n);
-	  printf("36-60: %.2lf%%\n",(100.0*nld[2])/n);
-	   printf("60??: %.2lf%%\n",(100.0*nld[3])/n);
+    my_printf("1-18: %.2lf%%\n",(100.0*nld[0])/n);
+	 my_printf("19-35: %.2lf%%\n",(100.0*nld[1])/n);
+	  my_printf("36-60: %.2lf%%\n",(100.0*nld[2])/n);
+	   my_printf("60??: %.2lf%%\n",(100.0*nld[3])/n);
 	return 0;
 }

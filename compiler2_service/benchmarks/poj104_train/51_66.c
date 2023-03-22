@@ -4,7 +4,7 @@ int main_bench()
 {
 	char z[500],gram[500][6];
 	int n,i,j,js[500],len,max=1;
-	scanf("%d%s",&n,z);
+	my_scanf("%d%s",&n,z);
 	len=strlen(z);
 	for(i=0;i<len-n+1;i++)
 	{
@@ -37,11 +37,11 @@ int main_bench()
 	}
 	if(max==1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<len-n+1;i++)
 		{
 
@@ -49,9 +49,9 @@ int main_bench()
 			{
 				for(j=0;j<n;j++)
 				{
-					printf("%c",gram[i][j]);
+					my_printf("%c",gram[i][j]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

@@ -49,6 +49,6 @@ int main_bench()
 		}
 	}
 	a[n1+x*(n3-n2)]='\0';
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 	return 0;
 }

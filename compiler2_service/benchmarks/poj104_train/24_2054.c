@@ -31,6 +31,6 @@ q=strlen(d[j]);
 strcpy(c,d[j]);
 }}
 
-printf("%s\n%s",b,c);
+my_printf("%s\n%s",b,c);
 return 0;
 }

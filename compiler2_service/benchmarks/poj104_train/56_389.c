@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int x1,x2,x3,x4,x5;
 	x1=n%10;
 	x2=((n-x1)%100)/10;
@@ -12,19 +12,19 @@ int main_bench()
 	x5=((n-x1-x2*10-x3*100-x4*1000)%100000)/10000;
     if(x5!=0)
 	{
-		printf("%d%d%d%d%d",x1,x2,x3,x4,x5);
+		my_printf("%d%d%d%d%d",x1,x2,x3,x4,x5);
 	}
 	else if(x5==0&&x4!=0)
 	{
-		printf("%d%d%d%d",x1,x2,x3,x4);
+		my_printf("%d%d%d%d",x1,x2,x3,x4);
 	}
 	else if(x5==0&&x4==0&&x3!=0)
 	{
-		printf("%d%d%d",x1,x2,x3);
+		my_printf("%d%d%d",x1,x2,x3);
 	}
 	else if(x5==0&&x4==0&&x3==0&&x2!=0)
 	{
-		printf("%d%d",x1,x2);
+		my_printf("%d%d",x1,x2);
 	}
 	return 0;
 }

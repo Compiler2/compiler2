@@ -17,8 +17,8 @@ int main_bench()
 	int i=0,j,n=0,m;
 	for(i=0;;i++)
 	{
-		scanf("%d",&x1);
-		scanf("%c",&c);
+		my_scanf("%d",&x1);
+		my_scanf("%c",&c);
 		if(x1<min) min=x1;
 		a[i].x=x1;
 		n++;
@@ -27,9 +27,9 @@ int main_bench()
 	}
 	for(i=0;;i++)
 	{
-		scanf("%d",&x1);
+		my_scanf("%d",&x1);
 		if(x1>max) max=x1;
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		a[i].y=x1;
 		if(c!=',')
 			break;
@@ -48,6 +48,6 @@ int main_bench()
 	{
 		if(m<b[i]) m=b[i];
 	}
-	printf("%d %d",n,m);
+	my_printf("%d %d",n,m);
 	return 0;
 }

@@ -5,8 +5,8 @@ main_bench()
       int sy,sm,sd,ey,em,ed;
       long int a,b,p,q;
       a=0,b=0;
-      scanf("%d %d %d",&sy,&sm,&sd);
-      scanf("%d %d %d",&ey,&em,&ed);
+      my_scanf("%d %d %d",&sy,&sm,&sd);
+      my_scanf("%d %d %d",&ey,&em,&ed);
       for (p=0;p<sy;p++)
           {
                         if ((p%4==0&&p%100!=0)||(p%400==0)) a=a+366;
@@ -77,6 +77,6 @@ main_bench()
                        else b=b+31+28+31+30+31+30+31+31+30+31+30+ed;
                    break;
           }
-      printf("%d",b-a);
+      my_printf("%d",b-a);
       return(0);
 }

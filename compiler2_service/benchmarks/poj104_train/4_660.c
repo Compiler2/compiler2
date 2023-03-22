@@ -4,12 +4,12 @@ int main_bench()
 {
 	int R,C,i,j,k,l,m,n;
 	int a[100][100];
-	scanf("%d %d",&R,&C);
+	my_scanf("%d %d",&R,&C);
 	for(i=0;i<R;i++)
 	{
 		for(j=0;j<C;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(j=0;j<C;j++)
@@ -18,7 +18,7 @@ int main_bench()
 		while(i<=j)
 		{ 
 			k=j-i;
-			printf("%d\n",a[i][k]);
+			my_printf("%d\n",a[i][k]);
 			i++;
 			if(i>R-1){break;}
 		}
@@ -29,7 +29,7 @@ int main_bench()
 	   while(m<=l)
 	   {
            n=l-m;
-		   printf("%d\n",a[m][n]);
+		   my_printf("%d\n",a[m][n]);
 		   m++;
 		   if(m>R-1) {break;}
 	   }

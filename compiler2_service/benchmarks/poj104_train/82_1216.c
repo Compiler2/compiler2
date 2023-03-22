@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,t=0,s=0;
 	int sz[100]={0},xueya[100][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
 		for(int a=0;a<2;a++){
-			scanf("%d",&xueya[i][a]);
+			my_scanf("%d",&xueya[i][a]);
 		}
 	}
 	for(int b=0;b<n;b++){
@@ -21,6 +21,6 @@ int main_bench(){
 			s=sz[g];
 		}
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

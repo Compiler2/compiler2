@@ -17,9 +17,9 @@ int main_bench()
            if ((c[i-1]!='-')&&(c[i]>='0')&&(c[i]<='9')){
                sum=sum+1;
                for (j=i;(c[j]>='0')&&(c[j]<='9');j++){
-                   printf("%c",c[j]);
+                   my_printf("%c",c[j]);
                    }
-               printf("\n");
+               my_printf("\n");
                i=j;
                }
            }

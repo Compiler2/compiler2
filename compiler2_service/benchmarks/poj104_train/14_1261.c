@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student{
 		int a,b,c;
 	}student_1;
 	int x,i=0;
 	int a1=0,a2=0,b1=0,b2=0,c1=0,c2=0;
 	while(i<n){
-		scanf("%d%d%d",&student_1.a,&student_1.b,&student_1.c);
+		my_scanf("%d%d%d",&student_1.a,&student_1.b,&student_1.c);
 		x=student_1.b+student_1.c;
 			if(x>a2){
 				c1=b1;
@@ -53,8 +53,8 @@ int main_bench()
 			}
 		i++;
 	}
-	printf("%d %d\n",a1,a2);
-	printf("%d %d\n",b1,b2);
-	printf("%d %d\n",c1,c2);
+	my_printf("%d %d\n",a1,a2);
+	my_printf("%d %d\n",b1,b2);
+	my_printf("%d %d\n",c1,c2);
 	return 0;
 }

@@ -46,16 +46,16 @@ int max(struct student *pt,int n)
 int main_bench()
 {
 	int n,i,m,sum=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %ld", stu[i].name ,&stu[i].qimo, &stu[i].banji ,&stu[i].ganbu ,&stu[i].xibu ,&stu[i].lunwen );
+		my_scanf("%s %d %d %c %c %ld", stu[i].name ,&stu[i].qimo, &stu[i].banji ,&stu[i].ganbu ,&stu[i].xibu ,&stu[i].lunwen );
 		yunsuan(&stu[i]);
 		sum+=stu[i].qian ;
 	}
 
 	m=max(stu,n);
-	printf("%s\n%d\n%ld\n", stu[m].name ,stu[m].qian, sum);
+	my_printf("%s\n%d\n%ld\n", stu[m].name ,stu[m].qian, sum);
 	return 0;
 }
 

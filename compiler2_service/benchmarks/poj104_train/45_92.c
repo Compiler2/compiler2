@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char c[50]={'\0'},s[50]={'\0'};
-	scanf("%s %s",c,s);
+	my_scanf("%s %s",c,s);
 	int n1,n2;
 	n1=strlen(c);
 	n2=strlen(s);
@@ -20,7 +20,7 @@ int main_bench()
 				}
 			}
 			if(count==0){
-				printf("%d\n",a);
+				my_printf("%d\n",a);
 				break;
 			}
 		}

@@ -16,12 +16,12 @@ void move(int a[],int b[],int n,int m)
 int main_bench()
 {
     int a[100],b[100],n,m,i;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=0;i<=n-1;i++)
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     move(a,b,n,m);
     for(i=0;i<=n-2;i++)
-        printf("%d ",b[i]);
-    printf("%d",b[n-1]);
+        my_printf("%d ",b[i]);
+    my_printf("%d",b[n-1]);
     return 0;
 }

@@ -15,10 +15,10 @@ int main_bench()
 {
 	int i=0,k=0,n=0,total=0;
 	struct scholarship data[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",data[i].name,&data[i].test,&data[i].judge,&data[i].job,&data[i].west,&data[i].paper);
+		my_scanf("%s %d %d %c %c %d",data[i].name,&data[i].test,&data[i].judge,&data[i].job,&data[i].west,&data[i].paper);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -33,6 +33,6 @@ int main_bench()
 	{
 		if (data[k].sum<data[i].sum) k=i;
 	}
-	printf("%s\n%d\n%d\n",data[k].name,data[k].sum,total);
+	my_printf("%s\n%d\n%d\n",data[k].name,data[k].sum,total);
 	return 0;
 }

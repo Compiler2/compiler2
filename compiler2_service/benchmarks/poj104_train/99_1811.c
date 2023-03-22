@@ -4,9 +4,9 @@ int main_bench()
 {
 int n,i,k,a=0,b=0,c=0,d=0;
 double a1,b1,c1,d1;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
-{scanf("%d",&k);
+{my_scanf("%d",&k);
 if(k<=18)
 {a++;}
 else if(k<=35)
@@ -24,6 +24,6 @@ a1=(double)(a)/n;
 b1=(double)(b)/n;
 c1=(double)(c)/n;
 d1=(double)(d)/n;
-printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a1,b1,c1,d1);
+my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a1,b1,c1,d1);
 return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	char s[500],sub[500][5],subt[5];
 	int a[500]={1,0};
 	int n,i,j,h,t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(s);
 	int len=strlen(s);
 	for(i=0;i<=len-n;i++)
@@ -34,14 +34,14 @@ int main_bench()
 	  }
 	  if(h!=i) {strcpy(subt,sub[h]);strcpy(sub[h],sub[i]);strcpy(sub [i],subt);t=a[h];a[h]=a[i];a[i]=t;}
 	}
-  if(a[0]==1) printf("NO\n");
+  if(a[0]==1) my_printf("NO\n");
   else
   {	
-         printf("%d\n",a[0]);
+         my_printf("%d\n",a[0]);
 	for(i=0;i<=len-n;i++)
 	{
 		if(a[i]==a[0])
-		printf("%s\n",sub[i]);
+		my_printf("%s\n",sub[i]);
 	}
   }
 }

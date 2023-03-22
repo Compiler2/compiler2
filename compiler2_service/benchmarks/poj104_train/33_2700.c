@@ -4,7 +4,7 @@ int main_bench()
 {
 int n;
 char sz[100000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 for(int i=0;i<n;i++)
  {

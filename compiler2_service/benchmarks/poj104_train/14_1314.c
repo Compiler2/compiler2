@@ -14,10 +14,10 @@ int main_bench()
 	two.yu=0;two.shu=0;
 	three.yu=0;three.shu=0;
 	int n,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf("%s %d %d",s[j].name,&s[j].yu,&s[j].shu);
+		my_scanf("%s %d %d",s[j].name,&s[j].yu,&s[j].shu);
 	}
 	for(j=0;j<n;j++)
 	{
@@ -42,6 +42,6 @@ int main_bench()
 		if((s[j].yu+s[j].shu)>(three.yu+three.shu))
 		three=s[j];
 	}
-	printf("%s %d\n%s %d\n%s %d\n",one.name,one.yu+one.shu,two.name,two.yu+two.shu,three.name,three.yu+three.shu);
+	my_printf("%s %d\n%s %d\n%s %d\n",one.name,one.yu+one.shu,two.name,two.yu+two.shu,three.name,three.yu+three.shu);
 	return 0;
 }

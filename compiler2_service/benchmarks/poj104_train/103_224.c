@@ -22,7 +22,7 @@ int main_bench()
              n=0;
              for(j=i;a[j]==a[i];j--)
              n++;
-             printf("(%c,%d)",a[i],n);
+             my_printf("(%c,%d)",a[i],n);
        }
   }
   return 0;

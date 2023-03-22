@@ -46,26 +46,26 @@ int shushu(int m)
 int main_bench()
 {
 	int m,n,flag=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(;m<=n;m++)
 	{
 		if(panduan(m)==1&&shushu(m)==1)
 		{
 			if(flag==0)
 			{
-				printf("%d",m);
+				my_printf("%d",m);
 				flag++;
 			}
 			else
 			{
-				printf(",%d",m);
+				my_printf(",%d",m);
 				flag++;
 			}
 		}
 	}
 	if(flag==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

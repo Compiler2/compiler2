@@ -24,7 +24,7 @@ int main_bench()
 }
 if(q==0)
 {for(i=0;ch[i]!=' ';i++)
-printf("%c",ch[i]);printf("\n");}
+my_printf("%c",ch[i]);my_printf("\n");}
 else
 {int num=0;
 
@@ -32,9 +32,9 @@ for(i=0;i<=m-1;i++)
 { if(ch[i]==' ')
   num++;
   else if(num==q)
-  printf("%c",ch[i]);
+  my_printf("%c",ch[i]);
 }
-  printf("\n");
+  my_printf("\n");
   
   
     
@@ -43,17 +43,17 @@ for(i=0;i<=m-1;i++)
 }
 if(p==0)
 {for(i=0;ch[i]!=' ';i++)
-printf("%c",ch[i]);
-printf("\n");}
+my_printf("%c",ch[i]);
+my_printf("\n");}
 else 
 {int mum=0;
 for(i=0;i<=m-1;i++)
 {if(ch[i]==' ')
  mum++;
 else if(mum==p)
-printf("%c",ch[i]);
+my_printf("%c",ch[i]);
 if(mum==p+1)
-  {printf("\n");
+  {my_printf("\n");
   break;}
 }}
 

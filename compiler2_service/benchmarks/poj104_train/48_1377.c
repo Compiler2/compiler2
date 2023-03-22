@@ -3,7 +3,7 @@
 main_bench()
 {
 	int num,day,i,j,k,p,q;
-	scanf("%d %d",&num,&day);
+	my_scanf("%d %d",&num,&day);
 	int min[11][11];
 	int temp[11][11];
 	for(i=0;i<11;i++)
@@ -30,9 +30,9 @@ main_bench()
 		for(j=1;j<10;j++)
 		{
 			if(j!=9)
-			printf("%d ",min[i][j]);
-			else printf("%d",min[i][j]);
+			my_printf("%d ",min[i][j]);
+			else my_printf("%d",min[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

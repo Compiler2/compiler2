@@ -17,9 +17,9 @@ int main_bench()
 {
 	int d;
 	char a[101]={'\0'},b[101]={'\0'};
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	change(a);
 	change(b);
-	if((d=strcmp(a,b))==0) printf("YES");
-	else printf("NO");
+	if((d=strcmp(a,b))==0) my_printf("YES");
+	else my_printf("NO");
 }

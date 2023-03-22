@@ -12,7 +12,7 @@ int main_bench()
         }
     }
     int e[13][13];
-    scanf("%d%d\n",&m,&n);
+    my_scanf("%d%d\n",&m,&n);
     c[6][6]=m;
     for(i=1;i<=n;i++)
     {
@@ -35,8 +35,8 @@ int main_bench()
     {
          for(b=2;b<=10;b++)
          {
-              if(b==10) printf("%d\n",c[a][b]);
-              else printf("%d ",c[a][b]);
+              if(b==10) my_printf("%d\n",c[a][b]);
+              else my_printf("%d ",c[a][b]);
          }
     }
 return 0;

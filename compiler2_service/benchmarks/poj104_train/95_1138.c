@@ -15,9 +15,9 @@ if(j==k)
     {    c=a[i];
     if(c>='A'&&c<='Z')  c-='A'-'a';    d=b[i];if(d>='A'&&d<='Z')  d-='A'-'a';
       if(c==d)  continue;
-      else if(c>d)  {printf(">");  break;}
-       else if(c<d)  {printf("<");  break;}}
+      else if(c>d)  {my_printf(">");  break;}
+       else if(c<d)  {my_printf("<");  break;}}
        if(i>=j)
-         printf("=");
+         my_printf("=");
 }
 }

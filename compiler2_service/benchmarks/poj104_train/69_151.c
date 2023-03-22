@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300],b[300],c[300],x;
 	int n1,n2,m,i,t=-1,z=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	n1=strlen(a);
 	n2=strlen(b);
 	if(n1<=n2)
@@ -76,8 +76,8 @@ int main_bench()
 	
 	if(z==1)
 	{
-		printf("1");
-	    printf("%s\n",c);
+		my_printf("1");
+	    my_printf("%s\n",c);
 	}
 	else 
 	{
@@ -92,10 +92,10 @@ int main_bench()
 		if(t!=-1)
 		{
 		    for(i=t;i<m;i++)
-			    printf("%c",c[i]);
-		    printf("\n");
+			    my_printf("%c",c[i]);
+		    my_printf("\n");
 		}
-		else printf("0\n");
+		else my_printf("0\n");
 	}
 	
 	return 0;

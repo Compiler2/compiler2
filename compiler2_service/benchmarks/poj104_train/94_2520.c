@@ -3,10 +3,10 @@
 int main_bench(){
     int n,k,e;
     int sz[500],a[500];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     k=0;
     for (int i=0;i<n;i++){
-        scanf("%d",&(sz[i]));
+        my_scanf("%d",&(sz[i]));
     }
     for(int i=0;i<n;i++){
         if(sz[i]%2==1){
@@ -25,10 +25,10 @@ int main_bench(){
     }
     for(int i=0;i<k;i++){
         if(i==0){
-            printf("%d",(a[i]));
+            my_printf("%d",(a[i]));
         }
         else{
-            printf(",%d",(a[i]));
+            my_printf(",%d",(a[i]));
         }        
     }
 return 0;

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,temp,l=0,a[300];
     do{
-		scanf("%d",&a[l]);
+		my_scanf("%d",&a[l]);
 		l++;
 	}while(getchar()!='\n');
 	if (l!=1)
@@ -18,14 +18,14 @@ int main_bench()
 					a[j+1]=temp;
 				}
 		if (a[0]==a[l-1])
-			printf("No");		
+			my_printf("No");		
 		for (i=l-1;i>=0;i--)
 			if (a[i]!=a[l-1])
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				break;
 			}
 	}
 	else 
-		printf("No");
+		my_printf("No");
 }

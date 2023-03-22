@@ -4,17 +4,17 @@ int main_bench()
 {
 int m,a[123],c[123],i,j,k,l;
 float b[123],o;
-scanf("%d",&m);
+my_scanf("%d",&m);
 i=0;
 l=0;
 while(i<m){
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	l=l+a[i];
 	i++;
 }
 j=0;
 while(j<m){
-scanf("%d",&c[j]);
+my_scanf("%d",&c[j]);
 if(c[j]>=90&&c[j]<=100){b[j]=4.0;}
 else if(c[j]<=89&&c[j]>=85){b[j]=3.7;}
 else if(c[j]<=84&&c[j]>=82){b[j]=3.3;}
@@ -34,6 +34,6 @@ o=o+a[k]*b[k];
 k++;
 }
 o=o/l;
-printf("%.2f",o);
+my_printf("%.2f",o);
 return 0;
 }

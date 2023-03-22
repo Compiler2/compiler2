@@ -2,14 +2,14 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a=0;
     int b=0;
     int c=0;
     int d=0;
     int nl[100];
     for(int i=0;i<n;i++){
-        scanf("%d",&nl[i]);
+        my_scanf("%d",&nl[i]);
     }
     for(int i=0;i<n;i++){
         if(nl[i]<=18){
@@ -30,10 +30,10 @@ int main_bench(){
     f=(double)b/n*100;
     g=(double)c/n*100;
     h=(double)d/n*100;
-    printf("1-18: %.2lf%%\n",e);
-    printf("19-35: %.2lf%%\n",f);
-    printf("36-60: %.2lf%%\n",g);
-    printf("Over60: %.2lf%%",h);
+    my_printf("1-18: %.2lf%%\n",e);
+    my_printf("19-35: %.2lf%%\n",f);
+    my_printf("36-60: %.2lf%%\n",g);
+    my_printf("Over60: %.2lf%%",h);
     return 0;
     
 }

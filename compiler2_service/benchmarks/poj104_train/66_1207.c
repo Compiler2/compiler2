@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,s,d,y;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if(b==1)
 	{
 		s=0;
@@ -127,31 +127,31 @@ int main_bench()
 	y=(s+c+d)%7;
     if(y==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	else if(y==2)
 	{
-		printf("Tue.");
+		my_printf("Tue.");
 	}	
     else if(y==3)
 	{
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	else if(y==4)
 	{
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	else if(y==5)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 	}
 	else if(y==6)
 	{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	else if(y==0)
 	{
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 
 	return 0;

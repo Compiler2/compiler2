@@ -14,15 +14,15 @@ int main_bench()
 	int r;
 	struct ren *p1, *p2,*head;
 	int i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	head = (struct ren *)malloc(sizeof(struct ren));
-	scanf("%s %d", c, &y);
+	my_scanf("%s %d", c, &y);
 	strcpy(head->id, c);
 	head->ye = y;
 	head->next = 0;
 	for (i = 2; i <= n; i++)
 	{
-		scanf("%s %d", c, &y);
+		my_scanf("%s %d", c, &y);
 		p1 = (struct ren *)malloc(sizeof(struct ren));
 		strcpy(p1->id, c);
 		p1->ye = y;
@@ -66,7 +66,7 @@ int main_bench()
 	p1 = head;
 	do
 	{
-		printf("%s\n", p1->id);
+		my_printf("%s\n", p1->id);
 		p1 = p1->next;
 	} while (p1 != 0);
 }

@@ -3,17 +3,17 @@
 int main_bench(){
 int sum=0;
 int n,i,j;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int a[10],b[10];
 for(i=0;i<n;i++){
-scanf("%d ",&a[i]);
+my_scanf("%d ",&a[i]);
 }
 for(i=0;i<n;i++){
 sum+=a[i];
 }
-scanf("\n");
+my_scanf("\n");
 for(j=0;j<n;j++){
-scanf("%d ",&b[j]);
+my_scanf("%d ",&b[j]);
 }
 double G,s=0;
 for(j=0;j<n;j++){
@@ -32,6 +32,6 @@ s+=G;
 }
 double GPA;
 GPA=s/sum;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 return 0;
 }

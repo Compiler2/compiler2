@@ -4,14 +4,14 @@ int main_bench()
 {
 	int sushu(int x);
 	int m,i,j,k;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=3;i<=m/2;i++)
 	{
 		k=sushu(i);
 		if (k==1)
 		{
 			j=m-i;
-			if (sushu(j)==1) printf("%d %d\n",i,j);
+			if (sushu(j)==1) my_printf("%d %d\n",i,j);
 			
 		}
 		

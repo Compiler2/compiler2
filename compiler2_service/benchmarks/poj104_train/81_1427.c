@@ -8,10 +8,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d ",&sz[i][j]);
+			my_scanf("%d ",&sz[i][j]);
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 
 	sz[5][5]=jhsz(sz,m,n);
 
@@ -23,7 +23,7 @@ int jhsz(int sz[5][5],int m,int n)
     int i,j,jh[5];
 
 	if(m>4||n>4){
-		printf("error");
+		my_printf("error");
 	}else
 	{
 		for(j=0;j<5;j++)
@@ -36,9 +36,9 @@ int jhsz(int sz[5][5],int m,int n)
 		{
 		    for(j=0;j<4;j++)
 			{
-			    printf("%d ",sz[i][j]);
+			    my_printf("%d ",sz[i][j]);
 			}
-			printf("%d\n",sz[i][4]);
+			my_printf("%d\n",sz[i][4]);
 		}
 	}
 	return sz[5][5];

@@ -4,13 +4,13 @@
 int main_bench()
 {
 	int n=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i=1;
 	int x=0,y=0;
 
 	for(i=1;i<=n;i++){
 		int t;
-		scanf("%d",&t);
+		my_scanf("%d",&t);
 		if(i==1){
 			x=t;
 		}
@@ -34,7 +34,7 @@ int main_bench()
 		}
 
 	}
-	printf("%d\n%d\n",x,y);
+	my_printf("%d\n%d\n",x,y);
 	
 	
 	return 0;

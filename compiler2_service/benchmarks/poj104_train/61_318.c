@@ -3,11 +3,11 @@
 main_bench()
 {
   int n,t,i,Y;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int s[n];
   for(i=0;i<=(n-1);i++)
   {
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     s[i]=t;
   }
   for(i=0;i<=(n-1);i++)
@@ -19,7 +19,7 @@ main_bench()
     a=b;
     b=c;
     }
-    printf("%d\n",c);
+    my_printf("%d\n",c);
   } 
   getchar();
   getchar();

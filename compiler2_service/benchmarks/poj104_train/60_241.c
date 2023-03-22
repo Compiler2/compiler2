@@ -20,9 +20,9 @@ int sushu(int a)
     }
 main_bench()
 {   int n,b[100000],i,j,k,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<=4)
-    printf("empty");
+    my_printf("empty");
    else 
    { for(i=1,j=0;i<=n;i++)
    {t=sushu(i);
@@ -34,7 +34,7 @@ main_bench()
                     } 
    for(j=1;j<=k;j++)
    {if(b[j]-b[j-1]==2)  
-     printf("%d %d\n",b[j-1],b[j]);
+     my_printf("%d %d\n",b[j-1],b[j]);
                     }                               
                     }  
                            

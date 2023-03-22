@@ -11,8 +11,8 @@ int main_bench()
      else break;
     if(a[1]=='\0') 
     {
-      printf("0\n");
-      printf("%c\n",a[0]);
+      my_printf("0\n");
+      my_printf("%c\n",a[0]);
       
       return 0;
     }
@@ -38,12 +38,12 @@ int main_bench()
     for(j=0;j<i;j++)
     if(c[j]!=0||ss!=0||j==i-1)
     {
-      printf("%d",c[j]);
+      my_printf("%d",c[j]);
       ss=1;
     }
-    printf("\n");
-    if(b[i-2]!=0) printf("%d",b[i-2]);
-    printf("%d\n",b[i-1]);
+    my_printf("\n");
+    if(b[i-2]!=0) my_printf("%d",b[i-2]);
+    my_printf("%d\n",b[i-1]);
     
     return 0;
 }

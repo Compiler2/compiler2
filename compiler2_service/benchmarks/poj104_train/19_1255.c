@@ -19,15 +19,15 @@ int main_bench()
 		{
 			*p='\0';
 			p=p+1;
-			if(strcmp(c,a)==0)printf("%s ",b);
-			else printf("%s ",c);
+			if(strcmp(c,a)==0)my_printf("%s ",b);
+			else my_printf("%s ",c);
 			c=p;
 		}
 	}
 	do
 	{
-		if(strcmp(c,a)==0)printf("%s",b);
-			else printf("%s",c);
+		if(strcmp(c,a)==0)my_printf("%s",b);
+			else my_printf("%s",c);
 			t=1;
 	}while((*p=='\0')&&(t=0));
 }

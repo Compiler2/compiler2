@@ -5,7 +5,7 @@ int main_bench()
     int i,j,m,l,p,q,k,a1,b1;
     double n;
     char s[1000];
-      scanf("%d",&m); 
+      my_scanf("%d",&m); 
     double a[100],b[100];
     memset(b,0,sizeof(b));
     memset(a,0,sizeof(a));
@@ -13,7 +13,7 @@ int main_bench()
     a1=0;b1=0;
     for (i=1;i<=m;i++)
     {
-        scanf("%s %lf",s,&n);
+        my_scanf("%s %lf",s,&n);
        
      if (s[0]=='m') 
      { 
@@ -56,9 +56,9 @@ int main_bench()
        
      }      
      }                
-     for(i=1;i<=a1;i++) printf("%.2lf ",a[i]);
-     for (i=1;i<=b1-1;i++) printf("%.2lf ",b[i]);
-     printf("%.2lf",b[b1]);
+     for(i=1;i<=a1;i++) my_printf("%.2lf ",a[i]);
+     for (i=1;i<=b1-1;i++) my_printf("%.2lf ",b[i]);
+     my_printf("%.2lf",b[b1]);
 
     return 0;
 }    

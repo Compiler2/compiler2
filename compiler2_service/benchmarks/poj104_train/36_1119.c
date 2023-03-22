@@ -3,10 +3,10 @@
 main_bench()
 {
 	char a[200],b[200];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int la=strlen(a),lb=strlen(b);
 	int i,j;char c;
-	if(la!=lb) printf("NO");
+	if(la!=lb) my_printf("NO");
 	else
 	{
 		for (i=0;i<la;i++)
@@ -25,8 +25,8 @@ main_bench()
 					c=b[i];b[i]=b[j];b[j]=c;
 				}
 			}
-		if (strcmp(a,b)==0) printf("YES");
-		else printf("NO");
+		if (strcmp(a,b)==0) my_printf("YES");
+		else my_printf("NO");
 	}
 	return 0;
 }

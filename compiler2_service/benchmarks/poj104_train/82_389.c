@@ -6,9 +6,9 @@ int main_bench(){
 	int sum=0;
 	int i;
 	int c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if(a>=90&&a<=140&&b>=60&&b<=90){
 			sum++;
 		}
@@ -20,10 +20,10 @@ int main_bench(){
 		}
 	}
 	if(c>=sum){
-	printf("%d",c);
+	my_printf("%d",c);
 	}
 	if(c<sum){
-		printf("%d",sum);
+		my_printf("%d",sum);
 	}
 
 	return 0;

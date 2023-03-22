@@ -3,17 +3,17 @@
 int main_bench()
 {
     int *p[400],m,n,a,i,j,k,l,sum,counter,b,matrix[100][100];
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     for(k=0;k<a;k++)
     {
                     sum=0;
                     counter=0;
-                    scanf("%d %d",&m,&n);
+                    my_scanf("%d %d",&m,&n);
                     for(i=0;i<m;i++)
                     {
                                     for(j=0;j<n;j++)
                                     {
-                                                    scanf("%d",&matrix[i][j]);
+                                                    my_scanf("%d",&matrix[i][j]);
                                                     if(i==0||i==m-1||j==0||j==n-1)
                                                     {
                                                               p[counter]=&matrix[i][j];
@@ -25,7 +25,7 @@ int main_bench()
                     {
                                           sum+=*p[l];
                     }
-                    printf("%d\n",sum);
+                    my_printf("%d\n",sum);
     }
     return 0;
 } 

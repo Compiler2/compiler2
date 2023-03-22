@@ -5,7 +5,7 @@ int main_bench()
 {
    char a[5000] , t;
    int la , i , j;
-   scanf ( "%s" , a );
+   my_scanf ( "%s" , a );
    la = strlen ( a );
    for ( i = 0 ; i < la ; i ++ )
     if ( 'a' <= a[i] && a[i] <= 'z' )
@@ -14,7 +14,7 @@ int main_bench()
     {
      t = a[i++] , j = 1;
      for ( ; a[i] == t ; i ++ , j ++ );
-     printf ( "(%c,%d)" , t , j );
+     my_printf ( "(%c,%d)" , t , j );
     }
   
    return 0;

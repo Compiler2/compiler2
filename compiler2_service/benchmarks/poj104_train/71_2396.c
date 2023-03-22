@@ -13,10 +13,10 @@ int run(int x)
 main_bench()
 {
     int n,y,mon1,mon2;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++)
     {
-        scanf("%d %d %d",&y,&mon1,&mon2);
+        my_scanf("%d %d %d",&y,&mon1,&mon2);
         if(mon1>mon2)
         {
             int temp=mon1;
@@ -36,9 +36,9 @@ main_bench()
                     d+=31;
             }
             if(d%7==0)
-                printf("YES\n");
+                my_printf("YES\n");
             else
-                printf("NO\n");
+                my_printf("NO\n");
         }
         else
         {
@@ -53,9 +53,9 @@ main_bench()
                     d+=31;
             }
             if(d%7==0)
-                printf("YES\n");
+                my_printf("YES\n");
             else
-                printf("NO\n");
+                my_printf("NO\n");
         }        
     }
     getchar();

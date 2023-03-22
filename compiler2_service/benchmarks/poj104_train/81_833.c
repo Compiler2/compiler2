@@ -6,11 +6,11 @@ int main_bench()
     int sz[5][5],i,p;
     for(i=0;i<5;i++){
         for(p=0;p<5;p++){
-			scanf("%d",&sz[i][p]);
+			my_scanf("%d",&sz[i][p]);
 		}
 	}
-	scanf("%d %d",&m,&n);
-	if(m>4||n>4){printf("error");return 0;}
+	my_scanf("%d %d",&m,&n);
+	if(m>4||n>4){my_printf("error");return 0;}
 	for(i=0;i<5;i++){
 		int tem;
 		tem=sz[m][i];
@@ -18,10 +18,10 @@ int main_bench()
 		sz[n][i]=tem;
 	}
     for(i=0;i<5;i++){
-		printf("%d",sz[i][0]);
+		my_printf("%d",sz[i][0]);
         for(p=1;p<5;p++){
-			printf(" %d",sz[i][p]);
-		}printf("\n");
+			my_printf(" %d",sz[i][p]);
+		}my_printf("\n");
 	}
 	return 0;
 }

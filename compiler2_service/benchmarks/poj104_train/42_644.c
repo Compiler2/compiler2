@@ -7,10 +7,10 @@ int main_bench()
     int *p;
     p=a;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-       scanf("%d",p+i);
-    scanf("%d",&k);
+       my_scanf("%d",p+i);
+    my_scanf("%d",&k);
     for(i=0;i<n;i++)
        if(*(p+i)==k)d++;    
     for(i=0;i<n;i++)
@@ -19,7 +19,7 @@ int main_bench()
           for(j=i;j<n;j++)
              *(p+j)=*(p+j+1);}
     p=a;
-    printf("%d",*p);
+    my_printf("%d",*p);
     for(i=1;i<n-d;i++)
-       printf(" %d",*(p+i));
+       my_printf(" %d",*(p+i));
 } 

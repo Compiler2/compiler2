@@ -9,21 +9,21 @@ int main_bench(){
         char b[501];
    
         
-        scanf("%lf\n",&n);    
+        my_scanf("%lf\n",&n);    
         gets(a);
         gets(b);
         
                 x=strlen(a);
                 y=strlen(b);
                 if(x!=y){
-                        printf("error");
+                        my_printf("error");
 						return 0;
 					
                 }
                 
         for (i=0; a[i]!='\0' ,b[i]!='\0'; i++){
         if ((a[i]!='A' && a[i]!='T' && a[i]!='G' && a[i]!='C')||(b[i]!='A' && b[i]!='T' && b[i]!='G' && b[i]!='C')){     
-                        printf("error");   
+                        my_printf("error");   
                         return 0 ;
 						break;
                 }
@@ -36,9 +36,9 @@ int main_bench(){
 
         
                 if (count/(x-1)>=n){
-                        printf("yes");
+                        my_printf("yes");
                 }else{
-                        printf("no");
+                        my_printf("no");
                 }
         
         return 0;

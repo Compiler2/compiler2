@@ -4,12 +4,12 @@ int main_bench()
 {
 	int row,col,i,j,x,sum,y,z;
 	int a[100][100];
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	i=0;
@@ -21,7 +21,7 @@ int main_bench()
 	if(col>=row){
 	while(1)
 	{
-		printf("%d\n",a[i][j]);
+		my_printf("%d\n",a[i][j]);
 		i++;
 		j--;
 		sum++;
@@ -53,7 +53,7 @@ int main_bench()
     {
         while(1)
         {
-            printf("%d\n",a[i][j]);
+            my_printf("%d\n",a[i][j]);
 		    i++;
 		    j--;
 		    sum++;

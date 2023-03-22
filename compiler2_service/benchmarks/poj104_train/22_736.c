@@ -7,7 +7,7 @@ int main_bench()
 	int m2=0;
 	int i;
 	for(i=0;i<300;i++){
-		scanf("%d,",&a[i]);
+		my_scanf("%d,",&a[i]);
 	}
 	m1=a[0];
 	for(i=1;i<300;i++){
@@ -21,8 +21,8 @@ int main_bench()
 		}
 	}
 	if(m2==0)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",m2);
+		my_printf("%d",m2);
 	return 0;
 }

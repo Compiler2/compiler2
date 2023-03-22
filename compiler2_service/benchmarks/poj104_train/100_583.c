@@ -3,7 +3,7 @@
 int main_bench()
 {
     char s[300];
-    scanf("%s",s);
+    my_scanf("%s",s);
     int len,i,j,k,w,count[26]={0};
     len=strlen(s);
     w=0;
@@ -15,14 +15,14 @@ int main_bench()
         }
         if(count[i]!=0) w=1;
     }
-    if(w==0) printf("No");
+    if(w==0) my_printf("No");
     if(w==1)
     {
         for(i=0;i<26;i++)
         {
             if(count[i]!=0)
             {
-                printf("%c=%d\n",'a'+i,count[i]);
+                my_printf("%c=%d\n",'a'+i,count[i]);
             }
         }
     }

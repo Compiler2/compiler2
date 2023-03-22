@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *data;
 	data=(int*)malloc(sizeof(int)*n*n);
 	int i,j,k;
@@ -13,7 +13,7 @@ int main_bench()
 	{
 		for (j=0;j<n;j++)
 		{
-			scanf("%d",&data[i*n+j]);
+			my_scanf("%d",&data[i*n+j]);
 		}
 		for (k=0;k<n;k++)
 		{
@@ -40,6 +40,6 @@ int main_bench()
 	y=q-s-1;
 	x=p-t-1;
 	z=x*y;
-	printf("%d\n",z);
+	my_printf("%d\n",z);
 	return 0;
 }

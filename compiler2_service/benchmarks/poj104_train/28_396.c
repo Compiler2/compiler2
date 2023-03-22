@@ -13,7 +13,7 @@ int main_bench()
 	if(k==0)
 	{
 		for(i=0;*(p+i)!='\0';i++) k++;
-		printf("%d",k);
+		my_printf("%d",k);
 	}
 	else
 	{
@@ -24,7 +24,7 @@ int main_bench()
 		{
 			if(k!=0) 
 			{
-				printf("%d,",k);
+				my_printf("%d,",k);
 				k=0;
 			}
 		}
@@ -35,7 +35,7 @@ int main_bench()
 	for(i=strlen(str)-1;;i--)
 		if(*(p+i)==' ') 
 		{
-			printf("%d",strlen(str)-i-1);
+			my_printf("%d",strlen(str)-i-1);
 			break;
 		}
 	}

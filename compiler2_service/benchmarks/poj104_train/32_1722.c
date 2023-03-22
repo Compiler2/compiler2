@@ -5,10 +5,10 @@ int main_bench()
 {
 	char a[100][101],b[100][101],j[100][101],A[100][101],B[100][101];
 	int ac,bc,i,k,c,j1,j2,sw,p,n,i2;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s%s", a[i],b[i]);
+		my_scanf("%s%s", a[i],b[i]);
 		ac=strlen(a[i]);
 		bc=strlen(b[i]);
 		if (ac>bc)
@@ -53,7 +53,7 @@ int main_bench()
 		}
 		j[i][k]='\0';
 		if (i!=n-1)
-			printf("\n");
+			my_printf("\n");
 	}
 	for (i2=0,p=0;i2<n;i2++)
 	{
@@ -62,10 +62,10 @@ int main_bench()
 			p+=1;
 		for (i=c-p-1;i>=0;i--)
 		{
-			printf("%c", j[i2][i]);
+			my_printf("%c", j[i2][i]);
 		}
 		if (i2!=n-1)
-				printf("\n");
+				my_printf("\n");
 	}
 	return 0;
 }

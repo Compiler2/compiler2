@@ -6,7 +6,7 @@ int main_bench(){
 	char *p;
 	t=is;
 	for (i=1;i<=100;i++) *(t+i)=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=1;i<=n;i++){
 		gets(a);
 		p=a;
@@ -16,7 +16,7 @@ int main_bench(){
 
 	}
 	for (i=1;i<=n;i++)
-		printf("%d\n",*(t+i));
+		my_printf("%d\n",*(t+i));
 	
 
 }

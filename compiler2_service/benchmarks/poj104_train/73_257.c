@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<=4;i++)
@@ -21,12 +21,12 @@ int main_bench()
 				p=a[i][j];
 				hang=i+1;
 				lie=j+1;
-				printf("%d %d %d\n",hang,lie,p);
+				my_printf("%d %d %d\n",hang,lie,p);
 			}
 		}
 	}
 	if(p==-1)
-		printf("not found\n");
+		my_printf("not found\n");
 	return 0;
 }
 

@@ -9,10 +9,10 @@ main_bench()
      int i,k;
      for(i=0;i<n;i++)
      {
-       if(a[i]!=32) printf("%c",a[i]);
+       if(a[i]!=32) my_printf("%c",a[i]);
        else {
-            if(a[i-1]!=32&&a[i+1]==32) {printf("%c",a[i]);}
-            else if(a[i-1]!=32&&a[i+1]!=32) printf("%c",a[i]);
+            if(a[i-1]!=32&&a[i+1]==32) {my_printf("%c",a[i]);}
+            else if(a[i-1]!=32&&a[i+1]!=32) my_printf("%c",a[i]);
             }
       }
       getchar();getchar();

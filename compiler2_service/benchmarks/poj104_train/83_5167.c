@@ -5,7 +5,7 @@ double Input(double a[],double n)
 {
     int i=0;
 	for(i=0;i<n;i++)
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 	return a[10];
 }
 double Sum(double a[],double n,double sum)
@@ -57,12 +57,12 @@ void check(double a[10],double n)
 {
 	int i=0;
 	for(i=0;i<n;i++)
-		printf("%lf  ",a[i]);
+		my_printf("%lf  ",a[i]);
 }
 int main_bench()
 {
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	double x[10];
 	double y[10];
 	Input(x,n);
@@ -77,6 +77,6 @@ int main_bench()
 	p=Sum(x,n,p);
 	q=Sum(y,n,q);
 	gpa=1.0*q/p;
-	printf("%.2lf",gpa);
+	my_printf("%.2lf",gpa);
 	return 0;
 }

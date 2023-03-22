@@ -22,12 +22,12 @@ int main_bench()
 
     for(i=0;i<k-1;i++){
 		if(strcmp(word[i],a)==0)
-			printf("%s ",b);
-		 else printf("%s ",word[i]);
+			my_printf("%s ",b);
+		 else my_printf("%s ",word[i]);
 	}
   
    	if(strcmp(word[i],a)==0)
-		printf("%s",b);
-    else printf("%s",word[i]);
+		my_printf("%s",b);
+    else my_printf("%s",word[i]);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j=0,s,t=0,m,q=0,d[250];char a[500],b[250][5];
-	scanf("%d %s",&n,a);
+	my_scanf("%d %s",&n,a);
 	s=strlen(a);
     for(i=0;i<=s-n;i++)
 	{
@@ -28,13 +28,13 @@ int main_bench()
 		d[i]=m;
 		if(d[i]>q)q=d[i];
 	}
-	if(q==0){printf("NO");}
+	if(q==0){my_printf("NO");}
 	else 
 	{
-		printf("%d\n",q);
+		my_printf("%d\n",q);
 		for(i=0;i<=s-n;i++)
 		{
-			if(d[i]==q)printf("%s\n",b[i]);
+			if(d[i]==q)my_printf("%s\n",b[i]);
 		}
 	}
 }

@@ -19,11 +19,11 @@ int main_bench()
 			p2[i]=p2[i]-'A'+'a';
 	}
 	if(strcmp(p1,p2)>0)
-		printf(">\n");
+		my_printf(">\n");
 	else if(strcmp(p1,p2)==0)
-		printf("=\n");
+		my_printf("=\n");
 	else 
-		printf("<\n");
+		my_printf("<\n");
 	free(p1);
 	free(p2);
 	return 0;

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int year,month,day,sum=0;
 	int i;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	year=year%400;
 	if(year==0){
 		year+=400;
@@ -42,25 +42,25 @@ int main_bench()
 	sum+=day;
 	switch(sum%7){
 		case 1:
-			printf("Mon.\n");
+			my_printf("Mon.\n");
 			break;
 		case 2:
-			printf("Tue.\n");
+			my_printf("Tue.\n");
 			break;
 		case 3:
-			printf("Wed.\n");
+			my_printf("Wed.\n");
 			break;
 		case 4:
-			printf("Thu.\n");
+			my_printf("Thu.\n");
 			break;
 		case 5:
-			printf("Fri.\n");
+			my_printf("Fri.\n");
 			break;
 		case 6:
-			printf("Sat.\n");
+			my_printf("Sat.\n");
 			break;
 		case 0:
-			printf("Sun.\n");
+			my_printf("Sun.\n");
 			break;
 	}
 	return 0;

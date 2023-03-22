@@ -3,17 +3,17 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int ae[n],vv[n];
     int i;
     double deal[n];
     double a=0;
     double b=0;
     for(i=0;i<n;i++){
-        scanf("%d ",&(ae[i]));
+        my_scanf("%d ",&(ae[i]));
     }
     for(i=0;i<n;i++){
-        scanf("%d ",&(vv[i]));
+        my_scanf("%d ",&(vv[i]));
     }
     for(i=0;i<n;i++){
         if(vv[i]>=90){
@@ -40,7 +40,7 @@ int main_bench()
         a=a+deal[i]*ae[i];
         b=b+ae[i];
     }
-    printf("%.2lf",a/b);
+    my_printf("%.2lf",a/b);
     return 0;
 }
 

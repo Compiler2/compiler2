@@ -36,7 +36,7 @@ int main_bench()
 {
 	char s[1000],str[1000][6];
 	int count[1000],num,n,i,max;
-	scanf("%d%s",&n,s);
+	my_scanf("%d%s",&n,s);
 	num=sub_count(s,str,count,n);
 	max=count[0];
 	for(i=0;i<num-1;i++)
@@ -45,14 +45,14 @@ int main_bench()
 			max=count[i+1];
 	}
 	if(max<=1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<num;i++)
 	{
 		if(count[i]==max)
-			printf("%s\n",str[i]);
+			my_printf("%s\n",str[i]);
 	}
 	}
 }

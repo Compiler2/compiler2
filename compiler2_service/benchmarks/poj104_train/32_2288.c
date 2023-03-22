@@ -5,9 +5,9 @@ int main_bench()
 {
 	int n,c,d,i,j;
 	char a[101]={'\0'},b[101]={'\0'},e[101]={'\0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%s %s",a,b);
+		my_scanf("%s %s",a,b);
 		c=strlen(a);d=strlen(b);
 		
 		for(j=d-1;j>=0;j--){
@@ -21,7 +21,7 @@ int main_bench()
 			else e[j]=a[j];
 		}
 		e[0]=a[0];
-		printf("%s\n",e);
+		my_printf("%s\n",e);
 		for(j=0;j<101;j++){
 			a[j]='\0';b[j]='\0';e[j]='\0';
 		}

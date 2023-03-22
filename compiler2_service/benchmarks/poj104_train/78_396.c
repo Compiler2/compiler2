@@ -12,9 +12,9 @@ int main_bench()
 	f=40;
 	g=10;
 	h=50;
-	printf("%c %d\n",d,h);
-	printf("%c %d\n",b,f);
-	printf("%c %d\n",a,e);
-	printf("%c %d\n",c,g);
+	my_printf("%c %d\n",d,h);
+	my_printf("%c %d\n",b,f);
+	my_printf("%c %d\n",a,e);
+	my_printf("%c %d\n",c,g);
 	return 0;
 }

@@ -4,15 +4,15 @@ int main_bench()
 {
 char x[500][50]={0};
     int i,j,m,k,total,temp,y[500];
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     temp=k;
     for(i=0;i<=k-1;i++)
-    scanf("%s",x[i]);
+    my_scanf("%s",x[i]);
     for(i=0;i<=k-1;i++)
     y[i]=strlen(x[i]);
     for(i=0;;)
     {
-                 printf("%s",x[i]);
+                 my_printf("%s",x[i]);
                  total=y[i];
                  temp--;
                  for(j=i+1;;j++)
@@ -25,15 +25,15 @@ char x[500][50]={0};
                  if(temp!=0)
                  {
                  for(m=i+1;m<=j-1;m++)
-                 printf(" %s",x[m]);
-                 printf("\n");
+                 my_printf(" %s",x[m]);
+                 my_printf("\n");
                  i=j;
                  }
                  else 
                  {
                       for(m=i+1;m<=k-1;m++)
-                      printf(" %s",x[m]);
-                      printf("\n");
+                      my_printf(" %s",x[m]);
+                      my_printf("\n");
                       break;
                  }
     }

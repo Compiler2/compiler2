@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j,k,x;
 	char s[200],a[200];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s);
-		printf("%s\n",s);
+		my_scanf("%s",s);
+		my_printf("%s\n",s);
 		
 		for(j=0;j<strlen(s);j++)
 		{
@@ -39,11 +39,11 @@ int main_bench()
 			int w;
 			for(w=0;w<strlen(s);w++)
 			{
-	         printf("%c",a[w]);
+	         my_printf("%c",a[w]);
 			}
 		
 	
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

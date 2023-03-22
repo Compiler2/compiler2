@@ -16,15 +16,15 @@ main_bench(){
                 k=0;
            }
        }
-       scanf("%s",a);
-       scanf("%s",b);
+       my_scanf("%s",a);
+       my_scanf("%s",b);
        for(i=0;i<=j;i++){
            if(strcmp(s[i],a)==0){ 
                strcpy(s[i],b);
            }
-           printf("%s",s[i]);
-           if(i!=j) printf(" ");
+           my_printf("%s",s[i]);
+           if(i!=j) my_printf(" ");
        }
-       printf("\n");
+       my_printf("\n");
 }
 

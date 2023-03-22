@@ -4,19 +4,19 @@ int main_bench()
 {
  int input;
  int ret,num;
- scanf("%d",&input);
+ my_scanf("%d",&input);
 
 for(;;)
  {
     if(input<10)
    {
-    printf("%d\n",input);
+    my_printf("%d\n",input);
 break;
    }
    num=input%10;
   input=input/10;
   
-  printf("%d",num);
+  my_printf("%d",num);
 
  }
 

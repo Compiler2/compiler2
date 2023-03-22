@@ -4,10 +4,10 @@ int e[1000][1000];
 int main_bench()
 {
    int i,j,n,a,b,c=0,d=0,t;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
    	for(j=0;j<n;j++){
-   		scanf("%d",&e[i][j]);
+   		my_scanf("%d",&e[i][j]);
    	}
    }
    	for(i=0;i<n;i++){
@@ -33,7 +33,7 @@ int main_bench()
    		break;
    	}
     t=(c-2)*(d-2);
-   	printf("%d",t);
+   	my_printf("%d",t);
     return 0;
 }
 

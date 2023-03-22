@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,l,i,m,t,j;
 	long sum=0;
 	char n[40],y[40],z[40];
-	scanf("%d %s %d",&a,n,&b);
+	my_scanf("%d %s %d",&a,n,&b);
 	l=strlen(n);
 	m=1;
 	for(i=1;i<=l;i++)
@@ -37,7 +37,7 @@ int main_bench()
 		z[j]=y[29-i+j];
 	}
 	z[i]='\0';
-	printf("%s",z);}
+	my_printf("%s",z);}
 	else
-		printf("0");
+		my_printf("0");
 }

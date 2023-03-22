@@ -16,10 +16,10 @@ int main_bench()
 	int n,i,j;
 	int sum;
 	int total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 		sum=0;
 		if(stu[i].qimo>80&&stu[i].lunwen>=1)
 			sum=sum+8000;
@@ -42,7 +42,7 @@ int main_bench()
 				stu[i]=stu[i+1];
 				stu[i+1]=temp;
 			}
-	printf("%s\n",stu[0].name);
-	printf("%d\n",stu[0].zongjiangjin);
-	printf("%d\n",total);
+	my_printf("%s\n",stu[0].name);
+	my_printf("%d\n",stu[0].zongjiangjin);
+	my_printf("%d\n",total);
 }

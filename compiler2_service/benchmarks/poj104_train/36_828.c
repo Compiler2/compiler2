@@ -31,8 +31,8 @@ int main_bench()
 	}
 		
 	if((l==1)&&(k*2==(len-1))){
-		printf("YES");
+		my_printf("YES");
 	}else{
-		printf("NO");
+		my_printf("NO");
 	}
 }

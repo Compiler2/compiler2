@@ -5,10 +5,10 @@ int main_bench()
 	int m,n,i,j;
 	char b[50],d[50];
 	int pp(char f[],char g[]);
-	scanf("%s",&b);
-	scanf("%s",&d);
+	my_scanf("%s",&b);
+	my_scanf("%s",&d);
 	m=pp(d,b);
-	printf("%d",m);
+	my_printf("%d",m);
 }
 pp(char a[],char b[])
 {

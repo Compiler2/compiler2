@@ -8,7 +8,7 @@ int main_bench()
          result[i]=-1;
     }
     char c[101];
-    scanf("%s",c);
+    my_scanf("%s",c);
     length=strlen(c);
     for(i=0;i<length;i++)
     {
@@ -37,17 +37,17 @@ int main_bench()
   }
    for(i=small;i<=large;i++)
    { 
-      printf("%d",result[i]);
+      my_printf("%d",result[i]);
       not_zero=1;
    }
    if(not_zero==1)
    {
-       printf("\n");
-       printf("%d\n",num[length]/10);
+       my_printf("\n");
+       my_printf("%d\n",num[length]/10);
    }
    else
    {
-       printf("0\n");
-       printf("%s",c);
+       my_printf("0\n");
+       my_printf("%s",c);
    }
 }

@@ -5,7 +5,7 @@ int main_bench()
 {
     int t,i,j,k,n,num=0,m,mmin,times=0;
     char s[100000];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     getchar();
     for(i=0;i<t;i++){
                      gets(s);
@@ -33,10 +33,10 @@ int main_bench()
                                            num=0;                                           
                                            }                     
                      if(times==0){
-                                  printf("no\n");
+                                  my_printf("no\n");
                                   }
                      else{
-                          printf("%c\n",s[mmin]);
+                          my_printf("%c\n",s[mmin]);
                           }
                      
                      }    

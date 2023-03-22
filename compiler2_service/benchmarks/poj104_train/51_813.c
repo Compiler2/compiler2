@@ -6,8 +6,8 @@ int main_bench()
 	int k,i,j=0,n,m=1,q=0;
 	char *p;
 	char (*w)[6];
-	scanf("%d",&k);
-	scanf("%s",a);
+	my_scanf("%d",&k);
+	my_scanf("%s",a);
 	n=strlen(a);
 	p=a;
 	w=b;
@@ -30,16 +30,16 @@ int main_bench()
 		
 
 	}
-	if(q==1)printf("NO");
+	if(q==1)my_printf("NO");
 	else{
-	printf("%d\n",q);
+	my_printf("%d\n",q);
 	for(j=0;j<n-k;j++)
 	{	m=0;
 		for(i=j;i<n-k+1;i++)
 		{
 			if(strcmp(*(w+j),*(w+i))==0)m=m+1;
 		}
-		if(m==q)printf("%s\n",*(w+j));
+		if(m==q)my_printf("%s\n",*(w+j));
 	
 	}}
 }

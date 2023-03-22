@@ -28,6 +28,6 @@ int main_bench()
 		if(b[j]<b[min]){min=j;
 		}
 	}
-	printf("%s\n%s",t[max],t[min]);
+	my_printf("%s\n%s",t[max],t[min]);
 	return 0;
 }

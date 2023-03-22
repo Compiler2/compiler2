@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,k,num[1000],i,j,p=0;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=1;i<=n;i++)
-	scanf("%d",&num[i-1]);
+	my_scanf("%d",&num[i-1]);
 	for(i=1;i<=n-1;i++)
 	{
 		for(j=i+1;j<=n;j++)
@@ -16,7 +16,7 @@ int main_bench()
 		}
 		if(p>0) break;
 	}
-	if(p>0) printf("yes");
-	else printf("no");
+	if(p>0) my_printf("yes");
+	else my_printf("no");
 	return 0;
 }

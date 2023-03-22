@@ -19,12 +19,12 @@ int main_bench()
 {
 	char s[257],sub[257],replace[257];
 	int i,j=0;
-	scanf("%s%s%s",s,sub,replace);
+	my_scanf("%s%s%s",s,sub,replace);
 	for (i=Issubstr(s,sub);i!=-1&&j<strlen(replace);i++)
 	{
 		s[i]=replace[j++];
 	}
 	if(i>strlen(s)) s[i]='\0';
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }

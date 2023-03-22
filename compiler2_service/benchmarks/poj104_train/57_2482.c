@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,z,i,l;
 	char word[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(z=0;z<n;z++)
 	{
-		scanf("%s",word);
+		my_scanf("%s",word);
 		l=strlen(word);
 		
 		for(i=0;i<l;i++)
@@ -15,19 +15,19 @@ int main_bench()
 			if(word[l-3]=='i'&&word[l-2]=='n'&&word[l-1]=='g')
 			{
 				for(i=0;i<l-3;i++)
-					printf("%c",word[i]);
-				printf("\n");
+					my_printf("%c",word[i]);
+				my_printf("\n");
 				break;
 			}
 			else 
 			{
 				for(i=0;i<l-2;i++)
-					printf("%c",word[i]);
-				printf("\n");
+					my_printf("%c",word[i]);
+				my_printf("\n");
 				break;
 
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

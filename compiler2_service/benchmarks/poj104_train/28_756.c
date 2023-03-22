@@ -17,14 +17,14 @@ int main_bench()
 	  { 
          if(c[i-1]!=' ')  
 		 {
-			 printf("%d,",t); 
+			 my_printf("%d,",t); 
              t=0; 
 		 }
 		 
 	  } 
       if(c[i]=='\0') 
 	  { 
-          printf("%d",t); 
+          my_printf("%d",t); 
 	      t=0;
 	  } 
 	} 

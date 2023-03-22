@@ -2,12 +2,12 @@
 
 int main_bench(){
 int k,sz[100][100],m,n,p,i,j,s[100]={0};
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(p=0;p<k;p++){
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
-            scanf("%d",&(sz[i][j]));
+            my_scanf("%d",&(sz[i][j]));
         }
     }
     if(m==1&&n==1){
@@ -24,7 +24,7 @@ for(p=0;p<k;p++){
 }
 }
 for(p=0;p<k;p++){
-    printf("%d\n",s[p]);
+    my_printf("%d\n",s[p]);
 }
 return 0;
 }

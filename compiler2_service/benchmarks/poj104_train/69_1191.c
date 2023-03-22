@@ -5,7 +5,7 @@ int main_bench(){
 	char ds1[260],ds2[260];
 	int a1[260]={0};
 	int a2[260]={0};
-	scanf("%s%s",ds1,ds2);
+	my_scanf("%s%s",ds1,ds2);
 	len1=strlen(ds1);
 	j=0;
 	for(i=len1-1;i>=0;i--){
@@ -19,7 +19,7 @@ int main_bench(){
 		j++;
 	}
 	if(a1[0]==0&&a2[0]==0){
-		printf("0");
+		my_printf("0");
 		return 0;
 	}
 	for(i=0;i<250;i++){
@@ -32,9 +32,9 @@ int main_bench(){
 	int q0=0;
 	for(i=250;i>=0;i--){
 		if(q0)
-			printf("%d",a1[i]);
+			my_printf("%d",a1[i]);
 		else if(a1[i]){
-			printf("%d",a1[i]);
+			my_printf("%d",a1[i]);
 			q0=1;
 		}
 	}

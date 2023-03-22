@@ -5,21 +5,21 @@ double gc(int m);
 int main_bench(){
     int n,s,i; 
     s=0; 
-    scanf("%d",&n); 
+    my_scanf("%d",&n); 
     double gpa=0; 
     int a[n],b[n]; 
     for(i=0;i<=n-1;i++)
     {
-                       scanf("%d",&a[i]);
+                       my_scanf("%d",&a[i]);
                        s+=a[i]; 
     }
     for(i=0;i<=n-1;i++)
     {
-                       scanf("%d",&b[i]);
+                       my_scanf("%d",&b[i]);
                        gpa+=gc(b[i])*a[i]; 
     }
     gpa=gpa/s; 
-    printf("%.2lf",gpa);
+    my_printf("%.2lf",gpa);
  
     return 0;
 } 

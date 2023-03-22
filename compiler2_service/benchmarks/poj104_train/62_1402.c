@@ -18,6 +18,6 @@ void guolv(char *p)
      {
                                 if(((*(p+i))==' ')&&((*(p+(i+1)))==' '));
                                 else
-                                printf("%c",*(p+i));
+                                my_printf("%c",*(p+i));
      }
 }

@@ -7,11 +7,11 @@ int main_bench()
     char c[100];
     int b[26]={0};
     char p[100001];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         t=0;
-        scanf("%s",p);
+        my_scanf("%s",p);
         a[0]=*p;
         b[0]=1;
         t++;
@@ -49,8 +49,8 @@ int main_bench()
     }
     for(i=0;i<n;i++)
     if(c[i]=='A')
-    printf("no\n");
+    my_printf("no\n");
     else
-    printf("%c\n",c[i]);
+    my_printf("%c\n",c[i]);
     return 0;
 }

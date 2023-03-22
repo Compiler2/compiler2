@@ -7,7 +7,7 @@ int main_bench()
       memset(N,0,sizeof(N));
       memset(Result,0,sizeof(Result));
       memset(Z,0,sizeof(Z));
-      scanf("%s",&N);
+      my_scanf("%s",&N);
       int i=0;
       int j=0;
       int k=0;
@@ -16,8 +16,8 @@ int main_bench()
       int a=strlen(N);
       g=1;
       if(a==1){
-               printf("0\n");
-               printf("%d",N[0]-'0');
+               my_printf("0\n");
+               my_printf("%d",N[0]-'0');
                }
       else{
            e=N[0]-'0';
@@ -25,8 +25,8 @@ int main_bench()
            while(g==1){
                        if((e*10+c)<13){
                                        if(a==2){
-                                                printf("0\n");
-                                                printf("%d",e*10+c);
+                                                my_printf("0\n");
+                                                my_printf("%d",e*10+c);
                                                 break;
                                                 }
                                        else{
@@ -54,8 +54,8 @@ int main_bench()
                                        Result[k]=Z[k]+'0';
                                        k++;
                                        }
-                       printf("%s\n",Result);
-                       printf("%d",e);
+                       my_printf("%s\n",Result);
+                       my_printf("%d",e);
                        g=0;
                        }
            }

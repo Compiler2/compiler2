@@ -3,9 +3,9 @@
 int main_bench(){
 	char yl[10000][256],pdl[10000][256];
  int i,j,n,t,m;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
- scanf("%s",yl[i]);}
+ my_scanf("%s",yl[i]);}
  for(i=0;i<n;i++){
 	 m=strlen(yl[i]);
  for(j=0;j<m;j++){
@@ -21,7 +21,7 @@ int main_bench(){
 for(i=0;i<n;i++)
 {t= strlen(yl[i]);
 for(j=0;j<t;j++){ 
-printf("%c",pdl[i][j]);} 
-printf("\n");}
+my_printf("%c",pdl[i][j]);} 
+my_printf("\n");}
  return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
 	for(i=0;i<4;i++){
 		count[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&(age[i]));
+		my_scanf("%d",&(age[i]));
 		if(1<=age[i]&&age[i]<=18){
 			count[0]+=1;
 		}
@@ -22,9 +22,9 @@ int main_bench()
 			count[3]+=1;
 		}
 	}
-	printf("1-18: ""%.2lf%""%\n",(double)count[0]/n*100);
-	printf("19-35: ""%.2lf%""%\n",(double)count[1]/n*100);
-	printf("36-60: ""%.2lf%""%\n",(double)count[2]/n*100);
-	printf("60??: ""%.2lf%1""%\n",(double)count[3]/n*100);
+	my_printf("1-18: ""%.2lf%""%\n",(double)count[0]/n*100);
+	my_printf("19-35: ""%.2lf%""%\n",(double)count[1]/n*100);
+	my_printf("36-60: ""%.2lf%""%\n",(double)count[2]/n*100);
+	my_printf("60??: ""%.2lf%1""%\n",(double)count[3]/n*100);
 	return 0;
 }

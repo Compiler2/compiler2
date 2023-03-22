@@ -10,10 +10,10 @@ int main_bench()
 	    char d[10];
 		int a;
 	}p[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",p[i].d,&p[i].a);
+		my_scanf("%s%d",p[i].d,&p[i].a);
 	}
 	m=0;
 	for(i=0;i<n;i++)
@@ -50,7 +50,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 	}
 
 		return 0;

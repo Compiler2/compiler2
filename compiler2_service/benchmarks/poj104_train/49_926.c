@@ -14,7 +14,7 @@ int main_bench(){
 			f(p+j,i);
 		}
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 }
 
 void f(char *p,int n)
@@ -28,8 +28,8 @@ void f(char *p,int n)
 	{
 		for(i=0;i<n;i++)
 		{
-			printf("%c",*(p+i));
+			my_printf("%c",*(p+i));
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,k,j,sum[10001]={0},l=0,be[50000],fi[50000],o,p,d,e;
-         scanf("%d",&n);
+         my_scanf("%d",&n);
         for(i=0;i<n;i++)
-             scanf("%d%d",&be[i],&fi[i]);
+             my_scanf("%d%d",&be[i],&fi[i]);
          o=be[0];
 		 p=fi[0]; 
        for(i=0;i<n;i++)
@@ -23,10 +23,10 @@ int main_bench()
 	   {
 		  if(sum[i]==0)
 		  {
-			  printf("no");
+			  my_printf("no");
 			  return 0;
 		  }
 	  }
-	  printf("%d %d",o,p);
+	  my_printf("%d %d",o,p);
 	return 0;
 }

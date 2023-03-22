@@ -4,9 +4,9 @@ int main_bench()
 {
 	char a[1000][256];
 	int n,i,j,l[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-       scanf("%s",a[i]);
+       my_scanf("%s",a[i]);
        }
     for(i=0;i<n;i++){
        l[i]=strlen(a[i]);
@@ -25,9 +25,9 @@ int main_bench()
        a[i][l[i]]='\0';
          }
     for(i=0;i<n;i++){
-       printf("%s\n",a[i]);
+       my_printf("%s\n",a[i]);
        }
    	int t;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	return 0;
 }

@@ -14,11 +14,11 @@ int main_bench()
 
 	
 	
-	scanf("%s", str);
+	my_scanf("%s", str);
 
-	scanf("%s", substr);
+	my_scanf("%s", substr);
 
-	scanf("%s", replace);
+	my_scanf("%s", replace);
 
 	
 	int str1 = strlen(str), str2 = strlen(substr), str3 = strlen(replace);
@@ -66,11 +66,11 @@ int main_bench()
 	{
 		
 		for(int i = 0; i < strlen(str) - strlen(substr) + strlen(replace); i++)
-		    printf("%c", p[i]);
+		    my_printf("%c", p[i]);
 	}
 	else
 	{
-		printf("%s", str);
+		my_printf("%s", str);
 	}
 	
 	return 0;

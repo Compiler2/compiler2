@@ -3,9 +3,9 @@
 
 int main_bench(){
 	int n,gao[100],di[100],xiaoshi=0,max=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&gao[i],&di[i]);
+		my_scanf("%d%d",&gao[i],&di[i]);
 	}
 	for(i=0;i<n;i++){
 		if(gao[i]>=90&&gao[i]<=140&&di[i]>=60&&di[i]<=90){
@@ -20,6 +20,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

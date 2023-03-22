@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str1[50],str2[50],*p1,*p2;
 	int t=0,j=0,k;
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	p1=str1;
 	p2=str2;
 	for(;*p2!='\0';)
@@ -20,6 +20,6 @@ int main_bench()
 				t=0;
 			}
 		}
-		if(t==1) {printf("%d",k);break;}
+		if(t==1) {my_printf("%d",k);break;}
 	}
 }

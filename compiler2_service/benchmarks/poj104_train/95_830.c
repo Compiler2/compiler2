@@ -40,10 +40,10 @@ int main_bench()
 		}
 	}
 	if(k==1)
-		printf(">");
+		my_printf(">");
 	else
 		if(k==0)
-			printf("=");
+			my_printf("=");
 		else
-			printf("<");
+			my_printf("<");
 }

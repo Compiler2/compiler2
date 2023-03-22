@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,i,x;
-	scanf ("%d%d%d",&y,&m,&d);
+	my_scanf ("%d%d%d",&y,&m,&d);
 	x=(y-1)%7+(y-1)/4-(y-1)/100+(y-1)/400;
 	int md[]={0,31,28,31,30,31,30,31,31,30,31,30};
 	for (i=1;i<m;i++)
@@ -13,13 +13,13 @@ int main_bench()
     x +=d;
 	switch (x%7)
 	{
-	case 0: printf ("Sun.");break;
-	case 1: printf ("Mon.");break;
-	case 2: printf ("Tue.");break;
-	case 3: printf ("Wed.");break;
-	case 4: printf ("Thu.");break;
-	case 5: printf ("Fri.");break;
-	case 6: printf ("Sat.");break;
+	case 0: my_printf ("Sun.");break;
+	case 1: my_printf ("Mon.");break;
+	case 2: my_printf ("Tue.");break;
+	case 3: my_printf ("Wed.");break;
+	case 4: my_printf ("Thu.");break;
+	case 5: my_printf ("Fri.");break;
+	case 6: my_printf ("Sat.");break;
 	}
 
 	return 0;

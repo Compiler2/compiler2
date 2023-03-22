@@ -5,11 +5,11 @@ int main_bench(){
 	char a[266];
 	char b[266];
 	int i,k,j=0,c=0,d=0,p=0,mark=0;
-	scanf("%s",zf);
+	my_scanf("%s",zf);
 	c=strlen(zf);
-	scanf("%s",a);
+	my_scanf("%s",a);
 	d=strlen(a);
-	scanf("%s",b);
+	my_scanf("%s",b);
 	for(i=0;i<c;i++){
 		if(zf[i]==a[0]){
 			for(k=0;k<d;k++){
@@ -24,13 +24,13 @@ int main_bench(){
 		}
 	}if(mark==1){
 		for(i=0;i<p;i++){
-			printf("%c",zf[i]);
-		}printf("%s",b);
+			my_printf("%c",zf[i]);
+		}my_printf("%s",b);
 		for(i=p+d;i<c;i++){
-			printf("%c",zf[i]);
+			my_printf("%c",zf[i]);
 		}
 	}if(mark==0)
-		printf("%s",zf);
+		my_printf("%s",zf);
 	return 0;
 }
 

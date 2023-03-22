@@ -22,11 +22,11 @@ int main_bench()
 {
 	int num;
 	int i;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=3;i<=num/2;i+=2)
 	{
 		if(prime(i)&&prime(num-i))
-			printf("%d %d\n",i,num-i);
+			my_printf("%d %d\n",i,num-i);
 	}
 	return 0;
 }

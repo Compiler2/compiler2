@@ -5,12 +5,12 @@ int main_bench()
 {
 	int n;
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char bh[999][999];
 	int nl[999];
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s %d",bh[i],&nl[i]);
+		my_scanf("%s %d",bh[i],&nl[i]);
 	}
 	int pd[999],k=0;
 	for(i=1;i<=n;i++)
@@ -44,7 +44,7 @@ int main_bench()
 	}
 	for(i=1;i<=k;i++)
 	{
-		printf("%s\n",bh[pd[i]]);
+		my_printf("%s\n",bh[pd[i]]);
 	}
 	return 0;
 }

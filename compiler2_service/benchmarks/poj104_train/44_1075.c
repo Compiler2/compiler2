@@ -18,8 +18,8 @@ main_bench()
                    int n,i,j,k;
                    for(k=0;k<6;k++)
                    {
-                                   scanf("%d",&n);
-                                   printf("%d\n",reverse(n));
+                                   my_scanf("%d",&n);
+                                   my_printf("%d\n",reverse(n));
                    }
       getchar();
       getchar();

@@ -15,8 +15,8 @@ main_bench()
     int d[300]={0};
     int p,u=0,v=0;
     int i,j,m,n,x=0,y=0;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
         m=strlen(a);
         n=strlen(b);
     for(i=0;i<m;i++)
@@ -43,7 +43,7 @@ main_bench()
     }
     if(u==0&&v==0)
     {
-        printf("%d",v);
+        my_printf("%d",v);
     }
     else
     {
@@ -76,7 +76,7 @@ main_bench()
         p=j;
         for(i=p;i>=0;i--)
         {
-            printf("%d",c[i]);
+            my_printf("%d",c[i]);
         }
     }
 }

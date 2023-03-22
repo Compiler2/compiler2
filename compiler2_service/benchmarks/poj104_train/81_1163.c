@@ -9,13 +9,13 @@ int main_bench(){
 	int sz[5][5];
 	for(i=0;i<5;i++){
 		for(k=0;k<5;k++){
-			scanf("%d",&sz[i][k]);
+			my_scanf("%d",&sz[i][k]);
 		}
 	}
-	scanf("%d",&a);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
     t=jh(a,b);
-	if(t==0){printf("error");}
+	if(t==0){my_printf("error");}
 	else {
 		for(k=0;k<5;k++){
 			m=sz[a][k];
@@ -26,9 +26,9 @@ int main_bench(){
     if(t==1){
      for(i=0;i<5;i++){
 		for(k=0;k<5;k++){
-			if(k==0){printf("%d",sz[i][k]);}
-			else if((k!=4)&&(k!=0)){printf(" %d",sz[i][k]);}
-			else{printf(" %d\n",sz[i][k]);}
+			if(k==0){my_printf("%d",sz[i][k]);}
+			else if((k!=4)&&(k!=0)){my_printf(" %d",sz[i][k]);}
+			else{my_printf(" %d\n",sz[i][k]);}
 		}
 	}
 	}

@@ -15,14 +15,14 @@ int ss(int x)
 main_bench()
 {
       int n,m;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       m=3;
       if (n<=4)
-      printf("empty");
+      my_printf("empty");
       while(m<=n-2)
       {
                    if(ss(m)!=0&&ss(m+2)!=0)
-                   printf("%d %d\n",m,m+2);
+                   my_printf("%d %d\n",m,m+2);
                    m++;
                    }                   
       getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();

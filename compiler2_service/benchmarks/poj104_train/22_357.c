@@ -5,7 +5,7 @@ int main_bench()
 {int a[100],i,max,min,n;
 char c;
 for(i=0;;i++)
-{scanf("%d%c",&a[i],&c);
+{my_scanf("%d%c",&a[i],&c);
 if(c=='\n')
 break;
 }
@@ -16,8 +16,8 @@ for(n=0,min=0;n<=i;n++)
 if(a[n]>=min&&a[n]<max)
 min=a[n];
 if(min==0)
-printf("No");
+my_printf("No");
 else
-printf("%d",min);
+my_printf("%d",min);
    return 0;
 }

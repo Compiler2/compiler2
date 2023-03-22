@@ -15,7 +15,7 @@ case ')':if(figure){figure--;temp[c[figure]]=' ';
 		 else temp[i] = '?';break;}
 		}
 		temp[i]='\0';
-		printf("%s\n%s\n",ch,temp);
+		my_printf("%s\n%s\n",ch,temp);
 	}
 	return 0;
 }

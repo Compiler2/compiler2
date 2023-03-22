@@ -4,7 +4,7 @@ main_bench()
 {
       int m,n,b,d,i,j,k,l;
       char a[100],c[100],e[100];
-      scanf("%d %s %d",&m,a,&n);
+      my_scanf("%d %s %d",&m,a,&n);
       b=0;
       for(i=0;a[i]!='\0';i++);
       {
@@ -23,7 +23,7 @@ main_bench()
       }
       }
       if(b==0)
-      printf("0");
+      my_printf("0");
       else
       {
       for(l=0;b!=0;l++)
@@ -39,7 +39,7 @@ main_bench()
       for(i=0;i<l;i++)
       e[i]=c[l-1-i];
       e[l]='\0';
-      printf("%s",e);
+      my_printf("%s",e);
       getchar();
       getchar();
       }

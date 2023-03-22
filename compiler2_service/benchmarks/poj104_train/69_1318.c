@@ -8,13 +8,13 @@ char s[300];
 int main_bench() {
 	memset(a, 0, sizeof(a));
 	memset(b, 0, sizeof(b));
-	scanf("%s", s);
+	my_scanf("%s", s);
 	al = strlen(s);
 	int i, j = 0;
 	for (i = al-1; i >= 0; i--, j++) {
 		a[j] = s[i]-'0';
 	}
-	scanf("%s", s);
+	my_scanf("%s", s);
 	bl = strlen(s);
 	j = 0;
 	for (i = bl-1; i >= 0; i--, j++) {
@@ -36,7 +36,7 @@ int main_bench() {
 	}
 	while (c[al] == 0 && al > 0) al --;
 	for (i = al; i >= 0; i--)
-		printf("%d", c[i]);
+		my_printf("%d", c[i]);
 	puts("");
 	return 0;
 }

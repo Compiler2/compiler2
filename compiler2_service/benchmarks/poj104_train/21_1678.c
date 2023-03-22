@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,a[300],t=0;
 	float s=0,aver,max,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -42,9 +42,9 @@ int main_bench()
 		{
 			t=t+1;
 			if(t==1)
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 			else
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 		}
 	}
 	return 0;

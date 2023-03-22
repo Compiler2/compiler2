@@ -5,9 +5,9 @@ int main_bench()
     int b,t,c,n,i;
     int m=0;
     int a[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-      scanf("%d %d",&b,&c);
+      my_scanf("%d %d",&b,&c);
       if(b>=90&&b<=140&&c>=60&&c<=90)
       {
             m++;     
@@ -32,6 +32,6 @@ int main_bench()
           t=a[i+1];
           }
     }                                  
-    printf("%d",t);
+    my_printf("%d",t);
     return 0;
 }                    

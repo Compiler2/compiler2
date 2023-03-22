@@ -18,11 +18,11 @@ int main_bench()
 		
       if(a[i]>=65&&a[i]<=90) a[i]=a[i]+32;
 	  if(b[i]>=65&&b[i]<=90) b[i]=b[i]+32;
-	  if(a[i]>b[i]) {printf(">\n"); break;}
-	  if(a[i]<b[i]) {printf("<\n"); break;}
+	  if(a[i]>b[i]) {my_printf(">\n"); break;}
+	  if(a[i]<b[i]) {my_printf("<\n"); break;}
 	  
 	}
-      if(i==l+1) printf("=\n");
+      if(i==l+1) my_printf("=\n");
      
 	return 0;
 }

@@ -11,10 +11,10 @@ struct pat
 int main_bench()
 {
     int i,j,t,s,n,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-                     scanf("%s %d",&pa[i].num,&pa[i].age);
+                     my_scanf("%s %d",&pa[i].num,&pa[i].age);
                      pa[i].turn=i;
     }
     for(i=1;i<=n;i++)

@@ -6,7 +6,7 @@ int main_bench()
 	int a[2][10]={0};
 	int i,j;
 
-	scanf("%d %d",&a[0][0],&a[1][0]);
+	my_scanf("%d %d",&a[0][0],&a[1][0]);
 
 	for(i=1;a[0][i]==0;i++)
 	{
@@ -29,5 +29,5 @@ int main_bench()
 		}
 	}
 
-   k:printf("%d",a[1][j]);
+   k:my_printf("%d",a[1][j]);
 }

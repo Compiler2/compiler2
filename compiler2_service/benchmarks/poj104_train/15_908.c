@@ -7,12 +7,12 @@ int i,j,n,i1,j1,i2,a,b,j2,J1=0,J2=0,I1=0,I2=0,GESHU;
 GESHU=0;
 a=1;
 b=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&(area[i][j]));
+			my_scanf("%d",&(area[i][j]));
 		}
 	}
 
@@ -39,7 +39,7 @@ b=2;
  }
 }
 GESHU=(J2-J1+1)*(I2-I1+1)-2*(J2-J1+I2-I1+2)+4;
-printf("%d",GESHU);
+my_printf("%d",GESHU);
 return 0;
 }
 

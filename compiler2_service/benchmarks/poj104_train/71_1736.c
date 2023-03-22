@@ -7,11 +7,11 @@
 int main_bench()
 {
 	int i,n,year,runfou,er,mon1,mon2,k,j,day;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0;i<n;i++)
 	{
 		day=0;
-		scanf("%d%d%d", &year,&mon1,&mon2);
+		my_scanf("%d%d%d", &year,&mon1,&mon2);
 		if (year%4==0)
 			if (year%100==0)
 				if (year%400==0)
@@ -37,7 +37,7 @@ int main_bench()
 			j=mon2;
 		}
 		else
-			printf("YES\n");
+			my_printf("YES\n");
 		for (;k<j;k++)
 		{
 			switch (k)
@@ -58,9 +58,9 @@ int main_bench()
 		}
 	
 		if (day%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

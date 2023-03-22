@@ -4,9 +4,9 @@
 int main_bench()
 {   char name[20],g,x,highestname[20];
     int q[100],b[100],l[100],n,i,j,sum[100]={0},max=0,t,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",name,&q[i],&b[i],&g,&x,&l[i]);
+		my_scanf("%s %d %d %c %c %d",name,&q[i],&b[i],&g,&x,&l[i]);
         if((q[i]>80)&&l[i]>=1){
 			sum[i]+=8000;
 		}
@@ -35,6 +35,6 @@ int main_bench()
 		}
 	}
     
-	printf("%s\n%d\n%d\n",highestname,sum[t],total);
+	my_printf("%s\n%d\n%d\n",highestname,sum[t],total);
 	return 0;
 }

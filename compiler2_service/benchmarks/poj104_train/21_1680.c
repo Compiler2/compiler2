@@ -21,17 +21,17 @@ int main_bench()
 {
 	int n,a[300]={0},i,j=0;
 	float b[300]={0},c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	average(a,b);
 	c=max(b,n);
 	for(i=0;i<n;i++)
 	{
 		if(b[i]==(-c)) 
 		{
-			if(j!=0) printf(",");
-			printf("%d",a[i]);
+			if(j!=0) my_printf(",");
+			my_printf("%d",a[i]);
 			j++;
 		}
 	}
@@ -39,10 +39,10 @@ int main_bench()
 	{
 		if(b[i]==c)
 		{
-			if(j!=0) printf(",");
-			printf("%d",a[i]);
+			if(j!=0) my_printf(",");
+			my_printf("%d",a[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }
 

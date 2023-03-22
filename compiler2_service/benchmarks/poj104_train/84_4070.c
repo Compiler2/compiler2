@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i,x[100];
 	int max=0,secondmax=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		if(x[i]>=max)
 		{
 		secondmax=max;
@@ -20,6 +20,6 @@ int main_bench()
 		}
 		
 	}
-	printf("%d\n%d\n",max,secondmax);
+	my_printf("%d\n%d\n",max,secondmax);
 	return 0;
 }

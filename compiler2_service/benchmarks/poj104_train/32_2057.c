@@ -4,11 +4,11 @@ main_bench()
 {
 	int n,i,j,t,as,bs;
 	char a[100][100],b[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%s",a[i]);
-		scanf("%s",b[i]);
+		my_scanf("%s",a[i]);
+		my_scanf("%s",b[i]);
 		getchar();
 	}
 	for (i=1;i<=n;i++)
@@ -34,8 +34,8 @@ main_bench()
 		while (a[i][t]==0)
 			t++;
 		for (j=t;j<as;j++)
-			printf("%d",a[i][j]);
-		printf("\n");
+			my_printf("%d",a[i][j]);
+		my_printf("\n");
 	}
 	return 0;
 }

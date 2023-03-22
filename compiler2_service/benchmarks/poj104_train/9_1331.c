@@ -7,9 +7,9 @@ struct {
 int main_bench()
 {
 int n,i,k,e,num,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%s %d",patient[i].ID,&patient[i].nian);
+my_scanf("%s %d",patient[i].ID,&patient[i].nian);
 }
 num=0;
 for(i=0;i<n;i++){
@@ -41,10 +41,10 @@ for(j=1;j<num;j++){
 	}
 }
 for(k=0;k<num;k++){
-	printf("%s\n",old[k].ID);
+	my_printf("%s\n",old[k].ID);
 }
 for(k=0;k<n-num;k++){
-	printf("%s\n",qita[k].ID);
+	my_printf("%s\n",qita[k].ID);
 }
 	return 0;
 }

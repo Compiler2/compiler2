@@ -13,9 +13,9 @@ main_bench()
       unsigned long ip,op,i,lenth,oplenth,cache,test=9999,mod;
       unsigned long dec=0;
       char num[100],wei;
-      scanf("%d",&ip);
-      scanf("%s",num);
-      scanf("%d",&op);
+      my_scanf("%d",&ip);
+      my_scanf("%s",num);
+      my_scanf("%d",&op);
       
       lenth=strlen(num);
       for(i=0;i<=lenth;i++)
@@ -42,11 +42,11 @@ main_bench()
                              mod=mod-cache*pow(op,oplenth-i-1);
                              
                              if(cache<=9)
-                             printf("%d",cache);
+                             my_printf("%d",cache);
                              else
                              {
                                  wei='A'+cache-10;
-                                 printf("%c",wei);
+                                 my_printf("%c",wei);
                              }
       }
       getchar();

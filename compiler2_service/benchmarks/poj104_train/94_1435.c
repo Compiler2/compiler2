@@ -4,9 +4,9 @@ int main_bench(){
     int a[500];
     int b[500];
     int i,n,t,j,k,s,min;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&a[i]);             
+        my_scanf("%d",&a[i]);             
                      }
     j=0;                 
     for(i=0;i<n;i++){
@@ -19,8 +19,8 @@ int main_bench(){
                      if(min<b[j]){b[s]=b[j];b[j]=min;}
     
                      }
-    printf("%d",b[0]);
+    my_printf("%d",b[0]);
     for(j=1;j<t;j++)
-    {printf(",%d",b[j]);}
+    {my_printf(",%d",b[j]);}
   return 0;
     }

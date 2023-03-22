@@ -2,9 +2,9 @@
 
 main_bench()
  {  long int a[100000],b[100000],c[100000],d,e,i,m,n,p,q,f[100000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<100000;i++)
-    {scanf("%d %d",&a[i],&b[i]);
+    {my_scanf("%d %d",&a[i],&b[i]);
     if(a[i]==0&&b[i]==0)
     break;d=i;}  
     for(m=0;m<=n-1;m++)
@@ -20,8 +20,8 @@ main_bench()
     for(m=0;m<=n-1;m++) 
     {if(c[m]==f[n-1])
      {if(c[m]>=n-1)
-    printf("%d",m);
-    else printf("NOT FOUND");}}
+    my_printf("%d",m);
+    else my_printf("NOT FOUND");}}
     getchar();getchar();getchar();getchar();
 }
     

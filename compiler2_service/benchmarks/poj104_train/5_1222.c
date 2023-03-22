@@ -7,16 +7,16 @@ int main_bench()
 	char first[1024];
 	char second[1024];
 	float rate = 0.0f;
-	scanf("%f", &rate);
-	scanf("%s", first);
-	scanf("%s", second);
+	my_scanf("%f", &rate);
+	my_scanf("%s", first);
+	my_scanf("%s", second);
 
 	int n1 = strlen(first);
 	int n2 = strlen(second);
 	
 	if (n1 != n2)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 
@@ -31,7 +31,7 @@ int main_bench()
 			second[i] != 'C' &&
 			second[i] != 'G')
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -45,9 +45,9 @@ int main_bench()
 
 	float actual = (float)same / (float)n1;
 	if (actual >= rate)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 
 	return 0;
 }

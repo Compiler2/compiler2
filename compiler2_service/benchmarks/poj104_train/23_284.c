@@ -19,13 +19,13 @@ int main_bench()
 	{
 		for(j=0;j<=a[i]-1;j++)
 		{
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		}
-        printf(" ");
+        my_printf(" ");
 	}
     for(j=0;j<=a[i]-1;j++)
 	{
-		printf("%c",c[0][j]);
+		my_printf("%c",c[0][j]);
 	}
     return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int n,m,d,w,i,y;
 	long sum;
 	char nian[20];
-    scanf("%s%d%d",nian,&m,&d);
+    my_scanf("%s%d%d",nian,&m,&d);
 	n=strlen(nian);
 	y=0;
 	if(n>5)
@@ -42,17 +42,17 @@ int main_bench()
 	sum=sum+d;
 	w=sum%7;
 	if(w==1)
-		printf("Mon.");
+		my_printf("Mon.");
     if(w==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	if(w==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	if(w==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	if(w==5)
-		printf("Fri.");
+		my_printf("Fri.");
     if(w==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	if(w==0)
-		printf("Sun.");
+		my_printf("Sun.");
 }

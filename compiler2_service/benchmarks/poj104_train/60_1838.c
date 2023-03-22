@@ -3,12 +3,12 @@
 main_bench()
 {
 	int i,n,x,k,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[n];
 	for(i=0;i<n;i++)
 	a[i]=i+1;
 	if(n<5)
-	printf("empty");
+	my_printf("empty");
 	else if(n>=5)
 	{
 		for(i=2;i<n;i++)
@@ -26,7 +26,7 @@ main_bench()
 			}
 			m=x;
 		if(k==a[i]&&m==a[i-2])
-		printf("%d %d\n",a[i-2],a[i]);
+		my_printf("%d %d\n",a[i-2],a[i]);
 			}
 		}
 	}

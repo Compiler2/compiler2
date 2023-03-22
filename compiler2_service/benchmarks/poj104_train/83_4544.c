@@ -5,14 +5,14 @@ int main_bench(){
 	int sz[100],sa[100];
 	double g=0.0,G;
 	double sb[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sa[i]);
+		my_scanf("%d",&sa[i]);
 	}
 	for(i=0;i<n;i++)
 		if(sa[i]>89)
@@ -73,6 +73,6 @@ int main_bench(){
 		x=x+sz[i];
 	}
      G=g/x;
-	 printf("%.2lf",G);
+	 my_printf("%.2lf",G);
 	return 0;
 }

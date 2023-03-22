@@ -17,16 +17,16 @@ int main_bench()
 	}
 	int m,n[100],j;
 	double sum[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<m;j++)
 	{    
 		sum[j]=0;
-		scanf("%d",&n[j]);	
+		my_scanf("%d",&n[j]);	
 		for(i=0;i<n[j];i++)
 		{
 			sum[j]+=c[i];
 		}
-		printf("%.3lf\n",sum[j]);
+		my_printf("%.3lf\n",sum[j]);
 
 	}
      return 0;

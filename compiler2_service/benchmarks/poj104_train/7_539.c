@@ -23,10 +23,10 @@ int main_bench()
 			break;
 	}
 	for (j=0;j<i;j++)
-		printf("%c",s1[j]);
+		my_printf("%c",s1[j]);
 if (i!=len1)
-	printf("%s",s3);
+	my_printf("%s",s3);
 	for (j=i+len2;j<len1;j++)
-		printf("%c",s1[j]);
+		my_printf("%c",s1[j]);
 	return 0;
 }

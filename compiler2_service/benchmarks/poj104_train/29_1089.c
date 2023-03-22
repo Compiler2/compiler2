@@ -11,9 +11,9 @@ int main_bench(){
 	  z[k]=s[i+1]/s[i];
 	  k++;
 	  }
-	  scanf("%d",&m);
+	  my_scanf("%d",&m);
 	  for(n=0;n<m;n++){
-	  scanf("%d",&g[n]); 
+	  my_scanf("%d",&g[n]); 
 	  }
 	  for(n=0;n<m;n++){
 		  sum=0;
@@ -22,7 +22,7 @@ int main_bench(){
 	     sum+=z[k];
 		 k++;
 		 }
-      printf("%.3lf\n",sum);
+      my_printf("%.3lf\n",sum);
 	  }
 	return 0;
 	}

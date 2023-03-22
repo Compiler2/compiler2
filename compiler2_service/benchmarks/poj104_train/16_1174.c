@@ -4,9 +4,9 @@ main_bench()
 {
 int i;
 char str[100];
-scanf("%s",&str);
+my_scanf("%s",&str);
 for(i=strlen(str)-1;i>=0;i--)
-printf("%c",str[i]);
+my_printf("%c",str[i]);
 getchar();
 getchar();
 }

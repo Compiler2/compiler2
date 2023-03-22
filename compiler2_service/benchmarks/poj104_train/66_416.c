@@ -5,9 +5,9 @@ int main_bench()
 	int y,m,d,c,j;
 	int num=0;
 	int day=0;
-	scanf("%d",&y);
-	scanf("%d",&m);
-	scanf("%d",&d);
+	my_scanf("%d",&y);
+	my_scanf("%d",&m);
+	my_scanf("%d",&d);
 	c=y-1;
 	day+=c*(365%7)+c/4-c/100+c/400;
 	for(j=1;j<m;j++)
@@ -41,31 +41,31 @@ int main_bench()
 	day+=d;
 	 	if(day%7==1)
 		{
-			printf("Mon.");
+			my_printf("Mon.");
 		}
 		if(day%7==2)
 		{
-			printf("Tue.");
+			my_printf("Tue.");
 		}
  		if(day%7==3)
 		{
-			printf("Wed.");
+			my_printf("Wed.");
 		}
 		if(day%7==4)
 		{
-			printf("Thu.");
+			my_printf("Thu.");
 		}
 		if(day%7==5)
 		{
-			printf("Fri.");
+			my_printf("Fri.");
 		}
 		if(day%7==6)
 		{
-			printf("Sat.");
+			my_printf("Sat.");
 		}
 		if(day%7==0)
 		{
-			printf("Sun.");
+			my_printf("Sun.");
 		}
 		return 0;
 	}

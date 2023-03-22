@@ -10,15 +10,15 @@ int main_bench()
 	int exchange(int a,int b);
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++){
-	scanf("%d",&shuzu[row][col]);}}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d",&shuzu[row][col]);}}
+	my_scanf("%d%d",&m,&n);
 	if(exchange(m,n)==0)
-	{printf("error");}
+	{my_printf("error");}
 	else
 	{for(row=0;row<5;row++){
 	for(col=0;col<5;col++){
-		if(col!=4){printf("%d ",after[row][col]);}
-	else printf("%d\n",after[row][col]);}}}
+		if(col!=4){my_printf("%d ",after[row][col]);}
+	else my_printf("%d\n",after[row][col]);}}}
 
 	
 	return 0;

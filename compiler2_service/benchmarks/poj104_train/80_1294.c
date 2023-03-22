@@ -3,7 +3,7 @@
 int main_bench()
 {
 int year1,year2,month1,month2,day1,day2,sum1=0,sum2=0,leap1,leap2,c1,c2,a,b,x;
-scanf("%d %d %d\n%d %d %d", &year1,&month1,&day1, &year2, &month2, &day2);
+my_scanf("%d %d %d\n%d %d %d", &year1,&month1,&day1, &year2, &month2, &day2);
 {
 	switch(month1)
 	{
@@ -19,7 +19,7 @@ case 9:sum1=243;break;
 case 10:sum1=273;break;
 case 11:sum1=304;break;
 case 12:sum1=334;break;
-default:printf("data error");break;
+default:my_printf("data error");break;
 	}
 sum1=sum1+day1;
 if((year1%4==0 && year1 % 100 != 0) || (year1 % 400 == 0))
@@ -44,7 +44,7 @@ case 9:sum2=243;break;
 case 10:sum2=273;break;
 case 11:sum2=304;break;
 case 12:sum2=334;break;
-default:printf("data error");break;
+default:my_printf("data error");break;
 }
 sum2=sum2+day2;
 if((year2 % 4 == 0 && year2 % 100 != 0) || (year2 % 400 == 0))
@@ -59,6 +59,6 @@ c2=(year2-1)/4-(year2-1)/100+(year2-1)/400;
 a=(year1-1)*365+sum1+c1;
 b=(year2-1)*365+sum2+c2;
 x=b-a;
-printf("%d\n",x);
+my_printf("%d\n",x);
 return 0;
 }

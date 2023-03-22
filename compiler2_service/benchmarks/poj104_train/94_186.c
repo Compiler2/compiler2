@@ -3,11 +3,11 @@
 int main_bench()
 {
 int N;
-scanf("%d",&N);
+my_scanf("%d",&N);
 int sz[N];
 int i;
 for(i=0;i<N;i++){
-    scanf("%d ",&sz[i]);
+    my_scanf("%d ",&sz[i]);
 }
 int js[500];
 int j=0,sum=0;
@@ -30,9 +30,9 @@ for(k=1;k<sum;k++){
 }
 for(j=0;j<sum;j++){
 if(j!=sum-1)
-printf("%d,",js[j]);
+my_printf("%d,",js[j]);
 else
-printf("%d",js[j]);
+my_printf("%d",js[j]);
 }
 return 0;
 }

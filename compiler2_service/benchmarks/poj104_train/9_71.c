@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,year[100],i,j,year2[100]={0},t,k;
     char num[100][10],num2[100][10],p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s",num[i]);
-        scanf("%d",&year[i]);
+        my_scanf("%s",num[i]);
+        my_scanf("%d",&year[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -37,12 +37,12 @@ int main_bench()
     for(i=0;i<n;i++)
     {
         if(year2[i]!=0)
-        printf("%s\n",num2[i]);
+        my_printf("%s\n",num2[i]);
     }
     for(i=0;i<n;i++)
     {
         if(year[i]<60)
-        printf("%s\n",num[i]);
+        my_printf("%s\n",num[i]);
     }
     return 0;
 }

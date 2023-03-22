@@ -6,7 +6,7 @@ int main_bench()
     char s[33];
     int i, a, b, n;
     long x = 0, y = 1;
-    scanf("%d %s %d", &a, s, &b);
+    my_scanf("%d %s %d", &a, s, &b);
     for (i = strlen(s)-1; i >= 0; i--)
     {
         if (s[i] >= 'a')
@@ -25,9 +25,9 @@ int main_bench()
         n = x / y;
         x = x % y;
         if (n >= 10)
-            printf("%c", 'A' + (n - 10));
+            my_printf("%c", 'A' + (n - 10));
         else
-            printf("%d", n);
+            my_printf("%d", n);
         y = y / b;
     }
     while (y >= 1);

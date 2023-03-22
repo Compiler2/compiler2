@@ -10,8 +10,8 @@ int main_bench() {
 	int max;
 	int idx[1000];
 	int count[1000] = {0};
-	scanf("%d", &n);
-	scanf("%s", s);
+	my_scanf("%d", &n);
+	my_scanf("%s", s);
 	len = strlen(s);
 	k=0;
 	for(i=0; i<=len-n; i++) {
@@ -35,16 +35,16 @@ int main_bench() {
 		}
 	}
 	if(max <= 1) {
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
-	printf("%d\n", max);
+	my_printf("%d\n", max);
 	for(i=0; i<k; i++) {
 		if(count[i] == max) {
 			for(j=idx[i]; j<idx[i]+n; j++) {
-				printf("%c", s[j]);
+				my_printf("%c", s[j]);
 			}
-			printf("\n");
+			my_printf("\n");
 			
 		}
 	}

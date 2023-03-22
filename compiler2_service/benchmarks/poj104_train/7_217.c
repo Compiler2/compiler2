@@ -5,7 +5,7 @@ int main_bench()
 	char string[256],substring[256],replacement[256];
 	char *str,*sub;
 	int a,n=0,b;
-	scanf("%s%s%s",string,substring,replacement);
+	my_scanf("%s%s%s",string,substring,replacement);
 	sub=substring;
 	a=strlen(substring);
 	
@@ -32,7 +32,7 @@ int main_bench()
 	
 	if(n==0)
 	{
-		printf("%s",string);
+		my_printf("%s",string);
 		return 0;
 	}
 	
@@ -43,7 +43,7 @@ int main_bench()
 		sub++;
 		str++;
 	}
-	printf("%s",string);
+	my_printf("%s",string);
 	return 0;
 }
 

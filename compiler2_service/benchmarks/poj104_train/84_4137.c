@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n;
 	int number[120];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,maxpos;
 	
 	for (i=0;i<n;i++)
-		scanf("%d",&number[i]);
+		my_scanf("%d",&number[i]);
 	int max=-100000, sndmax=-100000;
 	for (i=0;i<n;i++) {
 		if (number[i]>max) {
@@ -22,6 +22,6 @@ int main_bench()
 		if (number[i]>sndmax)
 			sndmax=number[i];
 	}
-	printf("%d\n%d\n",max,sndmax);
+	my_printf("%d\n%d\n",max,sndmax);
 	return 0;
 }

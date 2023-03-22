@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int a[100][100],n,i,j,b,c,d,e,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -29,6 +29,6 @@ int main_bench(){
 		}
 	}
 	s=(d-c+1)*(e-b+1)-(4+(d-c-1)*2+(e-b-1)*2);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

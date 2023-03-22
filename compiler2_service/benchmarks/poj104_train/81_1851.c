@@ -7,21 +7,21 @@ int main_bench()
 	int i,j,n,m;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d%d",&m,&n);
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&m,&n);
 	if(process(m,n))
 	{
 		for(i=0;i<5;i++)
 		{
 		for(j=0;j<5;j++)
 		{
-			printf("%d",a[i][j]);
-			if(j!=4) printf(" ");
+			my_printf("%d",a[i][j]);
+			if(j!=4) my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 		}
 	}
-	else printf("error\n");
+	else my_printf("error\n");
 	return 0;
 }
 int process(int y,int z)

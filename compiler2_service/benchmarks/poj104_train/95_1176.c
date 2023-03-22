@@ -5,7 +5,7 @@
 int main_bench()
 {
 char c,text1[81],text2[81];int i=0;
-gets(text1);printf("\n");gets(text2);printf("\n");
+gets(text1);my_printf("\n");gets(text2);my_printf("\n");
 while(text1[i]!='\0')
   {
    if((text1[i]==text2[i])||(fabs(text1[i]-text2[i])==32)) {c='=';i++;}
@@ -15,5 +15,5 @@ while(text1[i]!='\0')
    break;
  }
 }
-printf("%c",c);
+my_printf("%c",c);
 }

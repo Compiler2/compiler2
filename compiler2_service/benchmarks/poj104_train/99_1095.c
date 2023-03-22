@@ -8,9 +8,9 @@ int main_bench()
     c=0;
     d=0;
     int i=1;
-    scanf("%lf",&n);
+    my_scanf("%lf",&n);
     while(i<=n){
-        scanf("%lf",&x);
+        my_scanf("%lf",&x);
         if(x<=18){
             a++;
         }
@@ -29,14 +29,14 @@ int main_bench()
     h=100*b/n;
     p=100*c/n;
     q=100*d/n;
-   printf("1-18: %.2lf",m);
-   printf("%%\n");
-   printf("19-35: %.2lf",h);
-   printf("%%\n");
-   printf("36-60: %.2lf",p);
-   printf("%%\n");
-   printf("60??: %.2lf",q);
-   printf("%%");
+   my_printf("1-18: %.2lf",m);
+   my_printf("%%\n");
+   my_printf("19-35: %.2lf",h);
+   my_printf("%%\n");
+   my_printf("36-60: %.2lf",p);
+   my_printf("%%\n");
+   my_printf("60??: %.2lf",q);
+   my_printf("%%");
     return 0;
     
 }

@@ -6,7 +6,7 @@ int main_bench()
 {
 	int prime(int x);
 	int n, a, b, c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=3;a<n-1;a++)
 	{
 		b=a;
@@ -18,12 +18,12 @@ int main_bench()
 		}
 		else
 		{
-			printf("%d %d\n",b,c);
+			my_printf("%d %d\n",b,c);
 		}
 	}
 	if(n<5)
 	{
-		printf("empty");
+		my_printf("empty");
 	}
 	return 0;
 }

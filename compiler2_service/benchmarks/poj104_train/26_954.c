@@ -8,10 +8,10 @@ for(int i=0;a[i];i++){
 if((b==' ')&&(a[i]==' ')){
 continue;
 }else{
-printf("%c",a[i]);
+my_printf("%c",a[i]);
 b=a[i];
 }
 }
-printf("\n");
+my_printf("\n");
 return 0;
 }

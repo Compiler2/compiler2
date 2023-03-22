@@ -3,7 +3,7 @@
  int main_bench()
 {
  int n,a,b,c,d,e,i,zong;  
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<=1000;i++)
   {
     if(100*i<=n&&100*(i+1)>n)
@@ -31,7 +31,7 @@
      if(5*i<=zong&&5*(i+1)>zong)
      { e=i;
        zong=n-100*a-50*b-20*c-10*d-5*e;}}
- printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,zong);
+ my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,zong);
  return 0;
 }
     

@@ -3,11 +3,11 @@
 int main_bench(){
 	int n,x,y,i,hour[100];
 	int normal[100],m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<100;i++)
 		normal[i]=0;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&x,&y);
+		my_scanf("%d%d",&x,&y);
 		if(x<90||x>140||y<60||y>90)
 			m++;
 		else
@@ -17,5 +17,5 @@ int main_bench(){
 		if(normal[i]<normal[i-1])
 			normal[i]=normal[i-1];
 	}
-	printf("%d",normal[i-1]);
+	my_printf("%d",normal[i-1]);
 }

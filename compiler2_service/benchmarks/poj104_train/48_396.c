@@ -3,7 +3,7 @@
 int main_bench()
 {   int date,day,i,j;
 	int a[11][11]={0},t[11][11];
-	scanf("%d %d",&a[5][5],&date);
+	my_scanf("%d %d",&a[5][5],&date);
 	for(day=1;day<=date;day++){
 		for(i=1;i<10;i++){
 			for(j=1;j<10;j++){
@@ -18,13 +18,13 @@ int main_bench()
 	}
 	for(i=1;i<10;i++){
 		if(i!=1){
-			printf("\n");
+			my_printf("\n");
 		}
 		for(j=1;j<10;j++){
 			if(j!=1){
-				printf(" ");
+				my_printf(" ");
 			}
-			printf("%d",a[i][j]);
+			my_printf("%d",a[i][j]);
 		}
 	}
 	return 0;

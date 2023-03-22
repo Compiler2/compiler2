@@ -3,7 +3,7 @@
 int main_bench()
 {
 int a,b,c,s=0;
-scanf("%d",&a);
+my_scanf("%d",&a);
 c=a%10000;
 b=a/10000;
 s=s+b;
@@ -29,6 +29,6 @@ s=s+c*10000;
 for(c=0;c<4;c++){
 	if(s%10==0)
 		s=s/10;}
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

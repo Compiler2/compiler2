@@ -58,7 +58,7 @@ int main_bench()
 	int i,j;
 	int flag=0;
 	int flag1=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(sushu(i)==0)
@@ -69,18 +69,18 @@ int main_bench()
 				if(flag==0)
 				{
 					flag=1;
-					printf("%d",i);
+					my_printf("%d",i);
 				}
 				else
 				{
-					printf(",%d",i);
+					my_printf(",%d",i);
 				}
 			}
 		}
 	}
 	if(flag1==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 }
 				

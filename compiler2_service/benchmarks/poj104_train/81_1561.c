@@ -13,8 +13,8 @@ int main_bench()
 	int m,n,i,j,f[5][5],b[5];
 	for(i=0;i<=4;i++)
 		for(j=0;j<=4;j++)
-			scanf("%d",&f[i][j]);
-		scanf("%d %d",&m,&n);
+			my_scanf("%d",&f[i][j]);
+		my_scanf("%d %d",&m,&n);
 		if(A(m,n)==1)
 		{
 			if(m!=n)
@@ -27,11 +27,11 @@ int main_bench()
 			for(i=0;i<=4;i++)
 			{
 				for(j=0;j<=3;j++)
-					printf("%d ",f[i][j]);
-				printf("%d\n",f[i][4]);
+					my_printf("%d ",f[i][j]);
+				my_printf("%d\n",f[i][4]);
 			}
 		}
-		else printf("error");
+		else my_printf("error");
 }
 
 

@@ -5,21 +5,21 @@ main_bench()
 {
     char a[100];
     int b[100],c[100],d[100],i,j,k,m;
-    scanf("%s",a);
+    my_scanf("%s",a);
     k=strlen(a);
     for(i=0;i<k;i++)
     {
         b[i]=a[i]-'0';    
     }
     if(k==1)
-    printf("0\n%d",b[0]);
+    my_printf("0\n%d",b[0]);
     else
     {
         if(k==2&&b[0]*10+b[1]<13)
         {
             m=b[0]*10+b[1];
-            printf("0\n");
-            printf("%d",m);
+            my_printf("0\n");
+            my_printf("%d",m);
          }    
          else
          {
@@ -44,20 +44,20 @@ main_bench()
               {
                   for(i=2;i<k;i++)
                   {
-                      printf("%d",c[i]);
+                      my_printf("%d",c[i]);
                   }
-                      printf("\n");
-                      printf("%d",m);
+                      my_printf("\n");
+                      my_printf("%d",m);
                   
               }     
               else 
               {
                   for(i=1;i<k;i++)
                   {
-                      printf("%d",c[i]); 
+                      my_printf("%d",c[i]); 
                   }
-                      printf("\n");
-                      printf("%d",m);
+                      my_printf("\n");
+                      my_printf("%d",m);
                  
               }  
                   

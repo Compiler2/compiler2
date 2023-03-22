@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n,i,A=0,B=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n],b[n];
     for(i=0;i<n;i++)
-     {scanf("%d%d",&a[i],&b[i]);
+     {my_scanf("%d%d",&a[i],&b[i]);
       if((3+a[i]-b[i])%3==2)
        A++;
       if((3+a[i]-b[i])%3==1)
        B++;
      }
     if(A>B)
-     printf("A");
+     my_printf("A");
     else if(B>A)
-     printf("B");
+     my_printf("B");
     else
-     printf("Tie");
+     my_printf("Tie");
 }

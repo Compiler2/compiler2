@@ -3,7 +3,7 @@
 int prime(int n);
 int main_bench(){
 	int a,b,i,n,num,mid,mid0,line1[1000],line2[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	num=0;
 	mid=0;
 	for(i=3;i<n;i++){
@@ -17,13 +17,13 @@ int main_bench(){
 		}
 	}
 	if(n<5){
-		printf("empty");
+		my_printf("empty");
 	}
 	if(n==5){
-		printf("3 5\n");
+		my_printf("3 5\n");
 	}
 	for(i=0;i<mid;i++){
-		printf("%d %d\n",line1[i],line2[i]);
+		my_printf("%d %d\n",line1[i],line2[i]);
 	}
 	return 0;
 }

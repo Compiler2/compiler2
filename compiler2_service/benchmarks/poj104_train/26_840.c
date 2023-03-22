@@ -19,7 +19,7 @@ int main_bench(){
 	}
 	int n=strlen(result);
 	for(i=0;i<n;i++){
-	printf("%c",result[i]);
+	my_printf("%c",result[i]);
 	}
 	
 	return 0;

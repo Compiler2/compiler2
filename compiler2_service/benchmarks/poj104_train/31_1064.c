@@ -13,22 +13,22 @@ int main_bench()
 {
 	int i,j;
 	struct student stu[5000];
-	scanf("%s %s %c %d %s %s",stu[0].stuID,stu[0].name,&stu[0].sex,&stu[0].age,stu[0].score,stu[0].add);
+	my_scanf("%s %s %c %d %s %s",stu[0].stuID,stu[0].name,&stu[0].sex,&stu[0].age,stu[0].score,stu[0].add);
 	i=0;
 	if(strlen(stu[i].stuID)>=3)
 	{
 	while(1)
 	{
 		i++;
-		scanf("%s",stu[i].stuID);
+		my_scanf("%s",stu[i].stuID);
 		if(strlen(stu[i].stuID)==3)
 			break;
-		scanf("%s %c %d %s %s",stu[i].name,&stu[i].sex,&stu[i].age,stu[i].score,stu[i].add);
+		my_scanf("%s %c %d %s %s",stu[i].name,&stu[i].sex,&stu[i].age,stu[i].score,stu[i].add);
 	}
 	
 	for(j=i-1;j>=0;j--)
 	{
-		printf("%s %s %c %d %s %s\n",stu[j].stuID,stu[j].name,stu[j].sex,stu[j].age,stu[j].score,stu[j].add);
+		my_printf("%s %s %c %d %s %s\n",stu[j].stuID,stu[j].name,stu[j].sex,stu[j].age,stu[j].score,stu[j].add);
 	}
 	}
 	return 0;

@@ -31,25 +31,25 @@ int main_bench()
 	{
 		for (j=0;j<i;j++)
 		{
-			printf("%c",ci[j][0]);
+			my_printf("%c",ci[j][0]);
 		}
-		printf("%s",ci[i]);
+		my_printf("%s",ci[i]);
 		if(i!=ls-la)
 		{
 			for (j=i+la;j<ls-la;j++)
 			{
-				printf("%c",ci[j][0]);
+				my_printf("%c",ci[j][0]);
 			}
-			printf("%s",ci[ls-la]);
+			my_printf("%s",ci[ls-la]);
 		}
 	}
 	else
 	{
 		for (j=0;j<ls-la;j++)
 		{
-			printf("%c",ci[j][0]);
+			my_printf("%c",ci[j][0]);
 		}
-		printf("%s",ci[ls-la]);
+		my_printf("%s",ci[ls-la]);
 	}
 	return 0;
 }

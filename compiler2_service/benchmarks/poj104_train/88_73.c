@@ -21,9 +21,9 @@ int main_bench()
             {
                 for (j=a;j<=b;j++)
                 {
-                    printf("%c",c[j]);
+                    my_printf("%c",c[j]);
                 }
-                printf("\n");
+                my_printf("\n");
                 b=i;num=0;
             }
         }

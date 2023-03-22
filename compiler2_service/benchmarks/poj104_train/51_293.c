@@ -4,7 +4,7 @@ int main_bench()
 {
     char s[1000],s1[10];
     int i,j,k,l,m=0,n,x;
-    scanf("%d",&n); gets(s); gets(s);
+    my_scanf("%d",&n); gets(s); gets(s);
     for (i=0;i<strlen(s);i++)
     {
         for (j=0;j<n;j++)
@@ -19,10 +19,10 @@ int main_bench()
         }
         if (x>m) m=x;
     }
-    if (m<=1) printf("NO");
+    if (m<=1) my_printf("NO");
     else
     {
-    printf("%d\n",m);
+    my_printf("%d\n",m);
     for (i=0;i<strlen(s);i++)
     {
         for (j=0;j<n;j++)

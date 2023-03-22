@@ -41,8 +41,8 @@ int main_bench()
 				g++;
 			}
 		}
-		printf("%s\n",c[e[0]]);
-		printf("%s\n",c[f[0]]);
+		my_printf("%s\n",c[e[0]]);
+		my_printf("%s\n",c[f[0]]);
 	return 0;
 }
 

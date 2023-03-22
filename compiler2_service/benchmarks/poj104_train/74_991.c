@@ -27,17 +27,17 @@ int main_bench()
 {
 	int label=0;
     long int m,n,i,j,p=0;
-	scanf("%ld%ld",&m,&n);
+	my_scanf("%ld%ld",&m,&n);
 	for (i=m;i<=n;i++)
 	{
 		if (cc(i)==1 && tran(i)==1)
 		{
 			label++;
 			if (label==1)
-				printf("%ld",i);
-			else printf(",%ld",i);
+				my_printf("%ld",i);
+			else my_printf(",%ld",i);
 		}
 	}
 	if (label==0)
-		printf("no\n");
+		my_printf("no\n");
 }

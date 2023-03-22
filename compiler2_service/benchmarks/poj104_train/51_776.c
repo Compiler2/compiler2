@@ -6,7 +6,7 @@ main_bench()
       int n,i,m,sun=0,flag=0,aa=0,mm=1;
       char a[510];
       int b[510],d[510],p=0,j,pp,jj,ii,k;
-      scanf("%d%s",&n,a);
+      my_scanf("%d%s",&n,a);
       for(i=0;i<510;i++)
       b[i]=0;
       for(i=0;i<510;i++)
@@ -15,7 +15,7 @@ main_bench()
       {p++;}
       m=p-n+1;
       if(m<1)
-      printf("NO\n");
+      my_printf("NO\n");
       else{
                           for(i=0;i<m;i++)
                           {
@@ -35,7 +35,7 @@ main_bench()
                          
                          
                           if(sun==m*(m-1)/2)
-                                           printf("NO\n");
+                                           my_printf("NO\n");
          else
                                            {
                                                       for(i=0;i<m;i++)
@@ -63,9 +63,9 @@ main_bench()
                                                           if(d[i]>=d[j])
                                                            aa++;}
                                                                                                     if(aa==m)
-                                                                                                    {printf("%d\n",d[i]);
+                                                                                                    {my_printf("%d\n",d[i]);
                                                                                                     for(ii=0;ii<n;ii++)
-                                                                                                    printf("%c",a[i+ii]);printf("\n");
+                                                                                                    my_printf("%c",a[i+ii]);my_printf("\n");
                                                          break;}
                                                          aa=0;}
                                     
@@ -75,8 +75,8 @@ main_bench()
                                     {if(d[i]==d[k])
                                     {
                                     for(jj=0;jj<n;jj++)
-                                    printf("%c",a[k+jj]);
-                                    printf("\n");}}}}
+                                    my_printf("%c",a[k+jj]);
+                                    my_printf("\n");}}}}
                                    
                                     }
                                

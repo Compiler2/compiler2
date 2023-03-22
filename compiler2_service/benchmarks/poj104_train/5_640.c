@@ -4,11 +4,11 @@ int main_bench(){
 	int b,c,i,j,count;
 	double a,x,y,z;
 	char m[550],n[550];
-	scanf("%lf\n%s\n%s\n",&a,m,n);
+	my_scanf("%lf\n%s\n%s\n",&a,m,n);
 	b=strlen(m);
 	c=strlen(n);
 	if(b!=c)
-		printf("error");
+		my_printf("error");
 	j=0;
 	if(b==c){
 		for(i=0;m[i]!='\0';i++){
@@ -20,7 +20,7 @@ int main_bench(){
 				j++;
 		}
 		if(j>0)
-			printf("error");
+			my_printf("error");
 	}
 	count=0;
 	if(b==c&&j==0){
@@ -32,9 +32,9 @@ int main_bench(){
 		z=b;
 		x=z*a;
 		if(y>=x)
-			printf("yes");
+			my_printf("yes");
 		else
-			printf("no");
+			my_printf("no");
 	}
 	return 0;
 }

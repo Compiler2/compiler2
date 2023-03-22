@@ -9,12 +9,12 @@ int main_bench()
 	{
 		if(c[i]>=48&&c[i]<=57)
 		{
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 		    flag=0;
 		}
 		else if(flag==0)
 		{
-			printf("\n");
+			my_printf("\n");
 			flag=1;
 		}
 		i++;

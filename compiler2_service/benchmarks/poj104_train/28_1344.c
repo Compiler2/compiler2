@@ -13,7 +13,7 @@ int main_bench()
 	for(i=1;s[i]!='\0';i++)
 	  if(s[i]==' ') 
 	  {
-	  	if(s[i-1]!=' ') printf("%d,",l);
+	  	if(s[i-1]!=' ') my_printf("%d,",l);
 	   word=0;
 	   l=0;
       }
@@ -24,5 +24,5 @@ int main_bench()
 	   }
       else if(word==1)
 	   l++;
-   printf("%d",l);
+   my_printf("%d",l);
 }

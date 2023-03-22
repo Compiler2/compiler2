@@ -37,12 +37,12 @@ void shanchu(int a[100][100],int n)
 int main_bench()
 {
 	int a[100][100][100],i,j,k,sum,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 			for(k=0;k<n;k++)
 			{
-				scanf("%d",&a[i][j][k]);
+				my_scanf("%d",&a[i][j][k]);
 			}
 	for(i=0;i<n;i++)
 	{
@@ -53,6 +53,6 @@ int main_bench()
 			sum=sum+a[i][1][1];
 			shanchu(a[i],j);
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 }

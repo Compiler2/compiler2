@@ -4,8 +4,8 @@ int main_bench()
 {
 char ch1[50],ch2[50];
 int len1,len2,i,j,k,c,d;
-scanf("%s",&ch1);
-scanf("%s",&ch2);
+my_scanf("%s",&ch1);
+my_scanf("%s",&ch2);
 len1=strlen(ch1);
 len2=strlen(ch2);
 
@@ -26,7 +26,7 @@ do
 
 		if(k!=0)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 }

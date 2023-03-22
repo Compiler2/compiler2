@@ -7,13 +7,13 @@ int compare(const void * elem1, const void * elem2)
 main_bench()
 {
       int n,m;
-      scanf("%d %d",&n,&m);
+      my_scanf("%d %d",&n,&m);
       int a[n],b[m];
       int i,j;
       for(i=0;i<n;i++)
-            { scanf("%d",&a[i]);}
+            { my_scanf("%d",&a[i]);}
       for(i=0;i<m;i++)
-             {scanf("%d",&b[i]);}
+             {my_scanf("%d",&b[i]);}
       qsort(a,n,sizeof(int),compare);
       qsort(b,m,sizeof(int),compare);
       int c[n+m];
@@ -26,7 +26,7 @@ main_bench()
       for(i=0;i<n+m-1;i++)
        {
                         
-                        printf("%d ",c[i]);}
-                        printf("%d\n",c[i]);
+                        my_printf("%d ",c[i]);}
+                        my_printf("%d\n",c[i]);
      
 }

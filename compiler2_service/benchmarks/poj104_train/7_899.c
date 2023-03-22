@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[500],word1[100],word2[100];
-	scanf("%s%s%s",a,word1,word2);
+	my_scanf("%s%s%s",a,word1,word2);
 	int la,l1,l2,i,j,k,flag;
 	la=strlen(a);
 	l1=strlen(word1);
@@ -29,13 +29,13 @@ int main_bench()
 			}
 			if(flag==1)
 			{
-				printf("%s\n",a);
+				my_printf("%s\n",a);
 				break;
 			}
 		}
 		if(i==la-1)
 		{
-			printf("%s\n",a);
+			my_printf("%s\n",a);
 		}
 	}
 }

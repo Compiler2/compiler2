@@ -5,18 +5,18 @@ int main_bench()
 	int n[100],T[100][1001],Q[100][1001],i,j,k,r,t,mo,shi=0,s=0;
 	for(i=0;i<100;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		if(n[i]==0)
 		{
 			break;
 		}
 		for(j=0;j<n[i];j++)
 		{
-			scanf("%d",&T[i][j]);
+			my_scanf("%d",&T[i][j]);
 		}
 		for(j=0;j<n[i];j++)
 		{
-			scanf("%d",&Q[i][j]);
+			my_scanf("%d",&Q[i][j]);
 		}
 	}
 	for(j=0;j<i;j++)
@@ -81,7 +81,7 @@ int main_bench()
 			else if(T[j][k]<Q[j][k])
 				s-=200;
 		}
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 		s=0;
 		shi=0;
 	}

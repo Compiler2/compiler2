@@ -10,7 +10,7 @@ int main_bench()
 	int num=0;
 	int sum=0;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int ji;
 	gets(c);
 	for(ji=0;ji<n;ji++)
@@ -30,7 +30,7 @@ int main_bench()
 			}
 			if(num==1)
 			{
-					printf("%c\n",c[i]);
+					my_printf("%c\n",c[i]);
 					sum++;
 					goto can;
 			}
@@ -39,7 +39,7 @@ int main_bench()
 can:
 		if(sum==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

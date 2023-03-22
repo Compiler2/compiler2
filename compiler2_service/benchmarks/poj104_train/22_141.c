@@ -32,7 +32,7 @@ int main_bench()
 	{
 		if(strcmp(a[1],a[i])!=0){p=-1;break;}
 	}
-	if(k==1 || p!=-1)printf("No");
+	if(k==1 || p!=-1)my_printf("No");
 else
 {
 	
@@ -84,7 +84,7 @@ else
 		else break;
 	}
 	for(i=0;a[k-sign+1][i]!='\0';i++)
-		printf("%c",a[k-sign+1][i]);
+		my_printf("%c",a[k-sign+1][i]);
 }
 }
 

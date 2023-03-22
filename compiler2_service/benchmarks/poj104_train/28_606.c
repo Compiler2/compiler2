@@ -16,5 +16,5 @@ int main_bench()
 	}
 	end[t]=n-1;
 	for(j=0;j<=t;j++)
-		printf("%d%c",end[j]-beg[j]+1,(j!=t)?',':'\n');
+		my_printf("%d%c",end[j]-beg[j]+1,(j!=t)?',':'\n');
 }

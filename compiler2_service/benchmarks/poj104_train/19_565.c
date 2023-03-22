@@ -37,11 +37,11 @@ main_bench()
 
    for(i=0;i<k-1;i++)
    {
-     if(strcmp(d[i],a)!=0)  printf("%s ",d[i]);
-	 else printf("%s ",b);
+     if(strcmp(d[i],a)!=0)  my_printf("%s ",d[i]);
+	 else my_printf("%s ",b);
 		 
    }
-   if(strcmp(d[i],a)!=0)  printf("%s",d[i]);
-	 else printf("%s",b);
+   if(strcmp(d[i],a)!=0)  my_printf("%s",d[i]);
+	 else my_printf("%s",b);
    
 }

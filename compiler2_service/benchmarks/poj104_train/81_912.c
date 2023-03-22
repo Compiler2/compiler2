@@ -14,11 +14,11 @@ int main_bench()
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&o[i][j]);
+			my_scanf("%d",&o[i][j]);
 		}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	c=check(n,m);
-	if(c==0) printf("error");
+	if(c==0) my_printf("error");
 	else 	
 	{
 		for(i=0;i<5;i++)
@@ -31,10 +31,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			if(j<4)	printf("%d ",o[i][j]);
-			else printf("%d",o[i][j]);
+			if(j<4)	my_printf("%d ",o[i][j]);
+			else my_printf("%d",o[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	}
 }

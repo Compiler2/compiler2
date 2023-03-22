@@ -30,16 +30,16 @@ void infect(int m)
 int main_bench()
 {
   int m,i,j;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
-    scanf("%s",a[i]);
-  scanf("%d",&m);
+    my_scanf("%s",a[i]);
+  my_scanf("%d",&m);
   infect(m);
   int sum=0;
   for(i=0;i<n;i++)
      for(j=0;j<n;j++)
         if(a[i][j]=='@')
           sum++;
-  printf("%d",sum);
+  my_printf("%d",sum);
  return 0;    
 }

@@ -12,11 +12,11 @@ int main_bench()
 	  {if(*(s+i)>='0'&&*(s+i)<='9')
 		  {
 			  j=0;
-			  printf("%c",*(s+i));
+			  my_printf("%c",*(s+i));
 		  }
 		  else
 			  if(j==0)
-			  {  printf("\n");
+			  {  my_printf("\n");
 	  continue;}
 			  else
 				  continue;

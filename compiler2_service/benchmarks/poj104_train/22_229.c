@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[300];
 	int i=1,j,max,max2,n=0;
-	scanf("%d",&a[0]);
-	while((scanf(",%d",&a[i])>0))
+	my_scanf("%d",&a[0]);
+	while((my_scanf(",%d",&a[i])>0))
 		i++;
-	if(i==1) printf("No\n");
+	if(i==1) my_printf("No\n");
 	else
 	{
 		max=a[0];
@@ -22,9 +22,9 @@ int main_bench()
 			if(a[j]<max&&a[j]>max2)
 			max2=a[j];
 		}
-		if(max2==0) printf("No\n");
+		if(max2==0) my_printf("No\n");
 		else
-		printf("%d",max2);
+		my_printf("%d",max2);
 	}
 }
 

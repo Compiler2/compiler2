@@ -5,11 +5,11 @@ int main_bench()
 	int n;
 	int i,j,k;
 	char s[1000];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=2;i<=n+1;i++)
 	{
 		k=1;
-		scanf ("%s",s);
+		my_scanf ("%s",s);
 		if(isalpha(s[0])||s[0]=='_')
 		{
 			for (j=1;s[j]!='\0';j++)
@@ -22,16 +22,16 @@ int main_bench()
 			}	
 			if (k==j)
 			{
-				printf ("yes\n");
+				my_printf ("yes\n");
 			}
 			else 
 			{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}	
 	}
 	return 0;

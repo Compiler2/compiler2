@@ -24,17 +24,17 @@ int hui(int n,int k,int m)
 int main_bench()
 {
     int i,m,n;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=m;i<=n;i++)
     if(su(i)&&hui(i,i,0))
     {
-        printf("%d",i);
+        my_printf("%d",i);
         break;
     }
     if(i>n)
-    printf("no");
+    my_printf("no");
     else
     for(i=i+1;i<=n;i++)
     if(su(i)&&hui(i,i,0))
-    printf(",%d",i);
+    my_printf(",%d",i);
 }

@@ -9,7 +9,7 @@ int main_bench()
 	a=(char*)malloc(100*sizeof(char));
 	b=(char*)malloc(100*sizeof(char));
 	gets(s);
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 
 	k=strlen(a);
 	p=s;q=a;
@@ -22,12 +22,12 @@ int main_bench()
 		{
 			if(*p==' '||*p=='\0')
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				m=0;q=a;
 			}
 			else
 			{
-				printf("%s",a);
+				my_printf("%s",a);
 				m=0;q=a;
 			}
 		}
@@ -52,7 +52,7 @@ int main_bench()
 				    else
 					{
 					m=0;q=a;p++;
-					printf("%c",*p);
+					my_printf("%c",*p);
 					p++;
 					}
 				}
@@ -65,11 +65,11 @@ int main_bench()
 		else
 		{
 			p=p-m;
-			printf("%c",*p);
+			my_printf("%c",*p);
 			m=0;q=a;
 			p++;
 		}
 	}
 	if(m==k)
-		printf("%s",b);
+		my_printf("%s",b);
 }

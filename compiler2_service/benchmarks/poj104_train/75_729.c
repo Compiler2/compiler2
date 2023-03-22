@@ -6,9 +6,9 @@ int X[2000],Y[2000];
 int  main_bench()
 {
 		cnt=0;
-		while (scanf("%d",&X[cnt++]) && (c=getchar()) && c!='\n');
+		while (my_scanf("%d",&X[cnt++]) && (c=getchar()) && c!='\n');
 		cnt=0;
-		while (scanf("%d",&Y[cnt++]) && (c=getchar()) && c!='\n');
+		while (my_scanf("%d",&Y[cnt++]) && (c=getchar()) && c!='\n');
 		for (i = 0;i < 1000;++i)
 		{
 			tot=0;
@@ -16,6 +16,6 @@ int  main_bench()
 			if (X[j]<=i && Y[j]>i) tot++;
 			if (tot>Max) Max = tot;
 		}
-		printf("%d %d\n",cnt,Max);
+		my_printf("%d %d\n",cnt,Max);
 
 }

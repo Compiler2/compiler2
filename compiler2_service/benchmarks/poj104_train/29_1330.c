@@ -5,12 +5,12 @@ int main_bench(){
   int m,i;
   int sz[100];
   double result=0;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(i=1;i<=m;i++){
-    scanf("%d",&sz[i]);}
+    my_scanf("%d",&sz[i]);}
   for(i=1;i<=m;i++){
     result=sum(sz[i]);
-    printf("%.3lf\n",result);}
+    my_printf("%.3lf\n",result);}
   return 0;
 }
 

@@ -2,9 +2,9 @@
 
 int main_bench(){
 int n,cai[300][2],i,t,s;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-	scanf("%d %d",&(cai[i][0]),&(cai[i][1]));
+	my_scanf("%d %d",&(cai[i][0]),&(cai[i][1]));
 s=0;
 for(i=0;i<n;i++){
 	t=(cai[i][0])-(cai[i][1]);
@@ -14,10 +14,10 @@ for(i=0;i<n;i++){
 		s-=1;
 	}
 if(s>0)
-	printf("A");
+	my_printf("A");
 if(s<0)
-	printf("B");
+	my_printf("B");
 if(s==0)
-	printf("Tie");
+	my_printf("Tie");
 return 0;
 }

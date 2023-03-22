@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,x1,x2,x3,x4,x,y;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	x1=(((a-1)%400)/100)*5+(((a-1)%100)/4)*5+((a-1)%4)*1;
 	if(b==1) x2=0;
 	else if(b==2) x2=31;
@@ -34,13 +34,13 @@ int main_bench()
 	x3=c;
 	x=x1+x4+x3;
 	y=x%7;
-	if(y==1) printf("Mon.\n");
-	else if(y==2) printf("Tue.\n");
-	else if(y==3) printf("Wed.\n");
-	else if(y==4) printf("Thu.\n");
-	else if(y==5) printf("Fri.\n");
-	else if(y==6) printf("Sat.\n");
-	else printf("Sun.\n");
+	if(y==1) my_printf("Mon.\n");
+	else if(y==2) my_printf("Tue.\n");
+	else if(y==3) my_printf("Wed.\n");
+	else if(y==4) my_printf("Thu.\n");
+	else if(y==5) my_printf("Fri.\n");
+	else if(y==6) my_printf("Sat.\n");
+	else my_printf("Sun.\n");
 	return 0;
 }
 

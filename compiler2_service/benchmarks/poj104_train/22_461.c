@@ -8,7 +8,7 @@ int main_bench()
 	for(i=0;i<300;i++)
 	{
 	    
-		scanf("%d%c", &a[i], &c);
+		my_scanf("%d%c", &a[i], &c);
 		num=num+1;
         if(c=='\n')break;
 	}
@@ -16,7 +16,7 @@ int main_bench()
     int t=0, s=0;
 	int k;
 	k=a[0];
-	if(num==1)	printf("No\n");
+	if(num==1)	my_printf("No\n");
 	else	
 	{  
 		judge=0;
@@ -25,7 +25,7 @@ int main_bench()
 			if(a[i]==k) {judge=judge+1;}
 		}
 	
-		if(judge==num) printf("No\n");
+		if(judge==num) my_printf("No\n");
 		else
 		{
 			for(j=0;j<num;j++)
@@ -38,7 +38,7 @@ int main_bench()
 				if(a[i]>s && a[i]<t) s=a[i];
 			}
 	
-			printf("%d\n", s);
+			my_printf("%d\n", s);
 				
 		}
 			

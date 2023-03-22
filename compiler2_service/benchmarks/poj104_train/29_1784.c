@@ -8,9 +8,9 @@ int main_bench()
 	int a[1000];
 	int i,j,m;
 	float s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(j=1;j<=n;j++)
 	{
 		for(m=1;m<=a[j];m++)
@@ -23,7 +23,7 @@ int main_bench()
 			ai=aj;
 			bi=bj;
 		}
-		printf("%.3f\n",s);
+		my_printf("%.3f\n",s);
 		s=0;
 		ai=1;
 		bi=2;

@@ -10,9 +10,9 @@ int main_bench()
 	for(a=c+0;a<=c+d-1;a++)
 		{
 			if(isdigit(*a))
-			printf("%c",*a);
+			my_printf("%c",*a);
 			else if(!isdigit(*a)&&a>(c+0)&&isdigit(*(a-1)))
-				printf("\n");
+				my_printf("\n");
 	}
 	return 0;
 }

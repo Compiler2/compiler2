@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int n,i,c,d,e,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&c,&d,&e);
+		my_scanf("%d%d%d",&c,&d,&e);
 		int y=0;
 		if(d<e)
         {
@@ -31,9 +31,9 @@ int main_bench()
 		}
 		
 		if(y%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 		
 	}
 	

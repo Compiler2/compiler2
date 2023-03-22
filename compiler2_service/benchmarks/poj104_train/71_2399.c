@@ -3,10 +3,10 @@
 int main_bench()
 {
    int n,i,j,day1=0,day2=0,D,year,month1,month2;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-      scanf("%d %d %d",&year,&month1,&month2);
+      my_scanf("%d %d %d",&year,&month1,&month2);
       if(year%400==0||(year%4==0&&year%100!=0))
       {
          for(j=1;j<month1;j++)
@@ -80,11 +80,11 @@ int main_bench()
       }
       if(D%7==0)
       {
-          printf("YES\n");
+          my_printf("YES\n");
       }
       if(D%7!=0)
       {
-          printf("NO\n");
+          my_printf("NO\n");
       }
       day1=0;
       day2=0;

@@ -15,7 +15,7 @@ for(i=0;i<x;i++){
 }
 
 for(j=0;j<x;j++){
-printf("%c",b[j]);
+my_printf("%c",b[j]);
 }
 
 

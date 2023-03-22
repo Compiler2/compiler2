@@ -4,7 +4,7 @@ int main_bench(){
 	int month,date,all=0,i,k=0,t;
 	long year;
 	int p[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%ld%d%d",&year,&month,&date);
+	my_scanf("%ld%d%d",&year,&month,&date);
 	all=((year%7-1)*(365%7)+date-1)%7;
 	if(month==1);
 	else{
@@ -21,25 +21,25 @@ int main_bench(){
         t=all%7;
 	    switch(t){
     	    case 0:
-			    printf("Mon.\n");
+			    my_printf("Mon.\n");
 			    break;
             case 1:
-			    printf("Tue.\n");
+			    my_printf("Tue.\n");
 			    break;
 		    case 2:
-			    printf("Wed.\n");
+			    my_printf("Wed.\n");
 			    break;
             case 3:
-			    printf("Thu.\n");
+			    my_printf("Thu.\n");
 			    break;
 		    case 4:
-			    printf("Fri.\n");
+			    my_printf("Fri.\n");
 			    break;
 		    case 5:
-			    printf("Sat.\n");
+			    my_printf("Sat.\n");
 			    break;
 		    case 6:
-			    printf("Sun.\n");
+			    my_printf("Sun.\n");
 			    break;
 		}
 	

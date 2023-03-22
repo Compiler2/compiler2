@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,nian,y[2],q[2]={0,0},k,a,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&nian,&y[0],&y[1]);
+		my_scanf("%d %d %d",&nian,&y[0],&y[1]);
 		for(k=0;k<2;k++){
 			for(e=1;e<y[k];e++){
 		if(e==1||e==3||e==5||e==7||e==8||e==10||e==12){
@@ -24,10 +24,10 @@ int main_bench(){
 		q[0]=0;
 q[1]=0;
 		if(a==0){
-			printf("YES\n");
+			my_printf("YES\n");
 
 		}else{
-			printf("NO\n");
+			my_printf("NO\n");
 
 		}
 		

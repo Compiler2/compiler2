@@ -6,10 +6,10 @@ int main_bench()
 	int n;
 	int i;
 	double a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&num[i],&ynum[i]);
+		my_scanf("%d%d",&num[i],&ynum[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -17,9 +17,9 @@ int main_bench()
 	}
 	for(i=1;i<n;i++)
 	{
-		if(a[i]-a[0]>5) printf("better\n");
-		else if(a[0]-a[i]>5) printf("worse\n");
-		else printf("same\n");
+		if(a[i]-a[0]>5) my_printf("better\n");
+		else if(a[0]-a[i]>5) my_printf("worse\n");
+		else my_printf("same\n");
 	}
 	return 0;
 }

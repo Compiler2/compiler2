@@ -10,9 +10,9 @@ struct ID idy[100];
 struct ID id[100];
 struct ID e;
 int n,i,a=0,b=0,j,l,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-                         scanf("%s %d",id[i].idnum,&(id[i].old));
+                         my_scanf("%s %d",id[i].idnum,&(id[i].old));
                          if(id[i].old>=60){
                                               strcpy(ido[a].idnum, id[i].idnum);
                                               ido[a].old=id[i].old;
@@ -35,10 +35,10 @@ for(k = 1 ; k <= a ; k++){
 }
 
 for(j=0;j<a;j++){
-	printf("%s\n",ido[j].idnum);
+	my_printf("%s\n",ido[j].idnum);
 }
 for(l=0;l<b;l++){
-	printf("%s\n",idy[l].idnum);
+	my_printf("%s\n",idy[l].idnum);
 }
 
 return 0;

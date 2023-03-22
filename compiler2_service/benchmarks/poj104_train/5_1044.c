@@ -6,9 +6,9 @@ int main_bench()
 	int i,m;
 	double n;
 	m=0;
-	scanf("%lf",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int p=strlen(a);
 	int q=strlen(b);
 	if(p==q)
@@ -17,7 +17,7 @@ int main_bench()
 		{
 			if(((a[i]!='A')&&(a[i]!='T')&&(a[i]!='C')&&(a[i]!='G'))||((b[i]!='A')&&(b[i]!='T')&&(b[i]!='C')&&(b[i]!='G')))
 			{
-				printf("error");
+				my_printf("error");
 				return 0;
 			}
 			else
@@ -28,13 +28,13 @@ int main_bench()
 		}
 		if((1.0*m/(p*1.0))>=n)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
-		else{printf("no");}
+		else{my_printf("no");}
 	}
 	else
 	{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

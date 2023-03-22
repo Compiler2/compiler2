@@ -49,8 +49,8 @@ int main_bench()
 		if(*(pnum+i)==max)
 		{
 			for (j=(i-max);j<i;j++)
-				printf("%c",*(pstr+j));
-			printf("\n");
+				my_printf("%c",*(pstr+j));
+			my_printf("\n");
 			break;
 		}
 	}
@@ -59,7 +59,7 @@ int main_bench()
 		if(*(pnum+i)==min)
 		{
 			for (j=(i-min);j<i;j++)
-				printf("%c",*(pstr+j));
+				my_printf("%c",*(pstr+j));
 			return;
 		}
 	}

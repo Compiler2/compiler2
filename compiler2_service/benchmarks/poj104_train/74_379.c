@@ -27,19 +27,19 @@ int sushu(int a)
 int main_bench()
 {
 	int m,n,i,j,t1,t2;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		t1=huiwen(i);
 		t2=sushu(i);
 		if(t1==1&&t2==1)
-		{printf("%d",i);break;}
+		{my_printf("%d",i);break;}
 	}
-	if(i==n+1)printf("no");
+	if(i==n+1)my_printf("no");
 	else for(j=i+1;j<=n;j++)
 	{
 		t1=huiwen(j);
 		t2=sushu(j);
-		if(t1==1&&t2==1)printf(",%d",j);
+		if(t1==1&&t2==1)my_printf(",%d",j);
 	}
 }

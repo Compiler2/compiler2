@@ -3,7 +3,7 @@
 int sushu(int x);
 int main_bench(){
 	int n,i,s[10000],k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n;i++){
 		if(sushu(i)){
 			s[k]=i;
@@ -11,11 +11,11 @@ int main_bench(){
 		}
 	}
 	if(k==1){
-		printf("empty");
+		my_printf("empty");
 	}else{
 	for(i=0;i<k-1;i++){
 		if(s[i+1]-s[i]==2){
-			printf("%d %d\n",s[i],s[i+1]);
+			my_printf("%d %d\n",s[i],s[i+1]);
 		}
 	}
 	}

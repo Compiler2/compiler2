@@ -4,10 +4,10 @@ int main_bench()
 {
 	char e[50];
 	int a;
-	scanf("%s",e);
-	printf("%d",strlen(e));
-	while(scanf("%s",e) == 1){
-		printf(",%d",strlen(e));
+	my_scanf("%s",e);
+	my_printf("%d",strlen(e));
+	while(my_scanf("%s",e) == 1){
+		my_printf(",%d",strlen(e));
 	}
 	return 0;
 }

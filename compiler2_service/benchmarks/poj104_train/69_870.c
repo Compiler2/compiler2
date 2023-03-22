@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[251],b[251];
 	int c[254],i,l1,l2,m,n,l;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	l=0;
 	memset(c,0,sizeof(c));
     l1=(int)strlen(a);
@@ -21,7 +21,7 @@ int main_bench()
 	while(c[l]==0&&l>0)
 		l--;
 	for(i=l;i>=0;i--)
-		printf("%d",c[i]);
-	printf("\n");
+		my_printf("%d",c[i]);
+	my_printf("\n");
 	return 0;
 }

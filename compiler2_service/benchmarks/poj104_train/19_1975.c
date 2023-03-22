@@ -46,9 +46,9 @@ int main_bench()
 	{
 		for(i=0;i<n;i++)
 		{
-			printf("%s ",s2[i]);
+			my_printf("%s ",s2[i]);
 		}
-		printf("%s",s2[n]);
+		my_printf("%s",s2[n]);
 	}
 	else
 	{

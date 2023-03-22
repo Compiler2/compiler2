@@ -10,10 +10,10 @@ int main_bench()
 	int m,i,j,k,max=0;
 	int c[200][1000],count[200]={0};
 	struct cs x[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&x[i].b);
+		my_scanf("%d",&x[i].b);
 		gets(x[i].a);
 	}
 	for(i=0;i<m;i++)
@@ -38,10 +38,10 @@ int main_bench()
 	{
 		if(count[k]==max)
 		{
-			printf("%c\n%d\n",k,count[k]);
+			my_printf("%c\n%d\n",k,count[k]);
 			for(j=1;j<=max;j++)
 			{
-				printf("%d\n",c[k][j]);
+				my_printf("%d\n",c[k][j]);
 			}
 		}
 	}

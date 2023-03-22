@@ -45,15 +45,15 @@ int main_bench()
 	{
 		if (strstr(words[i].str, a) && strlen(words[i].str) == strlen(a))
 		{
-			printf("%s", b);
+			my_printf("%s", b);
 		}
 		else
 		{
-			printf("%s", words[i].str);
+			my_printf("%s", words[i].str);
 		}
 		
 		if ( i != numOfWords - 1)
-			printf(" ");
+			my_printf(" ");
 	}
 	
 	

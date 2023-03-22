@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char a[50],b[50];
-	scanf("%s",b);
-	scanf("%s",a);
+	my_scanf("%s",b);
+	my_scanf("%s",a);
 	int i,j;
 	i=0;
 	int k=1;
@@ -23,7 +23,7 @@ int main_bench()
 				}
 				if(k==strlen(b))
 				{
-					printf("%d",i);
+					my_printf("%d",i);
                     return 0;
 				}
 				k=1;

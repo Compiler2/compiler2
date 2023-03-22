@@ -3,8 +3,8 @@
 int main_bench()
 {
     char s[51],w[51];
-    scanf("%s",s);
-    scanf("%s",w);
+    my_scanf("%s",s);
+    my_scanf("%s",w);
     int i,j,x,l1,l2;
     l1=strlen(s);
     l2=strlen(w);
@@ -22,7 +22,7 @@ int main_bench()
             }
             if(x==l1)
             {    
-                printf("%d",i);
+                my_printf("%d",i);
                 return 0;
             }  
         }

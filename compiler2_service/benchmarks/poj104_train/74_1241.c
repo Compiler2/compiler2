@@ -21,7 +21,7 @@ int num(int nu)
 main_bench()
 {
      int m,n,i,count=0,a[1000];
-     scanf("%d%d",&m,&n);
+     my_scanf("%d%d",&m,&n);
      for(i=m;i<=n;i++)
      {
              if(ok(i))
@@ -33,10 +33,10 @@ main_bench()
                       }
              }         
      }  
-     if(count==0)printf("no");
+     if(count==0)my_printf("no");
      else {for(i=0;i<count-1;i++)
-     printf("%d,",a[i]);
-     printf("%d",a[count-1]);}
+     my_printf("%d,",a[i]);
+     my_printf("%d",a[count-1]);}
      getchar();
      getchar();
      getchar();   

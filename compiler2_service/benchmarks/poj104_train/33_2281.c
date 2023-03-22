@@ -5,9 +5,9 @@ int main_bench(){
     int a[1000]={0};
     char s1[1000][256];
     char s2[1000][256];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-         scanf("%s",s1[i]);
+         my_scanf("%s",s1[i]);
          a[i]=strlen(s1[i]);
          }
     for(i=0;i<n;i++){
@@ -29,7 +29,7 @@ int main_bench(){
          s2[i][c]='\0';
          }
     for(i=0;i<n;i++){
-         printf("%s\n",s2[i]);
+         my_printf("%s\n",s2[i]);
          }
     return 0;
 }

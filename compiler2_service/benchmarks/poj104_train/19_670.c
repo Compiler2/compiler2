@@ -30,10 +30,10 @@ int main_bench()
                                               }
                                               
      for(i=0;i<n-1;i++){ 
-                      printf("%s ",word[i]); 
+                      my_printf("%s ",word[i]); 
                       }
                       
-     printf("%s",word[n-1]);
+     my_printf("%s",word[n-1]);
     
     
       return 0;

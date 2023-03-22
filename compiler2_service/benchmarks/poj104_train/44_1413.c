@@ -3,12 +3,12 @@
 void reverse(int a)
 {
     if(a==0)
-    printf("0\n");
+    my_printf("0\n");
     else
     {
         if(a<0)
         {
-            printf("-");
+            my_printf("-");
             a=-a;
         }
         int i=10000000;
@@ -31,16 +31,16 @@ void reverse(int a)
         }
         for(j=t;j>=y;j--)
         {
-            printf("%d",x[j]);
+            my_printf("%d",x[j]);
         }
-        printf("\n");
+        my_printf("\n");
     }
 }
 main_bench()
 {
     int a[6],i;
     for(i=0;i<6;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(i=0;i<6;i++)
     reverse(a[i]);
 }

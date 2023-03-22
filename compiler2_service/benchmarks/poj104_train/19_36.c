@@ -39,15 +39,15 @@ int main_bench()
 		    k=pd(i); m=0;
 			if (k==1) 
 			{
-			    printf("%s",c2); i=i+strlen(c1)-1;
+			    my_printf("%s",c2); i=i+strlen(c1)-1;
 			}
 		
-		    else printf ("%c",str[i]);
+		    else my_printf ("%c",str[i]);
 		}
 		else
 		{
-		        printf ("%c",str[i]); 
+		        my_printf ("%c",str[i]); 
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

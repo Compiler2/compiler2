@@ -17,7 +17,7 @@ int sushu(int i)
 main_bench()
 {
 	int m,n,i,l,p,o,a[10000],h=0,k;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		l=sushu(i);
@@ -37,11 +37,11 @@ main_bench()
 			}
 		}
 	}
-	if(h==0) printf("no");
-	else if(h==1) printf("%d",a[0]);
+	if(h==0) my_printf("no");
+	else if(h==1) my_printf("%d",a[0]);
 	else
 	{
-		for(k=0;k<h-1;k++) printf("%d,",a[k]);
-		printf("%d",a[h-1]);
+		for(k=0;k<h-1;k++) my_printf("%d,",a[k]);
+		my_printf("%d",a[h-1]);
 	}
 }

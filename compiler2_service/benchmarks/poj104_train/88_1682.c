@@ -18,15 +18,15 @@ int main_bench()
 		 {
 			 m=1;
 			 for (j=k;j<=i-1;j++)
-				 printf("%c",s[j]);
-			 printf("\n");
+				 my_printf("%c",s[j]);
+			 my_printf("\n");
 		 }
 	 if (ch(s[i])&&i==strlen(s)-1)
 				  {
 					  m=1;
 			          for (j=k;j<=i;j++)
-				        printf("%c",s[j]);
-			          printf("\n");
+				        my_printf("%c",s[j]);
+			          my_printf("\n");
 			 }
 	}
 }

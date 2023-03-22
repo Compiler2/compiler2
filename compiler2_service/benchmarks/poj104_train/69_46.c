@@ -3,8 +3,8 @@
 int main_bench()
 {
     char s1[260],s2[260];
-    scanf("%s",&s1);
-    scanf("%s",&s2);
+    my_scanf("%s",&s1);
+    my_scanf("%s",&s2);
     int i,a1[260],m1,m2,a2[260];
     for(i=0;i<260;i++)
     a1[i]=0;
@@ -35,10 +35,10 @@ int main_bench()
   break;    }
   }
   if(s==-1)
-  printf("0");
+  my_printf("0");
  else
      {             for(i=s;i>=0;i--)
-                   printf("%d",a1[i]);
+                   my_printf("%d",a1[i]);
                    }           
     getchar();getchar();getchar();getchar();getchar();getchar();
 }

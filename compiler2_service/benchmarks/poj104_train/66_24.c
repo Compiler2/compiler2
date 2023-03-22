@@ -5,7 +5,7 @@ int main_bench()
 {
     int y,m,d,total,i;
 	int md[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	total=0;
 	if(y>400){
 		y=400+(y-400)%400;
@@ -29,31 +29,31 @@ int main_bench()
 	}
 	switch (n%7){
 	case 0 :{
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 		break;
 			}
 	case 1 :{
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 		break;
 			}
 	case 2 :{
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 		break;
 			}
 	case 3 :{
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 		break;
 			}
 	case 4 :{
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 		break;
 			}
 	case 5 :{
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 		break;
 			}
 	case 6 :{
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 		break;
 			}
 	}

@@ -2,9 +2,9 @@
 
 int main_bench(){
     int n,count[100]={0},m=0,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
         if((a>=90&&a<=140)&&(b>=60&&b<=90)){
 			count[m]++;
 		}else{
@@ -21,6 +21,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",count[0]);
+	my_printf("%d",count[0]);
     return 0;
 }

@@ -12,7 +12,7 @@ int main_bench()
 		memset(s[i],0,sizeof(s[i]));
 		for(j=0;;j++)
 		{
-			scanf("%c",&s[i][j]);
+			my_scanf("%c",&s[i][j]);
 			if(s[i][j]==' '||s[i][j]=='\n')
 			{
 				if(s[i][j-1]==',')
@@ -34,5 +34,5 @@ int main_bench()
 		}
 		if(s[i][j]=='\n') break;
 	}
-	printf("%s\n%s",max,min);
+	my_printf("%s\n%s",max,min);
 }

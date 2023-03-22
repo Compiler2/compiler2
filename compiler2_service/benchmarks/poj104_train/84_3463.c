@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int n,m,i=0,k1=0,k2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	do{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
         i++;
 		if(m>k1){
 			k2=k1,k1=m;
@@ -17,7 +17,7 @@ int main_bench()
 
 	}while(i<n);
 
-	printf("%d\n%d",k1,k2);
+	my_printf("%d\n%d",k1,k2);
 
 	return 0;
 }

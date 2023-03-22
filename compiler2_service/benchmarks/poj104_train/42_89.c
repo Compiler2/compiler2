@@ -4,12 +4,12 @@
 main_bench(){
        int a[100000];
        int i,j,n,k,sum;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        sum=n;
        for(i=0;i<n;i++){
-           scanf("%d",&a[i]);
+           my_scanf("%d",&a[i]);
        }
-       scanf("%d",&k);
+       my_scanf("%d",&k);
        for(i=0;i<sum;i++){
            if(a[i]==k){
                sum=sum-1;
@@ -20,7 +20,7 @@ main_bench(){
            }
        }
        for(i=0;i<sum-1;i++){
-           printf("%d ",a[i]);
+           my_printf("%d ",a[i]);
        }
-       printf("%d",a[sum-1]);
+       my_printf("%d",a[sum-1]);
 }

@@ -9,15 +9,15 @@ int main_bench()
 	gets(c);  
 	l=strlen(c);
 	if(c[0]!=' ')
-		printf("%c",c[0]);   
+		my_printf("%c",c[0]);   
 	for(i=1;i<l;i++)
 	{
 		if(c[i]!=' ')       
-			printf("%c",c[i]);  
+			my_printf("%c",c[i]);  
 		else
 		{
 			if(c[i-1]!=' ')
-				printf(" ");
+				my_printf(" ");
 		}
 	}
 	return 0;

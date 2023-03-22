@@ -17,10 +17,10 @@ int main_bench()
 {
 	int n,i,j,max[1000]={0},mmax,k=0;
 	long sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo ,&stu[i].banji ,&stu[i].leader ,&stu[i].west ,&stu[i].essay);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo ,&stu[i].banji ,&stu[i].leader ,&stu[i].west ,&stu[i].essay);
 	}
 	for(i=0;i<n;i++)
 	{   money[i].p=0;
@@ -52,5 +52,5 @@ int main_bench()
 
 		for(i=0;i<n;i++)
 			sum=sum+money[i].p;
-		printf("%s\n%ld\n%ld",stu[k].name,money[k].p,sum);
+		my_printf("%s\n%ld\n%ld",stu[k].name,money[k].p,sum);
 }

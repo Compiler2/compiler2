@@ -4,12 +4,12 @@ int main_bench()
 {
 	char c1[50],c2[50];
 	int num1[300]={0},i,num2[300]={0},k1,k2,p;
-	scanf("%s",c1);
-	scanf(" ");
-	scanf("%s",c2);
+	my_scanf("%s",c1);
+	my_scanf(" ");
+	my_scanf("%s",c2);
 	k1=strlen(c1);
 	k2=strlen(c2);
-	if(k1!=k2)  printf("NO");
+	if(k1!=k2)  my_printf("NO");
 	else if(k1==k2)
 	{
  	for(i=0;i<k1;i++)
@@ -22,7 +22,7 @@ int main_bench()
 	{
 		if(num1[i]!=num2[i]) p=1;
 	}
-	if(p==0) printf("YES");
-	else if(p==1)  printf("NO");
+	if(p==0) my_printf("YES");
+	else if(p==1)  my_printf("NO");
 	}
 }

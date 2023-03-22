@@ -6,12 +6,12 @@ int main_bench()
 	int n,i;
 	int y,m1,m2;
 	int d1,d2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		d1=0;
 		d2=0;
-		scanf("%d%d%d",&y,&m1,&m2);
+		my_scanf("%d%d%d",&y,&m1,&m2);
 		if(y%100==0&&y%40==0||y%100!=0&&y%4==0)
 		{
 			switch (m1)
@@ -44,8 +44,8 @@ int main_bench()
 			case 11:d2+=305;break;
 			case 12:d2+=335;break;
 			}
-			if((d1-d2)%7==0){printf("YES\n");}
-			else printf("NO\n");
+			if((d1-d2)%7==0){my_printf("YES\n");}
+			else my_printf("NO\n");
 		}
 		else
 		{
@@ -80,8 +80,8 @@ int main_bench()
 			case 12:d2+=334;break;
 			}
 
-			if((d1-d2)%7==0){printf("YES\n");}
-			else printf("NO\n");
+			if((d1-d2)%7==0){my_printf("YES\n");}
+			else my_printf("NO\n");
 
 		}
 	}

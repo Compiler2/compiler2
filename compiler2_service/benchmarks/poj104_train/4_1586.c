@@ -2,19 +2,19 @@
 
 void f(int *p1,int *p2,int m,int n)
 {
-    do{printf("%d\n",*p2);p2+=n-1;}
+    do{my_printf("%d\n",*p2);p2+=n-1;}
     while((p2-p1+1)%n&&(p2-p1+1)<=m*n);
 }
 
 int main_bench()
 {
     int r,l,i,j,*q;
-    scanf("%d%d",&r,&l);
+    my_scanf("%d%d",&r,&l);
     int *p[l+r-1];
     int a[r][l];
     for(i=1;i<=r;i++)
     for(j=1;j<=l;j++)
-    scanf("%d",&a[i-1][j-1]);
+    my_scanf("%d",&a[i-1][j-1]);
     for(i=1;i<=l;i++)
     p[i-1]=&a[0][i-1];
     for(i=l+1;i<=l+r-1;i++)

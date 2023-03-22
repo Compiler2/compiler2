@@ -4,8 +4,8 @@
 int main_bench()
 {
 	char a[250]={0},b[250]={0},sum[250]={0};
-    scanf("%s",a);
-	scanf("%s",b);
+    my_scanf("%s",a);
+	my_scanf("%s",b);
 
 	int na,i,nb;
 	for(i=0;i<250;i++)
@@ -94,7 +94,7 @@ int main_bench()
 		sum[n-x]=0;
 	}
 
-    printf("%s",sum);
+    my_printf("%s",sum);
 
     return 0;
 

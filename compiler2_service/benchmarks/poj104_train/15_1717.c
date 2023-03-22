@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,s=0,u;
 	int image[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int row=0;row<n;row++)
 	{
 		for(int col=0;col<n;col++)
 		{
-			scanf("%d",&(image[row][col]));
+			my_scanf("%d",&(image[row][col]));
 		}
 	}
 	for(int i=0;i<n;i++)
@@ -31,6 +31,6 @@ int main_bench()
 		
 	}
 	int m=(u-2)*(s-2);
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

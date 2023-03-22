@@ -7,7 +7,7 @@ int main_bench()
 	int yesOrNo;
 	char * p;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for (i = 0; i < n; i++) {
 		char a[81] = {'\0'};
@@ -20,17 +20,17 @@ int main_bench()
 					p++;
 				}
 				else {
-					printf("0\n");
+					my_printf("0\n");
 					yesOrNo = 1;
 					break;
 				}
 			}
 			if (yesOrNo == 0) {
-				printf("1\n");
+				my_printf("1\n");
 			}
 		}
 		else {
-			printf("0\n");
+			my_printf("0\n");
 		}
 	}
 	return 0;

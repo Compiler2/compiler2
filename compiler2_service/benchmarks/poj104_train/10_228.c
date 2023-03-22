@@ -7,9 +7,9 @@ int main_bench()
 	for(i=1;i<=25;i++){
 		count[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&hgt[i]);
+		my_scanf("%d",&hgt[i]);
 		count[1]=1;
 	}
 	for(i=2;i<=n;i++){
@@ -29,5 +29,5 @@ int main_bench()
 			max=count[i];
 		}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 }

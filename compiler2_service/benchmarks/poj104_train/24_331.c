@@ -34,9 +34,9 @@ int main_bench()
 		}
 	}
 	for (i=0;i<max;i++)
-		printf("%c",s[p][i]);
-	printf("\n");
+		my_printf("%c",s[p][i]);
+	my_printf("\n");
 	for (i=0;i<min;i++)
-		printf("%c",s[q][i]);
-	printf("\n");
+		my_printf("%c",s[q][i]);
+	my_printf("\n");
 }

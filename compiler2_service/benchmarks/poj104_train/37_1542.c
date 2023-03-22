@@ -3,14 +3,14 @@
 int main_bench(){
 	int t,i,j,k,sz[100005],bz=0,bz2=0;
 	char zfc[100005];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=1;i<=t;i++){
 		for(j=0;j<=100004;j++){
 			sz[j]=0;
 		}
 		bz=0;
 		bz2=0;
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		for(j=0;j<strlen(zfc);j++){
 			for(k=j;k<strlen(zfc);k++){
 				if(zfc[j]==zfc[k]) sz[j]++;
@@ -23,15 +23,15 @@ int main_bench(){
 					if(zfc[j]==zfc[k]) bz++;
 				}
 				if(bz==1){
-					printf("%c\n",zfc[j]);
+					my_printf("%c\n",zfc[j]);
 					bz2=1;
 					break;
 				}
 			}
 		}
-		if(bz2==0) printf("no\n");
+		if(bz2==0) my_printf("no\n");
 	}
 
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	return 0;
 }

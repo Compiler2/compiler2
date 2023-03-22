@@ -10,10 +10,10 @@ int main_bench()
 {
     int i,j,k,m,n;
     char c;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<m;i++)
     {
-                    scanf("%d %s",&b[i].num,b[i].au);
+                    my_scanf("%d %s",&b[i].num,b[i].au);
     }
     for(i=0;i<m;i++)
     {
@@ -48,7 +48,7 @@ int main_bench()
                                    k=i;
                      }
     }
-    printf("%c\n",k+64);
+    my_printf("%c\n",k+64);
     n=0;
     for(i=0;i<m;i++)
     {
@@ -57,7 +57,7 @@ int main_bench()
                                       n++;
                     }
     }
-    printf("%d\n",n);
+    my_printf("%d\n",n);
     n=0;
     for(i=0;i<m;i++)
     {
@@ -66,11 +66,11 @@ int main_bench()
                                       n++;
                                       if(n==1)
                                       {
-                                              printf("%d",b[i].num);
+                                              my_printf("%d",b[i].num);
                                       }
                                       else
                                       {
-                                          printf("\n%d",b[i].num);
+                                          my_printf("\n%d",b[i].num);
                                       }
                     }
     }

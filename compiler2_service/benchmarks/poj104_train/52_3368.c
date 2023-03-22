@@ -15,17 +15,17 @@ void change(int a[],int n,int m)
 int main_bench()
 {
 	int a[1000],n,m,i=0;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
 	}
 	while(getchar()!='\n');
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	n=i;
 	change(a,n,m);
 	for(i=0;i<n-1;i++)
-		printf("%d ",a[i]);
-	printf("%d",a[i]);
+		my_printf("%d ",a[i]);
+	my_printf("%d",a[i]);
 }

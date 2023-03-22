@@ -38,24 +38,24 @@ void print(int om)
 			{
 				if(n==0)
 				{
-					printf("%s",pi->id);
+					my_printf("%s",pi->id);
 					n++;
 				}
 				else
-					printf("\n%s",pi->id);
+					my_printf("\n%s",pi->id);
 			}
 		}
 }
 
 main_bench()
 {
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	struct pa *pi;
 	int om;
 	p=(struct pa*)malloc(num*sizeof(struct pa));
 	for(pi=p;pi<p+num;pi++)
 	{
-		scanf("%s %d",pi->id,&pi->age);
+		my_scanf("%s %d",pi->id,&pi->age);
 		if(pi->age>=60)
 			pi->o=1;
 		else pi->o=0;

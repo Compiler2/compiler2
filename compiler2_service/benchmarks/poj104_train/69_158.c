@@ -6,7 +6,7 @@ int main_bench(){
 	int i,j,k,u,N,s;
 
 
-		scanf("%s%s",s1,s2);
+		my_scanf("%s%s",s1,s2);
 		j=0;
 		while(s1[j]!='\0'){
 			a[j]=s1[j]-'0';
@@ -46,9 +46,9 @@ int main_bench(){
 while(u>1&&c[u-1]==0)
 u--;
 		while(u>0){
-				printf("%d", c[u-1]);
+				my_printf("%d", c[u-1]);
 			u--;
 		}
-		printf("\n");
+		my_printf("\n");
 
 }

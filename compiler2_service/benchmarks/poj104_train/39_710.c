@@ -13,9 +13,9 @@ int main_bench()
    int c;
 	}d[100],s;
  s.c=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
- {scanf("%s%d%d %c %c %d",d[i].name,&d[i].scorea,&d[i].scoreb,&d[i].a,&d[i].f,&d[i].b);
+ {my_scanf("%s%d%d %c %c %d",d[i].name,&d[i].scorea,&d[i].scoreb,&d[i].a,&d[i].f,&d[i].b);
   d[i].c=0;
   if(d[i].scorea>80&&d[i].b>0)
   d[i].c=d[i].c+8000;
@@ -32,6 +32,6 @@ int main_bench()
   for(i=0;i<n;i++)
   {if(d[i].c>s.c)
   s=d[i];}
-  printf("%s\n%d\n%d",s.name,s.c,e);
+  my_printf("%s\n%d\n%d",s.name,s.c,e);
  return 0;
 }

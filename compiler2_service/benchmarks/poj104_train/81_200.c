@@ -18,20 +18,20 @@ int main_bench(){
     int t,j,d,k,l,z[5][5];
 	for(j=0;j<5;j++){
 		for(d=0;d<5;d++){
-			scanf("%d",&(z[j][d]));
+			my_scanf("%d",&(z[j][d]));
 		}
 	}
-	scanf("%d%d",&k,&l);
+	my_scanf("%d%d",&k,&l);
     t=hs(z,k,l);
 	if(t==0){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(j=0;j<5;j++){
 		   for(d=0;d<5;d++){
 			   if(d!=4){
-				   printf("%d ",z[j][d]);
+				   my_printf("%d ",z[j][d]);
 			   }else{
-				   printf("%d\n",z[j][d]);
+				   my_printf("%d\n",z[j][d]);
 			   }
 		   }
 		}

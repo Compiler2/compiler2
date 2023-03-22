@@ -21,11 +21,11 @@ int main_bench()
         }
     }
     if(strcmp(a,b)==0)
-        printf("=");
+        my_printf("=");
     else {
         if(strcmp(a,b)>0)
-            printf(">");
-        else printf("<");
+            my_printf(">");
+        else my_printf("<");
     }
     return 0;
 }

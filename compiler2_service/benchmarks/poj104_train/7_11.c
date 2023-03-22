@@ -23,6 +23,6 @@ int main_bench()
 					  str[k]=rep[k-i];
  
           
-				  printf("%s",str);
+				  my_printf("%s",str);
 				return 0;
 }

@@ -5,14 +5,14 @@ int main_bench()
 	char s[101][101]={'\0'},s0[101][101];
 	char c;
 	int n,m=0,i,j,k,day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		c=getchar();
 		for(j=0;j<n;j++)
 			s[i][j]=getchar();
 	}
-	scanf("%d",&day);
+	my_scanf("%d",&day);
 	for(k=1;k<day;k++)
 	{
 		for(i=0;i<n;i++)
@@ -46,5 +46,5 @@ int main_bench()
 				m++;
 		}
 	}
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 }

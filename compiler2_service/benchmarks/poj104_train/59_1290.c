@@ -3,11 +3,11 @@
 int main_bench(){
 	int n,i,j,k,p=0,m;
 	char room[110][110]={'#'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%s",room[i]);
+		my_scanf("%s",room[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=0;k<m-1;k++){
 	for(i=1;i<=n;i++){
 		for(j=0;j<n;j++){
@@ -42,6 +42,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",p);
+	my_printf("%d",p);
 	return 0;
 	}

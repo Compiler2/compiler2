@@ -17,11 +17,11 @@ main_bench()
                         j=(int)*(give+i)-48;
                         k=(int)*(give+1+i)-48;
                         *(out+i)='a'+j+k-1;
-                        printf("%c",*(out+i));
+                        my_printf("%c",*(out+i));
       }
       j1=(int)*(head)-48;
       k1=(int)*(head+num-1)-48;
       *(out+i)='a'+j1+k1-1;
-      printf("%c",*(out+i));
+      my_printf("%c",*(out+i));
       
       }

@@ -15,16 +15,16 @@ int main_bench()
 	a2[i]=a2[i]-'A'+'a';}
      j=0;
 	  if(a1[j]>a2[j])
-	  printf(">");
+	  my_printf(">");
 	  if(a1[j]<a2[j])
-		  printf("<");
+		  my_printf("<");
 	 while((a1[j]==a2[j])&&(a1[j]!='\0')&&(a2[j]!='\0'))
 	 {j++;
 	 if(a1[j]=='\0'&&a2[j]=='\0')
-		  printf("=");
+		  my_printf("=");
 	  if(a1[j]>a2[j])
-	  printf(">");
+	  my_printf(">");
 	  if(a1[j]<a2[j])
-		  printf("<");
+		  my_printf("<");
 	  }
 }

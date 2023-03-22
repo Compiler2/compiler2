@@ -25,7 +25,7 @@ int main_bench()
 			a[r]=s[i];
 			if (!((s[i+1]<='9'&&s[i+1]>='0')||(s[i+1]=='.')))
 			{
-				if (r==0) printf("%c\n",a[0]);
+				if (r==0) my_printf("%c\n",a[0]);
 				else
 				{
 					k=-1;
@@ -35,8 +35,8 @@ int main_bench()
 					}
 					while (a[k]=='0');
 					for(;k<=r;k++)
-						printf("%c",a[k]);
-					printf("\n");
+						my_printf("%c",a[k]);
+					my_printf("\n");
 					nege=1;
 					deci=1;
 					r=-1;

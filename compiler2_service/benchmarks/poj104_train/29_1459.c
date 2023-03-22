@@ -4,15 +4,15 @@
 int main_bench(){
     int i,n,m,j;
     int a[100];
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(j=0;j<m;j++){
-        scanf("%d",&a[j]);
+        my_scanf("%d",&a[j]);
     }
     float up[100],down[100],sum=0;  
     for(j=0;j<m;j++){
         if(a[j]==1){   
            sum=2;
-           printf("%.3f\n",sum);
+           my_printf("%.3f\n",sum);
         }
         else if(a[j]>=2){
                 up[0]=2,up[1]=3;  
@@ -26,7 +26,7 @@ int main_bench(){
                sum+=up[i]/down[i];  
 
                }
-               printf("%.3f\n",sum);
+               my_printf("%.3f\n",sum);
        }
        sum=0;
     }

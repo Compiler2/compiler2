@@ -5,9 +5,9 @@ int main_bench()
 {
     int out=0;
     char input[123456];
-    while(scanf("%s", input)>0){
+    while(my_scanf("%s", input)>0){
         if(out++) putchar(',');
-        printf("%d", strlen(input));
+        my_printf("%d", strlen(input));
     }
     return 0;
 }

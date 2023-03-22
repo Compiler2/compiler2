@@ -7,11 +7,11 @@ int b[100];
 int c;
 for(i=0;i<101;i++)
 b[i]=0;
-scanf("%d",&a);
+my_scanf("%d",&a);
 c=a;
 for (i=0;i<a;i++)
 {
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 	
 }
 for (i=0;i<a;i++)
@@ -34,11 +34,11 @@ for(i=0;i<a;i++)
 	if(b[i]!=0)
 	{
 		if (i==0)
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		else
-			printf(",%d",b[i]);
+			my_printf(",%d",b[i]);
 	}
 }
-scanf("%d",&b[0]);
+my_scanf("%d",&b[0]);
 }
 

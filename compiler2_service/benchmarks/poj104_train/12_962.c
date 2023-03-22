@@ -16,7 +16,7 @@ int main_bench()
 	{
 		for(col=0;col<100;col++)
 		{
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 			if(sz[row][col]==0)
 			{
 				break;
@@ -49,7 +49,7 @@ int main_bench()
 	
 	for(row=0;row<=a;row++)
 	{
-		printf("%d\n",sum[row]);
+		my_printf("%d\n",sum[row]);
 	}
 	
 	return 0;

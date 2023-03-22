@@ -8,10 +8,10 @@ int main_bench()
 	{
 		b[i]=i;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",&a[i],&c[i]);
+		my_scanf("%s %d",&a[i],&c[i]);
 		if(c[i]>59)
 		{
 			d[i]=c[i];
@@ -38,7 +38,7 @@ int main_bench()
 		{
 			if(d[b[i]]>0)
 			{
-				printf("%s\n",a[b[i]]);
+				my_printf("%s\n",a[b[i]]);
 			}
 			else
 			{
@@ -49,7 +49,7 @@ int main_bench()
 		{
 			if(e[i]!=0)
 			{
-				printf("%s\n",a[i]);
+				my_printf("%s\n",a[i]);
 			}
 		}
 		return 0;

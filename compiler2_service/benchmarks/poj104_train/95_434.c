@@ -19,8 +19,8 @@ int main_bench()
 {
 	char str1[100],str2[100];
 	gets(str1);gets(str2);
-	if(cmp(str1,str2)==0) printf("=");
-	else if(cmp(str1,str2)>0) printf(">");
-	else printf("<");
+	if(cmp(str1,str2)==0) my_printf("=");
+	else if(cmp(str1,str2)>0) my_printf(">");
+	else my_printf("<");
 	return 0;
 }

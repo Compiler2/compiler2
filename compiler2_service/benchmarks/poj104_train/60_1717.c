@@ -16,16 +16,16 @@ int main_bench()
 {
     int su(int i);
     int n,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n>=5)
     {
        for(a=3;a<=n-2;a+=2)
        {
           b=a+2;
           if(su(a)&&su(b))
-             printf("%d %d\n",a,b);
+             my_printf("%d %d\n",a,b);
        }
     }
     else
-     printf("empty");
+     my_printf("empty");
 }

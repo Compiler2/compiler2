@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a[10000],i,k,j,t,x,b,c,d,e=0;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 
 	for(i=3,j=0;i<10000;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 			{
 				if(c==a[d]) 
 				{
-					printf("%d %d\n",a[b],a[d]);
+					my_printf("%d %d\n",a[b],a[d]);
 					break;
 				}
 			}

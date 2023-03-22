@@ -8,10 +8,10 @@ int main_bench()
 	float b[300],ave;
 	float c,d;
 	sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	c=sum;d=n;
@@ -37,11 +37,11 @@ int main_bench()
 			flags=i;
 	}
 	if(flags==(-1))
-		printf("%d",a[flag]);
+		my_printf("%d",a[flag]);
 	else 
 	{
 		if(a[flag]>a[flags])
-			printf("%d,%d",a[flags],a[flag]);
-		else printf("%d,%d",a[flag],a[flags]);
+			my_printf("%d,%d",a[flags],a[flag]);
+		else my_printf("%d,%d",a[flag],a[flags]);
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,m,i,j,k,t;
 	int tt[500],pp[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0,i=0;i<n;i++)
 	{
-		scanf("%d",&tt[i]);
+		my_scanf("%d",&tt[i]);
 		if((tt[i]%2)!=0)
 		{
 			pp[j]=tt[i]; j++;
@@ -29,8 +29,8 @@ int main_bench()
 	}
 	for(i=0;i<k;i++)
 	{
-	   if(i==0) printf("%d",pp[i]);
-	   else printf(",%d",pp[i]);
+	   if(i==0) my_printf("%d",pp[i]);
+	   else my_printf(",%d",pp[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

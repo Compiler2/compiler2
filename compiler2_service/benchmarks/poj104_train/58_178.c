@@ -26,21 +26,21 @@ main_bench()
 {
       char a[8000];
       int n,i;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       gets(a);
       for(i=0;i<n;i++)
       {
                       gets(a);
                       if(c(a)==1)
-                      printf("0\n");
+                      my_printf("0\n");
                       else if(a[0]=='_')
-                      printf("1\n");
+                      my_printf("1\n");
                       else if(a[0]>='A'&&a[0]<='Z')
-                      printf("1\n");
+                      my_printf("1\n");
                       else if(a[0]>='a'&&a[0]<='z')
-                      printf("1\n");
+                      my_printf("1\n");
                       else
-                      printf("0\n");
+                      my_printf("0\n");
       }
       getchar();
       getchar();

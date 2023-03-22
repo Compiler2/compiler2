@@ -8,9 +8,9 @@ struct person
 int main_bench()
 {
  int n,i,e,k;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
-  scanf("%s %d",pe[i].num,&pe[i].yr);
+  my_scanf("%s %d",pe[i].num,&pe[i].yr);
  }
     for(k = 0 ; k < n ; k++){
  for(i = 0; i <n-k-1 ; i++){
@@ -22,7 +22,7 @@ int main_bench()
  }
 }
     for(i=0;i<n;i++){
-  printf("%s\n",pe[i].num);
+  my_printf("%s\n",pe[i].num);
  }
  return 0;
 }

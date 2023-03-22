@@ -18,7 +18,7 @@ i--;}
 }
 }
 for(i=0;a[i]!='\0';i++)
-printf("%c",a[i]);
+my_printf("%c",a[i]);
 
 }
 void dao(char x[], int y)

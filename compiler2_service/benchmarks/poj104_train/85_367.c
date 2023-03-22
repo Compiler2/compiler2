@@ -4,9 +4,9 @@ main_bench()
 {
 	int i,j,l,n,k=0,x=0;
    char s[100][21];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-   scanf("%s\n",s[i]);
+   my_scanf("%s\n",s[i]);
    for(i=0;i<n;i++)
    {
 	   k=0;x=0;
@@ -31,7 +31,7 @@ main_bench()
 		else if(s[i][0]=='_')
 		x++;
 		if(x==1&&k==l)
-		printf("yes\n");
-		else printf("no\n");
+		my_printf("yes\n");
+		else my_printf("no\n");
 	}
 }

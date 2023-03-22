@@ -5,12 +5,12 @@ void cal(int *x);
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	do
 	{
 		if (n==1)
 		{
-			printf("End\n");
+			my_printf("End\n");
 			return 0;
 		}
 		else
@@ -27,12 +27,12 @@ void cal(int *x)
 	if (t%2)
 	{
 		t=t*3+1;
-		printf("%d*3+1=%d\n",(t-1)/3,t);
+		my_printf("%d*3+1=%d\n",(t-1)/3,t);
 	}
 	else
 	{
 		t/=2;
-		printf("%d/2=%d\n",t*2,t);
+		my_printf("%d/2=%d\n",t*2,t);
 	}
 	*x=t;
 }

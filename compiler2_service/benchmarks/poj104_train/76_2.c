@@ -8,9 +8,9 @@ struct array
 int main_bench()
 {
 	int n,i,j,t,end;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d%d",&(array[i].s),&(array[i].e));
+		my_scanf("%d%d",&(array[i].s),&(array[i].e));
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n;j++){
 			if(array[i].s>array[j].s){
@@ -37,7 +37,7 @@ int main_bench()
 			break;
 		}
 	}
-	if(t==1) printf("no\n");
-	else printf("%d %d\n",array[0].s,end);
+	if(t==1) my_printf("no\n");
+	else my_printf("%d %d\n",array[0].s,end);
 	return 0;
 }

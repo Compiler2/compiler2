@@ -26,7 +26,7 @@ int main_bench()
 	int i,k[6],shu;
 	for(i=0;i<6;i++)
 	{
-		scanf("%d",&shu);
+		my_scanf("%d",&shu);
 		if(shu==0)
 		{
 			k[i]=0;
@@ -42,7 +42,7 @@ int main_bench()
 	}
 	for(i=0;i<6;i++)
 	{
-		printf("%d\n",k[i]);
+		my_printf("%d\n",k[i]);
 	}
 	return 0;
 }

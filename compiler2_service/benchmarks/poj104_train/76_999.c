@@ -11,14 +11,14 @@ int main_bench()
 	t=1;
 	min=10000;
 	max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<10000;i++)
 	{
 		sz[i]=0;
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		for(j=a;j<b;j++)
 		{
 			sz[j]=1;
@@ -43,10 +43,10 @@ int main_bench()
 	}
 	if(t==0)
 	{
-		printf("no");
+		my_printf("no");
 	}else
 	{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

@@ -59,11 +59,11 @@ int main_bench()
 	{
                  if(shuzu[p]==0)
                  {
-                                printf("%c",zfc[p]);
+                                my_printf("%c",zfc[p]);
                  }
                  else
                  {
-                     printf("%s",b);
+                     my_printf("%s",b);
                      p=p+ltwo-1;
                  }
                  p++;

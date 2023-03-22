@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,sz1[200],sz2[200],a=0,b=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n-1;i++){
-		scanf("%d %d\n",&sz1[i],&sz2[i]);
+		my_scanf("%d %d\n",&sz1[i],&sz2[i]);
 	}
-	scanf("%d %d",&sz1[n-1],&sz2[n-1]);
+	my_scanf("%d %d",&sz1[n-1],&sz2[n-1]);
 	for(i=0;i<n;i++){
 		if(sz1[i]==0&&sz2[i]==1){
 			a++;
@@ -29,13 +29,13 @@ int main_bench()
 		}
 	}
 	if(a>b){
-		printf("A");
+		my_printf("A");
 	}
 	if(a<b){
-		printf("B");
+		my_printf("B");
 	}
 	if(a==b){
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

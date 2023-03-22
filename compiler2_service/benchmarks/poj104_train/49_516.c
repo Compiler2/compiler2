@@ -5,7 +5,7 @@ int f(int e0,int s0);
 int main_bench(){
 	int i,j,k,e,s;
 
-	scanf("%s",c); 
+	my_scanf("%s",c); 
 	int len;
 	len=strlen(c);
 	for(i=0;i<len;i++){
@@ -16,8 +16,8 @@ int main_bench(){
 					e=i+j+1;
 					if(f(e,s)){
 					for(k=s;k<=e;k++)
-						printf("%c",c[k]);
-					printf("\n");
+						my_printf("%c",c[k]);
+					my_printf("\n");
 					}
 				}
 			}

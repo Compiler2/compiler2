@@ -3,7 +3,7 @@
 int main_bench()
 {
     int a,b,c=13,i=0;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     for(b=0;b<12;b++)
     {
                      if((b-1)*(b-3)*(b-5)*(b-7)*(b-8)*(b-10)*(b-12)==0)
@@ -15,9 +15,9 @@ int main_bench()
                      if((c+a-1)%7==5)
                      {
                      if(i!=0)
-                     printf("\n");
+                     my_printf("\n");
                      i++;
-                     printf("%d",b+1);
+                     my_printf("%d",b+1);
                      }
                      }
     }

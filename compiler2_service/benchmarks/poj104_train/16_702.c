@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a1,a2,b1,b2,c1,c2,d1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a1=n%10;
 	a2=n/10;
 	if(a2>0)
@@ -17,15 +17,15 @@ int main_bench()
 			  if(c2>0)
 			  {
 					d1=c2%10;
-				     printf("%d%d%d%d",a1,b1,c1,d1);
+				     my_printf("%d%d%d%d",a1,b1,c1,d1);
 			  }
 			  else
-				     printf("%d%d%d",a1,b1,c1);
+				     my_printf("%d%d%d",a1,b1,c1);
 		}
 		else
-			printf("%d%d",a1,b1);
+			my_printf("%d%d",a1,b1);
 	}
 	else
-	printf("%d",a1);
+	my_printf("%d",a1);
     return 0;
 }

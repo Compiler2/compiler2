@@ -6,7 +6,7 @@ int main_bench()
 	int count[26]; 
 	char s[100000];
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while( n > 0 )
 	{
 		int i;
@@ -28,7 +28,7 @@ int main_bench()
 		{
 			if( count[ s[i] - 'a' ] == 1 )
 			{
-				printf( "%c\n", s[i] );
+				my_printf( "%c\n", s[i] );
 				flag = 1;                 
 				break;
 			}
@@ -38,7 +38,7 @@ int main_bench()
 
 		if( flag == 0 )  
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 
 		n--;

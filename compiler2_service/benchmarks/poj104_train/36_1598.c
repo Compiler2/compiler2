@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n;char s[2][1000];
-	scanf("%s%s",s[0],s[1]);
+	my_scanf("%s%s",s[0],s[1]);
 	void jg(char x[]);
 	jg(s[0]);jg(s[1]);
-	if(strcmp(s[0],s[1])) printf("NO");else printf("YES");
+	if(strcmp(s[0],s[1])) my_printf("NO");else my_printf("YES");
 	return 0;
 }
 void jg(char x[])

@@ -15,11 +15,11 @@ int f(int nian,int yue ,int ri){
 int main_bench()
 {	int nian,yue1,yue2;
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d%d%d",&nian,&yue1,&yue2);
-	if((int)(fabs(f(nian,yue1,1)-f(nian,yue2,1)))%7==0)printf("YES\n");
-	else printf("NO\n");
+	my_scanf("%d%d%d",&nian,&yue1,&yue2);
+	if((int)(fabs(f(nian,yue1,1)-f(nian,yue2,1)))%7==0)my_printf("YES\n");
+	else my_printf("NO\n");
 	}
 	
 	return 0;

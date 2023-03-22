@@ -28,8 +28,8 @@ int main_bench()
        strcpy(c[i],b);                 
     }
     for(i=0;i<n;i++)
-    printf("%s ",c[i]);
-    printf("%s",c[n]);
+    my_printf("%s ",c[i]);
+    my_printf("%s",c[n]);
     
     return 0;
     

@@ -6,9 +6,9 @@ int main_bench()
     int i, j, n, a[300], flag[300] = {0};
     int last;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++)
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
 
     for (i=0; i<n-1; i++)
         for (j=i+1; j<n; j++) 
@@ -22,8 +22,8 @@ int main_bench()
         }
     for (i=0; i<last; i++)
         if (flag[i] == 0)
-            printf("%d,", a[i]);
-    printf("%d", a[last]);
+            my_printf("%d,", a[i]);
+    my_printf("%d", a[last]);
 
     return 0;
 }

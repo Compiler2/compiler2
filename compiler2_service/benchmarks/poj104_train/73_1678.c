@@ -6,7 +6,7 @@ int main_bench()
 	int i,j;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	int max,min,m;
@@ -26,12 +26,12 @@ int main_bench()
 			}
 		}
 		if (j==5){
-		    printf("%d %d %d\n",i+1,m+1,min);
+		    my_printf("%d %d %d\n",i+1,m+1,min);
 			return 0;
 		}
 		
 	}
-	printf("not found");
+	my_printf("not found");
 	return 0;
 }
 

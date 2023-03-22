@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,n,xy[100][2],m,z=0,k[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&xy[i][0],&xy[i][1]);
+		my_scanf("%d%d",&xy[i][0],&xy[i][1]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",k[n-1]);
+	my_printf("%d",k[n-1]);
 	
 	return 0;
 }

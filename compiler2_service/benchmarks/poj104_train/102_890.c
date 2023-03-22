@@ -7,9 +7,9 @@ int main_bench(){
 	int n,i,j,k,a,b;
 	double g,s[48],m[48],f[48];
 	char qb[48][9];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %lf",qb[i],&s[i]);
+		my_scanf("%s %lf",qb[i],&s[i]);
 	}
 	j=0;
 	k=0;
@@ -43,12 +43,12 @@ int main_bench(){
 	}
 	for(a=0;a<j;a++){
 		if(a==0)
-			printf("%.2lf",m[a]);
+			my_printf("%.2lf",m[a]);
 		else
-			printf(" %.2lf",m[a]);			
+			my_printf(" %.2lf",m[a]);			
 	}
 	for(b=0;b<k;b++){
-		printf(" %.2lf",f[b]);
+		my_printf(" %.2lf",f[b]);
 	}
 	return 0;	
 }

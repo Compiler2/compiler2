@@ -16,12 +16,12 @@ int main_bench()
                                 if(a[i]>='a')
                                 {
                                              a[i]=a[i]-'a'+'A';
-                                             printf("(%c,%d)",a[i],count);
+                                             my_printf("(%c,%d)",a[i],count);
                                              count=1;
                                 }
                                 else
                                 {
-                                    printf("(%c,%d)",a[i],count);
+                                    my_printf("(%c,%d)",a[i],count);
                                     count=1;
                                 }
                             }

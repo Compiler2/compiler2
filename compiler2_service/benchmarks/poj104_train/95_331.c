@@ -23,15 +23,15 @@ int main_bench()
 				b[i]=b[i]-32;
 			}
 			if(a[i]>b[i]){
-				printf(">\n");
+				my_printf(">\n");
 			}
 			else {
-				printf("<\n");
+				my_printf("<\n");
 			}
 			break;
 		}
 		else if(i==m-1){
-			printf("=\n");
+			my_printf("=\n");
 		}
 	}
 	return 0;

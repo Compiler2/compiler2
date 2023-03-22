@@ -3,12 +3,12 @@
 int main_bench(){
 int n,a[50000],b[50000],sz[10001],p=10000,q=0,m;
 double k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int s=0;s<10001;s++){
 sz[s]=0;
 }
 for(int i=0;i<n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 if(a[i]<p){
 p=a[i];
 }
@@ -23,7 +23,7 @@ break;
 }
 }
 if(m==n){
-printf("no");
+my_printf("no");
 break;
 }
 else{
@@ -31,7 +31,7 @@ continue;
 }
 }
 if(k==q+0.5){
-printf("%d %d",p,q);
+my_printf("%d %d",p,q);
 }
 return 0;
 }

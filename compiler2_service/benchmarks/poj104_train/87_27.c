@@ -16,7 +16,7 @@ int main_bench()
   {
     for(i = 0; i < 6; i++)
     {
-      scanf("%d", &a[j][i]);
+      my_scanf("%d", &a[j][i]);
       if(a[j][i]==0)
           m++;
     }
@@ -25,7 +25,7 @@ int main_bench()
   while(m < 6);
   
   for(i = 0; i < j-1; i++)
-    printf("%d\n", second(a[i][0],a[i][1],a[i][2],a[i][3],a[i][4],a[i][5]));
+    my_printf("%d\n", second(a[i][0],a[i][1],a[i][2],a[i][3],a[i][4],a[i][5]));
 
   return 0;
 }

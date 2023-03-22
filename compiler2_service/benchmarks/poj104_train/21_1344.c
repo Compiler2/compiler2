@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int an[300]={0},sum=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&an[i]);
+		my_scanf("%d",&an[i]);
         sum+=an[i];
 	}
 	float average;
@@ -42,7 +42,7 @@ int main_bench()
 		}
 	}
 	if(num==1)
-		printf("%d",max[1]);
+		my_printf("%d",max[1]);
 	else 
 	{
 		for(int m=num-1;m>0;m--)
@@ -57,9 +57,9 @@ int main_bench()
 		}
 		for(int p=1;p<=num;p++)
 		{
-			printf("%d",max[p]);
+			my_printf("%d",max[p]);
 			if(p<=num-1)
-			printf(",");
+			my_printf(",");
 		}
 	}
 	return 0;

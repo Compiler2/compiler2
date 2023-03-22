@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,count=0;
     char line[200],tmp;
-	scanf("%s",line);
+	my_scanf("%s",line);
 	tmp=line[0];
 	for(i=0;line[i];i++) count++;
 	for(i=0;line[i];i++)
@@ -16,7 +16,7 @@ int main_bench()
 				if(line[j]==tmp) break;
 				else if(line[j]!=tmp&&line[j]!='0')    
 				{
-					printf("%d %d\n",i,j);
+					my_printf("%d %d\n",i,j);
 					line[i]=line[j]='0';
 					i=0;
 				    break;
@@ -24,6 +24,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("0 %d\n",count-1);
+	my_printf("0 %d\n",count-1);
 	return 0;
 }

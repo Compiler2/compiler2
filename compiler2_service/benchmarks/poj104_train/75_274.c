@@ -21,20 +21,20 @@ main_bench()
 {
 	int i=1,j,k,l,max=0,x[1001],y[1001];
 	char b;
-	scanf("%d",&x[0]);
-	while(scanf("%c",&b),b==',')
+	my_scanf("%d",&x[0]);
+	while(my_scanf("%c",&b),b==',')
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		i++;
 	}
 	i=1;
-	scanf("%d",&y[0]);
-	while(scanf("%c",&b),b==',')
+	my_scanf("%d",&y[0]);
+	while(my_scanf("%c",&b),b==',')
 	{
-		scanf("%d",&y[i]);
+		my_scanf("%d",&y[i]);
 		i++;
 	}
-	printf("%d ",i);
+	my_printf("%d ",i);
 	for (j=0;j<=1000;j++)
 	{
 		l=0;
@@ -44,5 +44,5 @@ main_bench()
 		}
 		if (l>max) max=l;
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 }

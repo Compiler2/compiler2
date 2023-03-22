@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,m,x,sd=13,p,d,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(m=1;m<=12;m++)
 	{
 		for(i=1;i<=m;i++)
@@ -40,7 +40,7 @@ int main_bench()
 		d=sd%7;
 		x=(d+w-1)%7;
 		if(x==5)
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 	}
 	return 0;
 }

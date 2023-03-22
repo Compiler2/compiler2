@@ -4,7 +4,7 @@ int main_bench()
 {
     long int a,b,s=0,i,j=0,t;
 	char c[100],d[100];
-	scanf("%d %s %d",&a,c,&b);
+	my_scanf("%d %s %d",&a,c,&b);
 	for(i=0;i<strlen(c);i++)
 	{
 		if(c[i]<='9')
@@ -25,9 +25,9 @@ int main_bench()
 		s=s/b;
 	}
 	for(i=j-1;i>=0;i--)
-		printf("%c",d[i]);
+		my_printf("%c",d[i]);
 	}
-	else printf("0");
+	else my_printf("0");
 }
 
 

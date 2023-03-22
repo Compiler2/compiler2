@@ -24,8 +24,8 @@ int main_bench()
 			if(strcmp(d,b)==0)
 			{
 				c[j]='\0';
-				printf("%s",c);
-				printf("%s",e);
+				my_printf("%s",c);
+				my_printf("%s",e);
 				j=i+strlen(b);
 				k=0;
 				while(a[j]!='\0')
@@ -35,13 +35,13 @@ int main_bench()
 					k++;
 				}
 				c[k]='\0';
-				printf("%s",c);
+				my_printf("%s",c);
 				return 0;
 			}
 		}
 		i++;
 		j++;
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	long i,j,k,m,n,l,sum=1,p,q;
-	scanf("%ld%ld%ld",&i,&j,&k);
+	my_scanf("%ld%ld%ld",&i,&j,&k);
 	p=0;
 	for(m=1;m<=400;m++){
 	    if((m%4==0&&m%100!=0)||(m%100==0&&m%400==0))
@@ -77,31 +77,31 @@ int main_bench()
 	}
 		l=l+n;
 		if(l==1)
-		printf("Mon.");
+		my_printf("Mon.");
 		if(l==2)
-		printf("Tue.");
+		my_printf("Tue.");
 		if(l==3)
-		printf("Wed.");
+		my_printf("Wed.");
 		if(l==4)
-		printf("Thu.");
+		my_printf("Thu.");
 		if(l==5)
-		printf("Fri.");
+		my_printf("Fri.");
 		if(l==6)
-		printf("Sat.");
+		my_printf("Sat.");
 		if(l==7)
-		printf("Sun.");
+		my_printf("Sun.");
 		if(l==8)
-		printf("Mon.");
+		my_printf("Mon.");
 		if(l==9)
-		printf("Tue.");
+		my_printf("Tue.");
 		if(l==10)
-		printf("Wed.");
+		my_printf("Wed.");
 		if(l==11)
-		printf("Thu.");
+		my_printf("Thu.");
 		if(l==12)
-		printf("Fri.");
+		my_printf("Fri.");
 		if(l==13)
-		printf("Sat.");
+		my_printf("Sat.");
 		if(l==14)
-		printf("Sun.");
+		my_printf("Sun.");
 }

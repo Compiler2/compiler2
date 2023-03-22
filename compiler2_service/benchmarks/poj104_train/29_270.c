@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int geshu[128],fenzi[512],fenmu[512];
 	double a[512];
 	fenzi[0]=2,fenmu[0]=1;
@@ -16,16 +16,16 @@ int main_bench()
 	int i,j;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&geshu[i]);
+		my_scanf("%d",&geshu[i]);
 			if(geshu[i]==1)
 			{
-				printf("%.3lf\n",sum);
+				my_printf("%.3lf\n",sum);
 				continue;
 			}
 			else if(geshu[i]==2)
 			{
 				sum+=a[1];
-				printf("%.3lf\n",sum);
+				my_printf("%.3lf\n",sum);
 				continue;
 			}
 		for(j=2;j<geshu[i];j++)
@@ -39,7 +39,7 @@ int main_bench()
 		}
 		if(j>=geshu[i])
 		{
-			printf("%.3lf\n",sum1);
+			my_printf("%.3lf\n",sum1);
 			sum1=a[0]+a[1];
 		}
 	}

@@ -9,9 +9,9 @@ main_bench()
    for(i=0;i<len;i++)
      a[i]=c[i]-'0';
    if(len==1)
-      printf("0\n%d",a[0]);
+      my_printf("0\n%d",a[0]);
    if(len==2&&(a[0]*10+a[1])<13)
-     printf("0\n%d",a[0]*10+a[1]);
+     my_printf("0\n%d",a[0]*10+a[1]);
    for (i=1;i<len;i++)
     {
       b[i]=(a[i-1]*10+a[i])/13;
@@ -22,8 +22,8 @@ main_bench()
        if(i==1&&b[i]==0)
          continue;
        else
-         printf("%d",b[i]);
+         my_printf("%d",b[i]);
        if(i==len-1)
-         printf("\n%d",a[len-1]);
+         my_printf("\n%d",a[len-1]);
      }
 }

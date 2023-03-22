@@ -2,10 +2,10 @@
 
 int main_bench() {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char jjl[n][260],hbl[n][260];
     for(i=0;i<n;i++) {
-        scanf("%s",jjl[i]);
+        my_scanf("%s",jjl[i]);
     }
     int len,a;
     for(i=0;i<n;i++) {
@@ -27,9 +27,9 @@ int main_bench() {
         hbl[i][len]='\0';
     }
     for(i=0;i<n-1;i++) {
-        printf("%s\n",hbl[i]);
+        my_printf("%s\n",hbl[i]);
     }
-    printf("%s",hbl[i]);
+    my_printf("%s",hbl[i]);
     return 0;
 }
 

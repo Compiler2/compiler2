@@ -10,10 +10,10 @@ int main_bench()
   int score2;
   int t;
  }stu[100000],m1,m2,m3;
- scanf("%d\n",&n);
+ my_scanf("%d\n",&n);
  for(i=0;i<n;i++)
      {
-      scanf("%d %d %d\n",&stu[i].num,&stu[i].score1,&stu[i].score2);
+      my_scanf("%d %d %d\n",&stu[i].num,&stu[i].score1,&stu[i].score2);
       stu[i].t=stu[i].score1+stu[i].score2;     
      }
  m1=stu[0];
@@ -37,7 +37,7 @@ int main_bench()
              m3=stu[i];
             }
         }
-   printf("%d %d\n%d %d\n%d %d",m1.num,m1.t,m2.num,m2.t,m3.num,m3.t);
+   my_printf("%d %d\n%d %d\n%d %d",m1.num,m1.t,m2.num,m2.t,m3.num,m3.t);
      
 }
 

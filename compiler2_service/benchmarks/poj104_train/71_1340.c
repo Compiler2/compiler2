@@ -9,9 +9,9 @@ int main_bench()
 		int month1;
 		int month2;
 	}p[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d%d%d",&p[i].year,&p[i].month1,&p[i].month2);
+		my_scanf("%d%d%d",&p[i].year,&p[i].month1,&p[i].month2);
 	for(i=0;i<n;i++)
 	{t1=0,t2=0;
 		for(j=0;j<p[i].month1;j++)
@@ -43,9 +43,9 @@ int main_bench()
 			}
 		}
 		if(((t2-t1)%7==0)||((t1-t2)%7==0))
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	
 	return 0;

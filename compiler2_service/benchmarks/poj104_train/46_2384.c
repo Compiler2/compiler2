@@ -8,12 +8,12 @@ int main_bench()
 	int m,n,i,j;
 	int mini,maxi,minj,maxj;
 	int time,count=0;;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for (i=0;i<m;i++)
 	{
 		for (j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	mini=0;
@@ -28,7 +28,7 @@ int main_bench()
 			  {
 				  for (i=mini,j=minj;j<=maxj;j++)
 				  {
-					  printf("%d\n",a[i][j]);
+					  my_printf("%d\n",a[i][j]);
 					  count++;
 				  }
 				  mini++;
@@ -38,7 +38,7 @@ int main_bench()
 			  {
 				  for (j=maxj,i=mini;i<=maxi;i++)
 				  {
-					  printf("%d\n",a[i][j]);
+					  my_printf("%d\n",a[i][j]);
 					  count++;
 				  }
 				  maxj--;
@@ -48,7 +48,7 @@ int main_bench()
 			  {
 				  for (i=maxi,j=maxj;j>=minj;j--)
 				  {
-					  printf("%d\n",a[i][j]);
+					  my_printf("%d\n",a[i][j]);
 					  count++;
 				  }
 				  maxi--;
@@ -58,7 +58,7 @@ int main_bench()
 			  {
 				  for (j=minj,i=maxi;i>=mini;i--)
 				  {
-					  printf("%d\n",a[i][j]);
+					  my_printf("%d\n",a[i][j]);
 					  count++;
 				  }
 				  minj++;

@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int geshu[1000];
 	for(int k=0;k<m;k++)
 	{
-		scanf("%d",&(geshu[k]));
+		my_scanf("%d",&(geshu[k]));
 	}
 	double sz[1000];
 	double sum=0;
@@ -24,7 +24,7 @@ int main_bench()
 			a=e;
 		
 		}
-			printf("%.3lf\n",sum);
+			my_printf("%.3lf\n",sum);
 			sum=0;
 			b=2;
 			a=1;

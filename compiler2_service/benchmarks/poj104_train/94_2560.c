@@ -3,9 +3,9 @@
 int main_bench()
 {
     int N,number[500],i,k,min,odd[500],n,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&number[i]);
+        my_scanf("%d",&number[i]);
     }
     k=0;
     for(i=0;i<n;i++){
@@ -27,8 +27,8 @@ int main_bench()
         odd[i]=e;
     }
     for(i=0;i<n-1;i++){
-        printf("%d,",odd[i]);
+        my_printf("%d,",odd[i]);
     }
-    printf("%d",odd[n-1]);
+    my_printf("%d",odd[n-1]);
     return 0;
 }

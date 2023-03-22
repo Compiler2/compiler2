@@ -4,8 +4,8 @@ int main_bench()
 {
 	char z[502];
 	int n,a,b,c,d,max,count,len,x[502];
-	scanf("%d",&n);
-	scanf("%s",z);
+	my_scanf("%d",&n);
+	my_scanf("%s",z);
     len=strlen(z);
 	for(a=0;a<=len;a++) 
 	{
@@ -40,10 +40,10 @@ int main_bench()
 	}
 	if (max==1)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	
 	
 		for(b=0;b<=len-n;b++)
@@ -52,12 +52,12 @@ int main_bench()
 			{
 				for(c=0;c<=n-1;c++)
 				{
-					printf("%c",z[b+c]);
+					my_printf("%c",z[b+c]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	
 	return 0;
 } 

@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,a,b,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a==b){
 		}
 		else if(a==0&&b==1){
@@ -27,13 +27,13 @@ int main_bench(){
 		}
 	}
 	if(total<0){
-		printf("B");
+		my_printf("B");
 	}
 	else if(total==0){
-		printf("Tie");
+		my_printf("Tie");
 	}
 	else if(total>0){
-		printf("A");
+		my_printf("A");
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a=0,b=0,c=0,d=0,e;
-	scanf("%d",&e);
+	my_scanf("%d",&e);
 	while(1000*a<=e-1000)
 	{
 		a++;
@@ -19,19 +19,19 @@ int main_bench()
 	d=e-10*c-100*b-1000*a;
 	if(a>0)
 	{
-		printf("%d%d%d%d",d,c,b,a);
+		my_printf("%d%d%d%d",d,c,b,a);
 	}
 	else
 	{if(b>0)
 	{
-		printf("%d%d%d",d,c,b);
+		my_printf("%d%d%d",d,c,b);
 	}
 	else
 	{if(c>0)
 	{
-		printf("%d%d",d,c);
+		my_printf("%d%d",d,c);
 	}
 	else{
-		printf("%d",d);
+		my_printf("%d",d);
 	}
 	}}}

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k;
 	char word[1000][1000]={'\0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 		k=strlen(word[i]);
 		if((word[i][0]>=65&&word[i][0]<=90)||(word[i][0]>=97&&word[i][0]<=122)||(word[i][0]=='_'))
 		{
@@ -20,10 +20,10 @@ int main_bench()
 				else if((word[i][j]>=48)&&(word[i][j]<=57)) j=j+1;
 				else break;
 			}
-			if(j==k) printf("yes\n");
-			else printf("no\n");
+			if(j==k) my_printf("yes\n");
+			else my_printf("no\n");
 		}
-		else printf("no\n");
+		else my_printf("no\n");
 	}
 	return 0;
 }

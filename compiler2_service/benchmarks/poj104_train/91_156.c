@@ -12,7 +12,7 @@ int main_bench()
 	}
 	*(p2+i-1)=*(p1+0)+*(p1+i-1);
 	*(p2+i)='\0';
-	printf("%s",p2);
+	my_printf("%s",p2);
 	return 0;
 
 }

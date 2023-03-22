@@ -8,7 +8,7 @@ int main_bench()
 	c='A';
 	while(c!='\n')
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if(c!=' '&&c!='\n')
 		{
 			a[i][j]=c;
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	for(j=i;j>0;j=j-1)
 	{
-		printf("%s ",a[j]);
+		my_printf("%s ",a[j]);
 	}
-	printf("%s",a[0]);
+	my_printf("%s",a[0]);
 }

@@ -12,8 +12,8 @@ int main_bench()
   {
    if(x==1)
 	  { if(c[i]==' ')
-   {printf("%d,",a);x=0;};
+   {my_printf("%d,",a);x=0;};
 	   a=0;}
       }
-}printf("%d",a);
+}my_printf("%d",a);
 }

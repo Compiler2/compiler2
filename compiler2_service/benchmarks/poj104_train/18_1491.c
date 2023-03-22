@@ -73,7 +73,7 @@ int ans(int n,int ** pp)
 int main_bench()
 {
 	int n=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int **pp;
 	pp=(int **)malloc(n*sizeof(int *));
 	for(int i=0;i<n;i++)
@@ -89,10 +89,10 @@ int main_bench()
 			{
 				for(int j=0;j<n;j++)
 				{
-					scanf("%d",&pp[i][j]);
+					my_scanf("%d",&pp[i][j]);
 				}
 			}
-		printf("%d\n", ans(n,pp) );
+		my_printf("%d\n", ans(n,pp) );
 	}
 
 	for(int i=0;i<n;i++)

@@ -7,7 +7,7 @@ void shuchu(int a)
  r=0;c=a;
  for(;r<h;i++)
  {if(c>=0&&c<l)
-	printf("%d\n",*(*(p+r)+c));
+	my_printf("%d\n",*(*(p+r)+c));
   r+=1;c-=1;
  }
 
@@ -15,11 +15,11 @@ void shuchu(int a)
 
 int main_bench()
 {int i,j;
- scanf("%d %d",&h,&l);
+ my_scanf("%d %d",&h,&l);
 p=(int (*)[100])malloc(h*100*sizeof(int));
  for(i=0;i<h;i++)
   for(j=0;j<l;j++)
-	  scanf("%d",*(p+i)+j);
+	  my_scanf("%d",*(p+i)+j);
   for(i=0;i<h+l-1;i++)
 	  shuchu(i);
 }

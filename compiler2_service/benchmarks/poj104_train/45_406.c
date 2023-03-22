@@ -20,7 +20,7 @@ int main_bench()
 		    if(*p1!=*p3)
 			{p1=c;break;}
 			else if(p1==q-1)
-			printf("%d\n",k);
+			my_printf("%d\n",k);
 	
 	}
 }

@@ -5,7 +5,7 @@ int main_bench(){
 	int isRunNian(int year);
 	int a,b,c;
 	int days=0,i,n;
-    scanf("%d%d%d",&a,&b,&c);
+    my_scanf("%d%d%d",&a,&b,&c);
 	a%=2800;
 	for(i=1;i<a;i++){
 		if(isRunNian(i)){
@@ -17,25 +17,25 @@ int main_bench(){
 	days+=DiJiTian(a,b,c);
 	n=(days%7);
     if(n==1){
-			printf("Mon.");
+			my_printf("Mon.");
 	}
 	else if(n==2){
-			printf("Tue.");
+			my_printf("Tue.");
 	}
 	else if(n==3){
-			printf("Wed.");
+			my_printf("Wed.");
 	}
 	else if(n==4){
-			printf("Thu.");
+			my_printf("Thu.");
 	}
 	else if(n==5){
-			printf("Fri.");
+			my_printf("Fri.");
 	}
 	else if(n==6){
-			printf("Sat.");
+			my_printf("Sat.");
 	}
 	else if(n==0){
-			printf("Sun.");
+			my_printf("Sun.");
 	}
 	return 0;
 }

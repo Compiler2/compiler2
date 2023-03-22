@@ -2,7 +2,7 @@
 
 int main_bench()
 {
-	int money;scanf("%d", &money);
+	int money;my_scanf("%d", &money);
 	int m1=0, m2=0, m3=0, m4=0, m5=0, m6=0;
 	m1=money/100;
 	if(money%100 != 0){
@@ -20,11 +20,11 @@ int main_bench()
 	if(money%100%50%20%10%5 != 0){
 		m6=money%100%50%20%10%5;
 	}
-	printf("%d\n", m1);
-	printf("%d\n", m2);
-	printf("%d\n", m3);
-	printf("%d\n", m4);
-	printf("%d\n", m5);
-	printf("%d\n", m6);
+	my_printf("%d\n", m1);
+	my_printf("%d\n", m2);
+	my_printf("%d\n", m3);
+	my_printf("%d\n", m4);
+	my_printf("%d\n", m5);
+	my_printf("%d\n", m6);
 	return 0;
 }

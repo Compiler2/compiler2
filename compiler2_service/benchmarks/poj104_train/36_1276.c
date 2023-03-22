@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,m,n;
 	memset(a,0,sizeof(a));
 	memset(b,0,sizeof(b));
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	m=strlen(a);
 	n=strlen(b);
 	
@@ -34,8 +34,8 @@ int main_bench()
 				}
 			}
 			if(strcmp(a,b)==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else
-				printf("NO\n");
+				my_printf("NO\n");
 	return 0;
 }

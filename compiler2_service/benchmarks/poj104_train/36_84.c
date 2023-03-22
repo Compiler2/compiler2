@@ -29,7 +29,7 @@ int main_bench()
 	int *p1,*p2;
 	p1=a;
 	p2=b;
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	find(a,str1);
 	find(b,str2);
 
@@ -39,9 +39,9 @@ int main_bench()
 			n++;
 	}
 	if(n==52)
-		printf("YES") ;
+		my_printf("YES") ;
 	else
-		printf("NO");
+		my_printf("NO");
 }
 		
 			

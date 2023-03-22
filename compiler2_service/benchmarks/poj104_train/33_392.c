@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char z[1000][256]; 
     for(int i=0;i<n;i++){
-            scanf("%s",&z[i]);
+            my_scanf("%s",&z[i]);
             for(int j=0;j<strlen(z[i]);j++){
                     if(z[i][j]=='A')
                       z[i][j]='T';
@@ -18,7 +18,7 @@ int main_bench(){
                     }
             }
     for(int i=0;i<n;i++){
-           printf("%s\n",z[i]);
+           my_printf("%s\n",z[i]);
            }
     return 0;
 }

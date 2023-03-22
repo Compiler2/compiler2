@@ -26,7 +26,7 @@ main_bench()
     c1[k]=c3[l];                                 
   } }
   
- printf("%s",c1);    
+ my_printf("%s",c1);    
 getchar();
 getchar();
  getchar();     

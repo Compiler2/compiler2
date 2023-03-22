@@ -19,6 +19,6 @@ main_bench()
       i--;
     }
   }
-  printf("%s",s);
+  my_printf("%s",s);
 }
 

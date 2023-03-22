@@ -7,12 +7,12 @@ int main_bench(){
     }*p,*p60_up,*p60_low,t;
     
     int n,i,j,k=0;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     p = (struct patient *) malloc( sizeof(struct patient) * n );
     
     for(i=0;i<n;i++){
-        scanf("%s",&(p[i].id));
-        scanf("%d",&(p[i].age));    
+        my_scanf("%s",&(p[i].id));
+        my_scanf("%d",&(p[i].age));    
     }
     for(i=0;i<=n;i++){
         if(p[i].age>=60){

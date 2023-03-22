@@ -18,7 +18,7 @@ main_bench()
       while ((b[j]==0)&&(j<=l-1)) j++;
       if (j==l) j--;
       for (i=j;i<=l-1;i++)
-      printf("%d",b[i]);
-      printf("\n");
-      printf("%d",n);
+      my_printf("%d",b[i]);
+      my_printf("\n");
+      my_printf("%d",n);
 }

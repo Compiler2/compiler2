@@ -15,9 +15,9 @@ int main_bench()
 	char c1[50];
 	int a1,a2,i,l,k,sh=0,count=0;
 	int b[50],d[50];
-	scanf("%d",&a1);
-    scanf("%s",c1);
-    scanf("%d",&a2);
+	my_scanf("%d",&a1);
+    my_scanf("%s",c1);
+    my_scanf("%d",&a2);
 	l=strlen(c1);
 	for (i=0;i<l;i++){
         if (c1[i]=='0')
@@ -76,7 +76,7 @@ int main_bench()
 	for (i=0;i<l;i++){
           sh=sh+b[i]*chf(a1,l-1-i);
 		  }
-	if (sh==0) { printf("0"); return 0;}
+	if (sh==0) { my_printf("0"); return 0;}
 	for (i=0;;i++){
 		d[i]=sh%a2;
 		sh=sh/a2;
@@ -90,53 +90,53 @@ int main_bench()
 	}
 	for (k=i+1;k>=0;k--){
 		if (d[k]==17)
-			printf("H");
+			my_printf("H");
 		if (d[k]==16)
-			printf("G");
+			my_printf("G");
         if (d[k]==15)
-			printf("F");
+			my_printf("F");
 		if (d[k]==14)
-			printf("E");
+			my_printf("E");
         if (d[k]==13)
-			printf("D");
+			my_printf("D");
 		if (d[k]==12)
-			printf("C");
+			my_printf("C");
         if (d[k]==11)
-			printf("B");
+			my_printf("B");
 		if (d[k]==10)
-			printf("A");
+			my_printf("A");
         if (d[k]==9)
-			printf("9");
+			my_printf("9");
 		if (d[k]==8)
-			printf("8");
+			my_printf("8");
         if (d[k]==7)
-			printf("7");
+			my_printf("7");
 		if (d[k]==6)
-			printf("6");
+			my_printf("6");
         if (d[k]==5)
-			printf("5");
+			my_printf("5");
 		if (d[k]==4)
-			printf("4");
+			my_printf("4");
         if (d[k]==3)
-			printf("3");
+			my_printf("3");
 		if (d[k]==2)
-			printf("2");
+			my_printf("2");
         if (d[k]==1)
-			printf("1");
+			my_printf("1");
 		if (d[k]==0)
-			printf("0");
+			my_printf("0");
 	    if (d[k]==18)
-			printf("I");
+			my_printf("I");
 		if (d[k]==19)
-			printf("J");
+			my_printf("J");
         if (d[k]==20)
-			printf("K");
+			my_printf("K");
 		if (d[k]==21)
-			printf("L");
+			my_printf("L");
         if (d[k]==22)
-			printf("M");
+			my_printf("M");
 		if (d[k]==23)
-			printf("N");}
+			my_printf("N");}
         
 	return 0;
 }

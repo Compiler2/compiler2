@@ -16,11 +16,11 @@ int main_bench()
 		leta[i].name='a'+i;letb[i].name='a'+i;
 		leta[i].times=0;letb[i].times=0;
 	}
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	lena=strlen(a);lenb=strlen(b);
 	if(lena!=lenb)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}else
 	{
@@ -35,8 +35,8 @@ int main_bench()
 				t=1;
 		}
 		if(t==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }

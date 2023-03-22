@@ -8,7 +8,7 @@ n=strlen(a);
 for(i=0;i<n;i++){
 if(a[i]==' '){
 if(a[i+1]==' '){
-continue;}else{printf("%c",a[i]);}
-}else{printf("%c",a[i]);}}
+continue;}else{my_printf("%c",a[i]);}
+}else{my_printf("%c",a[i]);}}
 return 0;
 }

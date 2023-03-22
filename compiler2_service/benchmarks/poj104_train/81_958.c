@@ -8,20 +8,20 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&h[i][j]);
+			my_scanf("%d",&h[i][j]);
 		}
 	}
-	scanf("%d%d",&p,&q);
+	my_scanf("%d%d",&p,&q);
 	if(hu(h,p,q))
 	{
 		for(i=0;i<5;i++)
 		{
-			printf("%d %d %d %d %d\n",h[i][0],h[i][1],h[i][2],h[i][3],h[i][4]);
+			my_printf("%d %d %d %d %d\n",h[i][0],h[i][1],h[i][2],h[i][3],h[i][4]);
 		}		
 	    
 	}
 	else
-		printf("error");
+		my_printf("error");
 }
 int hu(int a[][5], int m, int n)
 {

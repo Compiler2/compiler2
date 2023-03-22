@@ -6,8 +6,8 @@ int main_bench()
   char c;
   j=0;
   for(i=0;i<300;i++)
-   {scanf("%d",&a[i]);
-    scanf("%c",&c);
+   {my_scanf("%d",&a[i]);
+    my_scanf("%c",&c);
     j=j+1;
     if(c!=',') i=300;
    }
@@ -22,6 +22,6 @@ int main_bench()
        m2=m0;
       }
      }
-  if(m2==-1) printf("No");
-  else printf("%d",m2);
+  if(m2==-1) my_printf("No");
+  else my_printf("%d",m2);
 }

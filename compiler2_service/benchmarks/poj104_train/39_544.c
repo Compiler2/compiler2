@@ -14,10 +14,10 @@ int main_bench()
 		int jj;
 	};
 	struct student stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qm,&stu[i].bj,&stu[i].xg,&stu[i].xb,&stu[i].lw);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qm,&stu[i].bj,&stu[i].xg,&stu[i].xb,&stu[i].lw);
 	}
 	for(i=0;i<n;i++)
 	{     stu[i].jj=0;
@@ -42,12 +42,12 @@ int main_bench()
 				k++;
 		}
 		if(k==n)
-		{printf("%s\n%d\n",stu[i].name,stu[i].jj);
+		{my_printf("%s\n%d\n",stu[i].name,stu[i].jj);
 		break;}
     }
 	for(i=0;i<n;i++)
 	m=m+stu[i].jj;
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 }
 
 		

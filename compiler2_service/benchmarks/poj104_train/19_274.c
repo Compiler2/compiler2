@@ -25,18 +25,18 @@ int main_bench()
     b[i]='\0';
   }
   gets(s);
-  scanf("%s%s",a,b);
+  my_scanf("%s%s",a,b);
   l=strlen(s);
   s[l]=' ';
   l=strlen(a);
   a[l]=' ';
-  if(check(s,a,l,0)) printf("%s",b);
+  if(check(s,a,l,0)) my_printf("%s",b);
   else
    { 
      i=0;
      do
      {
-      printf("%c",s[i]);
+      my_printf("%c",s[i]);
       i++;
      }
      while(s[i]!=' '); 
@@ -47,13 +47,13 @@ int main_bench()
   {
     j=i;
     if(s[i]=='\0') break;
-    else if(check(s,a,l,i)) printf(" %s",b);
+    else if(check(s,a,l,i)) my_printf(" %s",b);
     else
     {
-      printf(" ");
+      my_printf(" ");
       do
      {
-      printf("%c",s[i]);
+      my_printf("%c",s[i]);
       i++;
      }
      while(s[i]!=' '); 

@@ -5,10 +5,10 @@ int main_bench()
 {
     char s[10000];
     int i,j,l,t,k,n;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(j=0;j<n;j++)
     {
-     scanf("%s",s);
+     my_scanf("%s",s);
      for(i=0;i<200;i++)
       rec[i]=0;
      l=strlen(s);
@@ -18,13 +18,13 @@ int main_bench()
      for(i=0;i<l;i++)
       if(rec[s[i]]==1)
       {
-        printf("%c\n",s[i]);
+        my_printf("%c\n",s[i]);
         t=1;
         break;
       }
-     if(t==0) printf("no\n");
+     if(t==0) my_printf("no\n");
     }
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
 }
       

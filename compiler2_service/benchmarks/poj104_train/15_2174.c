@@ -12,11 +12,11 @@ int main_bench()
    
    
    
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for (i=1;i<=n;i++)
        for (j=1;j<=n;j++) 
            {
-            scanf("%d",&temp);
+            my_scanf("%d",&temp);
             a[i][j]=(temp==0)? 1:0;               
            }
    for  (i=1;i<=n;i++)
@@ -26,7 +26,7 @@ int main_bench()
                     if ((a[i][j+1]==1)&&(a[i+1][j]==1)) {x1=i;y1=j;}            
                     if ((a[i][j-1]==1)&&(a[i-1][j]==1)) {x2=i;y2=j;}      
                }
-    printf("%d\n",(x2-x1-1)*(y2-y1-1));
+    my_printf("%d\n",(x2-x1-1)*(y2-y1-1));
   
     return 0;
    

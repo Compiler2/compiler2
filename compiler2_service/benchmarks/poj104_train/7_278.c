@@ -27,13 +27,13 @@ int main_bench()
 		puts(w);
 	}else{
 	   for(i=0;i<m;i++){
-           printf("%c",w[i]);
+           my_printf("%c",w[i]);
 	   }
 	   for(i=0;i<len2;i++){
-	        printf("%c",ti[i]);
+	        my_printf("%c",ti[i]);
 	   }
 	   for(i=m+len1;i<len;i++){
-            printf("%c",w[i]);
+            my_printf("%c",w[i]);
 	   }
 	}
 return 0;

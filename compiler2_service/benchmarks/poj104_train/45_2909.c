@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,j,k;
     char a[55],b[55],c[55];
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
     for(i=0;b[i]!='\0';i++)
     {
         if(b[i]==a[0])
@@ -18,7 +18,7 @@ int main_bench()
             c[k]='\0';
             if(strcmp(a,c)==0)
             {
-                printf("%d",i);return 0;
+                my_printf("%d",i);return 0;
             }
         }
     }

@@ -9,17 +9,17 @@ void find(char c[])
 	for (i=0;c[i];i++)
 		if (a[c[i]-'a']==1)
 		{
-			printf ("%c\n",c[i]);
+			my_printf ("%c\n",c[i]);
 			return;
 		}
-	printf ("no\n");
+	my_printf ("no\n");
 }
 
 main_bench()
 {
 	int t,i;
 	char c[100000];
-	scanf ("%d\n",&t);
+	my_scanf ("%d\n",&t);
 	for (i=0;i<t;i++)
 	{
 		gets (c);

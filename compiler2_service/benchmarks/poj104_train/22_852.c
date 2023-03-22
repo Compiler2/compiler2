@@ -15,7 +15,7 @@ int main_bench()
 	}
 	t=i+1;
 	fir=a[0];
-	if(t==1) printf("No");
+	if(t==1) my_printf("No");
 	else
 	{
 		for(i=1;i<t;i++)
@@ -25,8 +25,8 @@ int main_bench()
 			else if(a[i]<fir&&a[i]>sec)
 			sec=a[i];
 		}
-		if(sec==0) printf("No");
-		else printf("%d",sec);
+		if(sec==0) my_printf("No");
+		else my_printf("%d",sec);
 	}
 	return 0;
 }

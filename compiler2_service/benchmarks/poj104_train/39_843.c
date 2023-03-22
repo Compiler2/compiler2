@@ -10,12 +10,12 @@ int main_bench()
 	int g1,g2,lun,r;
 	char s[333];
 	char s1[333];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	r=0;
 	max=-999;
 	for (i=1;i<=n;i++)
 	{
-		scanf("%s %d %d %c %c %d",s,&g1,&g2,&gan,&xi,&lun);
+		my_scanf("%s %d %d %c %c %d",s,&g1,&g2,&gan,&xi,&lun);
 
 
 		t=0;
@@ -32,6 +32,6 @@ int main_bench()
 		}   
 	}
     puts(s1);
-    printf("%d\n%d\n",max,r);
+    my_printf("%d\n%d\n",max,r);
 	return 0; 
 }

@@ -5,18 +5,18 @@ int main_bench()
 	int isit(int);
 	int n;
 	int empt=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=2;i<=n-2;i++)
 	{
 		if (isit(i)&&isit(i+2))
 		{
 			empt=0;
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 		}
 	}
 	if(empt)
-		printf("empty");
+		my_printf("empty");
 	return 0;
 }
 int isit(int num)

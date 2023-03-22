@@ -8,7 +8,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&num[i][j]);
+			my_scanf("%d",&num[i][j]);
 		}
 	}
 	int judge1[5][5];
@@ -64,11 +64,11 @@ int main_bench()
 		{
 			if(judge1[i][j]==1&&judge2[i][j]==1)
 			{
-				printf("%d %d %d\n",i+1,j+1,num[i][j]);
+				my_printf("%d %d %d\n",i+1,j+1,num[i][j]);
 				g=1;
 			}
 		}
 	}
-	if(g==0)printf("not found\n");
+	if(g==0)my_printf("not found\n");
 	return 0;
 }

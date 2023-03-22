@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n,s[100],sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 	}
 	sum=n;
 	for(int j=1;j<n;j++){
-		printf("%d ",s[sum-j]);	
+		my_printf("%d ",s[sum-j]);	
 	}
-	printf("%d",s[0]);
+	my_printf("%d",s[0]);
 	return 0;
 }

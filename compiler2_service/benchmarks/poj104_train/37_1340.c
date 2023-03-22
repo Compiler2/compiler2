@@ -18,6 +18,6 @@ for(k=0;a[k]!='\0';k++){
 			break;	
 	}}}		
 	if(t!=0){		
-		printf("%c\n",a[k]);
+		my_printf("%c\n",a[k]);
 		break;			}		}		if(t==0){		
-	printf("no\n");		}	}			return 0;		}
+	my_printf("no\n");		}	}			return 0;		}

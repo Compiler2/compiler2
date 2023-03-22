@@ -14,10 +14,10 @@ int main_bench()
 {
 	int n,i,sum=0;
 	struct student p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a1,&stu[i].a2,&stu[i].m,&stu[i].w,&stu[i].e);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a1,&stu[i].a2,&stu[i].m,&stu[i].w,&stu[i].e);
 		stu[i].sch=0;
 		if(stu[i].a1>80&&stu[i].e>0)  stu[i].sch+=8000;
 		if(stu[i].a1>85&&stu[i].a2>80)    stu[i].sch+=4000;
@@ -29,6 +29,6 @@ int main_bench()
 	p=stu[0];
 	for(i=0;i<n;i++)
 	if(stu[i].sch>p.sch)  p=stu[i];
-	printf("%s\n%d\n%d",p.name,p.sch,sum);
+	my_printf("%s\n%d\n%d",p.name,p.sch,sum);
 }
 

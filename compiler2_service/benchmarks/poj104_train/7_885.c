@@ -12,7 +12,7 @@ int main_bench()
     gets(p2);
     gets(p3);
     p=strstr(p1,p2);
-    if(p==0)printf("%s",p1);
+    if(p==0)my_printf("%s",p1);
     else{
     for(i=0;*(p1+i)!='\0';i++)
     {
@@ -24,5 +24,5 @@ int main_bench()
     for(k=i+strlen(p2);*(p1+k)!='\0';k++,j++)
     *(q+i+j)=*(p1+k);
     *(q+i+j)='\0';
-    printf("%s",q);}
+    my_printf("%s",q);}
 }

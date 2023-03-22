@@ -9,9 +9,9 @@ main_bench()
 	for(i=0;i<=n;i++)
 	{
 		if(s[i]!=' '&&i!=n)t++;
-		else if(s[i]==' '&&t!=0){printf("%d",t);t=0;}
-		if(i==n)printf("%d",t+1);
-		if(i!=n&&t==0&&s[i-1]!=' ')printf(",");
+		else if(s[i]==' '&&t!=0){my_printf("%d",t);t=0;}
+		if(i==n)my_printf("%d",t+1);
+		if(i!=n&&t==0&&s[i-1]!=' ')my_printf(",");
 	}
 
 }

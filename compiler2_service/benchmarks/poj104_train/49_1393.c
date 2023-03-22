@@ -19,8 +19,8 @@ int main_bench()
 			if(q<=p)
 			{
 				for(j=i;j<=i+l;j++)
-					printf("%c",s[j]);
-				printf("\n");
+					my_printf("%c",s[j]);
+				my_printf("\n");
 			}
 		}
 		return 0;

@@ -6,12 +6,12 @@ int main_bench()
     int n,i=3,a;
 	int max,sec;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	max=a;
 
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if (a>max)
 	{
 		sec=max;
@@ -27,7 +27,7 @@ int main_bench()
 
 	for (i=3;i<=n;i++)
 	{
-		scanf("%d", &a);
+		my_scanf("%d", &a);
 	    if (a>max)
 		{
 			sec=max;
@@ -38,7 +38,7 @@ int main_bench()
 		    	sec=a;
 		      }
 	}
-	printf("%d\n%d\n",max,sec);
+	my_printf("%d\n%d\n",max,sec);
 
 
 	    

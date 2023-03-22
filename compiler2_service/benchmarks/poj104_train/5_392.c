@@ -5,9 +5,9 @@ int main_bench()
 	int i,t=0,s=0,l1,l2;
 	double n,m;
     char a[256],b[256];
-	scanf("%lf",&n);
-	scanf("%s",&a);
-	scanf("%s",&b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
 	l1=strlen(a);
 	l2=strlen(b);
 	for(i=0;i<l1;i++)
@@ -19,7 +19,7 @@ int main_bench()
 	}
 	if(s!=0||l1!=l2)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -33,9 +33,9 @@ int main_bench()
 		m=(double)t/l1;
 		if(m>n)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
-		else printf("no");
+		else my_printf("no");
 	}
 return 0;
 }  

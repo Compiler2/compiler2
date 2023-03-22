@@ -15,10 +15,10 @@ int main_bench()
     struct student st[100];
     int n,i,am=0,max;
     char f[20];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s %d %d %c %c %d",st[i].name,&st[i].a,&st[i].b,&st[i].c,&st[i].d,&st[i].e);
+        my_scanf("%s %d %d %c %c %d",st[i].name,&st[i].a,&st[i].b,&st[i].c,&st[i].d,&st[i].e);
         st[i].sum=0;
     }
     for(i=0;i<n;i++)
@@ -44,6 +44,6 @@ int main_bench()
            strcpy(f,st[i].name);
        }
     }
-    printf("%s\n%d\n%d",f,max,am);
+    my_printf("%s\n%d\n%d",f,max,am);
     return 0;
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int k,n,i,last1,last2,b,result;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
     for(i=0;i<k;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n==1||n==2)
 		{
-			printf("1\n");
+			my_printf("1\n");
 		}
 		else
 		{
@@ -22,7 +22,7 @@ int main_bench()
 				last2=last1;
 				last1=result;
 			}
-		    printf("%d\n",result);
+		    my_printf("%d\n",result);
 		}
 	}
 	return 0;

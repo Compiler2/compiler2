@@ -9,9 +9,9 @@ int main_bench()
          n=strlen(a);
          for(i=0;i<=n-2;i++)
          {
-           printf("%c",a[i]);
+           my_printf("%c",a[i]);
          }
-         printf("%c\n",a[n-1]);
+         my_printf("%c\n",a[n-1]);
          for(i=0;i<n;i++)   
          {
             if(a[i]==')')
@@ -44,9 +44,9 @@ int main_bench()
          }
          for(i=0;i<n;i++)
          {
-            printf("%c",a[i]);
+            my_printf("%c",a[i]);
          }
-         printf("\n");
+         my_printf("\n");
  }                
     
 }

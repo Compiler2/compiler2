@@ -6,7 +6,7 @@ int main_bench()
 	int n,a,i;
 	a=0;
 	i=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	while(i<n){
 		i++;
@@ -18,6 +18,6 @@ int main_bench()
 	}
 	
 
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }

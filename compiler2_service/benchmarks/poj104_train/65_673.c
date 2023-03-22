@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n,sz[1000],s[1000],i=0,m=0,l=0,k=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 struct cui{
     int x;
     int y;
 } cui[300];
 for(i=0;i<n;i++){
-    scanf("%d%d",&cui[i].x,&cui[i].y);
+    my_scanf("%d%d",&cui[i].x,&cui[i].y);
 }
 m=0;
 for(i=0;i<n;i++){
@@ -31,13 +31,13 @@ for(i=0;i<n;i++){
     }}
 
     if(k>l){
-        printf("A");
+        my_printf("A");
     }
     else if(l>k){
-        printf("B");
+        my_printf("B");
     }
     else if(l=k){
-        printf("Tie");
+        my_printf("Tie");
     }
     return 0;
 }

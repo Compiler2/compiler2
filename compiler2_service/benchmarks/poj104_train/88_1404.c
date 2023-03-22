@@ -11,12 +11,12 @@ int main_bench()
 		if(*p<'0'||*p>'9')continue;
 		else
 		{
-			printf("%c",*p);
+			my_printf("%c",*p);
 			if(p<=c+k-2)
 			{
-				if(*(p+1)<'0'||*(p+1)>'9')printf("\n");
+				if(*(p+1)<'0'||*(p+1)>'9')my_printf("\n");
 			}
-			else printf("\n");
+			else my_printf("\n");
 		}
 	}
 	return 0;

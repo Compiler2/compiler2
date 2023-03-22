@@ -7,11 +7,11 @@ struct bingren{
 
 int main_bench()
 {	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j,k=0,l=0,e,a[100];
 		char xiao[101][1000],da[101][1000],c[1000];
 	for(i=0;i<n;i++){
-		scanf("%s %d",&bin[i].id,&bin[i].age);
+		my_scanf("%s %d",&bin[i].id,&bin[i].age);
 	}
 	for(i=0;i<n;i++){
 		if(bin[i].age<60){
@@ -34,10 +34,10 @@ int main_bench()
 		
 	}
 	for(i=0;i<l;i++){
-		printf("%s\n",da[i]);
+		my_printf("%s\n",da[i]);
 	}
 	for(i=0;i<k;i++){
-			printf("%s\n",xiao[i]);
+			my_printf("%s\n",xiao[i]);
 	}
 
 	return 0;

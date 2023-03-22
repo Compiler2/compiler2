@@ -3,7 +3,7 @@
 int main_bench(){
     int n[6],f(int x),i,j,nf[6];
     for(i=0;i<6;i++){
-        scanf("%d",&n[i]);
+        my_scanf("%d",&n[i]);
     }
     for(i=0;i<6;i++){
         if(n[i]==0){
@@ -17,7 +17,7 @@ int main_bench(){
         }
     }
     for(i=0;i<6;i++){
-        printf("%d\n",nf[i]);
+        my_printf("%d\n",nf[i]);
     }
     return 0;
 }

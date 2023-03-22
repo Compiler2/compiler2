@@ -4,7 +4,7 @@ int main_bench()
 {
     char num[10]={'a'};
     int i,sum=0;
-    scanf("%s",num);
+    my_scanf("%s",num);
     for(i=0;i<10;i++)
     {
                      if((num[i]>='0')&&(num[i]<='9')==1)
@@ -14,7 +14,7 @@ int main_bench()
     }
     for(i=sum-1;i>=0;i--)
     {
-                         printf("%c",num[i]);
+                         my_printf("%c",num[i]);
     }
 
     return 0;

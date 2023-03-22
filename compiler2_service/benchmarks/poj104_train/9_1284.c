@@ -10,7 +10,7 @@ int main_bench()
     int  s1[100],sz[100],t[100];
     int n,i,p,k;
 
-   scanf("%d",&n);
+   my_scanf("%d",&n);
 
     
      int j=0;
@@ -19,7 +19,7 @@ int main_bench()
    
      for(i=0;i<n;i++)
 	 {  
-		 scanf("%s %d",str[i],&sz[i]);
+		 my_scanf("%s %d",str[i],&sz[i]);
  
      
                      if(sz[i]>=60)
@@ -50,14 +50,14 @@ int main_bench()
                                       }
                           for(p=0;p<j;p++)
                                       {
-                                                      printf("%s\n",str[t[p]]);
+                                                      my_printf("%s\n",str[t[p]]);
                                                       
                                                       }
             
   for(i=0;i<n;i++)
   {
                   if(sz[i]<60)
-                  printf("%s\n",str[i]);
+                  my_printf("%s\n",str[i]);
                   }
                   
 

@@ -4,14 +4,14 @@ int main_bench()
 {
 	int n,c[100],x[100],i,k,sum=0;
 	double j[100],gpa=0,GPA;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -39,5 +39,5 @@ int main_bench()
 								sum+=x[i];
 	}
 	GPA=gpa/sum;
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 }

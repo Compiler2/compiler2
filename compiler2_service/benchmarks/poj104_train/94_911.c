@@ -2,12 +2,12 @@
 
    int main_bench(){
    int n,i,d,k,c,j,e;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int a[n],b[100];
    d=0;
    c=0;
    for(i=0;i<n;i++){
-       scanf("%d",&a[i]);
+       my_scanf("%d",&a[i]);
        }
    for(i=0;i<n;i++){
        if(a[i]%2!=0){
@@ -35,12 +35,12 @@
       }
     for(i=0;i<d;i++){
        if(i!=d-1){
-       printf("%d,",b[i]);
+       my_printf("%d,",b[i]);
        }
        else{
-       printf("%d",b[i]);     
+       my_printf("%d",b[i]);     
        }
        } 
-       scanf("%d",&n);  
+       my_scanf("%d",&n);  
     return 0;
 }

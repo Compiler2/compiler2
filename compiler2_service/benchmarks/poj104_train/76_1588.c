@@ -5,10 +5,10 @@ int main_bench()
 	int a[50000],b[50000],c[10001];
 	int n,i,j,k,s=0,p,q,l,u;
 	int x=10000,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&(a[i]),&(b[i]));
+		my_scanf("%d%d",&(a[i]),&(b[i]));
 	}
 	for(i=0;i<=10000;i++)
 	{
@@ -49,16 +49,16 @@ int main_bench()
 	{
 		if(s>0)
 		{
-			printf("no");
+			my_printf("no");
 		}
 	    if(s==0)
 		{
-		    printf("%d %d",x,d);
+		    my_printf("%d %d",x,d);
 		}
 	}
 	if(n<3)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

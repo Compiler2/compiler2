@@ -5,7 +5,7 @@ int main_bench()
           char s[1050];
           char bj;
           int i,j,k,f,l;
-          scanf("%s",s);
+          my_scanf("%s",s);
           l=strlen(s);
           f=0;
           for (i=0;i<l;i++)
@@ -22,14 +22,14 @@ int main_bench()
                                         f++;
                                         else
                                         {
-                                            printf("(%c,%d)",bj,f);
+                                            my_printf("(%c,%d)",bj,f);
                                             f=1;
                                              bj=s[i];
                                              if (bj>=97)
                                              bj=bj-32;
                                         }
                        }
-          printf("(%c,%d)",bj,f);
+          my_printf("(%c,%d)",bj,f);
 }
                                             
                                         

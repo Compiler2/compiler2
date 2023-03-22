@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,l,i;char c[10];
 	char str[256];
-	scanf("%d",&n);gets(c);
+	my_scanf("%d",&n);gets(c);
 	while(n--)
 	{
 		memset(str,0,sizeof(str));
@@ -14,12 +14,12 @@ int main_bench()
 		{
 			switch(str[i])
 			{
-			case'A':printf("T");break;
-			case'T':printf("A");break;
-			case'C':printf("G");break;
-			case'G':printf("C");break;
+			case'A':my_printf("T");break;
+			case'T':my_printf("A");break;
+			case'C':my_printf("G");break;
+			case'G':my_printf("C");break;
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

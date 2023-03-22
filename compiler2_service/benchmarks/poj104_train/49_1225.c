@@ -5,7 +5,7 @@ int main_bench()
 
     int i,j,k,m,n;
 	char st[500];
-	scanf("%s",st);
+	my_scanf("%s",st);
 	for(i=2;i<=500;i++)
 	{
 	    for(j=0;j<500-i+1;j++)
@@ -24,9 +24,9 @@ int main_bench()
 		  {
 			  for(n=j;n<j+i;n++)
 			  {
-				  printf("%c",st[n]);
+				  my_printf("%c",st[n]);
 				if(n==j+i-1)
-					printf("\n");
+					my_printf("\n");
 			  }
 		  }
 		}

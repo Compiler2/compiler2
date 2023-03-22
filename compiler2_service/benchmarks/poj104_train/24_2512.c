@@ -20,6 +20,6 @@ int main_bench()
 			j=0;i++;
 		}
 	}
-	printf("%s\n%s",b[x],b[y]);
+	my_printf("%s\n%s",b[x],b[y]);
 	return 0;
 }

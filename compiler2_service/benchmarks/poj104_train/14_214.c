@@ -9,10 +9,10 @@ struct stu
 int main_bench()
 {
 	int n,i,first,second,third,h1=0,h2=0,h3=0,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a[i].id,&a[i].Chinese,&a[i].math);
+		my_scanf("%d%d%d",&a[i].id,&a[i].Chinese,&a[i].math);
 	}
 	first=0;
 	second=0;
@@ -53,5 +53,5 @@ int main_bench()
 			h3=a[i].id;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d",h1,first,h2,second,h3,third);
+	my_printf("%d %d\n%d %d\n%d %d",h1,first,h2,second,h3,third);
 }

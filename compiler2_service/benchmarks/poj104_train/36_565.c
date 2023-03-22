@@ -4,11 +4,11 @@ void sxpl(char x[]);
 int main_bench()
 {
 	char a[50],b[50];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	sxpl(a);
 	sxpl(b);
-	if(strcmp(a,b)==0) printf("YES\n");
-	else printf("NO\n");
+	if(strcmp(a,b)==0) my_printf("YES\n");
+	else my_printf("NO\n");
 }
 void sxpl(char x[])
 {

@@ -8,7 +8,7 @@ int main_bench()
 		a[j]=0;
 	do
 	{
-		scanf("%c",&b);
+		my_scanf("%c",&b);
 		if((b>='0'&&b<='9'))
 			a[i]=a[i]*10+b-'0';
 		else
@@ -23,12 +23,12 @@ int main_bench()
 				a[k+1]=temp;
 			}
 			if(a[0]==a[i-1]||i==1)
-				printf("No");
+				my_printf("No");
 			else
 				for(k=0;k<=i;k++)
 					if(a[k]<a[0])
 					{
-						printf("%d",a[k]);
+						my_printf("%d",a[k]);
 						break;
 					}
 }

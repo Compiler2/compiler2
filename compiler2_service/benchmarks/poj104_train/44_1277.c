@@ -6,7 +6,7 @@ int main_bench()
 	int n=0,t=0;
 	while(1)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n>=0)
 		{
 			n=fanxu(n);
@@ -17,7 +17,7 @@ int main_bench()
 			n=fanxu(n);
 			n=-1*n;
 		}
-		printf("%d\n",n);
+		my_printf("%d\n",n);
 		t++;
 		if(t==6) break;
 	}

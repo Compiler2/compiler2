@@ -44,9 +44,9 @@ int main_bench()
                                         {
                                             for(s=0;s<5;s++)
                                             {
-                                                printf("%d",a[s]);
+                                                my_printf("%d",a[s]);
                                                 if(s!=4)
-                                                    printf(" ");
+                                                    my_printf(" ");
                                             }
                                         }
                                         

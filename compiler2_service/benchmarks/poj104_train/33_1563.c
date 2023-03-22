@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char zfc[n][257];
 	for(int i=0;i<n;i++){
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	for(int i=0;i<n;i++){
 		for(int j=0;j<257;j++){
@@ -24,6 +24,6 @@ int main_bench(){
 							break;
 						}}}}}}
 	for(int i=0;i<n;i++){
-		printf("%s\n",zfc[i]);
+		my_printf("%s\n",zfc[i]);
 	}
 	return 0;}

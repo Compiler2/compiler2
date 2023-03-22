@@ -12,13 +12,13 @@ void cal()
 int main_bench()
 {
     int t;
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     cal();
     while(t--)
     {
         int n;
-        scanf("%d",&n);
-        printf("%d\n",a[n-1]);
+        my_scanf("%d",&n);
+        my_printf("%d\n",a[n-1]);
     }
     
     return 0;

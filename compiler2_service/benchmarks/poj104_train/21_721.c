@@ -9,10 +9,10 @@ int main_bench()
 	double zong=0;
 	double max=0;
 	double ping;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		zong=zong+a[i];
 	}
 	ping=zong/n;
@@ -36,11 +36,11 @@ int main_bench()
 		{
 			j++;
 			if(j==1)
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 			else
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

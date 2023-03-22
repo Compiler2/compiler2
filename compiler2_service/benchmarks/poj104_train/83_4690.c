@@ -4,7 +4,7 @@ int main_bench(){
 	int n,q,i;
 
 	double s,m,A;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int f[n];
 	double g[n];
 	int x[n];
@@ -13,11 +13,11 @@ int main_bench(){
     q=0;
   
     for( i=0 ;  i < n ;  i++){
-		scanf("%d", &(x[i]));
+		my_scanf("%d", &(x[i]));
 		q+=x[i];
 }
  for( i=0 ;  i < n ;  i++){
-		scanf("%d", &(f[i]));
+		my_scanf("%d", &(f[i]));
 	  if(f[i]>=90&&f[i]<=100){
            g[i]=4.0;
    }else if(f[i]>=85&&f[i]<=89){
@@ -44,6 +44,6 @@ int main_bench(){
 		s+=m;
 	}
     A=s/q;
-    printf("%.2lf",A);
+    my_printf("%.2lf",A);
 	return 0;
 }

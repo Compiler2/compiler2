@@ -11,6 +11,6 @@ int main_bench()
 		*(p-1)=*(p-1)+*p;
 	*(p-1)=*(p-1)+t;
 	for(p=a;*p!='\0';p++)
-		printf("%c",*p);
+		my_printf("%c",*p);
 
 }

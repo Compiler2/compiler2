@@ -7,10 +7,10 @@ int main_bench()
 	{
 		shuzhou[i]=1;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -42,11 +42,11 @@ int main_bench()
 	}
 	if(p!=0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	if(p==0)
 	{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

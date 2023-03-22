@@ -7,7 +7,7 @@ main_bench()
 {
     char a[100]={'\0'},b[100]={'\0'};int c[100]={0},d[100]={0};
     int k,m,t=0,c1=0,c2=0,j1=0,j2=0,z=0,y=0,h=0;
-    scanf("%s",a);
+    my_scanf("%s",a);
     int l=strlen(a);
     for(k=0;k<l;k++)
     {
@@ -30,7 +30,7 @@ main_bench()
     {if(c[k]!=-1) b[c[k]]='$';}
     for(k=0;k<j2;k++)
     {if(d[k]!=-1) b[d[k]]='?';}
-    printf("%s\n",a);for(k=0;k<l;k++)printf("%c",b[k]);printf("\n");
+    my_printf("%s\n",a);for(k=0;k<l;k++)my_printf("%c",b[k]);my_printf("\n");
 }
   getchar();
   getchar();

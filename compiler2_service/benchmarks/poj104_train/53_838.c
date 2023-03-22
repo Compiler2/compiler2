@@ -2,11 +2,11 @@
 
 int main_bench(){
 int a[100],b[100],n,i=0,j=0,t=0,p=0,r,x=0,z=0;
-             scanf("%d",&n);  
+             my_scanf("%d",&n);  
 
 	         for (i=0;i<n;i++){
-		         scanf("%d",&a[i]);}
-		printf("%d,",a[0]);
+		         my_scanf("%d",&a[i]);}
+		my_printf("%d,",a[0]);
 			 
 		 
 		
@@ -24,8 +24,8 @@ int a[100],b[100],n,i=0,j=0,t=0,p=0,r,x=0,z=0;
 		 }}
 
   for (z=0;z<j-1;z++){
-				printf("%d,",b[z]);
+				my_printf("%d,",b[z]);
   }
-		printf("%d",b[j-1]);
+		my_printf("%d",b[j-1]);
 	return 0;
 }

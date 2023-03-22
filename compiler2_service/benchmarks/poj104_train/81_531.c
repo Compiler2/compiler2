@@ -10,8 +10,8 @@ int main_bench()
 	int flag,i,j,m,n,swap,num[5][5];
 	for (i=0;i<=4;i++)
 		for (j=0;j<=4;j++) 
-			scanf("%d",&num[i][j]);
-	scanf("%d %d",&n,&m);
+			my_scanf("%d",&num[i][j]);
+	my_scanf("%d %d",&n,&m);
 	if (find(n,m))
 	{
 		for (i=0;i<=4;i++)
@@ -25,12 +25,12 @@ int main_bench()
 			flag=0;
 			for (j=0;j<=4;j++) 
 			{
-				if (flag) printf(" ");
+				if (flag) my_printf(" ");
 				else flag=1;	
-				printf("%d",num[i][j]);
+				my_printf("%d",num[i][j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
-	else printf("error");
+	else my_printf("error");
 }

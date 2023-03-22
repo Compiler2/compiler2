@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[500]={""},s1[500][6]={""};
 	int n,x[500]={0},i,j,length,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(s);
 	length=strlen(s);
@@ -30,13 +30,13 @@ int main_bench()
 			max=x[i];
 	}
 	if(max==0)
-		printf("NO");
+		my_printf("NO");
 	else
-	{printf("%d\n",max+1);
+	{my_printf("%d\n",max+1);
 	for(i=0;i<=length-n;i++)
 	{
 		if(x[i]==max)
-			printf("%s\n",s1[i]);
+			my_printf("%s\n",s1[i]);
 	}}
 	return 0;
 }

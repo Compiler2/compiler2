@@ -9,8 +9,8 @@ int main_bench()
 	
 	for(p=str;*p!='\0';p++){
 		if ((*p>'9'||*p<'0')&&(*(p+1)<='9'&&*(p+1)>='0')){
-			printf("\n");
+			my_printf("\n");
 		}
-		if ((*p)<='9'&&(*p)>='0') printf("%c",*p);
+		if ((*p)<='9'&&(*p)>='0') my_printf("%c",*p);
 	}
 }

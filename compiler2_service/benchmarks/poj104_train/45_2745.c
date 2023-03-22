@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char s[1000],w[1000];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	int sn=strlen(s);
 	int wn=strlen(w);
 	int pos=0;
@@ -16,7 +16,7 @@ int main_bench()
 		if(w[i]==s[pos]) pos++;
 		else pos=0;
 	}
-	printf("%d",i-pos);
+	my_printf("%d",i-pos);
 
 	return 0;
 }

@@ -29,12 +29,12 @@ int main_bench()
 	}
 	for(i=q;i<max+q;i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=p;i<p+min;i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 	return 0;
 }

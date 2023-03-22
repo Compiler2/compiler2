@@ -5,12 +5,12 @@ int main_bench()
 	int i=0,j,n,a[100],temp,k=0;
 	char b;
 	do{
-		scanf("%d%c",&a[i],&b);
+		my_scanf("%d%c",&a[i],&b);
 		i=i+1;
 	}
 	while(b==',');
 	n=i;
-	if(n==1)printf("No");
+	if(n==1)my_printf("No");
 	else
 	{
 		for(i=0;i<n;i++)
@@ -25,12 +25,12 @@ int main_bench()
 	
 		}
 	for(j=0;j<n-1;j++)if(a[j]==a[j+1])k++;
-		if(k==n-1)printf("No");
+		if(k==n-1)my_printf("No");
 		else for(i=0;i<n;i++)
 		{
 			if(a[i]<a[0])
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				break;
 			}
 		}

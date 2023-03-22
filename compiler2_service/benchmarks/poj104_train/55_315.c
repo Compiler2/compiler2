@@ -6,7 +6,7 @@ int main_bench()
 	char fan[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int from,to;
 	char in[255];
-	scanf("%d%s%d",&from,in,&to);
+	my_scanf("%d%s%d",&from,in,&to);
 	int i;
 	for(i='0';i<='9';i++)
 		zheng[i]=i-'0';
@@ -28,7 +28,7 @@ int main_bench()
 		sum/=to;
 	}
 	for(i=l-1;i>=0;i--)
-		printf("%c",out[i]);
+		my_printf("%c",out[i]);
 	return 0;
 
 }

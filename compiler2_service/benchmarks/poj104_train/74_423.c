@@ -32,15 +32,15 @@ int huiwen(int n)
 int main_bench()
 {
 	int m,n,i,flag=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if (sushu(i))
 		   if (huiwen(i)) 
 		   {
-			   if (flag==0) {printf("%d",i);flag++;}
-			   else printf(",%d",i);
+			   if (flag==0) {my_printf("%d",i);flag++;}
+			   else my_printf(",%d",i);
 		   }
 	}
-	if(flag==0) printf("no");
+	if(flag==0) my_printf("no");
 }

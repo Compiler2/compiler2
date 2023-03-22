@@ -3,10 +3,10 @@
 int main_bench(){
     char u[60][33],a[60][33];
     int n,j,m=0,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for(j=0;j<n;j++){
-    scanf("%s",u[j]);
+    my_scanf("%s",u[j]);
 }
 
 for(j=0;j<n;j++){
@@ -33,7 +33,7 @@ for(j=0;j<n;j++){
                     }
 }
 for(j=0;j<n;j++){
-printf("%s\n",a[j]);
+my_printf("%s\n",a[j]);
 }
 return 0;
 }

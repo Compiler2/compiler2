@@ -8,7 +8,7 @@ int main_bench(){
    
    for(i=0;i>=0;i++){
      
-	  scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+	  my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
       if(a==0){
 		  break;
 	  }
@@ -30,7 +30,7 @@ int main_bench(){
 
 	  sum=h*3600+m*60+s;
 
-	  printf("%d\n",sum);
+	  my_printf("%d\n",sum);
 	  
 	 }
 

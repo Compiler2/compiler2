@@ -5,7 +5,7 @@ int main_bench()
 	
 	int y,m,d,r=0,a,z,i;
 	
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	r=0;
 	while(y>2000){
 		y=y-2000;
@@ -101,25 +101,25 @@ int main_bench()
 		a=(z-1)%7;
 		switch(a){
 		case 0:
-			printf("Mon.");
+			my_printf("Mon.");
 			break;
 		case 1:
-			printf("Tue.");
+			my_printf("Tue.");
 			break;
 		case 2:
-			printf("Wed.");
+			my_printf("Wed.");
 			break;
 		case 3:
-			printf("Thu.");
+			my_printf("Thu.");
 			 break;
 		case 4:
-			printf("Fri.");
+			my_printf("Fri.");
 			break;
 		case 5:
-			printf("Sat.");
+			my_printf("Sat.");
 			break;
 		case 6:
-			printf("Sun.");
+			my_printf("Sun.");
 			break;
 		}
 		

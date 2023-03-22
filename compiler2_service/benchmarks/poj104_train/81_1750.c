@@ -8,10 +8,10 @@ int main_bench(){
     a=0;
     for(int h=0;h<H;h++){
         for(int l=0;l<L;l++){
-            scanf("%d",&sz[h][l]);
+            my_scanf("%d",&sz[h][l]);
         }
     }
-    scanf ("%d%d",&n,&m);
+    my_scanf ("%d%d",&n,&m);
     if (n<H&&m<H){
         a=1;
     }
@@ -23,13 +23,13 @@ int main_bench(){
     } 
     for(h=0;h<H;h++){
         for(l=0;l<L-1;l++){
-            printf("%d ",sz[h][l]);
+            my_printf("%d ",sz[h][l]);
         }
-        printf("%d\n",sz[h][L-1]);
+        my_printf("%d\n",sz[h][L-1]);
     }
     }
     else{
-     printf("error");  
+     my_printf("error");  
     }
     return 0;
 }

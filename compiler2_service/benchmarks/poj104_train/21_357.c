@@ -9,10 +9,10 @@ int main_bench()
 {
 	int n,i,j;
 	double sum=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num[i].a);
+		my_scanf("%d",&num[i].a);
 		sum=sum+num[i].a;
 	}
 	t=sum/n;
@@ -36,11 +36,11 @@ int main_bench()
 		}
 	}
 	if(num[0].b!=num[1].b)
-		printf("%d\n",num[0].a);
+		my_printf("%d\n",num[0].a);
     else if(num[0].b==num[1].b)
 	{
-		printf("%d",num[0].a);
-		printf(",%d\n",num[1].a);
+		my_printf("%d",num[0].a);
+		my_printf(",%d\n",num[1].a);
 	}
 }
 

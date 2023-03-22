@@ -33,10 +33,10 @@ int main_bench(){
 	}
 	for(i=0;i<k;i++){
 		if(i!=k-1){
-		    printf("%d,",sz[i]);
+		    my_printf("%d,",sz[i]);
 		}
 		else{
-			printf("%d",sz[i]);
+			my_printf("%d",sz[i]);
 		}
 	}
 	return 0;

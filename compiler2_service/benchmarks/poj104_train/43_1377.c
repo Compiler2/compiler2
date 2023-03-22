@@ -20,12 +20,12 @@ int leap(int a)
 int main_bench()
 {
 	int i,m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=2;i<=m/2;i++)
 	{
 		if(leap(i)&&leap(m-i))
 		{
-			printf("%d %d\n",i,m-i);
+			my_printf("%d %d\n",i,m-i);
 		}
 	}
 	return 0;

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,a[100][100]={0},j,m,i,k,p;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(j=0;j<n;j++)
 	{
 		for(i=0;i<m;i++)
 		{
-		scanf("%d",&a[j][i]);
+		my_scanf("%d",&a[j][i]);
 		}
 	}
 	if(m>n)
@@ -25,19 +25,19 @@ int main_bench()
 	
 		for(j=i;j<m-i;j++)
 		{
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 		}
 		for(j=i+1;j<n-i;j++)
 		{
-			printf("%d\n",a[j][m-i-1]);
+			my_printf("%d\n",a[j][m-i-1]);
 		}
 		for(j=m-i-2;j>=i;j--)
 		{
-			printf("%d\n",a[n-1-i][j]);
+			my_printf("%d\n",a[n-1-i][j]);
 		}
 		for(j=n-i-2;j>i;j--)
 		{
-			printf("%d\n",a[j][i]);
+			my_printf("%d\n",a[j][i]);
 		}
 			}
 			if(k%2==0)
@@ -45,19 +45,19 @@ int main_bench()
 				i=(k-1)/2;
 			for(j=i;j<m-i;j++)
 		{
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 		}
 		for(j=i+1;j<n-i;j++)
 		{
-			printf("%d\n",a[j][m-i-1]);
+			my_printf("%d\n",a[j][m-i-1]);
 		}
 		for(j=m-i-2;j>=i;j--)
 		{
-			printf("%d\n",a[n-1-i][j]);
+			my_printf("%d\n",a[n-1-i][j]);
 		}
 		for(j=n-i-2;j>i;j--)
 		{
-			printf("%d\n",a[j][i]);
+			my_printf("%d\n",a[j][i]);
 		}
 			}
 			else
@@ -67,7 +67,7 @@ int main_bench()
 					i=(n-1)/2;
 					for(j=i;j<m-i;j++)
 		{
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 		}
 				}
 				else
@@ -75,7 +75,7 @@ int main_bench()
 					i=(m-1)/2;
 					for(j=i;j<n-i;j++)
 		{
-			printf("%d\n",a[j][m-i-1]);
+			my_printf("%d\n",a[j][m-i-1]);
 		}
 				}
 			}

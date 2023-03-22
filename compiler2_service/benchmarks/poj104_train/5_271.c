@@ -5,10 +5,10 @@ int main_bench(){
   char b[500],c[500];
   double s=0;
   int i;
-  scanf("%lf",&a);
-  scanf("%s %s",b,c);
+  my_scanf("%lf",&a);
+  my_scanf("%s %s",b,c);
   if(strlen(b)!=strlen(c)){
-	  printf("error");
+	  my_printf("error");
 	  return 0;
   }
   for(i=0;i<strlen(b);i++){
@@ -16,7 +16,7 @@ int main_bench(){
 		  s=1;
   }
   if(s==1){
-	  printf("error");
+	  my_printf("error");
 	  return 0;
   }
   s=0;
@@ -25,8 +25,8 @@ int main_bench(){
 		   s++;
    }
    if(s/strlen(b)>a)
-	   printf("yes");
+	   my_printf("yes");
    else
-	   printf("no");
+	   my_printf("no");
    return 0;
 }

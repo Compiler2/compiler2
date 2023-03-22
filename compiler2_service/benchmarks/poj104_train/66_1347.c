@@ -11,7 +11,7 @@ int main_bench(){
 	struct tian{
 	int year,month,day;
 }a;
-scanf("%d %d %d",&a.year,&a.month,&a.day);
+my_scanf("%d %d %d",&a.year,&a.month,&a.day);
 for(i=1;i<((a.year-1)%400)+1;i++){
 answer+=1;
 if(runnian(i))
@@ -29,18 +29,18 @@ answer+=2;
 answer+=a.day;
 
 if(answer%7==1)
-printf("Mon.");
+my_printf("Mon.");
 if(answer%7==2)
-printf("Tue.");
+my_printf("Tue.");
 if(answer%7==3)
-printf("Wed.");
+my_printf("Wed.");
 if(answer%7==4)
-printf("Thu.");
+my_printf("Thu.");
 if(answer%7==5)
-printf("Fri.");
+my_printf("Fri.");
 if(answer%7==6)
-printf("Sat.");
+my_printf("Sat.");
 if(answer%7==0)
-printf("Sun.");
+my_printf("Sun.");
 return 0;
 }

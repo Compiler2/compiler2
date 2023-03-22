@@ -3,7 +3,7 @@
 int main_bench()
 {   
     int i,j,u,m,n,x,y,sum,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     double a[50],c[50],d;
     char b[50][10];
     memset(a,0,sizeof(a));
@@ -12,15 +12,15 @@ int main_bench()
     y=0;
     for(i=0;i<n;i++)
     {
-                    scanf("%s",b[i]);
+                    my_scanf("%s",b[i]);
                     if(b[i][0]=='m')
                     {
-                                       scanf("%lf",&a[i]);
+                                       my_scanf("%lf",&a[i]);
                                        y++;
                     }
                     else if(b[i][0]=='f')
                     {
-                        scanf("%lf",&c[i]);
+                        my_scanf("%lf",&c[i]);
                         x++;
                     }
     }
@@ -51,15 +51,15 @@ int main_bench()
     for(i=y-1;i>=0;i--)
     {
                        if(i==y-1)
-                       printf("%.2lf",a[i]);
+                       my_printf("%.2lf",a[i]);
                        else 
-                       printf(" %.2lf",a[i]);
+                       my_printf(" %.2lf",a[i]);
     }
     for(i=0;i<x;i++)
     {
-                    printf(" %.2lf",c[i]);
+                    my_printf(" %.2lf",c[i]);
     }
-    scanf("%d",&u);
+    my_scanf("%d",&u);
     return 0;
 }
                                                    

@@ -5,10 +5,10 @@ int main_bench()
     int i,j,k,l,m,n,a[400],b[400];
     float x=0,y=0;
     memset(a,0,sizeof(a)); memset(b,0,sizeof(b));
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=1;i<=n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         x=x+a[i];
     }
     x=(float)x/n;
@@ -28,6 +28,6 @@ int main_bench()
            b[l]=a[i];
         }
     for (i=1;i<l;i++)
-        printf("%d,",b[i]);
-    printf("%d",b[l]);
+        my_printf("%d,",b[i]);
+    my_printf("%d",b[l]);
 }

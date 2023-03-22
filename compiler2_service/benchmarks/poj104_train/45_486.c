@@ -37,7 +37,7 @@ int main_bench()
 		}
 	}
 
-	printf("%d",output);
+	my_printf("%d",output);
 
 }
 	

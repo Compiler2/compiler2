@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,s[200],z[200],a,b;
 	a=0;
 	b=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-		scanf("%d%d", &s[i], &z[i]);}
+		my_scanf("%d%d", &s[i], &z[i]);}
 	for(i=0;i<n;i++){
 		if(s[i]-z[i]==1) {
 			b++;}
@@ -19,12 +19,12 @@ int main_bench()
 			b++;}
 	}
 	if(b>a) {
-		printf("B");}
+		my_printf("B");}
 	else {
 		if(b<a) {
-		   printf("A");}
+		   my_printf("A");}
 		else  {
-		printf("Tie");}
+		my_printf("Tie");}
 	}
 	return 0;
 }

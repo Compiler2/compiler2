@@ -3,8 +3,8 @@
 int main_bench()
 {
    int input[100]={0},i=0,j=0,n=0,t=0;
-   scanf("%d",&n);
-   for(i=0;i<n;i++) scanf("%d",&input[i]);
+   my_scanf("%d",&n);
+   for(i=0;i<n;i++) my_scanf("%d",&input[i]);
 
 
    for(i=1;i<n;i++)
@@ -16,7 +16,7 @@ int main_bench()
 	 input[i-1]=t;
       }
    }
-   printf("%d\n",input[n-1]);
+   my_printf("%d\n",input[n-1]);
    input[j]=0;
 
    for(i=1;i<n-1;i++)
@@ -28,5 +28,5 @@ int main_bench()
 	 input[i-1]=t;
       }
    }
-   printf("%d\n",input[n-2]);
+   my_printf("%d\n",input[n-2]);
 }

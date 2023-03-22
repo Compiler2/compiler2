@@ -5,7 +5,7 @@ int main_bench()
 	
 char a[100001];
 int  length,i,j,len,check,t;
-scanf("%s",&a);
+my_scanf("%s",&a);
 len=strlen(a);
     for(length=2;length<=len;length++)
 	{
@@ -24,9 +24,9 @@ len=strlen(a);
 			   if(check==0)
 			   {
 			      for(t=0;t<length;t++)
-                      printf("%c",a[i+t]);
+                      my_printf("%c",a[i+t]);
 			   }
-          printf("\n");
+          my_printf("\n");
 		  }
 	
 	}

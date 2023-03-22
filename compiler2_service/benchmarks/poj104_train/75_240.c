@@ -7,13 +7,13 @@ int main_bench()
 {
 	int list1[1000];
 	int list2[1000];
-	scanf("%d",&list1[0]);
+	my_scanf("%d",&list1[0]);
 	int count=1;
-	while(scanf(",%d",&list1[count++])!=0);
+	while(my_scanf(",%d",&list1[count++])!=0);
 	count--;
 	int index=1;
-	scanf("%d",&list2[0]);
-	while(scanf(",%d",&list2[index++])!=0);
+	my_scanf("%d",&list2[0]);
+	while(my_scanf(",%d",&list2[index++])!=0);
 
 	int max=0;
 	int num=0;
@@ -30,6 +30,6 @@ int main_bench()
 			max=num;
 	}
 
-	printf("%d %d",count,max);
+	my_printf("%d %d",count,max);
 	return 0;
 }

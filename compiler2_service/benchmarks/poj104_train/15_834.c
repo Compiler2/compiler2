@@ -7,13 +7,13 @@ int main_bench()
 	int re=0;
 	i=0;
 	j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int s[1000][1000];
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&(s[i][j]));
+			my_scanf("%d",&(s[i][j]));
 			if(s[i][j]==0&&f==-1)
 			{
 				star1=i+1;
@@ -28,7 +28,7 @@ int main_bench()
 		}
 	}
 	re=(end1-star1+1)*(end2-star2+1);
-	printf("%d",re);
+	my_printf("%d",re);
 	return 0;
 }
 		

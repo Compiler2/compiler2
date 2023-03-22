@@ -4,13 +4,13 @@
 void scan(int n[],int a[],int b[])
 { 
 	int i;
-	scanf("%d%d",&n[0],&n[1]);
+	my_scanf("%d%d",&n[0],&n[1]);
 
 	for(i=0;i<n[0];i++)
-	 scanf("%d",&a[i]);
+	 my_scanf("%d",&a[i]);
 
 	for(i=0;i<n[1];i++)
-	 scanf("%d",&b[i]);
+	 my_scanf("%d",&b[i]);
 }
 
 
@@ -49,9 +49,9 @@ void prt(int ab[],int m,int n)
 {
 	int i;
 	for(i=0;i<m+n-1;i++)
-		printf("%d ",ab[i]);
+		my_printf("%d ",ab[i]);
 
-	printf("%d",ab[m+n-1]);
+	my_printf("%d",ab[m+n-1]);
 
 }
 

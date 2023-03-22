@@ -9,8 +9,8 @@ int main_bench()
     int i, j, k, n;
     int a[200];
     gets(s);
-    scanf("%s",ti);
-    scanf("%s",bt);
+    my_scanf("%s",ti);
+    my_scanf("%s",bt);
     n = 0; k = 0;
     for (i = 0; s[i] != 0; i++) {
         if (s[i] == ' ') {
@@ -34,9 +34,9 @@ int main_bench()
      for(i=0;i<n;i++)
      {
        if(i==0)
-       printf("%s",words[0]);
+       my_printf("%s",words[0]);
        else
-       printf(" %s",words[i]) ;
+       my_printf(" %s",words[i]) ;
      }
 
      return 0;

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,x[100];
 	double a=0,b=0,c=0,d=0,s,t,u,v,all;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		if(x[i]<=18)
 			a++;
 		else if(x[i]>18&&x[i]<36)
@@ -22,6 +22,6 @@ int main_bench()
 	t=100*b/all;
 	u=100*c/all;
 	v=100*d/all;
-    printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",s,t,u,v);
+    my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",s,t,u,v);
 	return 0;
 }

@@ -36,8 +36,8 @@ int main_bench(){
 			strcpy(nowword,to);
 		}
 	}
-	printf("%s",string[0]);
-	for(i=1;i<count;i++) printf(" %s",string[i]);
-	printf("\n");
+	my_printf("%s",string[0]);
+	for(i=1;i<count;i++) my_printf(" %s",string[i]);
+	my_printf("\n");
 	return 0;
 }

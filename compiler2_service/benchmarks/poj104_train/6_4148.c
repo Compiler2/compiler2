@@ -4,12 +4,12 @@ int main_bench(){
 int k,m,n,i,j,l,sum=0;
 int a[100][100];
 int b[1000];
-scanf("%d\n",&k);
+my_scanf("%d\n",&k);
 for(i=0;i<k;i++){
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(j=0;j<m;j++){
 		for(l=0;l<n;l++){
-		scanf("%d",&a[j][l]);
+		my_scanf("%d",&a[j][l]);
 		}
 
 	}
@@ -40,7 +40,7 @@ for(i=0;i<k;i++){
 	}
 }
 for(i=0;i<k;i++){
-printf("%d\n",b[i]);
+my_printf("%d\n",b[i]);
 }
 return 0;
 }

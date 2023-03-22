@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,len;
 	char a[256],b[256]={'\0'};
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		char b[256]={'\0'};

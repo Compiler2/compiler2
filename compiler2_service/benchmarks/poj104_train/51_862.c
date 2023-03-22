@@ -4,8 +4,8 @@ int main_bench(){
 	
 	int a[501],b,c,n,m,t,j,l,jl;
 	char s[501],u[501][501];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	l=strlen(s);
 
 	for(b=0;b<=l-n;b++){
@@ -34,10 +34,10 @@ int main_bench(){
 	
 	
 	if(jl==0||jl==1){
-		printf("NO");
+		my_printf("NO");
 			return 0;
 	}
-	printf("%d\n",jl);
+	my_printf("%d\n",jl);
 	for(b=0;b<=l-n;b++){
 		if(a[b]==jl){
 		puts(u[b]);

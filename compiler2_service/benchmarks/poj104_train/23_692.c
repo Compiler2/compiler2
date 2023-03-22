@@ -24,6 +24,6 @@ int main_bench()
         }
     }
     fanzhuan(a, 0, strlen(a) - 1);
-    printf("%s\n", a);
+    my_printf("%s\n", a);
     return 0;
 }

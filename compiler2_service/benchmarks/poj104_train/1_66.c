@@ -14,10 +14,10 @@ int acSearch(int n, int i) {
 }
 
 int main_bench() {
-	scanf("%d", &N);
+	my_scanf("%d", &N);
 	for(; N --;) {
-		scanf("%d", &A);
-		printf("%d\n", acSearch(A, 2));
+		my_scanf("%d", &A);
+		my_printf("%d\n", acSearch(A, 2));
 	}
 	return 0;
 }

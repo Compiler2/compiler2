@@ -18,7 +18,7 @@ int f(int a)
 int main_bench()
 {
     int n,i,j,c,d;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n>=5)
     {
         n=n-2;
@@ -28,10 +28,10 @@ int main_bench()
             c=f(i);
             d=f(j);
             if(c==1&&d==1)
-            printf("%d %d\n",i,j);
+            my_printf("%d %d\n",i,j);
         }
     }
     else
-    printf("empty");
+    my_printf("empty");
     return 0;
 }

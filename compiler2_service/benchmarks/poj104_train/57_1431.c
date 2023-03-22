@@ -2,10 +2,10 @@
 
 int main_bench(){
    int i,t,n;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(t=1;t<=n;t++){
                                        char zifu[400][400];
-                                       scanf("%s",&zifu[t]);
+                                       my_scanf("%s",&zifu[t]);
                                        char das[400][400];
                                        int j=strlen(zifu[t]);
    if((zifu[t][j-2]=='e'&&zifu[t][j-1]=='r')||(zifu[t][j-2]=='l'&&zifu[t][j-1]=='y')){                                  
@@ -20,7 +20,7 @@ int main_bench(){
                                                                                                                      }
                                                                                                 puts(das[t]);
                                                                                                 }
-                                       else{printf("%s\n",zifu[t]);}
+                                       else{my_printf("%s\n",zifu[t]);}
                                       
                                        }
    

@@ -3,9 +3,9 @@
 int main_bench()
 {
     int a,b,c;
-    scanf ("%d",&a);
+    my_scanf ("%d",&a);
     if (a==1)
-    printf("End");
+    my_printf("End");
     else
     {
     do
@@ -13,20 +13,20 @@ int main_bench()
     if (b==0)
     {
     c=a/2;
-    printf ("%d/2=%d\n",a,c);
+    my_printf ("%d/2=%d\n",a,c);
     a=a/2;
     }
     else 
     {
     c=a*3+1;
-    printf ("%d*3+1=%d\n",a,c);
+    my_printf ("%d*3+1=%d\n",a,c);
     a=a*3+1;
     }
 }
 
     while (a>1);
 
-    printf("End");
+    my_printf("End");
 }
     getchar();
     getchar();

@@ -16,7 +16,7 @@ int main_bench()
 		last = input[i];
 	}
 	res[j] = '\0';
-	printf("%s\n",res);
+	my_printf("%s\n",res);
 
 	return 0;
 }

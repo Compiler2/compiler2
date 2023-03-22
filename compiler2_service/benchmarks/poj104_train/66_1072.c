@@ -5,7 +5,7 @@ int DiJiTian(int year, int month, int day);
 int main_bench(){
 
 	int y,m,d,sum,a,b,i,n=0;
-scanf("%d%d%d",&y,&m,&d);
+my_scanf("%d%d%d",&y,&m,&d);
 a= DiJiTian(y,m,d);
 a=a%7;
 y=y%(365*7*400);
@@ -17,25 +17,25 @@ sum=a+b;
 switch(sum%7){
 
 case 1:
-printf("Mon.");
+my_printf("Mon.");
 break;
 case 2:
-printf("Tue.");
+my_printf("Tue.");
 break;
 case 3:
-printf("Wed.");
+my_printf("Wed.");
 break;
 case 4:
-printf("Thu.");
+my_printf("Thu.");
 break;
 case 5:
-printf("Fri.");
+my_printf("Fri.");
 break;
 case 6:
-printf("Sat.");
+my_printf("Sat.");
 break;
 case 0:
-printf("Sun.");
+my_printf("Sun.");
 break;
 
 }

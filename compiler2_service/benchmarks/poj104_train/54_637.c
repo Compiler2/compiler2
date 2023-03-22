@@ -18,12 +18,12 @@ int main_bench()
 	int n,k,b,c=0;
 	long int a,s;
 	int*p;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	b=n;
 	a=1;
 	p=&c;
 	if(n==1)
-		printf("%d\n",1+k);
+		my_printf("%d\n",1+k);
 	else
 	{
 		for(a=1;a<=1000000;a++)
@@ -36,6 +36,6 @@ int main_bench()
 				break;
 				
 		}
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 	}
 }

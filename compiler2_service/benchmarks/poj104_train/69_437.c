@@ -4,8 +4,8 @@ int main_bench()
 {
 char s1[250];
 char s2[250];
-scanf("%s",s1);
-scanf("%s",s2) ; 
+my_scanf("%s",s1);
+my_scanf("%s",s2) ; 
 int l1 ,l2 ;
 l1=strlen(s1);
 l2=strlen(s2) ;
@@ -32,7 +32,7 @@ while(p[i]==0&&i>0)
 i--;
 for (;i>=0;i--)
 {
-printf("%d",p[i]);    
+my_printf("%d",p[i]);    
     
     
     

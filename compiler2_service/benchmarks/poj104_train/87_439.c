@@ -5,7 +5,7 @@ int main_bench()
 	int shuzu[100][6];
 	for(int i=0;i<100;i++){
 		for(int j=0;j<6;j++){
-		scanf("%d",&shuzu[i][j]);
+		my_scanf("%d",&shuzu[i][j]);
 		}
 		if(shuzu[i][0]==0 && shuzu[i][1]==0 && shuzu[i][2]==0 && shuzu[i][3]==0 && shuzu[i][4]==0 && shuzu[i][5]==0)
 			break;
@@ -31,7 +31,7 @@ int main_bench()
 		}
 
 		sum=h*60*60+m*60+s;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 		}
 	return 0;
 }

@@ -28,12 +28,12 @@ float sum (int n)
 int main_bench()
 {
     int m,x;
-    scanf ("%d",&m);
+    my_scanf ("%d",&m);
     for (x=0;x<m;x++)
     {
         int n;
-        scanf ("%d",&n);
-        printf ("%.3f\n",sum(n));
+        my_scanf ("%d",&n);
+        my_printf ("%.3f\n",sum(n));
     }
     getchar ();
     getchar ();

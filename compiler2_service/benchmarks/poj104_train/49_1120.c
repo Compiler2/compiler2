@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[500]={0},result[500]={0};
 	int i,j,sum,p,len,x;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	len=strlen(str);
 	for(i=1;i<=len;i++){
 		for(j=0;j<=len-i;j++){
@@ -22,7 +22,7 @@ int main_bench()
 				else sum++;
 			}
 			if(sum==x+1&&strlen(result)!=1)
-				printf("%s\n",result);
+				my_printf("%s\n",result);
 		}
 	}
 	return 0;

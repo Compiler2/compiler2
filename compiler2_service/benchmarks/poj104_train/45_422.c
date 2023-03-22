@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,k,m,n,count=0;
 	p1=str1;
 	p2=str2;
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 	m=strlen(str1);
 	n=strlen(str2);
 	for(i=0;i<n;)
@@ -26,6 +26,6 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%d",k);
+	my_printf("%d",k);
     return 0;
 }

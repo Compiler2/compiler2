@@ -28,5 +28,5 @@ int main_bench()
         strcat(string2, " ");
     }
     strcat(string2,str[0]);
-    printf("%s",string2);
+    my_printf("%s",string2);
 }

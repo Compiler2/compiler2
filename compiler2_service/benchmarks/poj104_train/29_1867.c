@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int m,n,i,j;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	float a[200];
 	float b[200];
 	float s;
@@ -14,7 +14,7 @@ int main_bench()
 	b[2]=2;
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		s=0;
 		for(j=1;j<=n;j++)
 		{
@@ -22,7 +22,7 @@ int main_bench()
 			b[j+2]=b[j]+b[j+1];
 			s=s+(a[j]/b[j]);
 		}
-		printf("%.3f\n", s);
+		my_printf("%.3f\n", s);
 	}
 
 	return 0;

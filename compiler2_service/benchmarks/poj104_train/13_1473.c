@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int sz1[20000],sz2[20000],i,j,n,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	j=1;
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&sz1[i]);
+		my_scanf("%d",&sz1[i]);
 	}
 	sz2[0]=sz1[0];
 	for(i=1;i<=n-1;i++)
@@ -29,11 +29,11 @@ int main_bench()
 	{
 		if(i==j-1)
 		{
-			printf("%d",sz2[i]);
+			my_printf("%d",sz2[i]);
 		}
 		else
 		{
-			printf("%d ",sz2[i]);
+			my_printf("%d ",sz2[i]);
 		}
 	}
 	return 0;

@@ -12,7 +12,7 @@ int leap_year(int y)
 int main_bench()
 {
 	int y,m,d,count;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if(leap_year(y))
 	{
 		switch (m)
@@ -51,6 +51,6 @@ int main_bench()
 		}
 		count+=d;
 	}
-	printf("%d\n",count);
+	my_printf("%d\n",count);
 	return 0;
 }

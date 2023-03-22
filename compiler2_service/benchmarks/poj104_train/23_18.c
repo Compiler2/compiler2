@@ -23,6 +23,6 @@ int main_bench()
 		}
 	*(*(q+j)+k)='\0';
 	for(i=j;i>0;i--)
-		printf("%s ",q+i);
-	printf("%s\n",q);
+		my_printf("%s ",q+i);
+	my_printf("%s\n",q);
 }

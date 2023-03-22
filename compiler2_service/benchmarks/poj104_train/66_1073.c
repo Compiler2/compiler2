@@ -7,7 +7,7 @@ int main_bench()
     int y2,m2,d2;
 	
     int sum=0;
-    scanf("%d%d%d",&y2,&m2,&d2);
+    my_scanf("%d%d%d",&y2,&m2,&d2);
 	while(y2>(7*400))
 	{
 		y2=y2%(7*400);
@@ -49,19 +49,19 @@ int main_bench()
 	sum=sum%7;
 	switch(sum)
 	{
-	case 0:printf("Mon.");
+	case 0:my_printf("Mon.");
 		break;
-	case 1:printf("Tue.");
+	case 1:my_printf("Tue.");
 		break;
-	case 2:printf("Wed.");
+	case 2:my_printf("Wed.");
 		break;
-	case 3:printf("Thu.");
+	case 3:my_printf("Thu.");
 		break;
-	case 4:printf("Fri.");
+	case 4:my_printf("Fri.");
 		break;
-	case 5:printf("Sat.");
+	case 5:my_printf("Sat.");
 		break;
-	case 6:printf("Sun.");
+	case 6:my_printf("Sun.");
 		break;
 	}
 	return 0;

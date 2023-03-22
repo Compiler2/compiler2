@@ -10,10 +10,10 @@ main_bench()
 	int paper;
 	};
  int n,i;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  struct student stu[100];
  for(i=0;i<n;i++)
-	 scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].average,&stu[i].classeva,
+	 my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].average,&stu[i].classeva,
 	       &stu[i].leader,&stu[i].western,&stu[i].paper);
  int sum[100],max=0;
  long total=0;
@@ -29,5 +29,5 @@ main_bench()
 	}
  for(i=0;i<n;i++)
 	 if(sum[i]==max)break;
- printf("%s\n%d\n%ld",stu[i].name,max,total);
+ my_printf("%s\n%d\n%ld",stu[i].name,max,total);
 }

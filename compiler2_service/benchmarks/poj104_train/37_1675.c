@@ -4,13 +4,13 @@ int main_bench()
 {
 	
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i1;
 	for(i1=0;i1<=n-1;i1++)
 	{
 		char str[100000];
 
-		scanf("%s",str);
+		my_scanf("%s",str);
 		int length;
 		length=strlen(str);
 		int counter;
@@ -35,13 +35,13 @@ int main_bench()
 			}
 			if(counter==1)
 			{
-				printf("%c\n",str[i3]);
+				my_printf("%c\n",str[i3]);
 				break;
 			}
 		}
 		if(i3==length)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a[300],i=1,j,b,c=0,n;
-	scanf("%d",&a[0]);
-	while(scanf(",%d",&a[i]))i=i+1;
+	my_scanf("%d",&a[0]);
+	while(my_scanf(",%d",&a[i]))i=i+1;
 	b=a[0];
 	for(j=0;j<i;j++){
 	if(a[j]>b)b=a[j];
@@ -13,8 +13,8 @@ int main_bench()
 	if(a[n]>c&&a[n]!=b)
 		c=a[n];
 	}
-	if(c==0)printf("No\n");
+	if(c==0)my_printf("No\n");
 	else
-	printf("%d\n",c);
+	my_printf("%d\n",c);
 	return 0;
 }

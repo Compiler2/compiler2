@@ -25,7 +25,7 @@ int main_bench()
 		}
 	    if(p==n) 
 		{
-		    printf("%s\n",b[i]);
+		    my_printf("%s\n",b[i]);
 		    break;
 		}
 	}
@@ -38,7 +38,7 @@ int main_bench()
 		}
 	    if(p==n) 
 		{
-		    printf("%s\n",b[i]);
+		    my_printf("%s\n",b[i]);
 		    break;
 		}
 	}

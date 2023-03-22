@@ -6,7 +6,7 @@ int main_bench()
 	int i=0,j,k,l,c;
 	while(i<=10)
 	{
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 		strcpy(s0,s[i]);
 		l=strlen(s[i]);
 		for(j=l-1;j>=0;j--)
@@ -36,11 +36,11 @@ int main_bench()
 				s[i][j]='?';
 		}
 		for(j=0;j<=l-1;j++)
-			printf("%c",s0[j]);
-		printf("\n");
+			my_printf("%c",s0[j]);
+		my_printf("\n");
 		for(j=0;j<=l-1;j++)
-			printf("%c",s[i][j]);
-		printf("\n");
+			my_printf("%c",s[i][j]);
+		my_printf("\n");
 		i++;
 	}
 }

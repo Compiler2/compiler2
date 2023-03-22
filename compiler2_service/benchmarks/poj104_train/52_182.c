@@ -24,18 +24,18 @@ int main_bench()
 {
 	int n,m,i;
 	int a[30];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	move(a,n,m);
 	for(i=0;i<n;i++)
 	{
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 		if(i!=n-1)
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	return 0;

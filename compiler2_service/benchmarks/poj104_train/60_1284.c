@@ -5,7 +5,7 @@
 int main_bench()
 {
   int n,i,a,b=0,c,d=0,e=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
 
   for (i=5;i<=n;i++)
   {
@@ -30,14 +30,14 @@ int main_bench()
           if (d==0)  
           {
           e++;
-          printf("%d %d\n",i-2,i);
+          my_printf("%d %d\n",i-2,i);
            }
        }
     b=0;
     d=0;    
   }
  if (e==0)
- printf("empty\n");
+ my_printf("empty\n");
  
  return 0;
         

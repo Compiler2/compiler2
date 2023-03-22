@@ -22,7 +22,7 @@ int main_bench()
 	  {strcpy(b[k],d[i]);k=k+1;}
   }
   if(k==1)
-  {printf("No\n");}
+  {my_printf("No\n");}
   else
   {
 	for(i=0;i<k-1;i++)
@@ -54,9 +54,9 @@ int main_bench()
 		{x=1;break;}
 	}
 	if(x==1)
-	{printf("%s\n",b[i+1]);}
+	{my_printf("%s\n",b[i+1]);}
 	else
-	{printf("No\n");}
+	{my_printf("No\n");}
   }
 
 

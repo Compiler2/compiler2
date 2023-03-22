@@ -6,10 +6,10 @@ int e,n,m,i;
 m=0;
 e=0;
 int a[100],b[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 }
 for(i=0;i<n;i++){
 	if(a[i]>=90&&a[i]<=140){
@@ -27,7 +27,7 @@ for(i=0;i<n;i++){
 	else{m=0;}
 
 }
-printf("%d",e);
+my_printf("%d",e);
 
 
 

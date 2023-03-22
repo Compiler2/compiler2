@@ -48,7 +48,7 @@ int main_bench()
 	j++;
 	}
 	if(j==numa+1)
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{
 		for(i=0;i<=numa;i++)
@@ -57,7 +57,7 @@ int main_bench()
 		break;}
 		}
         for(i=k;i<=numa;i++)
-	    printf("%c",c[i]);
+	    my_printf("%c",c[i]);
 	}
 	return 0;
 }

@@ -12,10 +12,10 @@ int main_bench()
 	int m;
 	int n,l;
 	int i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<=m-1;i++)
 	{
-		scanf("%s%d",b[i].id,&b[i].age);
+		my_scanf("%s%d",b[i].id,&b[i].age);
 	}
 	n=0;l=0;
 	for(i=0;i<=m-1;i++)

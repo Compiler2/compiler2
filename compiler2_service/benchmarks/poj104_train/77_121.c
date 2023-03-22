@@ -5,7 +5,7 @@ int main_bench()
 {
 	char m,f,p,l,a[100];
 	int i,j;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	m=a[0];
 	for(i=0;i<strlen(a);i++)
 		if(a[i]!=m)
@@ -17,7 +17,7 @@ int main_bench()
 			l=j;
 			if(a[l]==f)
 			{
-				printf("%d %d\n",p,l);
+				my_printf("%d %d\n",p,l);
 				a[p]='|';
 				a[l]='|';
 				p=0;

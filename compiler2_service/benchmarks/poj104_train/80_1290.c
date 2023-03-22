@@ -6,7 +6,7 @@ int main_bench()
 	int total[13]={0,31,59,90,120,151,181,212,243,273,304,334,365};
 	int y1,y2,m1,m2,d1,d2;
 	int sum=0,j;
-	scanf("%d %d %d %d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d %d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	 
 	if (y1==y2){
 	   	  if (leap(y1)==0)  
@@ -31,7 +31,7 @@ int main_bench()
        else if (m2>2)   
 	      sum+=total[m2-1]+d2+1;
 	}  
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 

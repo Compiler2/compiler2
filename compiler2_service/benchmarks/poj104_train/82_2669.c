@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int a[100][2],i,j,sum=0,n,sum_max=0;
-	scanf("%d",&n);
-	printf("\n");
+	my_scanf("%d",&n);
+	my_printf("\n");
 	for(i =0;i<n;i++)
 	{          
 		for(j=0;j<2;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}	            
 	}
 	for(i=0;i<n;i++)
@@ -25,6 +25,6 @@ int main_bench()
 		}
 	}
 	if(sum>sum_max)sum_max=sum;
-	printf("%d",sum_max);
+	my_printf("%d",sum_max);
 	return 0;
 }

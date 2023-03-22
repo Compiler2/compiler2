@@ -4,12 +4,12 @@ int ifunlucky(int d);
 int main_bench()
 {
     int w,t;
-    scanf("%d",&w);
+    my_scanf("%d",&w);
     int m=1;
     for(m=1;m<=12;m++){
     t=ifunlucky(m);
     if((t+w-5)%7==0){
-    printf("%d\n",m);
+    my_printf("%d\n",m);
     }
     }
     return 0;

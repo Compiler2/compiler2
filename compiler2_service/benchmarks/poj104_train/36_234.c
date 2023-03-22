@@ -6,19 +6,19 @@ int main_bench()
 {
 	char a[50]={0},b[50]={0};
 	int i,l1,l2;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	l1=strlen(a);l2=strlen(b);
-	if(l1!=l2) printf("NO\n");
+	if(l1!=l2) my_printf("NO\n");
 	else 
 	{
 		arn(a,l1);arn(b,l1);
 		for(i=0;i<l1;i++)
 			if(a[i]!=b[i])
 			{
-				printf("NO\n");break;
+				my_printf("NO\n");break;
 			}
 	}
-	if(i==l1) printf("YES\n");
+	if(i==l1) my_printf("YES\n");
 }
 
 

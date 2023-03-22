@@ -11,9 +11,9 @@ int main_bench()
 	char a,d='A';
 	for(i=0;i<26;i++)
 		k[i]=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
-		scanf("%d%s",&b[i].ISBN,b[i].name);
+		my_scanf("%d%s",&b[i].ISBN,b[i].name);
 	for(a='A';a<='Z';a++)
 		for(i=0;i<m;i++)
 			for(j=0;j<26;j++)
@@ -26,12 +26,12 @@ int main_bench()
 		if(k[i]==max)
 		{
 			d+=i;
-			printf("%c\n",d);
-			printf("%d\n",max);		
+			my_printf("%c\n",d);
+			my_printf("%d\n",max);		
 		}
 	for(i=0;i<m;i++)
 		for(j=0;j<26;j++)
 			if(b[i].name[j]==d)
-				printf("%d\n",b[i].ISBN);
+				my_printf("%d\n",b[i].ISBN);
 	return 0;
 }

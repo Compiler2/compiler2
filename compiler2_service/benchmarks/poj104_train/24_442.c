@@ -27,9 +27,9 @@ int main_bench()
 		if (min>len[i]) {w2=i;min=len[i];}
 	}
 	for (i=beg[w1];i<beg[w1]+len[w1];i++)
-	printf("%c",s[i]);
-	printf("\n");
+	my_printf("%c",s[i]);
+	my_printf("\n");
 	for (i=beg[w2];i<beg[w2]+len[w2];i++)
-	printf("%c",s[i]);
+	my_printf("%c",s[i]);
 	return 0;
 }

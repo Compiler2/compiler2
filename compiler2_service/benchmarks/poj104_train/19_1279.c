@@ -20,12 +20,12 @@ int main_bench()
 			*s='\0';
 			s=s+1;
 			if(strcmp(p,a)==0) 
-		    	printf("%s ",b);
-	    	else printf("%s ",p);
+		    	my_printf("%s ",b);
+	    	else my_printf("%s ",p);
 	    	p=s;
 		}
 	}
-	if(strcmp(p,a)==0) printf("%s",b);
-	else printf("%s",p);
+	if(strcmp(p,a)==0) my_printf("%s",b);
+	else my_printf("%s",p);
 return 0;
 }

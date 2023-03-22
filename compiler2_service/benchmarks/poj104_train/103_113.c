@@ -23,7 +23,7 @@ main_bench()
                                       else  if(a[j]!=a[0])
                                       break;   
                       }
-                      printf("(%c,%d)",a[0],count);   
+                      my_printf("(%c,%d)",a[0],count);   
       
       for(i=1;i<n;i++)
       {
@@ -40,7 +40,7 @@ main_bench()
                                       count++;
                                       
                       }
-                      printf("(%c,%d)",a[i],count);
+                      my_printf("(%c,%d)",a[i],count);
                       }
       }
       getchar();

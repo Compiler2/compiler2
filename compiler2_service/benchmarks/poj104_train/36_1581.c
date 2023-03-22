@@ -3,7 +3,7 @@
 int main_bench()
 {
 char a[10000],b[10000],tem;
-scanf("%s%s",a,b);
+my_scanf("%s%s",a,b);
 for (int i=strlen(a)-1;i>=0;i--)
     for (int j=0;j<i;j++)
         if (a[j]>a[j+1])
@@ -20,6 +20,6 @@ for (int i=strlen(b)-1;i>=0;i--)
         b[j]=b[j+1];
         b[j+1]=tem;
         }
-if (strcmp(a,b)==0) printf("YES");
-else printf("NO");
+if (strcmp(a,b)==0) my_printf("YES");
+else my_printf("NO");
 }

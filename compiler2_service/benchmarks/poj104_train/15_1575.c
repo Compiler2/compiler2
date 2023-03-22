@@ -3,14 +3,14 @@
 int main_bench()
 {
   int n,a,b,c,d,sum;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   int sz[100][100];
   int row,col;
   for(row=0;row<n;row++)
   {
      for(col=0;col<n;col++)
      {
-        scanf("%d\n",&(sz[row][col]));
+        my_scanf("%d\n",&(sz[row][col]));
       }
    }
   for(row=0;row<n;row++)
@@ -38,6 +38,6 @@ int main_bench()
       }
    }
   sum=(c-a+1)*(d-b+1);
-  printf("%d",sum);
+  my_printf("%d",sum);
   return 0;
 }

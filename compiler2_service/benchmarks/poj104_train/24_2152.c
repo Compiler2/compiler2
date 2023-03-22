@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for(j=0;j<=99;++j)
 		{
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 		    if(a[i][j]==' ')
 		    {
 			    a[i][j]='\0';
@@ -36,7 +36,7 @@ int main_bench()
 	{
 		if(m==l[k]) break;
 	}
-	printf("%s\n",a[k]);
+	my_printf("%s\n",a[k]);
 	m=9999;
 	for(k=0;k<=i;++k)
 	{
@@ -46,6 +46,6 @@ int main_bench()
 	{
 		if(m==l[k]) break;
 	}
-	printf("%s\n",a[k]);
+	my_printf("%s\n",a[k]);
 	return 0;
 }

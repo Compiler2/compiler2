@@ -10,7 +10,7 @@ int main_bench()
 	gets(b);
 	cclen=add(a,b);
 	for(j=cclen;j>=0;j--){
-      printf("%d",c[j]);
+      my_printf("%d",c[j]);
        }
 }
 int add(char *a,char *b)

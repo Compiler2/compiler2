@@ -5,10 +5,10 @@ int main_bench()
 {
      int n,i,j,k=0,x[310],y[310];
 
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 for(i=0;i<n;i++)
 	 {
-	     scanf("%d",&x[i]);
+	     my_scanf("%d",&x[i]);
 	 }
 
 	 y[0]=x[0];
@@ -26,10 +26,10 @@ int main_bench()
 			 k++;
 		 }
 	 }
-	 printf("%d",y[0]);
+	 my_printf("%d",y[0]);
 	 for(i=1;i<k;i++)
 	 {
-		 printf(",%d",y[i]);
+		 my_printf(",%d",y[i]);
 	     
 	 }
 

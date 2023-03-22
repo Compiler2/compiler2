@@ -3,9 +3,9 @@
 int main_bench(){
 	char jj[1000][300];
 	int i,n,len[1000],j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",jj[i]);
+		my_scanf("%s",jj[i]);
 		len[i]=strlen(jj[i]);
 	}
 	for(i=0;i<n;i++){
@@ -21,7 +21,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",jj[i]);
+		my_printf("%s\n",jj[i]);
 	}
 	
 

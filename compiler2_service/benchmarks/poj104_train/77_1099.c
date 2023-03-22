@@ -25,7 +25,7 @@ int main_bench()
 			if(p[i]*p[j]==-1)
             {
 				p[i]=p[j]=0;
-				printf("%d %d\n",i,j);
+				my_printf("%d %d\n",i,j);
 				m=1;
 				break;
 			}

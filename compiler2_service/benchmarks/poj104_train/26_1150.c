@@ -12,13 +12,13 @@ int main_bench()
 		{
 		case ' ':
 			if(i!=0&&blabla[i-1]!=' ')
-				printf("%c",blabla[i]);
+				my_printf("%c",blabla[i]);
 			break;
 		default:
-			printf("%c",blabla[i]);
+			my_printf("%c",blabla[i]);
 			break;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

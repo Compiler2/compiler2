@@ -42,8 +42,8 @@ int main_bench()
     int i,a;
     for(i=0;i<6;i++)
     {
-         scanf("%d",&a);
-         printf("%d\n",reserve(a));
+         my_scanf("%d",&a);
+         my_printf("%d\n",reserve(a));
     }
     getchar();
     getchar();

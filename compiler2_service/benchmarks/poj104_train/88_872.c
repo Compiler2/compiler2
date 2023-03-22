@@ -11,12 +11,12 @@ int main_bench()
 	{
 		if(*q<='9'&&*q>='0')
 		{
-			printf("%c",*q);
+			my_printf("%c",*q);
 			a=0;
 		}
 		if((*q>'9'||*q<'0')&&a==0)
 		{
-			printf("\n");
+			my_printf("\n");
 			a++;
 		}
 		q++;

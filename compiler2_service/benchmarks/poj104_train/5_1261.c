@@ -4,7 +4,7 @@ int main_bench(){
     int i,j,c,d;
     double l,m,n,x=0;
     char a[500],b[500];
-    scanf("%lf %s %s",&l,&a,&b);
+    my_scanf("%lf %s %s",&l,&a,&b);
     
     m=strlen(a);
     n=strlen(b);
@@ -21,8 +21,8 @@ int main_bench(){
             }else{x=x;}
         }
         if(l<(x/n)){
-            printf("yes");
-        }else{printf("no");}
-    }else{printf("error");}
+            my_printf("yes");
+        }else{my_printf("no");}
+    }else{my_printf("error");}
     return 0;
 }

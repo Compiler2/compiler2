@@ -3,12 +3,12 @@
 int main_bench(){
    char sz[101][103][103];
    int n,i,j;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=1;i<=n;i++){
-	      scanf("%s\n",&sz[0][i][1]);
+	      my_scanf("%s\n",&sz[0][i][1]);
    }
    int m,k;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
  
 	   
        for(i=0;i<=(n+1);i++){
@@ -38,7 +38,7 @@ int main_bench(){
 	   for(w=1;w<=n;w++){
 		   if(sz[m-1][h][w]=='@'){sum++;}
    }}
-   printf("%d\n",sum);
+   my_printf("%d\n",sum);
 
    return 0;
 

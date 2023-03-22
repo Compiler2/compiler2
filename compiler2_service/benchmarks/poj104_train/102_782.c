@@ -49,12 +49,12 @@ int main_bench()
 	int N,count;
 	int i=0;
 	int j=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	count = N;
 	while(N--)
 	{
-		scanf("%s",sex[i]);
-		scanf("%f",&tall[i]);
+		my_scanf("%s",sex[i]);
+		my_scanf("%f",&tall[i]);
 		i++;
 	}
 
@@ -71,7 +71,7 @@ int main_bench()
 
 	for(i=0;i<j;i++)
 	{
-		printf("%.2f ",sort1[i]);
+		my_printf("%.2f ",sort1[i]);
 	}
 
 	for(i=0,j=0;i<count;i++)
@@ -87,9 +87,9 @@ int main_bench()
 
 	for(i=0;i<j-1;i++)
 	{
-		printf("%.2f ",sort2[i]);
+		my_printf("%.2f ",sort2[i]);
 	}
-    printf("%.2f",sort2[j-1]);
-	printf("\n");
+    my_printf("%.2f",sort2[j-1]);
+	my_printf("\n");
 	return 0;
 }

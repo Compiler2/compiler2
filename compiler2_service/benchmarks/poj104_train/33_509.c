@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	char **oldjianji=(char**)malloc(sizeof(char*)*n);
 	for(i=0;i<n;i++){
@@ -11,7 +11,7 @@ int main_bench(){
 	int j;
 	int *len=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%s",oldjianji[i]);
+		my_scanf("%s",oldjianji[i]);
 		len[i]=strlen(oldjianji[i]);
 	}
 	char **jianji=(char**)malloc(sizeof(char*)*n);
@@ -33,7 +33,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",jianji[i]);
+		my_printf("%s\n",jianji[i]);
 	}
 free(jianji);
 free(oldjianji);

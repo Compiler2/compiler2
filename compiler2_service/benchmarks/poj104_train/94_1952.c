@@ -3,9 +3,9 @@
 int main_bench(){
     int n,i,k,t;
     int shuzu[500],shushu[500];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d",&shuzu[i]);
+                     my_scanf("%d",&shuzu[i]);
                      if(shuzu[i]%2!=0){
                                        shushu[i]=shuzu[i];
                                        }
@@ -21,10 +21,10 @@ int main_bench(){
    }
    for(i=0;i<n;i++){
                     if((shushu[i]!=0)&&(i!=n-1)){
-                                     printf("%d,",shushu[i]);
+                                     my_printf("%d,",shushu[i]);
                                      }
                     if(i==n-1){
-                               printf("%d",shushu[i]);
+                               my_printf("%d",shushu[i]);
                                }
                     }
    return 0;

@@ -4,7 +4,7 @@ int main_bench(){
 	double rate;
 	int x1,x2,y=0,i,flag=0;
 	char a[500],b[500];
-	scanf("%lf%s%s",&rate,a,b);
+	my_scanf("%lf%s%s",&rate,a,b);
 	x1=strlen(a);
 	x2=strlen(b);
 	for(i=0;i<x1;i++){
@@ -26,12 +26,12 @@ int main_bench(){
 			}
 		}
 	    if((double)y/(double)x1>rate){
-		    printf("yes");
+		    my_printf("yes");
 		}else{
-		    printf("no");
+		    my_printf("no");
 		}
 	}else{
-		printf("error");
+		my_printf("error");
 	}
     return 0;
 }

@@ -12,17 +12,17 @@ int main_bench()
 		for(j=0;j<100;j++)
 			a[i][j]=-1;
 	}
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	if(col==1)
 	{
 		for(j=0;j<row;j++)
 		{
-			printf("%d\n",a[j][0]);
+			my_printf("%d\n",a[j][0]);
 			a[0][j]=-1;
 		}
 	}
@@ -33,25 +33,25 @@ int main_bench()
 		for(;q<=j-1;q++)
 		{
 			if(a[p][q]!=-1)
-			printf("%d\n",a[p][q]);
+			my_printf("%d\n",a[p][q]);
 			a[p][q]=-1;
 		}
 		for(;p<=i-1;p++)
 		{
 			if(a[p][q]!=-1)
-			printf("%d\n",a[p][q]);
+			my_printf("%d\n",a[p][q]);
 			a[p][q]=-1;
 		}
 		for(;q>=col-j;q--)
 		{
 			if(a[p][q]!=-1)
-			printf("%d\n",a[p][q]);
+			my_printf("%d\n",a[p][q]);
 			a[p][q]=-1;
 		}
 		for(;p>=row-i;p--)
 		{
 			if(a[p][q]!=-1)
-			printf("%d\n",a[p][q]);
+			my_printf("%d\n",a[p][q]);
 			a[p][q]=-1;
 		}
 		p=p+1;
@@ -62,7 +62,7 @@ int main_bench()
 		i=q/2;
 		j=p/2;
 		if(a[p-j][q-i]!=-1)
-		printf("%d",a[p-j][q-i]);
+		my_printf("%d",a[p-j][q-i]);
 	}
 	}
 	return 0;

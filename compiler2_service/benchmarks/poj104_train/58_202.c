@@ -4,7 +4,7 @@ main_bench()
 {
       int i,j,k,n,m,l;
       char a[80],v[10];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       gets(v);
       for(i=0;i<n;i++)
       {
@@ -19,15 +19,15 @@ main_bench()
                  continue;
               else
               {
-                  printf("0\n");
+                  my_printf("0\n");
                   break;
               }
           }
           else
-          printf("0\n");
+          my_printf("0\n");
           
           if(j==l)
-          printf("1\n");
+          my_printf("1\n");
       }
       getchar();
       getchar();

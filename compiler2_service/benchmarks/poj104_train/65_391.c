@@ -18,10 +18,10 @@ main_bench()
 {
     int n,i,l,na=0,nb=0;
     int a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %d",&a,&b);
+        my_scanf("%d %d",&a,&b);
         if(fun(a,b)==1)
             na++;
         if(fun(a,b)==0)
@@ -29,9 +29,9 @@ main_bench()
         else continue;
     }
     if(na>nb)
-        printf("A");
+        my_printf("A");
     if(na==nb)
-        printf("Tie");
+        my_printf("Tie");
     if(na<nb)
-        printf("B");
+        my_printf("B");
 }

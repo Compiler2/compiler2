@@ -6,10 +6,10 @@ char id[101][11];
 int main_bench()
 {   int n;
     int age[101],a[101];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=1;i<=n;i++)
     {
-        scanf("%s%d",id[i],&age[i]);
+        my_scanf("%s%d",id[i],&age[i]);
         int j=i;
         if (age[i]>=60)
         {
@@ -19,7 +19,7 @@ int main_bench()
         a[j]=i;
     }
     for (int i=1;i<=n;i++)
-    printf("%s\n",id[a[i]]);
+    my_printf("%s\n",id[a[i]]);
     getchar();
     getchar();
     return 0;

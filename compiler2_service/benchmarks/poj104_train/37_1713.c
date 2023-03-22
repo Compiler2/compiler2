@@ -4,10 +4,10 @@ main_bench()
 {
 
 int t,i=1,m;
-scanf("%d",&t);
+my_scanf("%d",&t);
 while(i<=t)
 {char zifu[100000],q='0';
-scanf("%s",&zifu);
+my_scanf("%s",&zifu);
 m=strlen(zifu);
 int k=0,j=0;
 while(k<=m-2)
@@ -25,9 +25,9 @@ else
 k++;
 }
 if(q=='0')
-printf("no\n");
+my_printf("no\n");
 else
-printf("%c\n",q);
+my_printf("%c\n",q);
 
 
 i++;}}

@@ -7,7 +7,7 @@ for (i=1;i<=5;i++)
 {
   for (j=1;j<=5;j++)
   {
-      scanf("%d",&a[i][j]);
+      my_scanf("%d",&a[i][j]);
    }
 }
 for (i=1;i<=5;i++)
@@ -21,11 +21,11 @@ for (i=1;i<=5;i++)
   }
   if (d==5)
  {
-      printf("%d %d %d\n",i,j,a[i][j]);
+      my_printf("%d %d %d\n",i,j,a[i][j]);
   q=1;
 }
   else if (i==5&&j==5&&q!=1)
-  printf("not found");
+  my_printf("not found");
   d=0;
  }
 }

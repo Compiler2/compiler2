@@ -27,11 +27,11 @@ int main_bench()
 				if(flagdh==0)
 				{
 					flagdh=1;
-					printf("%d",counts);
+					my_printf("%d",counts);
 				}
 				else
 				{
-					printf(",%d",counts);
+					my_printf(",%d",counts);
 				}
 				counts=0;
 			}
@@ -45,22 +45,22 @@ int main_bench()
 					counts++;
 					if(flagdh==0)
 					{
-						printf("%d",counts);
+						my_printf("%d",counts);
 					}
 					else
 					{
-						printf(",%d",counts);
+						my_printf(",%d",counts);
 					}
 				}
 				else
 				{
 					if(flagdh==0)
 					{
-						printf("%d",counts);
+						my_printf("%d",counts);
 					}
 					else
 					{
-						printf(",%d",counts);
+						my_printf(",%d",counts);
 					}
 				}
 			}
@@ -70,11 +70,11 @@ int main_bench()
 				{
 					if(flagdh==0)
 					{
-						printf("1");
+						my_printf("1");
 					}
 					else
 					{
-						printf(",1");
+						my_printf(",1");
 					}
 				}
 			}

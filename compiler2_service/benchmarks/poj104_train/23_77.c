@@ -26,12 +26,12 @@ int main_bench()
 	{
 		for(k=b[i-1]+1;k<b[i];k++)
 		{
-			printf("%c",a[k]);
+			my_printf("%c",a[k]);
             
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	for(i=0;i<b[0];i++)
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	return 0;
 }

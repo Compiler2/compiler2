@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n,i,j,c=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int SZ[n][2];
     int a[1000]={0};
     for(i=0;i<n;i++){
         for(j=0;j<2;j++){
-            scanf("%d",&SZ[i][j]);
+            my_scanf("%d",&SZ[i][j]);
         }
     }
     for(i=0;i<n;i++){
@@ -27,7 +27,7 @@ int main_bench(){
             }
         }
     }
-    printf("%d",a[n-1]);
+    my_printf("%d",a[n-1]);
     return 0;
 }
 

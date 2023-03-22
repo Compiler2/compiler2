@@ -5,9 +5,9 @@ int main_bench()
 	int n,i;
 	int a[110];
 	int *t=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",t++);   
+		my_scanf("%d",t++);   
     
 	for(i=0;i<n/2;i++)
 	{
@@ -15,8 +15,8 @@ int main_bench()
 		*(a+i)=*(a+n-1-i);    
 		*(a+n-1-i)=*t;
 	}
-	printf("%d",*a);        
+	my_printf("%d",*a);        
 	for(i=1;i<n;i++)
-		printf(" %d",*(a+i));
+		my_printf(" %d",*(a+i));
 	return 0;
 }

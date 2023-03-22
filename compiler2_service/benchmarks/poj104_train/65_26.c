@@ -2,11 +2,11 @@
 
 int main_bench(){
 int n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int sz[n][2];
 for(int i=0;i<n;i++){
 for(int j=0;j<2;j++){
-scanf("%d",&sz[i][j]);
+my_scanf("%d",&sz[i][j]);
 }
 }
 int sum1=0;
@@ -20,12 +20,12 @@ sum2++;
 }
 }
 if(sum1>sum2){
-printf("A");
+my_printf("A");
 }
 else if(sum1<sum2){
-printf("B");}
+my_printf("B");}
 else {
-printf("Tie");
+my_printf("Tie");
 }
 return 0;
 }

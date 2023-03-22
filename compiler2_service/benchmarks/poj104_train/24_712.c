@@ -31,6 +31,6 @@ int main_bench()
 		if(strlen(p[i])<strlen(p[min]))
 			min=i;
 	}
-	printf("%s\n%s",p[max],p[min]);
+	my_printf("%s\n%s",p[max],p[min]);
 	return 0;
 }

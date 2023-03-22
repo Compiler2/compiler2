@@ -20,8 +20,8 @@ int main_bench()
 				if(k>len/2)
 				{
 					for(k=i;k<i+len;k++)
-						printf("%c",a[k]);
-					printf("\n");
+						my_printf("%c",a[k]);
+					my_printf("\n");
 				}
 			}
 		}

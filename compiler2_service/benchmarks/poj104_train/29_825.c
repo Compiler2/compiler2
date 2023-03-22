@@ -6,12 +6,12 @@ int main_bench()
 	double shang[100],sum=0;
 	int fenzi[100],fenmu[100];
 	int i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++)
 	{
 		fenzi[0]=2;
 		fenmu[0]=1;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j=0;j<n;j++)
 		{
 			if(j==0)
@@ -28,7 +28,7 @@ int main_bench()
 				sum=sum+shang[j];
 			}
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 		sum=0;
 	}
 	return 0;

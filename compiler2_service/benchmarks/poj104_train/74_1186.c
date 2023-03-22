@@ -37,7 +37,7 @@ int ss(int a)
 int main_bench()
 {
 	int m,n;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int i=0,k=0;
 	for(i=m;i<=n;i++)
 	{
@@ -48,13 +48,13 @@ int main_bench()
 			{
 				k=k+1;			
 				if(k!=1)
-				printf(",%d",i);
+				my_printf(",%d",i);
 				else
-				printf("%d",i);
+				my_printf("%d",i);
 			}
 		}	
 	}
 	if(k==0)
-	printf("no");
+	my_printf("no");
 	return 0;
 }

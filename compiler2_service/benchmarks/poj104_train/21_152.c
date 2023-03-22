@@ -8,9 +8,9 @@ int main_bench()
 { 
 	int n,i,j;
 	float sum=0,b,h=0,k;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
-		scanf("%f",&num[i].a);
+		my_scanf("%f",&num[i].a);
 	for(i=0;i<n;i++)
 	{
 		sum=sum+num[i].a;
@@ -45,7 +45,7 @@ int main_bench()
 			num[i+1]=num[400];
 		}}
 	}
-	printf("%.0f",num[0].a);
+	my_printf("%.0f",num[0].a);
 	for(i=1;i<h+1;i++)
-		printf(",%.0f",num[i].a);
+		my_printf(",%.0f",num[i].a);
 }

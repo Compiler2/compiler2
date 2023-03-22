@@ -11,10 +11,10 @@ int main_bench()
 
 	int n,i,j,mid;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&stu[i].num,&stu[i].chi,&stu[i].math);
+		my_scanf("%d%d%d",&stu[i].num,&stu[i].chi,&stu[i].math);
 	}
   
 	for(i=0;i<3;i++){
@@ -36,7 +36,7 @@ int main_bench()
 	}
 
     for(i=0;i<3;i++){
-		printf("%d %d\n",stu[i].num,stu[i].math+stu[i].chi);
+		my_printf("%d %d\n",stu[i].num,stu[i].math+stu[i].chi);
 	}
 	
 	return 0;

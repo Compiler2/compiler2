@@ -9,7 +9,7 @@ int main_bench()
 	int x[100];
 	int y[100];
 	int n,m,i;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	
     origin(x,n);
 	origin(y,m);
@@ -26,7 +26,7 @@ void origin(int a[100],int k)
 {
 	int i;
 	for(i=0;i<k;i++)
-	{scanf("%d",&a[i]);}
+	{my_scanf("%d",&a[i]);}
 	
 }
 
@@ -62,9 +62,9 @@ void copy(int a[],int n,int b[],int m)
 	up=i;
 	for(i=0;i<up-1;i++)
 	{
-		printf("%d ",c[i]);
+		my_printf("%d ",c[i]);
 	}
-	printf("%d",c[up-1]);
+	my_printf("%d",c[up-1]);
 }
 
 

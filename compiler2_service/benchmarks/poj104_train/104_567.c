@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,j,a,b,x[10],y[10],countx=0,county=0;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
     for(i=0;;i++)
 	{
 		if(i==0) x[i]=a;
@@ -24,7 +24,7 @@ int main_bench()
 		for(j=0;j<county;j++)
 			if(x[i]==y[j])
 			{
-				printf("%d\n",x[i]);
+				my_printf("%d\n",x[i]);
 				return 0;
 			}
 }

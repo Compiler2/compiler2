@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,i,b[26],p,max,j,c;
-	scanf ("%d",&m);
+	my_scanf ("%d",&m);
 	struct point 
 	{
 		int n;
@@ -11,7 +11,7 @@ int main_bench()
 	}a[999];
     for (i=0;i<m;i++)
 	{
-		scanf ("%d %s",&a[i].n,a[i].s);
+		my_scanf ("%d %s",&a[i].n,a[i].s);
 	}
 	for (i=0;i<26;i++)
 	{
@@ -86,13 +86,13 @@ int main_bench()
 		}
 	}
 	c=(p+'A');
-	printf ("%c\n%d\n",c,max);
+	my_printf ("%c\n%d\n",c,max);
 	for (i=0;i<m;i++)
 	{
 		for (j=0;a[i].s[j]!='\0';j++)
 		{
 			if (a[i].s[j]==(p+'A'))
-				printf("%d\n",a[i].n);
+				my_printf("%d\n",a[i].n);
 		}
 	}
 	return 0;

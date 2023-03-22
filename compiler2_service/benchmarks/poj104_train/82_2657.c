@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,xy[100][2],i,j,k,t;
 	int xs[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&xy[i][0]);
-		scanf("%d",&xy[i][1]);
+		my_scanf("%d",&xy[i][0]);
+		my_scanf("%d",&xy[i][1]);
 	}
 	for(k=0;k<100;k++)
 	{
@@ -40,7 +40,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",xs[n-1]);
+	my_printf("%d\n",xs[n-1]);
 	return 0;
 }
 

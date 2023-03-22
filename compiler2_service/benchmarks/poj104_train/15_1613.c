@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int s,start1,start2,end1,end2,n,sz[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	int flag = 0;
 	start1=0;
 	start2=0;
@@ -12,7 +12,7 @@ int main_bench()
 	for(int i=0;i<n;i++)
 		for(int j=0;j<n;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 			if(sz[i][j]==0 && flag == 0)
 			{
 				flag = 1;
@@ -27,6 +27,6 @@ int main_bench()
 		}
 	   
 	   s=(end1-start1)*(end2-start2);
-       printf("%d\n",s);
+       my_printf("%d\n",s);
        return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
    int n,total;
    char in[550];
    char sp[510][500];
-   scanf("%d%s",&n,in);
+   my_scanf("%d%s",&n,in);
     int i,j,k;
 	total=strlen(in)-n+1;
 	for(i=0;i<total;i++)
@@ -35,11 +35,11 @@ int main_bench()
    }
    if(max!=1)
    {
-   printf("%d\n",max);
+   my_printf("%d\n",max);
    for(i=0;i<total;i++)
    {
-     if(count[i]==max)printf("%s\n",sp[i]);
+     if(count[i]==max)my_printf("%s\n",sp[i]);
    }
    }
-   else printf("NO\n");
+   else my_printf("NO\n");
 }

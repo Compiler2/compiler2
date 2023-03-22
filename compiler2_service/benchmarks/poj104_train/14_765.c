@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,a[99999],b[2],i,k,m,s[99999],first=0,x,y;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d",&a[i]);
+		my_scanf ("%d",&a[i]);
 		for (k=0;k<2;k++)
 		{
-			scanf("%d",&b[k]);
+			my_scanf("%d",&b[k]);
 		}
 		s[i]=b[0]+b[1];						
 	}
@@ -26,7 +26,7 @@ int main_bench()
 			   
 
 		}
-		printf ("%d %d\n",y,first);
+		my_printf ("%d %d\n",y,first);
 	    s[y-1]=0;
 
 	}

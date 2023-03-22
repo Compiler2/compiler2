@@ -32,19 +32,19 @@ int main_bench()
 	
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&d[i][j]);
-		scanf("%d%d",&m,&n);
+			my_scanf("%d",&d[i][j]);
+		my_scanf("%d%d",&m,&n);
     f(d,m,n);
 	if(f(d,m,n)==0)
-		printf("error");
+		my_printf("error");
 		else if(f(d,m,n)==1)
 			  for(i=0;i<5;i++)
 			  {
 				  for(j=0;j<5;j++)
 				  {if(j/4==0)
-					  printf("%d ",d[i][j]);
+					  my_printf("%d ",d[i][j]);
 				else  if(j/4==1)
-				printf("%d\n",d[i][j]);
+				my_printf("%d\n",d[i][j]);
 				  }
 			  }
 }

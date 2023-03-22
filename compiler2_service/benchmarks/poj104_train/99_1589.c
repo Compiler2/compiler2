@@ -3,9 +3,9 @@
 int main_bench()
 {
 	double n,a=0,b=0,c=0,d=0,x,ave1,ave2,ave3,ave4;
-	scanf("%lf\n",&n);
+	my_scanf("%lf\n",&n);
 	while(n>0){
-		scanf("%lf",&x);
+		my_scanf("%lf",&x);
 		if(x>=1&&x<=18)
 			a+=1;
 		if(x>=19&&x<=35)
@@ -20,9 +20,9 @@ int main_bench()
 	ave2=b/(a+b+c+d)*100;
 	ave3=c/(a+b+c+d)*100;
 	ave4=d/(a+b+c+d)*100;
-	printf("1-18: %.2lf%%\n",ave1);
-	printf("19-35: %.2lf%%\n",ave2);
-	printf("36-60: %.2lf%%\n",ave3);
-	printf("60??: %.2lf%%\n",ave4);
+	my_printf("1-18: %.2lf%%\n",ave1);
+	my_printf("19-35: %.2lf%%\n",ave2);
+	my_printf("36-60: %.2lf%%\n",ave3);
+	my_printf("60??: %.2lf%%\n",ave4);
 	return 0;
 }

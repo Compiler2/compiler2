@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,x=0,y=0,z=0,p=0,a;
 	double X,Y,Z,P;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 	
 		if(a>=1&&a<=18)x++;
 		if(a>=19&&a<=35)y++;
@@ -20,10 +20,10 @@ int main_bench()
 	Z=1.0*z/n*100;
 	P=1.0*p/n*100;
 	
-	printf("1-18: %.2lf%%\n",X);
-	printf("19-35: %.2lf%%\n",Y);
-    printf("36-60: %.2lf%%\n",Z);
-    printf("60??: %.2lf%%",P);
+	my_printf("1-18: %.2lf%%\n",X);
+	my_printf("19-35: %.2lf%%\n",Y);
+    my_printf("36-60: %.2lf%%\n",Z);
+    my_printf("60??: %.2lf%%",P);
 	
 	return 0;
 

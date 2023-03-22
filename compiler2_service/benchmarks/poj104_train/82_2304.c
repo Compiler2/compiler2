@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n;
 	int i=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	
 	int a[200];
@@ -15,7 +15,7 @@ int main_bench()
 	for(i=0;i<100;i++)
 		time[i]=0;
 	for(i=0;i<2*n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	int m=0;
 	for(i=0;i<2*n;i=i+2)
 	{
@@ -31,6 +31,6 @@ int main_bench()
 			max=time[i];
 	}
 
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	return 0;
 }

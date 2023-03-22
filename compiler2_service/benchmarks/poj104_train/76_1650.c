@@ -3,12 +3,12 @@
 int main_bench(){
       int n,a,b,p,q,k,i;
       int s[10010];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       p=500;
       q=0;
       for(i=0;i<n;i++)
 {
-      scanf("%d%d",&a,&b);
+      my_scanf("%d%d",&a,&b);
      if(p>a)
      p=a;
      if(q<b)
@@ -26,7 +26,7 @@ int main_bench(){
    else  k=k;
 }
   if(k==0)
- printf("%d %d\n",p,q);
- else printf("no");
+ my_printf("%d %d\n",p,q);
+ else my_printf("no");
  return 0;
 }

@@ -13,9 +13,9 @@ int main_bench()
     int i, n, j;
     int year, m1, m2, max, min, sum;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++) {
-        scanf("%d%d%d", &year, &m1, &m2);
+        my_scanf("%d%d%d", &year, &m1, &m2);
         max = (m1 > m2) ? m1 : m2;
         min = (m1 < m2) ? m1 : m2;
         sum = 0;
@@ -23,9 +23,9 @@ int main_bench()
         for (j=min-1; j<max-1; j++)
             sum += days[j];
         if (sum % 7 == 0)
-            printf("YES\n");
+            my_printf("YES\n");
         else
-            printf("NO\n");
+            my_printf("NO\n");
         if (is_leap_year(year)) days[1] --; 
 }
 return 0;

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a=0,b=0,c=0,d=0,e=0,f=0,p,q,r,i,j,k,sum;
-	scanf("%d%d%d\n%d%d%d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d%d%d\n%d%d%d",&a,&b,&c,&d,&e,&f);
 	p=(d-a)*365;
 	q=(b-1)*30+c;
 	r=(e-1)*30+f;
@@ -55,6 +55,6 @@ int main_bench()
 	else
 		r=r+0;
 	sum=p-q+r;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

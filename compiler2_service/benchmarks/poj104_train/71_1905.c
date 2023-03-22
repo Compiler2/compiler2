@@ -7,10 +7,10 @@ int main_bench()
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int b[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	int  n, m;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=1;i<=k;i++)
 	{
-		scanf("%d%d%d",&yyyy,&nn,&mm);
+		my_scanf("%d%d%d",&yyyy,&nn,&mm);
 		if(mm>nn)
 		{
            n=mm;
@@ -27,8 +27,8 @@ int main_bench()
 		  {
              c=c+b[j-1];
 		  }
-		  if(c%7==0) printf("YES\n");
-		  else printf("NO\n");
+		  if(c%7==0) my_printf("YES\n");
+		  else my_printf("NO\n");
 		}
 		else
 		{
@@ -37,8 +37,8 @@ int main_bench()
 		  {
              c=c+a[j-1];
 		  }
-		  if(c%7==0) printf("YES\n");
-		  else printf("NO\n");
+		  if(c%7==0) my_printf("YES\n");
+		  else my_printf("NO\n");
 		}
 	}
 	

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,k,n,x;
 	char c[100][10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
@@ -17,9 +17,9 @@ int main_bench()
 		
 		if(x==1) 
         {
-        	printf("%c\n",c[i][j]);
+        	my_printf("%c\n",c[i][j]);
         	break;}
         }
-        if(x>1) printf("no\n");
+        if(x>1) my_printf("no\n");
 	}
 }

@@ -4,10 +4,10 @@ main_bench()
 {
    char c[1000][40],w[40];
    int n,i,j,k,a[1000];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {  
-      scanf("%s",w);
+      my_scanf("%s",w);
       for(j=0;w[j]!='\0';j++)
       {
          c[i][j]=w[j];
@@ -23,14 +23,14 @@ main_bench()
       {
         k=0;
         for(j=0;j<a[i];j++)
-         printf("%c",c[i][j]);
-        printf("\n");
+         my_printf("%c",c[i][j]);
+        my_printf("\n");
         continue;        
       }   
       for(j=0;j<a[i];j++) 
-       printf("%c",c[i][j]); 
+       my_printf("%c",c[i][j]); 
       if(i!=(n-1))
-        printf(" ");       
+        my_printf(" ");       
    }    
   getchar();getchar();getchar();getchar();getchar();        
 }

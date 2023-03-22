@@ -3,15 +3,15 @@
 int main_bench()
 {
   int k,m,n;
-  scanf("%d",&k);
+  my_scanf("%d",&k);
   
   for(int l=1;l<=k;l++){
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     
     int sz[m][n];
     for(int j=0;j<m;j++){
       for(int i=0;i<n;i++){
-        scanf("%d",&(sz[j][i]));
+        my_scanf("%d",&(sz[j][i]));
       }
     }
     
@@ -26,7 +26,7 @@ int main_bench()
         a-=sz[j][i];
       }
     }
-    printf("%d\n",a);
+    my_printf("%d\n",a);
   }
   
   return 0;

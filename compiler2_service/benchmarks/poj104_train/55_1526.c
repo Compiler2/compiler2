@@ -55,7 +55,7 @@ int main_bench()
 	int sum=0;
 	
 	
-	scanf("%d%s%d",&a,c,&b);
+	my_scanf("%d%s%d",&a,c,&b);
 	l=strlen(c);
 	for(i=0;i<l;i++)
 	{
@@ -74,7 +74,7 @@ int main_bench()
 	
 	if(sum==0)
 	{
-	printf("0");
+	my_printf("0");
 	}
 	
 	
@@ -86,11 +86,11 @@ int main_bench()
 	
 	for(j=i-1;j>=0;j--)
 	{
-		printf("%c",t[j]);
+		my_printf("%c",t[j]);
 	}
 
 	
-	printf("\n");
+	my_printf("\n");
 	
 	return 0;
 }

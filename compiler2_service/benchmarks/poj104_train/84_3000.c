@@ -5,9 +5,9 @@ int main_bench()
 	int sz[100];
          int i;
 	int a , b , c , e;
-	scanf("%d", &a);
+	my_scanf("%d", &a);
 	for(i=0 ; i<a; i++){
-		scanf("%d", &(sz[i]));
+		my_scanf("%d", &(sz[i]));
 	}
 	for(i=0; i<a-1; i++){
 		if(sz[i] > sz[i+1]){
@@ -25,7 +25,7 @@ int main_bench()
 		}
 	}		
 	c=sz[i];
-	printf("%d\n", b);
-	printf("%d\n", c);
+	my_printf("%d\n", b);
+	my_printf("%d\n", c);
 	return 0;
 }

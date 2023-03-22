@@ -18,7 +18,7 @@ int main_bench()
 	    if(k==n)break;
 		else k=0;	
 	}    
-    printf("%s\n",a[i]);
+    my_printf("%s\n",a[i]);
 k=0;
  for(i=0;i<n;i++)
 	{
@@ -27,5 +27,5 @@ k=0;
 	    if(k==n)break;
 		else k=0;	
 	}    
-    printf("%s\n",a[i]);
+    my_printf("%s\n",a[i]);
 }

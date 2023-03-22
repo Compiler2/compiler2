@@ -13,9 +13,9 @@ int main_bench()
 	int j = 0;
 	struct Ill illMan[100], illOld[100], temp,illOld1[100];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i = 0; i < n; i++) {
-		scanf("%s %d",illMan[i].a,&illMan[i].age);
+		my_scanf("%s %d",illMan[i].a,&illMan[i].age);
 	}
 	
 	for (i = 0; i < n; i++) {
@@ -41,11 +41,11 @@ int main_bench()
 		}
 	}
 	for (i = 0; i < j; i++) {
-		printf("%s\n",illOld[i].a);
+		my_printf("%s\n",illOld[i].a);
 	}
 	for (i = 0; i < n; i++) {
 		if (illMan[i].age < 60) {
-			printf("%s\n",illMan[i].a);
+			my_printf("%s\n",illMan[i].a);
 		}
 	}
 	return 0;

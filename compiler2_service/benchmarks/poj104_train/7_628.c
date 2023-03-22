@@ -16,8 +16,8 @@ int main_bench()
 			i++;
 		}
 	}
-	scanf("%s",subString);
-	scanf("%s",replacement);
+	my_scanf("%s",subString);
+	my_scanf("%s",replacement);
 	for(i=0;i<strlen(string);i++)
 	{
 		if(string[i] == subString[0])
@@ -38,6 +38,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",string);
+	my_printf("%s\n",string);
     return 0;
  }

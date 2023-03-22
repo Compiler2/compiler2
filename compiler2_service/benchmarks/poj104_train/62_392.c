@@ -20,7 +20,7 @@ int main_bench(){
 			a[m+1]='\0';
 		}
 	}
-	printf("%s", a);
+	my_printf("%s", a);
 
 	return 0;
 }

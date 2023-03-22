@@ -12,16 +12,16 @@ int main_bench()
                   char b[2];
 	};
 	int i,m,n[100],p=0,q=0,w=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	struct student stu[100];
 	for(i=0;i<m;i++)
 	{
-		scanf("%s ",stu[i].name);
-		scanf("%d ",&stu[i].mark1);
-		scanf("%d ",&stu[i].mark2);
-		scanf("%s ",&stu[i].a);
-		scanf("%s ",&stu[i].b);
-		scanf("%d",&stu[i].number);
+		my_scanf("%s ",stu[i].name);
+		my_scanf("%d ",&stu[i].mark1);
+		my_scanf("%d ",&stu[i].mark2);
+		my_scanf("%s ",&stu[i].a);
+		my_scanf("%s ",&stu[i].b);
+		my_scanf("%d",&stu[i].number);
 	}
 	for(i=0;i<m;i++)
 	{	n[i]=0;
@@ -45,8 +45,8 @@ int main_bench()
 		}
 		q=q+n[i];
 	}
-	printf("%s\n",stu[w].name);
-	printf("%d\n",n[w]);
-         printf("%d\n",q);
+	my_printf("%s\n",stu[w].name);
+	my_printf("%d\n",n[w]);
+         my_printf("%d\n",q);
 	return 0;
 }

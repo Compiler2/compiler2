@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,d[12]={31,28,31,30,31,30,31,31,30,31,30,31},i,m,n=0;
-	scanf("%d %d %d",&sy,&sm,&sd);
-	scanf("%d %d %d",&ey,&em,&ed);
+	my_scanf("%d %d %d",&sy,&sm,&sd);
+	my_scanf("%d %d %d",&ey,&em,&ed);
 	
 	for (i=sy;i<=ey;i++)
 	{
@@ -46,5 +46,5 @@ int main_bench()
 				}
 		}
 	}
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 }

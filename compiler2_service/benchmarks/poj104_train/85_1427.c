@@ -3,10 +3,10 @@
 int main_bench()
 {
 int n,i,c,a;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char szpand[n][20];
 for(i=0;i<n;i++){
-scanf("%s",szpand[i]);
+my_scanf("%s",szpand[i]);
 }
 int flag;
 for(i=0;i<n;i++){
@@ -19,9 +19,9 @@ for(i=0;i<n;i++){
 {flag=0;break;}
     }
 if(!flag)
-printf("no\n");
+my_printf("no\n");
 else
-printf("yes\n");
+my_printf("yes\n");
 }
 
 return 0;

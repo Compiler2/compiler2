@@ -8,9 +8,9 @@ struct ren{
   int c;
 
 }a[100],d[100],m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-   scanf("%s%d",a[i].b,&a[i].c);
+   my_scanf("%s%d",a[i].b,&a[i].c);
    d[i]=a[i];
 
 }
@@ -28,13 +28,13 @@ if(d[j].c<d[j+1].c){
 }
 for(i=0;i<n;i++){
     if(d[i].c>=60){
-  printf("%s\n",d[i].b);
+  my_printf("%s\n",d[i].b);
 }
 
 }
 for(i=0;i<n;i++){
     if(a[i].c<60){
-   printf("%s\n",a[i].b);
+   my_printf("%s\n",a[i].b);
 }
 }
 return 0;

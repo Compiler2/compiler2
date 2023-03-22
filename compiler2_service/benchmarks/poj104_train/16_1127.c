@@ -3,7 +3,7 @@
 int main_bench()
 {
     int a,r,i;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     r=0;
 	i=0;
     while(a>0)
@@ -15,15 +15,15 @@ int main_bench()
 	switch(i)
 	{
 	case 0:
-		printf("%d\n",r);break;
+		my_printf("%d\n",r);break;
 	case 1:
-		printf("0%d\n",r);break;
+		my_printf("0%d\n",r);break;
 	case 2:
-		printf("00%d\n",r);break;
+		my_printf("00%d\n",r);break;
 	case 3:
-		printf("000%d\n",r);break;
+		my_printf("000%d\n",r);break;
 	case 4:
-		printf("0000%d\n",r);break;
+		my_printf("0000%d\n",r);break;
 	}
     return 0;
 }

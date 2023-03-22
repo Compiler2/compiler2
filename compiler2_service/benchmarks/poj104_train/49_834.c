@@ -17,7 +17,7 @@ int main_bench()
 			for(p=0;p<=(i+1)/2-1;p++)
 			{
 				if(temp[p]!=temp[i-p]) break;
-				if(p==(i+1)/2-1) printf("%s\n",temp);
+				if(p==(i+1)/2-1) my_printf("%s\n",temp);
 			}
 			for(q=0;q<500;q++) temp[q]=0;
 		}

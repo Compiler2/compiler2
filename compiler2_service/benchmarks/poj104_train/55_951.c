@@ -4,7 +4,7 @@ int main_bench()
 {
     char n[40],y[40],z[40];
     int a,b,c=0,l,i,k;    
-    scanf("%d %s %d",&a,n,&b);
+    my_scanf("%d %s %d",&a,n,&b);
     l = strlen(n);
     for (i = 0;i<l;i++)
     {
@@ -26,7 +26,7 @@ int main_bench()
      c=c/b;
     }
     if (k == 0)
-    printf("0\n");
+    my_printf("0\n");
     else 
     {
      for (i = 0;i<k;i++)
@@ -42,6 +42,6 @@ int main_bench()
      }
     z[k]=0;
     
-    printf("%s\n",z);
+    my_printf("%s\n",z);
     }
 }

@@ -6,10 +6,10 @@
 	a=1;
 	b=0;
     c=0;
-	scanf("%d",&e);
+	my_scanf("%d",&e);
 	while(a<=e)
 	{a++;
-	scanf("%d",&d);
+	my_scanf("%d",&d);
     if(d>c)
 	{   b=c;
      	c=d;
@@ -19,6 +19,6 @@
 	else b=b;
 	     c=c;
 	}
-	printf("%d\n%d",c,b);
+	my_printf("%d\n%d",c,b);
 	return 0;
  }

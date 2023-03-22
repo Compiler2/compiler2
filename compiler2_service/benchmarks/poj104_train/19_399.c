@@ -33,6 +33,6 @@ int main_bench()
 		if(strcmp(p1,*(p+i))==0)
 			p[i]=p2;
      for(i=0;i<j;i++)
-	   printf("%s ",p[i]);
-    printf("%s",p[j]);
+	   my_printf("%s ",p[i]);
+    my_printf("%s",p[j]);
 }

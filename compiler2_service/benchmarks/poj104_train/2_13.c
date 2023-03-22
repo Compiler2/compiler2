@@ -10,11 +10,11 @@ struct
 int main_bench()
 {
 	int n,i,j,max=0,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int c[26]={0};
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&book[i].num,book[i].name);
+		my_scanf("%d %s",&book[i].num,book[i].name);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -31,10 +31,10 @@ int main_bench()
 			m=j;
 		}
 	}
-	printf("%c\n%d\n",'A'+m,c[m]);
+	my_printf("%c\n%d\n",'A'+m,c[m]);
 	for(i=0;i<n;i++)
 	{
-		strchr(book[i].name,'A'+m)?printf("%d\n",book[i].num):0;
+		strchr(book[i].name,'A'+m)?my_printf("%d\n",book[i].num):0;
 	}
 	return 0;
 }

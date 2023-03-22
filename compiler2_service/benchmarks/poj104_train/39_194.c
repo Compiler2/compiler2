@@ -12,10 +12,10 @@ int main_bench()
 		char d;
 		int e;
 	}stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,
 			&stu[i].c,&stu[i].d,&stu[i].e);
 	}
 	for(i=0;i<n;i++)
@@ -39,7 +39,7 @@ int main_bench()
 		{stu[0]=stu[i];
 		sum[0]=sum[i];}
 	}
-	printf("%s\n",stu[0].name);
-	printf("%d\n",sum[0]);
-	printf("%d",p);
+	my_printf("%s\n",stu[0].name);
+	my_printf("%d\n",sum[0]);
+	my_printf("%d",p);
 }

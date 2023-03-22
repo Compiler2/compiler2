@@ -9,13 +9,13 @@ struct student
 int main_bench()
 {
 	int n,m,i,j,t,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=n;
 	struct student *stu=(struct student*)malloc(sizeof(struct student)*n);
 	int *score=(int*)malloc(sizeof(int)*m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].num,&stu[i].yuwen,&stu[i].shuxue);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].yuwen,&stu[i].shuxue);
 		score[i]=stu[i].yuwen+stu[i].shuxue;
 	}
 	for(i=0;i<3;i++)
@@ -35,7 +35,7 @@ int main_bench()
 	}
 	for(i=n-1;i>=n-3;i--)
 	{
-		printf("%d %d\n",stu[i].num,score[i]);
+		my_printf("%d %d\n",stu[i].num,score[i]);
 	}
 	free(stu);
 	free(score);

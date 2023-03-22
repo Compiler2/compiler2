@@ -5,7 +5,7 @@ int main_bench()
  int m, n;
 
  int temp, p, q, c, w=0;
- scanf("%d %d", &m, &n);
+ my_scanf("%d %d", &m, &n);
  
  
  
@@ -33,12 +33,12 @@ int main_bench()
 	   if(c>=m)
 	   {
 		   w++;
-		   if(w==1)printf("%d", m);
-		   else printf(",%d", m);
+		   if(w==1)my_printf("%d", m);
+		   else my_printf(",%d", m);
 	   }    
 	  }
  }
- if(w==0)  printf("no");
- printf("\n");
+ if(w==0)  my_printf("no");
+ my_printf("\n");
  return 0;
 }

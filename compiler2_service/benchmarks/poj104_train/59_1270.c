@@ -4,12 +4,12 @@ char zf[1001][1001];
 int main_bench(){
 int m,n,i,j,k,p=0;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%s",zf[i]);
+	my_scanf("%s",zf[i]);
    
 }
-scanf("%d",&m);
+my_scanf("%d",&m);
 
 for(k=0;k<m-1;k++){
   for(i=0;i<n;i++){
@@ -36,6 +36,6 @@ for(i=0;i<n;i++){
 		}
 	}
 }
-printf("%d\n",p);
+my_printf("%d\n",p);
 return 0;
 }

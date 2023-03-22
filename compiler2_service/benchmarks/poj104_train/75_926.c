@@ -24,7 +24,7 @@ int main_bench()
 		}
 		else i++;
 	}
-	printf("%d ",k);
+	my_printf("%d ",k);
 	for(t=0;t<=1000;t++)
 	{
 		j=0;
@@ -35,7 +35,7 @@ int main_bench()
 		}
 		if(max<j) max=j;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 }
 
 	

@@ -12,7 +12,7 @@ m=strlen(a);
   }
   b[m-1]=((int)(a[m-1])+(int)(a[0]))%256;
 for(j=0;j<m;j++)
-		printf("%c",b[j]);
+		my_printf("%c",b[j]);
 	return 0;
 
 

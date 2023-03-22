@@ -13,9 +13,9 @@ int main_bench()
 		{
 			while(str[i+1]==' ')
 				i++;
-			printf("%d",x);
+			my_printf("%d",x);
 			if(str[i]!='\0')
-			{	printf(",");
+			{	my_printf(",");
 			x=0;}
 		}
 		else

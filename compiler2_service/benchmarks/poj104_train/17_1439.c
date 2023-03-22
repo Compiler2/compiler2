@@ -34,7 +34,7 @@ char left(char c,char a)
 main_bench()
 { int i,n;
   char s[101],a[101];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   while(gets(s))
    { num=0;
      for(i=0;i<strlen(s);i++)
@@ -44,8 +44,8 @@ main_bench()
        a[i]=left(s[i],a[i]);
      puts(s);
      for(i=0;i<strlen(s);i++)
-       printf("%c",a[i]);
-       printf("\n");
+       my_printf("%c",a[i]);
+       my_printf("\n");
    }
   return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,j,k,t,tmp,a[10000];
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
     for(i=1;i<=n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 	for(i=1;i<n;i++)
 	{
@@ -31,13 +31,13 @@ int main_bench()
         {
 			if(a[i]+a[j]==k&&t==0)
 			{
-				printf("yes");
+				my_printf("yes");
 				t=1;
 			}
 			else if(a[i]+a[j]>k) break;
 		}
 	}
-	if(t==0) printf("no");
+	if(t==0) my_printf("no");
 	return 0;
 }
 

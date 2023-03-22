@@ -15,12 +15,12 @@ int main_bench()
 	}
 	if(strcmp(c1,c2)>0) 
 	{
-		printf(">");
+		my_printf(">");
 	}
 	else if(strcmp(c1,c2)==0)
 	{
-		printf("=");
+		my_printf("=");
 	}
-	else printf("<");
+	else my_printf("<");
 	return 0;
 }

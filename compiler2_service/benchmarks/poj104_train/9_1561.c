@@ -36,11 +36,11 @@ int main_bench()
    struct stu a[1000],b[1000],c[1000],temp;
    int i,j,tot=0,totc=0;
    
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    
    for (i=1;i<=n;i++)
        {
-          scanf("%s %d",&a[i].n,&a[i].y);                     
+          my_scanf("%s %d",&a[i].n,&a[i].y);                     
           if (a[i].y>=60) 
              {
                 b[++tot]=a[i];               
@@ -63,8 +63,8 @@ int main_bench()
          
        
    
-   for (i=1;i<=tot;i++) printf("%s\n",b[i].n);
-   for (i=1;i<=totc;i++) printf("%s\n",c[i].n);
+   for (i=1;i<=tot;i++) my_printf("%s\n",b[i].n);
+   for (i=1;i<=totc;i++) my_printf("%s\n",c[i].n);
    
  
    

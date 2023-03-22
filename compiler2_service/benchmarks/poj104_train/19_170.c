@@ -17,9 +17,9 @@ int main_bench()
 			if(strcmp(t,b)==0)
 			{
 				strcpy(t,c);
-			    printf("%s ",t);	
+			    my_printf("%s ",t);	
 			}
-			else printf("%s ",t);
+			else my_printf("%s ",t);
 			j=-1;
 		}
 	}
@@ -27,9 +27,9 @@ int main_bench()
     if(strcmp(t,b)==0)
 	{
 		strcpy(t,c);
-		printf("%s",t);	
+		my_printf("%s",t);	
 	}
-	else printf("%s",t);
+	else my_printf("%s",t);
 	return 0;
 }
 

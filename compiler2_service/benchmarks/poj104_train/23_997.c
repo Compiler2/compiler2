@@ -23,10 +23,10 @@ int main_bench()
 	for(i=n;i>0;i--)
 	{
 		for(j=0;*(*(q+i)+j)!='\0';j++)
-		    printf("%c",*(*(q+i)+j));
-        printf(" ");
+		    my_printf("%c",*(*(q+i)+j));
+        my_printf(" ");
 	}
 	for(j=0;*(*q+j)!='\0';j++)
-	    printf("%c",*(*q+j));
-	printf("\n");
+	    my_printf("%c",*(*q+j));
+	my_printf("\n");
 }

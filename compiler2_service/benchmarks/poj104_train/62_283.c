@@ -17,6 +17,6 @@ int main_bench(){
            else continue;
             i++;
          }
-         printf("%s",a);
+         my_printf("%s",a);
        return 0;
 }

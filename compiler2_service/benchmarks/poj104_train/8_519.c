@@ -4,11 +4,11 @@ int n[2];
 void input(int a[],int b[],int n[2])
 {
 	int i;
-	scanf("%d %d",&n[0],&n[1]);
+	my_scanf("%d %d",&n[0],&n[1]);
 	for(i=0;i<n[0];i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for(i=0;i<n[1];i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 }
 void sort(int *p,int *q,int *x)
 {
@@ -42,8 +42,8 @@ void putout(int *w,int *x)
 {
     int i;
 	for(i=0;i<(*x)+(*(x+1))-1;i++)
-		printf("%d ",*(w+i));
-	printf("%d\n",*(w+i));
+		my_printf("%d ",*(w+i));
+	my_printf("%d\n",*(w+i));
 }
 int main_bench()
 {

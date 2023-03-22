@@ -23,10 +23,10 @@ int main_bench()
 			break;
 	}
 	if(n==0)
-		printf("=");
+		my_printf("=");
 	else if(n<0)
-		printf("<");
+		my_printf("<");
 	else
-		printf(">");
+		my_printf(">");
 	return 0;
 }

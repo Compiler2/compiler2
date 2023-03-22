@@ -34,8 +34,8 @@ int main_bench()
 			y=i;
 		}
 	}	
-	printf("%s\n",q[x]);
-		printf("%s\n",q[y]);
+	my_printf("%s\n",q[x]);
+		my_printf("%s\n",q[y]);
 }
 
 

@@ -6,7 +6,7 @@ int main_bench()
 	int n;
 	char a[256]={'\0'},b[256]={'\0'};
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(j=0;j<n;j++)
 	{

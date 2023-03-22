@@ -10,10 +10,10 @@ int main_bench()
 		c[i]=0;
 	}
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0,t=0;i<=n-1;i++)
 	{
-		scanf("%d%d",&x,&y);
+		my_scanf("%d%d",&x,&y);
 		if(x>=90&&x<=140&&y>=60&&y<=90)
 		    a[t]=a[t]+1;
 		else
@@ -30,7 +30,7 @@ max=a[0];
 		     total=max;
 		}
 	}
-printf("%d\n",total);
+my_printf("%d\n",total);
 
 	
 	return 0;

@@ -4,12 +4,12 @@ int main_bench()
 { 
 	int cmp(char a[],char b[],int);
 	char a[100]="",b[100]="";
-	scanf("%s %s",a,b);
-	if(strlen(a)!=strlen(b))printf("NO\n");
+	my_scanf("%s %s",a,b);
+	if(strlen(a)!=strlen(b))my_printf("NO\n");
 	else
 	{
-	if(cmp(a,b,0)==1)printf("YES\n");
-	else printf("NO\n");
+	if(cmp(a,b,0)==1)my_printf("YES\n");
+	else my_printf("NO\n");
 	}
 } 
 

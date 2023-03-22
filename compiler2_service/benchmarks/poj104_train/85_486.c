@@ -16,17 +16,17 @@ int main_bench()
 {
 	int i,t,n;
 	char s[100][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	}
 	for(i=0;i<n;i++){
 		t=legal(s[i]);
 	
 		if(t==0)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 		return 0;	
 }

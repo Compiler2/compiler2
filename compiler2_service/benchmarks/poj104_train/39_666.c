@@ -13,12 +13,12 @@ int main_bench()
 {
 	int n,*pr,sum=0,max;
 	struct reward *p,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct reward *rew=(struct reward*)malloc(sizeof(struct reward)*n);
 	int *trew=(int*)malloc(sizeof(int)*n);
 	for(p=rew;p<rew+n;p++)
 	{
-		scanf("%s %d %d %c %c %d",p->name,&p->fgra,&p->tgra,&p->gb,&p->xb,&p->lw);
+		my_scanf("%s %d %d %c %c %d",p->name,&p->fgra,&p->tgra,&p->gb,&p->xb,&p->lw);
 	}
 	for(p=rew,pr=trew;p<rew+n;p++,pr++)
 	{
@@ -60,7 +60,7 @@ int main_bench()
 			temp=*p;
 		}
 	}
-	printf("%s\n%d\n%d\n",temp.name,max,sum);
+	my_printf("%s\n%d\n%d\n",temp.name,max,sum);
 	return 0;
 }
 

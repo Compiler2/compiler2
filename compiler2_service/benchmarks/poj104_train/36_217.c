@@ -4,7 +4,7 @@ int main_bench()
 {
 	void same(char a[],char b[]);
 	char a[1000],b[1000];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	same(a,b);
 }
 void same(char a[],char b[])
@@ -35,10 +35,10 @@ void same(char a[],char b[])
 		else break;
 	}
 	if(n==strlen(a)-1)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 }

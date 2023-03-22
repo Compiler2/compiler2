@@ -5,7 +5,7 @@ int main_bench()
 	char c[101],d[101];
 	int a,b,i,j,p,x;
 	long n=0;
-	scanf("%d %s %d",&a,c,&b);
+	my_scanf("%d %s %d",&a,c,&b);
 	for(i=0;i<=100;i++)
 	{
 	if(c[i]==0)break;
@@ -39,7 +39,7 @@ int main_bench()
 	}
 	for(j=i;j>=1;j--)
 	{
-		 printf("%c",d[j]);
+		 my_printf("%c",d[j]);
 	}
 
 }

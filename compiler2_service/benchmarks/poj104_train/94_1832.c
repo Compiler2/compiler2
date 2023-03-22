@@ -8,9 +8,9 @@ int main_bench(){
 	d=0;
 	e=0;
 	g=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(b=0;b<n;b++){
-		scanf("%d",&sz[b]);
+		my_scanf("%d",&sz[b]);
 	}
 	for(a=0;a<n;a++){
 		
@@ -32,8 +32,8 @@ int main_bench(){
 		}
 	}
 	for(g=1;g<c;g++){
-		printf("%d,",Sz[g]);
+		my_printf("%d,",Sz[g]);
 	}
-	printf("%d",Sz[c]);
+	my_printf("%d",Sz[c]);
 	return 0;
 }

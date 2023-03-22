@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[10000],b[10000],num=0,i,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	}
 	for(i=0;i<n;i++){
 		if(a[i]%2!=0){
@@ -27,10 +27,10 @@ int main_bench(){
 			b[num-p]=e;
 		}
 		if(p!=num){
-			printf("%d,",b[num-p]);
+			my_printf("%d,",b[num-p]);
 		}
 		if(p==num){
-			printf("%d",b[num-p]);
+			my_printf("%d",b[num-p]);
 		}
 	}
 	return 0;

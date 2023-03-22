@@ -5,7 +5,7 @@ main_bench()
 {
       int i,a[1000],x;
       char s[1001];
-      scanf("%s",s);
+      my_scanf("%s",s);
       x=strlen(s);
       for(i=0;i<1000;i++)
       a[i]=1;
@@ -27,12 +27,12 @@ main_bench()
                       {
                           if((s[i-1]-'0')<43)
                           {
-                          printf("(%c,%d)",s[i-1],a[s[i-1]-'A']);
+                          my_printf("(%c,%d)",s[i-1],a[s[i-1]-'A']);
                           a[s[i-1]-'A']=1;
                           }
                           else
                           {
-                          printf("(%c,%d)",s[i-1]-'A'-32+'A',a[s[i-1]-'A'-32]);
+                          my_printf("(%c,%d)",s[i-1]-'A'-32+'A',a[s[i-1]-'A'-32]);
                           a[s[i-1]-'A'-32]=1;
                           }
                           }

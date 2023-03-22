@@ -4,9 +4,9 @@ int a[100],b[50];
 void read(int a[],int b[])
 {
 	int i;
-	scanf("%d %d",&a[0],&b[0]);
-	for (i=1;i<=a[0];i++) scanf("%d",&a[i]);
-	for (i=1;i<=b[0];i++) scanf("%d",&b[i]);
+	my_scanf("%d %d",&a[0],&b[0]);
+	for (i=1;i<=a[0];i++) my_scanf("%d",&a[i]);
+	for (i=1;i<=b[0];i++) my_scanf("%d",&b[i]);
 }
 void change(int c,int x[])
 {
@@ -39,9 +39,9 @@ void out(int m,int n,int x[])
 	int i;
 	for (i=1;i<m+n;i++)
 	{
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	}
-	printf("%d\n",a[m+n]);
+	my_printf("%d\n",a[m+n]);
 }
 main_bench()
 {

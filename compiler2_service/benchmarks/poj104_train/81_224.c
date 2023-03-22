@@ -6,10 +6,10 @@ int main_bench(){
 	int jz[5][5];
 	for(i=0;i<5;i++){
 		for(r=0;r<5;r++){
-			scanf("%d",&jz[i][r]);
+			my_scanf("%d",&jz[i][r]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(F(n,m)){
 		for(i=0;i<5;i++){
 			r=jz[m][i];
@@ -18,13 +18,13 @@ int main_bench(){
 		}
 		for(i=0;i<5;i++){
 			for(r=0;r<4;r++){
-				printf("%d ",jz[i][r]);
+				my_printf("%d ",jz[i][r]);
 			}
-			printf("%d\n",jz[i][4]);
+			my_printf("%d\n",jz[i][4]);
 		}
 	}
 	else
-		printf("error");
+		my_printf("error");
 	return 0;
 }
 int F(int n,int m){

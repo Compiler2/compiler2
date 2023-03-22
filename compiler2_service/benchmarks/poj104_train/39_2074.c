@@ -14,15 +14,15 @@ int main_bench()
 	};
 	struct stu a[101];
 	int i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",&a[i].name);
-		scanf("%d",&a[i].qm);
-		scanf("%d",&a[i].cm);
-		scanf("%s",&a[i].xs);
-		scanf("%s",&a[i].west);
-		scanf("%d",&a[i].paper);
+		my_scanf("%s",&a[i].name);
+		my_scanf("%d",&a[i].qm);
+		my_scanf("%d",&a[i].cm);
+		my_scanf("%s",&a[i].xs);
+		my_scanf("%s",&a[i].west);
+		my_scanf("%d",&a[i].paper);
 		a[i].sp=0;
 		if ((a[i].qm>80)&&(a[i].paper>0)) a[i].sp+=8000;
 		if ((a[i].qm>85)&&(a[i].cm>80)) a[i].sp+=4000;
@@ -38,8 +38,8 @@ int main_bench()
 		if (a[i].sp>a[max].sp) max=i;
 		total=total+a[i].sp;
 	}
-	printf("%s\n",a[max].name);
-	printf("%d\n",a[max].sp);
-	printf("%d\n",total);
+	my_printf("%s\n",a[max].name);
+	my_printf("%d\n",a[max].sp);
+	my_printf("%d\n",total);
 	return 0;
 }

@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[100]={0},b[100]={0},*p,*q,*k;
 	int out;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	
 	for (p=b;*p!='\0';p++)
 	{
@@ -20,6 +20,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",out);
+	my_printf("%d",out);
 
 }

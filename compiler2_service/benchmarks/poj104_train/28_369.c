@@ -26,9 +26,9 @@ int main_bench()
 	if(m!=1)
 	{
 		for(j=0;j<m;j++)
-		    printf("%d,",*(q+j));
-	    printf("%d",*(q+m));
+		    my_printf("%d,",*(q+j));
+	    my_printf("%d",*(q+m));
 	}
-	else printf("%d",*q);
+	else my_printf("%d",*q);
 return 0;
 }

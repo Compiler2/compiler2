@@ -9,9 +9,9 @@ int main_bench()
     int m,i,l,k,p=0,max,maxl;
     int a[200][1000];
     int b[200];
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<m;i++)
-    scanf("%d%s",&bk[i].num,bk[i].str);
+    my_scanf("%d%s",&bk[i].num,bk[i].str);
     
     for(l=0;l<26;l++)
    {
@@ -34,9 +34,9 @@ if(b[l]>max)
 {max=b[l];
 maxl=l;}
 }
-printf("%c\n",maxl+65);
-printf("%d\n",max);
+my_printf("%c\n",maxl+65);
+my_printf("%d\n",max);
 for(i=0;i<max;i++)
-printf("%d\n",a[maxl][i]);
+my_printf("%d\n",a[maxl][i]);
     return 0;
 }

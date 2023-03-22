@@ -40,7 +40,7 @@ return 0;
 }
 int main_bench()
 {int i,n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=1;i<=n;i++)
 {char a[101];int t;
 gets(a);

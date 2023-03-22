@@ -2,10 +2,10 @@
 
 int main_bench()
 {int i,j,n,k,a[100000],m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	scanf("%d",&m);
+		my_scanf("%d",&a[i]);
+	my_scanf("%d",&m);
 	i=0;
 	j=n;
 	while(i<j)
@@ -19,8 +19,8 @@ i--;
 		i++;	
 	}
 	for(i=0;i<j-1;i++)
-	{	printf("%d ",a[i]);
+	{	my_printf("%d ",a[i]);
 	}
-		printf("%d",a[j-1]);
+		my_printf("%d",a[j-1]);
 	return 0;
 }

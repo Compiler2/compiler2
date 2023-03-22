@@ -4,12 +4,12 @@ int main_bench(){
 	int n,i,l,e;
 	int k=0;
 	int a=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100][2];
 	int sf[100];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&sz[i][0],&sz[i][1]);
+		my_scanf("%d %d",&sz[i][0],&sz[i][1]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -48,6 +48,6 @@ int main_bench(){
 			sf[l+1]=e;
 		}
 	}
-	printf("%d",sf[k]);
+	my_printf("%d",sf[k]);
 	return 0;
 }

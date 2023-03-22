@@ -14,8 +14,8 @@ int main_bench()
 	};
 	struct stu s1,s2;
 	int n,i,zong;
-	scanf("%d\n",&n);
-    scanf("%s %d %d %c %c %d",s1.name,&s1.a,&s1.b,&s1.c,&s1.d,&s1.e);
+	my_scanf("%d\n",&n);
+    my_scanf("%s %d %d %c %c %d",s1.name,&s1.a,&s1.b,&s1.c,&s1.d,&s1.e);
 		s1.sum=0;
 		if(s1.a>80&&s1.e>0)
 			s1.sum+=8000;
@@ -30,7 +30,7 @@ int main_bench()
 		zong=s1.sum;
 	for(i=1;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",s2.name,&s2.a,&s2.b,&s2.c,&s2.d,&s2.e);
+		my_scanf("%s %d %d %c %c %d",s2.name,&s2.a,&s2.b,&s2.c,&s2.d,&s2.e);
 		s2.sum=0;
 		if(s2.a>80&&s2.e)
 			s2.sum+=8000;
@@ -46,6 +46,6 @@ int main_bench()
 		if(s2.sum>s1.sum)
 		s1=s2;
 	}
-	printf("%s\n%d\n%d",s1.name,s1.sum,zong);
+	my_printf("%s\n%d\n%d",s1.name,s1.sum,zong);
 return 0;
 }

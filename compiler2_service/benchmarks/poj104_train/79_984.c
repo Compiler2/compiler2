@@ -46,7 +46,7 @@ void shuchu(int n, int m)
 	head=head->next ;
 	}while(head->next !=head);
 
-	printf("%d\n",head->a );
+	my_printf("%d\n",head->a );
 
 }
 
@@ -57,9 +57,9 @@ int main_bench()
 
 	for(;sign;)
 	{
-		scanf("%d%d",&n, &m);
+		my_scanf("%d%d",&n, &m);
 		if(m==1)
-			printf("%d\n",n);
+			my_printf("%d\n",n);
 		else
 		{
 		if(n!=0)

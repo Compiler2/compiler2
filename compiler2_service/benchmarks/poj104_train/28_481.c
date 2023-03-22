@@ -20,5 +20,5 @@ int main_bench()
 	gets(a);
 	pb=&b[0];
 	getword(a,pb);
-	for(i=0;b[i]!=0;i++) { printf("%d",*(pb+i)); if(b[i+1]!=0) putchar(','); }
+	for(i=0;b[i]!=0;i++) { my_printf("%d",*(pb+i)); if(b[i+1]!=0) putchar(','); }
 }

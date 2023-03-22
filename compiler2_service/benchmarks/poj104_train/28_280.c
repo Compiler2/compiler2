@@ -15,9 +15,9 @@ int main_bench()
 		}
 		else if(k==0)
 		{
-			printf("%d,",j);
+			my_printf("%d,",j);
 			k=1;j=0;
 		}
 	}
-	printf("%d\n",j);
+	my_printf("%d\n",j);
 }

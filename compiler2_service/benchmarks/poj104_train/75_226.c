@@ -11,17 +11,17 @@ int main_bench()
 	int i=1,j,n,min=2000,max=0,t,d;
 	do
 	{
-		scanf("%d%c",&a[i].x,&c);
+		my_scanf("%d%c",&a[i].x,&c);
 		i++;
 	}while(c==',');
 	n=i-1;
 	i=1;
 	do
 	{
-		scanf("%d%c",&a[i].y,&c);
+		my_scanf("%d%c",&a[i].y,&c);
 		i++;
 	}while(c==',');
-	printf("%d ",n);
+	my_printf("%d ",n);
 	for(i=1;i<=n;i++)
 	{
 		if(a[i].x<min)
@@ -42,6 +42,6 @@ int main_bench()
         if(d>t)
 			t=d;
 	}
-    printf("%d",t);
+    my_printf("%d",t);
 	return 0;
 }

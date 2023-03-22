@@ -6,10 +6,10 @@ int main_bench()
 {
 	int n,k,x[100][4],y,z;
 	char a[100][20],b[100],c[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0,y=0,z=0;k<n;k++)
 	{
-		scanf("%s %d %d %c %c %d",a[k],&x[k][0],&x[k][1],&b[k],&c[k],&x[k][2]);
+		my_scanf("%s %d %d %c %c %d",a[k],&x[k][0],&x[k][1],&b[k],&c[k],&x[k][2]);
 		x[k][3]=0;
 		if(x[k][0]>80&&x[k][2]>0)
 		{
@@ -34,7 +34,7 @@ int main_bench()
 		z=z+x[k][3];
 		if(x[k][3]>x[y][3])y=k;
 	}
-	printf("%s\n%d\n%d\n",a[y],x[y][3],z);
+	my_printf("%s\n%d\n%d\n",a[y],x[y][3],z);
 }
 
 

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[251],b[251],c[251],d[251];
 	int i,t=0,m,n,l1,l2,x,j;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	m=strlen(a);
 	n=strlen(b);
 	i=0;
@@ -47,7 +47,7 @@ int main_bench()
 			d[0]='\0';
 			strcat(d,c);
 		}
-		printf("%s",d);
+		my_printf("%s",d);
 	}
 	else
 	{
@@ -81,8 +81,8 @@ int main_bench()
 			d[0]='\0';
 			strcat(d,c);
 		}
-		printf("%s",d);
+		my_printf("%s",d);
 	}
 	if(l1==0&&l2==0)
-		printf("0");
+		my_printf("0");
 }

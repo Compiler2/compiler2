@@ -49,7 +49,7 @@ int main_bench()
 	}
 	if(tmp==1)
 	{
-		printf("1");
+		my_printf("1");
 		head=1;
 	}
 	for(j=0;j<sl1;j++)
@@ -60,8 +60,8 @@ int main_bench()
 			continue;
 		}
 		head=1;
-		printf("%c",total[j]);
+		my_printf("%c",total[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

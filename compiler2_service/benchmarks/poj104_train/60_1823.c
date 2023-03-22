@@ -6,7 +6,7 @@ int main_bench()
     int n,i,j,k,u,s=0;
     int l=0;
     m[0]=2;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=3,j=1;i<=n;i++)
         {
            for(k=0;m[k]*m[k]<i;k++)              
@@ -22,12 +22,12 @@ int main_bench()
       u=m[s+1]-m[s];
       if (u==2)
       {
-         printf("%d %d\n",m[s],m[s+1]);
+         my_printf("%d %d\n",m[s],m[s+1]);
          l=l+1;
       }
       s++;
     }
     if (l==0)
-    printf("empty\n");
+    my_printf("empty\n");
 	return 0;
 }

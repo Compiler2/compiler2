@@ -4,7 +4,7 @@ int main_bench()
 {
        char a[100];
        int nn;
-       scanf("%d",&nn);
+       my_scanf("%d",&nn);
        while(gets(a))
        {
              char ans[101];
@@ -12,7 +12,7 @@ int main_bench()
              {
                   ans[i]=' ';
              }
-             printf("%s\n",a);
+             my_printf("%s\n",a);
              int L=strlen(a);
              ans[L]='\0';
              int mark=0;
@@ -40,6 +40,6 @@ int main_bench()
                 }
                 for(int i=0;i<101;i++)
                     if(a[i]==')') ans[i]='?';
-                printf("%s\n",ans);
+                my_printf("%s\n",ans);
        }
 }

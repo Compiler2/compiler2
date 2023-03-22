@@ -3,10 +3,10 @@
 int main_bench(){
 int m,n,i,sz[100];
 double a,b,c,d;
-scanf("%d",&n);
+my_scanf("%d",&n);
 a=0;b=0;c=0;d=0;
 for(i=0;i<n;i++){
-scanf("%d",&(sz[i]));
+my_scanf("%d",&(sz[i]));
 }
 for(i=0;i<n;i++){
     if(sz[i]<=18){
@@ -23,6 +23,6 @@ a=100*a/n;
 b=100*b/n;
 c=100*c/n;
 d=100*d/n;
-printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\nOver60: %.2lf%%\n",a,b,c,d);
+my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\nOver60: %.2lf%%\n",a,b,c,d);
 return 0;
 }

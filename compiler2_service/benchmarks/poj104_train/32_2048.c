@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,leng_a,leng_b,tag=0,a[128],b[128];
 	char s1[128],s2[128];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		for(i=0;i<128;i++)
@@ -12,7 +12,7 @@ int main_bench()
 			a[i]=0;
 			b[i]=0;
 		}
-		scanf("%s%s",s1,s2);
+		my_scanf("%s%s",s1,s2);
 		leng_a=strlen(s1);
 		leng_b=strlen(s2);
 		for(i=0;i<leng_a;i++)
@@ -36,12 +36,12 @@ int main_bench()
 					tag = 1;
 				if (tag == 1)
 				{
-					printf("%d",a[i]);
+					my_printf("%d",a[i]);
 				}
 				if (tag == 0 && i == 0)
-					printf("0");
+					my_printf("0");
 			}
-			printf("\n");
+			my_printf("\n");
 	}
 	return 0;
 }

@@ -29,14 +29,14 @@ j=0;
 }
 while(s[m]!=' '&&s[m]!='\0')
 {
-printf("%c",s[m]);
+my_printf("%c",s[m]);
 m++;
 }
-printf("\n");
+my_printf("\n");
 while(s[n]!=' '&&s[n]!='\0')
 {
-printf("%c",s[n]);
+my_printf("%c",s[n]);
 n++;
 }
-printf("\n");
+my_printf("\n");
 }

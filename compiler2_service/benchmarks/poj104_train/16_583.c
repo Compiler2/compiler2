@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 		if(a<10000)
 	      if(a<1000)
 			if(a<100)
@@ -15,10 +15,10 @@ int main_bench()
     if(a<10000)
 	   if(a<1000)
 	      if(a<100)
-			if(a<10) printf("%d\n",a);
-			else printf("%d%d\n",f,e);
-		  else printf("%d%d%d\n",f,e,d);
-		else printf("%d%d%d%d\n",f,e,d,c);
-	else printf("%d%d%d%d%d\n",f,e,d,c,b);
+			if(a<10) my_printf("%d\n",a);
+			else my_printf("%d%d\n",f,e);
+		  else my_printf("%d%d%d\n",f,e,d);
+		else my_printf("%d%d%d%d\n",f,e,d,c);
+	else my_printf("%d%d%d%d%d\n",f,e,d,c,b);
 	return 0;
 }

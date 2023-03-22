@@ -19,9 +19,9 @@ int main_bench()
 		  s1[i][r]=s[k];
 	   for(r=0,k=a[2*i-1]+1;k<strlen(s);r++,k++)
 	  s1[i][r]=s[k];
-   printf("%s",s1[0]);
+   my_printf("%s",s1[0]);
 	for(i=1;i<j/2+1;i++)
-	printf(" %s",s1[i]);
+	my_printf(" %s",s1[i]);
 	}
-   else for(i=0;i<strlen(s);i++)printf("%c",s[i]);
+   else for(i=0;i<strlen(s);i++)my_printf("%c",s[i]);
 }

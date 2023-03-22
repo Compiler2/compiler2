@@ -4,10 +4,10 @@ int main_bench(){
 	double bi,p;
 	int len1,len2,i,flag,s=0;
 	char zfc[2][501];
-	scanf("%lf",&bi);
+	my_scanf("%lf",&bi);
 	for(i=0;i<2;i++)
 	{
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	len1=strlen(zfc[0]);
 	len2=strlen(zfc[1]);
@@ -32,7 +32,7 @@ int main_bench(){
 	}
 	if(flag==1)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else if(flag==0)
 	{
@@ -50,11 +50,11 @@ int main_bench(){
 		p=s*1.0/len1;
 		if(p>bi)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	
 	}

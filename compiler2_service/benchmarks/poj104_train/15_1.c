@@ -6,11 +6,11 @@ int main_bench()
     int image[1000][1000];
     int n, i,j,area, begRow,begCol,endRow,endCol,isBreak;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
         for(j=0;j<n;j++)
         {
-           scanf("%d", &image[i][j]);
+           my_scanf("%d", &image[i][j]);
         }
 
     isBreak = 0;
@@ -44,5 +44,5 @@ int main_bench()
     }
 
     area = (endRow - begRow - 1)*(endCol - begCol - 1);
-    printf("%d", area);
+    my_printf("%d", area);
 }

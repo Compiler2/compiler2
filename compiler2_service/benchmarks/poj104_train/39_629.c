@@ -26,10 +26,10 @@ int jiangjin(int i)
 int main_bench()
 {
 	int n,i,a[100],h,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].x,&stu[i].y,&stu[i].l);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].x,&stu[i].y,&stu[i].l);
 	a[i]=jiangjin(i);
 	}
 	h=0;
@@ -39,5 +39,5 @@ int main_bench()
 		if(a[i]>a[h]){
 			h=i;}
 	}
-	printf("%s\n%d\n%d",stu[h].name,a[h],sum);
+	my_printf("%s\n%d\n%d",stu[h].name,a[h],sum);
 }

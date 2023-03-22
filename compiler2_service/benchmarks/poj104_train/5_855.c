@@ -4,9 +4,9 @@ int main_bench(){
 	double n;
 	int i,l,r=1,s=0;
 	char a[2][500];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for(i=0;i<2;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	if(strlen(a[0])!=strlen(a[1])){
 	    r=0;
@@ -22,11 +22,11 @@ int main_bench(){
 		}
 	}
 	if(r==0){
-		printf("error");
+		my_printf("error");
 	}else if(1.0*s/l>=n){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

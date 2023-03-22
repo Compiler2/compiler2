@@ -13,37 +13,37 @@ int main_bench()
 p=a;
 for(i=0;i<5;i++)
 {for(j=0;j<5;j++)
-scanf("%d",*(p+i)+j);
+my_scanf("%d",*(p+i)+j);
 }
-scanf("%d%d",&n,&m);
+my_scanf("%d%d",&n,&m);
 if(f(m,n)==0)
-printf("error");
+my_printf("error");
 else
 {for(i=0;i<n;i++)
-{printf("%d",p[i][0]);
+{my_printf("%d",p[i][0]);
 	for(j=1;j<5;j++)
-printf(" %d",p[i][j]);
-printf("\n");
+my_printf(" %d",p[i][j]);
+my_printf("\n");
 }
-printf("%d",p[m][0]);
+my_printf("%d",p[m][0]);
 for(j=1;j<5;j++)
-printf(" %d",p[m][j]);
-printf("\n");
+my_printf(" %d",p[m][j]);
+my_printf("\n");
 for(i=n+1;i<m;i++)
-{printf("%d",p[i][0]);
+{my_printf("%d",p[i][0]);
 	for(j=1;j<5;j++)
-printf(" %d",p[i][j]);
-printf("\n");
+my_printf(" %d",p[i][j]);
+my_printf("\n");
 }
-printf("%d",p[n][0]);
+my_printf("%d",p[n][0]);
 for(j=1;j<5;j++)
-printf(" %d",p[n][j]);
-printf("\n");
+my_printf(" %d",p[n][j]);
+my_printf("\n");
 for(i=m+1;i<5;i++)
-{printf("%d",p[i][0]);
+{my_printf("%d",p[i][0]);
 	for(j=1;j<5;j++)
-printf(" %d",p[i][j]);
-printf("\n");}
+my_printf(" %d",p[i][j]);
+my_printf("\n");}
 }
 return 0;
 }

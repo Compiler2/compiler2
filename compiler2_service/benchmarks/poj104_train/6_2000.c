@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int i,m,n,sum,a[10001],*p;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	while(i--){
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(p=a;p<a+m*n;p++)
-			scanf("%d",p);
+			my_scanf("%d",p);
 		sum=0;
 		for(p=a;p<a+n;p++)
 			sum+=*p;
@@ -18,6 +18,6 @@ int main_bench()
 			sum+=*p;
 		for(p=a+n*2-1;p<a+m*n-1;p+=n)
 			sum+=*p;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 }

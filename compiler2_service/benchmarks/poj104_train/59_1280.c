@@ -7,16 +7,16 @@ int main_bench()
 {
 	int n,m,i,j,k,s=0;
 	char a[102][102];
-	scanf("%d",&n); 
+	my_scanf("%d",&n); 
 	for(i=1;i<=n;i++)
 	{
 		getchar();
 		for(j=1;j<=n;j++)
 		{
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<m;k++)
 	{
 		for(i=1;i<=n;i++)
@@ -66,7 +66,7 @@ int main_bench()
 			
 		} 
 	} 
-	printf("%d",s);
+	my_printf("%d",s);
  
 	return 0;
 }

@@ -5,7 +5,7 @@
 int main_bench()
 {
 	int a,b,c;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if((a%4==0 && a%100!=0)||(a%400==0))
 	{
 		int m[12]={31,29,31,30,31,30,31,31,30,31,30,31};
@@ -16,7 +16,7 @@ int main_bench()
 		  k=k+m[i];
 		}
 	k=k+c;
-	printf("%d",k);
+	my_printf("%d",k);
 	}
 	else
 	{
@@ -28,7 +28,7 @@ int main_bench()
 		  k=k+m[i];
 		}
 	    k=k+c;
-	    printf("%d",k);
+	    my_printf("%d",k);
 	}
 	return 0;
 }

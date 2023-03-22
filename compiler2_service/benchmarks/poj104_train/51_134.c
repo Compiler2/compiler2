@@ -5,8 +5,8 @@ int main_bench()
 	int f(char s[],int n,int len,int i);
 	int n,len=0,i=0,j=0,t=0,x=0;
 	char s[500],p[500];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	len=strlen(s);
 	for(i=0;i<len-n+1;i++)
 	{
@@ -16,17 +16,17 @@ int main_bench()
 	{
 		if(t<p[i])t=p[i];
 	}
-	if(t==0)printf("NO");
+	if(t==0)my_printf("NO");
 	else
 	{
-    	printf("%d\n",t+1);
+    	my_printf("%d\n",t+1);
     	for(i=0;i<len-n+1;i++)
 		{
 	    	if(p[i]==t)
 			{
 			 for(j=i;j<i+n;j++)
-				printf("%c",s[j]);
-			 printf("\n");
+				my_printf("%c",s[j]);
+			 my_printf("\n");
 			}
 		}
 	}

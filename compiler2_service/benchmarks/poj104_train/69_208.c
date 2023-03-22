@@ -6,8 +6,8 @@ int main_bench()
     long long sum=0,k;
     char s1[500],s2[500];
     int a[500],b[500],c[1500];
-    scanf("%s",s1);
-    scanf("%s",s2);
+    my_scanf("%s",s1);
+    my_scanf("%s",s2);
     l1=strlen(s1);
     l2=strlen(s2);
     memset(a,0,sizeof(a));
@@ -29,7 +29,7 @@ int main_bench()
     
     while ((c[l]==0)&&(l>1)) l--;
     if (c[l]>0) l++;
-    for (i=l-1;i>=0;i--)printf("%d",c[i]);    
+    for (i=l-1;i>=0;i--)my_printf("%d",c[i]);    
     
         return 0;
 }        

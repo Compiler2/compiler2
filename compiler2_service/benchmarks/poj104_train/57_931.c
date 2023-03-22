@@ -3,11 +3,11 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char zfc[100][33];
 int i,j;
 for(i=0;i<n;i++){
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 }
 
 for(i=0;i<n;i++){
@@ -19,7 +19,7 @@ for(i=0;i<n;i++){
 
 
 for(i=0;i<n;i++){
-	printf("%s\n",zfc[i]);}
+	my_printf("%s\n",zfc[i]);}
 		
 
 	

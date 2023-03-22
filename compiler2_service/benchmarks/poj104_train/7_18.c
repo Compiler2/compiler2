@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300],b[300],c[300];
 	int i,j,k,n1,n2;
-	scanf("%s %s %s",a,b,c);
+	my_scanf("%s %s %s",a,b,c);
 	n1=strlen(a);
 	n2=strlen(b);
 	for (i=0;i<=n1-n2;i++)
@@ -22,8 +22,8 @@ int main_bench()
 	{
 		for (j=0;j<n2;j++)
 			a[i+j]=c[j];
-		printf("%s",a);
+		my_printf("%s",a);
 	}
-else printf("%s",a);
+else my_printf("%s",a);
 	return 0;
 }

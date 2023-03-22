@@ -4,13 +4,13 @@ int main_bench(){
     double x,y;
     int na,nb,i,c;
     char a[500],b[500];
-    scanf("%lf",&x);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%lf",&x);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     na=strlen(a);
     nb=strlen(b);
     if(na!=nb){
-        printf("error");
+        my_printf("error");
         return 0;
     }else{
         c=0;
@@ -20,18 +20,18 @@ int main_bench(){
                  if(a[i]==b[i]){
                      c=c+1;
                  }
-               }else{printf("error");
+               }else{my_printf("error");
                         return 0;
                }
-            }else{printf("error");
+            }else{my_printf("error");
                   return 0;
             }
             }
     }
                 y=1.0*c/na;
                 if(y>=x){
-                printf("yes");
-                }else{printf("no");}
+                my_printf("yes");
+                }else{my_printf("no");}
                 return 0;
     }
 

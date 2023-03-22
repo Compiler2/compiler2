@@ -20,7 +20,7 @@ int main_bench()
 		b[n-1]=a[0]+a[n-1];
 		for(i=0;i<n;i++)
 		{
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 		}
 		return 0;
 }

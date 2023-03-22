@@ -4,13 +4,13 @@ int main_bench(){
   int t,e,i,z;
   e=0;
   double x,y,k,h;
-  scanf("%lf",&k);
+  my_scanf("%lf",&k);
   char a[510],b[510];
-  scanf("%s",a);
-  scanf("%s",b);
+  my_scanf("%s",a);
+  my_scanf("%s",b);
   t=strlen(a);
   if(strlen(a)!=strlen(b)){
-    printf("error");
+    my_printf("error");
   }else{
      for(i=0;a[i]!='\0';i++){
        if(a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C'){
@@ -22,15 +22,15 @@ int main_bench(){
              }
        }
      if(z!=0){
-       printf("error");
+       my_printf("error");
      }else{
      x=e;
      y=t;
      h=x/y;
      if(h>k){
-       printf("yes");
+       my_printf("yes");
     }else{
-        printf("no");
+        my_printf("no");
     }
     }
   }

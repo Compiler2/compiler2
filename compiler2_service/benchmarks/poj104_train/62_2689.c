@@ -22,6 +22,6 @@ int main_bench()
 	}	
 	m=strlen(t);
 	for(i=0;i<m;i++)
-	printf("%c",(int)t[i]);
+	my_printf("%c",(int)t[i]);
 	return 0;
 }

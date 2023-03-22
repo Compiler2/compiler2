@@ -6,7 +6,7 @@ int main_bench()
 	char q;
 	int n,i,l,k,r,t;
 	int a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(ch);
 	for(i=1;i<=n;i++)
 	{
@@ -28,7 +28,7 @@ int main_bench()
 	}
    for(k=1;k<=n;k++)
    {
-	   printf("%d\n",a[k-1]);
+	   my_printf("%d\n",a[k-1]);
    }
    return 0;
 }

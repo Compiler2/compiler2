@@ -3,7 +3,7 @@
 int main_bench()
 {
    int w,month,xqj;
-   scanf("%d",&w);
+   my_scanf("%d",&w);
 
    for(month=1;month<=12;month++){
        int dijit=13;
@@ -20,7 +20,7 @@ int main_bench()
 
       xqj=(dijit+w-8)%7;
       if(xqj==5){
-          printf("%d\n",month);
+          my_printf("%d\n",month);
       }
    }
 

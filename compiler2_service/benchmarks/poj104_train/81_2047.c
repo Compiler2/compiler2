@@ -6,8 +6,8 @@ int trans()
 	p=(int(*)[5])calloc(5,5*sizeof(int));
     for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",*(p+i)+j);
-    scanf("%d%d",&m,&n);
+			my_scanf("%d",*(p+i)+j);
+    my_scanf("%d%d",&m,&n);
 	if(m<5 && n<5)
 	{
 		for(j=0;j<5;j++)
@@ -27,9 +27,9 @@ int main_bench()
         for(i=0;i<5;i++)
 		{
 			for(j=0;j<4;j++)
-		       printf("%d ",*(*(p+i)+j));
-	        printf("%d\n",*(*(p+i)+4));
+		       my_printf("%d ",*(*(p+i)+j));
+	        my_printf("%d\n",*(*(p+i)+4));
         }
 	}
-	else printf("error");
+	else my_printf("error");
 }

@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int n, m, time=0, i, x, j, mark;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &m);
+		my_scanf("%d", &m);
 		if(m!=0)
 		{
 		for(j=1;j<m+1;j++)
 		{
-			scanf("%d", &x);
+			my_scanf("%d", &x);
 			if(time<60&&x+3*(j-1)>=60)
 			{
 				mark=60-3*(j-1);
@@ -31,7 +31,7 @@ int main_bench()
 		{
 			mark=60;
 		}
-		printf("%d\n", mark);
+		my_printf("%d\n", mark);
 	}
 		return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	for(;;)
 	{
 	int m,n,i,j,k,t=0;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(n==0)break;
 	int a[n];
 	for(i=0;i<n;i++)
@@ -24,7 +24,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		if(a[i]==0)printf("%d\n",i+1);
+		if(a[i]==0)my_printf("%d\n",i+1);
 	}
 	}
 }

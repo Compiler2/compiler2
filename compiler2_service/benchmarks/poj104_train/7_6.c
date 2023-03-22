@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[300],a[300],b[300];
 	int n,m,i,j,p;
-	scanf("%s\n%s\n%s",s,a,b);
+	my_scanf("%s\n%s\n%s",s,a,b);
 	n=strlen(s);
 	m=strlen(a);
 
@@ -23,5 +23,5 @@ int main_bench()
 		for(i=0;i<m;i++)
 			s[p-m+1+i]=b[i];
 
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j,n,t,a[300]={0};
 	float ave=0,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	ave=sum/n;
@@ -20,10 +20,10 @@ int main_bench()
 		}
 	}
 	if((ave-a[0])>(a[n-1]-ave))
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	else if((ave-a[0])<(a[n-1]-ave))
-		printf("%d",a[n-1]);
+		my_printf("%d",a[n-1]);
 	else
-		printf("%d,%d",a[0],a[n-1]);
+		my_printf("%d,%d",a[0],a[n-1]);
 	return 0;
 }

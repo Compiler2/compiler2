@@ -9,12 +9,12 @@ float jue(float t)
 int main_bench()
 {
 	int n,a[300],shu[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	float s=0,ave,max,tem;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s=s+a[i];
 	}
 	ave=s/n;
@@ -48,8 +48,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<k-1;i++)
-		printf("%d,",shu[i]);
-	printf("%d",shu[k-1]);
+		my_printf("%d,",shu[i]);
+	my_printf("%d",shu[k-1]);
 	return 0;
 }
 

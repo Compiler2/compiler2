@@ -6,7 +6,7 @@ int main_bench()
 	int judgep(int i);
 	int judgeh(int i);
 	int m,n,i,flag1,flag2,flag;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for (i=m,flag1=0,flag2=0,flag=0;i<n+1;i++)
 	{
 		flag1=judgep(i);
@@ -15,15 +15,15 @@ int main_bench()
 			continue;
 		else if (flag1&&flag2&&(flag==0))
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			flag=1;
 		}
 		else if (flag1&&flag2&&flag)
-			printf(",%d",i);
+			my_printf(",%d",i);
 	}
 	if (!flag)
-		printf("no");
-	printf("\n");
+		my_printf("no");
+	my_printf("\n");
 }
 
 int judgep(int i)

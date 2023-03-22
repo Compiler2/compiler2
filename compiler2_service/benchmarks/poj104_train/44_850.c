@@ -6,32 +6,32 @@ int main_bench()
 	int i,j,k;
 	for(i=0;i<6;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(j=0;j<6;j++)
 	{
 		if(strcmp(a[j],"0")==0||strcmp(a[j],"-0")==0)
 		{
-			printf("0\n");
+			my_printf("0\n");
 		}
 		else
 		{
 			if(a[j][0]=='-')
 			{
-		        printf("-");
+		        my_printf("-");
 		        for(i=9;i>0;i--)
 				{
 			        if(a[j][i]!='0'&&a[j][i]!='\0')
 					{
-				        printf("%c",a[j][i]);
+				        my_printf("%c",a[j][i]);
 						break;
 					}
 				}
 				for(k=i-1;k>0;k--)
 				{
-					printf("%c",a[j][k]);
+					my_printf("%c",a[j][k]);
 				}
-		        printf("\n");
+		        my_printf("\n");
 			}
 	        else
 			{
@@ -39,15 +39,15 @@ int main_bench()
 				{
 			        if(a[j][i]!='0'&&a[j][i]!='\0')
 					{
-				        printf("%c",a[j][i]);
+				        my_printf("%c",a[j][i]);
 						break;
 					}
 				}
 				for(k=i-1;k>=0;k--)
 				{
-					printf("%c",a[j][k]);
+					my_printf("%c",a[j][k]);
 				}
-		        printf("\n");
+		        my_printf("\n");
 			}
 		}
 	}

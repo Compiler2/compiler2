@@ -21,7 +21,7 @@ int yu7wuguan(int n)
 int main_bench()
 {
 	int n,sum=0,y=0,i=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		y=0;
@@ -32,6 +32,6 @@ int main_bench()
 		}
 		
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

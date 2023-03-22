@@ -4,9 +4,9 @@ int main_bench(){
 	char zfc[256],dy[256]={0};
 	int i,n,l,j;
 	char sz;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		l=strlen(zfc);
 		for(j=0;j<l;j++){
 			if(zfc[j]=='A'){
@@ -21,9 +21,9 @@ int main_bench(){
 			dy[j]=sz;
 		}
 		for(j=0;j<=l-1;j++){
-				printf("%c",dy[j]);
+				my_printf("%c",dy[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 				
 

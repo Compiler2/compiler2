@@ -11,12 +11,12 @@ int main_bench()
 	{
 		s[u]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	max=0;
 	min=0;
 	for(int c=0;c<n;c++)
 	{
-		scanf("%d%d",&i[c].a,&i[c].b);
+		my_scanf("%d%d",&i[c].a,&i[c].b);
 		if(c==0)
 		{
 			min=i[c].a;
@@ -58,8 +58,8 @@ int main_bench()
 			f=f*1;
 	}
 	if(f==1)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	else
-		printf("no");
+		my_printf("no");
 	return 0;
 }

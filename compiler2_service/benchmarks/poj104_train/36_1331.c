@@ -3,11 +3,11 @@
 int main_bench(){
 	int i,j,x,y,e,c;
 	char a[100],b[100];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	x=strlen(a);
 	y=strlen(b);
-	if(x!=y) printf("NO");
+	if(x!=y) my_printf("NO");
 	else{
 		for(i=0;i<x;i++){
 			for(j=0;j<x;j++){
@@ -20,9 +20,9 @@ int main_bench(){
 		}
 		c=strcmp(a,b);
 		if(c==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 	 return 0;
 }

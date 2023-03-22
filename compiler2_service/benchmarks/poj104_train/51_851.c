@@ -9,8 +9,8 @@ int main_bench()
 		int word;
 		int num;
 	}a[505];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	len=strlen(s);
 	for(i=0;i<len-n+1;i++)
 	{
@@ -39,10 +39,10 @@ int main_bench()
 			max=a[i].num;
 	}
 	if(max==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
    
 	for(i=0;i<len-n+1;i++)
 	{
@@ -50,9 +50,9 @@ int main_bench()
 		{
 			for(j=0;j<n;j++)
 			{
-				printf("%c",s[i+j]);
+				my_printf("%c",s[i+j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	}

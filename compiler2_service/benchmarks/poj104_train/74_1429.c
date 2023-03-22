@@ -2,7 +2,7 @@
 
 int main_bench(){
     int m,n,i,j,a[100000]={0},w[10000],z=0,s=0;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=m;i<=n;i++)
      {
         for(j=2;j<i;j++)
@@ -36,14 +36,14 @@ int main_bench(){
 	  }
    }
    if(z==0)
-	   printf("no");
+	   my_printf("no");
    else
    {
    for(z=1;z<s;z++)
      {	  
-			   printf("%d,",w[z]);
+			   my_printf("%d,",w[z]);
    }
-  printf("%d",w[s]);
+  my_printf("%d",w[s]);
    }
 return 0;
 }

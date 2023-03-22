@@ -4,14 +4,14 @@ int main_bench()
 {
 int i,n,s,k,a[11];
 float sum=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 }
 for(i=1;i<=n;i++)
 {
-scanf("%d",&k);
+my_scanf("%d",&k);
 switch(k)
 {
 case 90:
@@ -99,6 +99,6 @@ for(i=1;i<=n;i++)
 s+=a[i];
 }
 sum/=s;
-printf("%.2f",sum);
+my_printf("%.2f",sum);
 return 0;
 }

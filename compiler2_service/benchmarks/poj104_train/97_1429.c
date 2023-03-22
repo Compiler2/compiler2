@@ -3,7 +3,7 @@
 int main_bench(){
     int i,a=0,n,sz[101],b=0,c=0,d=0,zong=0,e=0,f=0,g;
     double aa,bb,cc,dd;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     a=n/100;
     g=n-a*100; 
     b=g/50;
@@ -15,11 +15,11 @@ int main_bench(){
     e=g/5;
     g=g-e*5;
     f=g;
-    printf("%d\n",a);
-     printf("%d\n",b);
-      printf("%d\n",c);
-       printf("%d\n",d);
-        printf("%d\n",e);
-         printf("%d\n",f);
+    my_printf("%d\n",a);
+     my_printf("%d\n",b);
+      my_printf("%d\n",c);
+       my_printf("%d\n",d);
+        my_printf("%d\n",e);
+         my_printf("%d\n",f);
                                       return 0;
 } 

@@ -7,7 +7,7 @@ main_bench()
 	int a,b;
 	int r[10002];
 
-	scanf("%d\n",&N);
+	my_scanf("%d\n",&N);
 
 	for (i=0;i<10001;i++)
 		r[i]=0;
@@ -15,7 +15,7 @@ main_bench()
 	maxr=0;
 	for (i=0;i<N;i++)
 	{
-		scanf("%d%d\n",&a,&b);
+		my_scanf("%d%d\n",&a,&b);
 		if (r[a]<b) r[a]=b; 
 		if (maxr<b) maxr=b;
 	}
@@ -33,12 +33,12 @@ main_bench()
 	if (tail==maxr) flag=1;
 	if (flag==0) 
 	{
-		printf("no");
+		my_printf("no");
 	}
 	if (flag==1)
 	{
-		printf("%d %d\n",head,tail);
+		my_printf("%d %d\n",head,tail);
 	}
 	getchar();
-	scanf("%d\n",&N);
+	my_scanf("%d\n",&N);
 }

@@ -7,11 +7,11 @@ int main_bench(){
 	for(i=0;;){
 		k=0;
 		while((m==' ')||(m=='?')||(m==',')||(m=='!')){
-			scanf("%c",&m);
+			my_scanf("%c",&m);
 		}
 		wd[i][k]=m;
 		for(k=1;;){
-			scanf("%c",&m);
+			my_scanf("%c",&m);
 			if(m==' '){
 				wd[i][k]='\0';
 				len[i]=k;
@@ -33,9 +33,9 @@ int main_bench(){
 		}
 		i++;
 	}
-	printf("%d",len[0]-1);
+	my_printf("%d",len[0]-1);
 	for(j=1;j<=i;j++){
-		printf(",%d",len[j]);
+		my_printf(",%d",len[j]);
 	}
 	return 0;
 }

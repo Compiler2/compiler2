@@ -6,17 +6,17 @@ int main_bench()
 	int n;
 	int sum1=0;
 	int i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a['n'],score['n'];
 	float b['n'],sum2=0,GPA;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 		sum1=sum1+a[i];
 	}
 	for(j=0;j<n;j++)
 	{
-		scanf("%d",&(score[j]));
+		my_scanf("%d",&(score[j]));
 		if(((score[j])<=100)&&((score[j])>=90))
 		{
 			b[j]=4.0;
@@ -63,7 +63,7 @@ int main_bench()
 		sum2=sum2+(a[k])*(b[k]);
 	}
 	GPA=(float)sum2/sum1;
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 
 
 	return 0;

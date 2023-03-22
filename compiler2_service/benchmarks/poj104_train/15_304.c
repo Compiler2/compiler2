@@ -3,11 +3,11 @@
 int main_bench()
 {
  int n,i,j,k,c,x=0,d,m,a[500][500];
- scanf("%d ",&n);
+ my_scanf("%d ",&n);
  for(i=0;i<n;i++)
  {
   for(j=0;j<n;j++)
-  scanf("%d",&a[i][j]);
+  my_scanf("%d",&a[i][j]);
  }   
  for(i=0;i<n;i++)
  {
@@ -38,5 +38,5 @@ int main_bench()
    else if(a[i][j]==0) break;
   }
  }
- printf("%d",x);
+ my_printf("%d",x);
 }

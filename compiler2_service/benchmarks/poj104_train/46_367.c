@@ -2,10 +2,10 @@
 
 int main_bench(){
  int array[100][100],i,j,a,b,b1,c,c1,d,e,f,f1,g,g1,h,row,col,sz[10000]={0},n=0,s=0,p,k=0;
- scanf("%d %d",&row,&col);
+ my_scanf("%d %d",&row,&col);
     for (i=0;i<row;i++){
   for (j=0;j<col;j++){
-   scanf("%d",&array[i][j]);
+   my_scanf("%d",&array[i][j]);
    s++;
   }
  }
@@ -38,7 +38,7 @@ int main_bench(){
   }
  }
      for (p=0;p<s;p++){
-   printf("%d\n",sz[p]);
+   my_printf("%d\n",sz[p]);
   }
 
 return 0;

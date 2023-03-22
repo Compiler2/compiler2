@@ -16,9 +16,9 @@ int judgebegin(char x){
 int main_bench(){
 	int all,i,p,len,ok;
 	char input[21];
-	scanf("%d",&all);
+	my_scanf("%d",&all);
 	for(i=0;i<all;i++){
-		scanf("%s",input);
+		my_scanf("%s",input);
 		len=strlen(input);
 		ok=1;
 		if(judgebegin(input[0])){
@@ -26,8 +26,8 @@ int main_bench(){
 			
 			ok=0;}
 		for(p=1;p<len;p++){if(judgechar(input[p])){ok=0;}}
-		if(ok==0){printf("no\n");}
-		if(ok==1){printf("yes\n");}
+		if(ok==0){my_printf("no\n");}
+		if(ok==1){my_printf("yes\n");}
 	}
 
 return 0;}

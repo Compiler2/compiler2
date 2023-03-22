@@ -39,10 +39,10 @@ int main_bench()
 	{
 		if(x[i]!=y[i])
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			return 0;
 		}
 	}
-	printf("YES\n");
+	my_printf("YES\n");
 	return 0;
 }

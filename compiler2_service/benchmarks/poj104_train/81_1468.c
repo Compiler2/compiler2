@@ -8,23 +8,23 @@ int main_bench()
     
     for(i=0;i<5;i++){ 
        for(j=0;j<5;j++){
-                        scanf("%d",&det[i][j]);
+                        my_scanf("%d",&det[i][j]);
                         }
     } 
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     if(exchange(det,n,m)== 1){
                                
                                                 
                                 for(i=0;i<5;i++){
                                    for(j=0;j<5;j++){
-                                      printf("%d",det[i][j]);
+                                      my_printf("%d",det[i][j]);
                                       if(j<4)
-                                             printf(" ");
+                                             my_printf(" ");
                                    }
-                                   printf("\n");
+                                   my_printf("\n");
                                 }
     }else{ 
-         printf("error\n");
+         my_printf("error\n");
     } 
     
     

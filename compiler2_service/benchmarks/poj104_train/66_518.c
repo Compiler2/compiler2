@@ -6,9 +6,9 @@ int main_bench(){
 int year,month,day;
 int z,i,y,s,ba,sb,a;
 int b=0;
-scanf("%d %d %d",&year,&month,&day);
+my_scanf("%d %d %d",&year,&month,&day);
 if(year==1111111111&&month==11&&day==11){
-printf("Sat.");
+my_printf("Sat.");
 }else{
 s=(year-1)/4;
 ba=(year-1)/100;
@@ -32,37 +32,37 @@ y=z%7;
 switch(y){
 case 1:
 {
-printf("Mon.");
+my_printf("Mon.");
 break;
 }
 case 2:
 {
-printf("Tue.");
+my_printf("Tue.");
 break;
 }
 case 3:
 {
-printf("Wed.");
+my_printf("Wed.");
 break;
 }
 case 4:
 {
-printf("Thu.");
+my_printf("Thu.");
 break;
 }
 case 5:
 {
-printf("Fri.");
+my_printf("Fri.");
 break;
 }
 case 6:
 {
-printf("Sat.");
+my_printf("Sat.");
 break;
 }
 case 0:
 {
-printf("Sun.");
+my_printf("Sun.");
 break;
 }
 }

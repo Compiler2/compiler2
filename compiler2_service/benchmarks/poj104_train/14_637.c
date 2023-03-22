@@ -6,10 +6,10 @@ int main_bench()
 	int a[3], n,c,b,d,g[3], i,temp;
 
 	int j = 0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i = 0; i < 3; i++)
 	{
-		scanf("%d %d %d", &d,&b,&c);
+		my_scanf("%d %d %d", &d,&b,&c);
 		g[i] = d;
 		a[i] = b+c;
 	}
@@ -27,7 +27,7 @@ int main_bench()
 
 	for(i=3;i<n;i++)
 	{
-		scanf("%d %d %d",&d,&b,&c);
+		my_scanf("%d %d %d",&d,&b,&c);
 		temp=b+c;
 
 		
@@ -56,5 +56,5 @@ int main_bench()
 		}
 	}
 
-			printf("%d %d\n%d %d\n%d %d\n",g[0],a[0],g[1],a[1],g[2],a[2]);
+			my_printf("%d %d\n%d %d\n%d %d\n",g[0],a[0],g[1],a[1],g[2],a[2]);
 }

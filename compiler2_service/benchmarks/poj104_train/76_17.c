@@ -5,9 +5,9 @@ int main_bench(){
 	int n,min=10001,max=0;
 	int i,num,flag;
 	double t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	for(i=0;i<n;i++){
 		if(a[i]<min)
 			min=a[i];
@@ -20,12 +20,12 @@ int main_bench(){
 			if(t>=a[i] && t<=b[i])
 				flag++;
 		if(flag==0){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(flag!=0)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 }
 
 

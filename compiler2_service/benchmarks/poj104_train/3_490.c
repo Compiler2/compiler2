@@ -5,9 +5,9 @@ int main_bench()
 	int a[1000]; 
 	int b[1000];
 	int i,j=0,n,k,l,t;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     for(i=0;i<n;i++)
 		if(a[i]<=k)  
 		{  
@@ -19,10 +19,10 @@ int main_bench()
 			t=b[i]+b[l];
 			if(t==k)  
 			{
-				printf("yes");
+				my_printf("yes");
 				goto loop;
 			}
 		}
-     if(i>=(j-1))  printf("no");
-loop:  printf("\n");
+     if(i>=(j-1))  my_printf("no");
+loop:  my_printf("\n");
 }

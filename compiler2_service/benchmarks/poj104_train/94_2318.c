@@ -5,9 +5,9 @@ int main_bench(){
     int a,b,e;
     int sz[500];
     int jishu[500];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&sz[i]);    
+        my_scanf("%d",&sz[i]);    
     }
        for(i=0;i<n;i++){
           if(sz[i]%2!=0){
@@ -28,10 +28,10 @@ int main_bench(){
     }
     for(i=0;i<n-1;i++){
            if(jishu[i]!=0){
-        printf("%d,",jishu[i]);
+        my_printf("%d,",jishu[i]);
          }
     }
-      printf("%d",jishu[n-1]);  
+      my_printf("%d",jishu[n-1]);  
     
     
     return 0;

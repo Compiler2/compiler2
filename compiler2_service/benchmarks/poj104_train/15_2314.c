@@ -5,11 +5,11 @@ int main_bench(){
 	int a[1002][1002];
 
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			if(start==0&&a[i][j]==0){
 				start=1;
 				fx=i;fy=j;
@@ -22,7 +22,7 @@ int main_bench(){
 	}
 	}
 
-	printf("%d\n",(fx-lx+1)*(fy-ly+1));
+	my_printf("%d\n",(fx-lx+1)*(fy-ly+1));
 	
 	getchar();getchar();
 	return 0;

@@ -10,10 +10,10 @@ int main_bench()
 		long sum;
 	}t[100000];
 	long n,i,j,k,tmp;
-	scanf("%ld",&n);
+	my_scanf("%ld",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%ld %ld %ld",&t[i].num,&t[i].chinese,&t[i].maths);
+		my_scanf("%ld %ld %ld",&t[i].num,&t[i].chinese,&t[i].maths);
 	}
     for(i=0;i<n;i++)
 	{
@@ -37,7 +37,7 @@ int main_bench()
 	}
 	for(i=0;i<3;i++)
 	{
-	    printf("%ld %ld\n",t[i].num,t[i].sum);
+	    my_printf("%ld %ld\n",t[i].num,t[i].sum);
 	}
 	return 0;
 }

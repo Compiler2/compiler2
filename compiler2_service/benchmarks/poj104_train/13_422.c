@@ -6,10 +6,10 @@ int a[20010];
 int main_bench()
 {
 	int n,i,tmp,k,ii=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&tmp);
+		my_scanf("%d",&tmp);
 		int j;
 		int flag = 0;
 		for(j=0;j<i;j++)
@@ -29,8 +29,8 @@ int main_bench()
 	}
 	for(k=0;k<ii-1;k++)
 	{
-		printf("%d ",a[k]);
+		my_printf("%d ",a[k]);
 	}
-	printf("%d",a[ii-1]);
+	my_printf("%d",a[ii-1]);
 	
 }

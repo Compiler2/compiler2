@@ -23,8 +23,8 @@ int main_bench(){
 	}
 	num[k]=len-time-sum2;
 	for(i=1;i<k;i++){
-		printf("%d,", num[i]);
+		my_printf("%d,", num[i]);
 	}
-	printf("%d", num[k]);
+	my_printf("%d", num[k]);
 	return 0;
 }

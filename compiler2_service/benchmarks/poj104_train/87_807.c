@@ -11,12 +11,12 @@ int main_bench(){
 	int x;
 	int y;
 	for(int i=0;i<10000;i++){
-	scanf("%d",&a);
-	scanf("%d",&b);
-	scanf("%d",&c);
-	scanf("%d",&d);
-	scanf("%d",&e);
-	scanf("%d\n",&f);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
+	my_scanf("%d",&c);
+	my_scanf("%d",&d);
+	my_scanf("%d",&e);
+	my_scanf("%d\n",&f);
 	if(a==0&&b==0&&a==0&&c==0&&d==0&&e==0&&f==0){
 		break;
 	}
@@ -26,7 +26,7 @@ int main_bench(){
 	x=a*3600+b*60+c;
 	y=d*3600+e*60+f;
 	s=y-x;
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	}
 	return 0;
 }

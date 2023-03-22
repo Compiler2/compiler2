@@ -8,10 +8,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&matrix[i][j]);
+			my_scanf("%d",&matrix[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int a=n;
 	int b=m;
 	int t[5],c;
@@ -32,7 +32,7 @@ int main_bench()
 	q=p;
 	if(q==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else if(q==1)
 	{
@@ -42,11 +42,11 @@ int main_bench()
 			{
 				if(j==4)
 				{
-					printf("%d\n",matrix[i][j]);
+					my_printf("%d\n",matrix[i][j]);
 				}
 				else
 				{
-					printf("%d ",matrix[i][j]);
+					my_printf("%d ",matrix[i][j]);
 				}
 			}
 		}

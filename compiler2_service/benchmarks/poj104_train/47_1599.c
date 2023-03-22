@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int sz[100],i,n,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 
 	if(n%2==0)
@@ -34,11 +34,11 @@ int main_bench()
 	{
 		if(i==0)
 		{
-			printf("%d",sz[i]);
+			my_printf("%d",sz[i]);
 		}
 		else
 		{
-			printf(" %d",sz[i]);
+			my_printf(" %d",sz[i]);
 		}
 	}
 

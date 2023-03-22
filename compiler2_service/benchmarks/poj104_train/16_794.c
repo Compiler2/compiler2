@@ -3,18 +3,18 @@
 int main_bench()
 {
 int ace,a,b,c,d;
-scanf("%d",&ace);
+my_scanf("%d",&ace);
 a=(int)(ace/1000);
 b=(int)((ace-1000*a)/100);
 c=(int)((ace-1000*a-100*b)/10);
 d=(ace-1000*a-100*b-10*c);
 
-if(ace>=1000) printf("%d%d%d%d",d,c,b,a);
+if(ace>=1000) my_printf("%d%d%d%d",d,c,b,a);
 else 
-if (ace>=100) printf("%d%d%d",d,c,b);
+if (ace>=100) my_printf("%d%d%d",d,c,b);
 else 
-if (ace>=10) printf("%d%d",d,c);
+if (ace>=10) my_printf("%d%d",d,c);
 else 
-printf("%d",d);
+my_printf("%d",d);
 
 }

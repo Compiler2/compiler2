@@ -4,8 +4,8 @@ int main_bench()
 {
   char s1[50],s2[50],*p1,*p2;
   int i=0,j,lens1,lens2,n,x=0,y=0;
-  scanf("%s",s1);
-  scanf("%s",s2);
+  my_scanf("%s",s1);
+  my_scanf("%s",s2);
   p1=s1;p2=s2;
   lens1=strlen(s1);
   lens2=strlen(s2);
@@ -22,7 +22,7 @@ int main_bench()
       }
       if (x==lens1) {y=i;break;}
   }
-  printf("%d",y);
+  my_printf("%d",y);
 
   return 0;
 }

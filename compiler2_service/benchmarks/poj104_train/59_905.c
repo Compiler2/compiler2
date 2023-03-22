@@ -4,10 +4,10 @@ int main_bench()
 {
  int n,m,i,j,d,k;
  char c[2][100][100]={0};
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
-  scanf("%s",c[1][i]);
- scanf("%d",&d);
+  my_scanf("%s",c[1][i]);
+ my_scanf("%d",&d);
  for(i=0;i<d;i++)
  {for(j=0;j<n;j++)
    for(k=0;k<n;k++)
@@ -28,5 +28,5 @@ int main_bench()
  for(j=0;j<n;j++)
   for(k=0;k<n;k++)
    if(c[0][j][k]=='@') i++;
- printf("%d",i);
+ my_printf("%d",i);
 }

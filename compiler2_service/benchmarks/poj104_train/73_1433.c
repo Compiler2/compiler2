@@ -7,7 +7,7 @@ int main_bench() {
 	int g = 0;
 	for(i=0; i<5; i++) {
 		for(j=0; j<5; j++) {
-			scanf("%d", &map[i][j]);
+			my_scanf("%d", &map[i][j]);
 		}
 	}
 	for(i=0; i<5; i++) {
@@ -23,12 +23,12 @@ int main_bench() {
 			}
 		}
 		if(j >= 5) {
-			printf("%d %d %d\n", i+1, k+1, map[i][k]);
+			my_printf("%d %d %d\n", i+1, k+1, map[i][k]);
 			g = 1;
 		}
 	}
 	if(g == 0) {
-		printf("not found\n");
+		my_printf("not found\n");
 	}
 	return 0;
 }

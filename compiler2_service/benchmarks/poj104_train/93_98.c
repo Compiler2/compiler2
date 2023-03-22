@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,a[3]={0},i,j,p=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if(m%3==0)
 		a[0]=3;
 	if(m%5==0)
@@ -18,14 +18,14 @@ int main_bench()
 		{if(a[j]>0)
 		p=1;}
 		if(p==1)
-         printf("%d ",a[i]);
+         my_printf("%d ",a[i]);
 		else if(p==0)
-			printf("%d",a[i]);}
+			my_printf("%d",a[i]);}
 		p=0;
 	}
 	if(a[2]>0)
-		printf("%d",7);
+		my_printf("%d",7);
 	if(m%3!=0&&m%5!=0&&m%7!=0)
-		printf("n");
+		my_printf("n");
 	return 0;
 }

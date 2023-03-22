@@ -9,11 +9,11 @@ double b,n;
 
 char z[500],s[500];
 
-scanf("%lf",&n);
+my_scanf("%lf",&n);
 
-scanf("%s",z);
+my_scanf("%s",z);
 
-scanf("%s",s);
+my_scanf("%s",s);
 
 l=strlen(z);
 
@@ -23,7 +23,7 @@ if(l!=p)
 {
   
 
-  printf("error");
+  my_printf("error");
 }
 else
 {
@@ -45,16 +45,16 @@ else
 	  }
    }
 
-   if(t==0) printf("error");
+   if(t==0) my_printf("error");
 
    else 
    {
 	   b=(double)sum/l;
 
 	   if(b>n)
-	   printf("yes");
+	   my_printf("yes");
 
-	   else printf("no");
+	   else my_printf("no");
    }
 }
  

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j,len,fail=0;
 	char s[50],w[20];
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	len=strlen(s);
 	i=j=0;
 	while(1){
@@ -26,5 +26,5 @@ int main_bench()
 		}
 		else break;
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 }

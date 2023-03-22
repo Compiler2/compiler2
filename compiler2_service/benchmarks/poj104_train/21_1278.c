@@ -4,10 +4,10 @@ int main_bench()
 {
  int i;
  double n,q=0,max,a[301]={0},b[301],c[3]={0};
- scanf("%lf",&n);
+ my_scanf("%lf",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%lf",&a[i]);
+  my_scanf("%lf",&a[i]);
   q=q+a[i];
  }
  q=q/n;
@@ -29,13 +29,13 @@ int main_bench()
   {c[1]=a[i];
   break;}
   if(c[1]==0){
-  printf("%1.lf\n",c[0]);
+  my_printf("%1.lf\n",c[0]);
   }
  else
   if(c[0]>c[1]){
-  printf("%1.lf,%1.lf",c[1],c[0]);}
+  my_printf("%1.lf,%1.lf",c[1],c[0]);}
   else{
-      printf("%1.lf,%1.lf",c[0],c[1]);}
+      my_printf("%1.lf,%1.lf",c[0],c[1]);}
  
  return 0;
 }

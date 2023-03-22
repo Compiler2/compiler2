@@ -3,9 +3,9 @@
 int main_bench(){
 int n,i;
 char y[260],t[260]={0};
-scanf ("%d",&n);
+my_scanf ("%d",&n);
 for (i=0;i<n;i++){
-scanf ("%s",y);
+my_scanf ("%s",y);
 char *py=y,*pt=t;
 for (;*py!='\0';py++,pt++)
 {
@@ -16,6 +16,6 @@ if (*py=='C') *pt='G';
 
 }
 *pt='\0';
-printf("%s\n",t);}
+my_printf("%s\n",t);}
 return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int m,n,i,j,p;
 	char s[501],a[500][5];
 	int c[500];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(s);
 	m=0;p=0;
 	while(s[p]!='\0')
@@ -37,14 +37,14 @@ for(i=0;i<500;i++)
 			m=c[i];
 	}
 	if(m==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 	for(i=0;i<p-n;i++)
 	{
 		if(c[i]==m)
-			printf("%s\n",a[i]);
+			my_printf("%s\n",a[i]);
 	}
 	}
 

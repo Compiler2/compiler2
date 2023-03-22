@@ -13,14 +13,14 @@ main_bench()
             {
                   for(j=0;j<101;j++) s2[j]='\0';
                   for(p=0;p<k-i;p++) s2[p]=s1[i+1+p];
-                  printf("%s ",s2);
+                  my_printf("%s ",s2);
                   k=i-1;
             }
             else if(i==0)
             { 
                   for(j=0;j<101;j++) s2[j]='\0';
                   for(p=0;p<=k;p++) s2[p]=s1[p];
-                  printf("%s",s2);
+                  my_printf("%s",s2);
             }
       }
 }

@@ -3,7 +3,7 @@
 main_bench()
 {
 	int n,k,i,s,e;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	s=n+k;
 	e=s;
 	goto abc;
@@ -14,5 +14,5 @@ abc:for(i=2;i<=n;i++)
 		if((n*e)%(n-1)==0)	e=n*e/(n-1)+k;
 		else goto loop;
 	}
-	printf("%d",e);
+	my_printf("%d",e);
 }

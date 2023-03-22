@@ -7,9 +7,9 @@ int main_bench()
 {
 	int p,num,k;
 	for(k=1;k<7;k++){
-	   scanf("%d",&num);
+	   my_scanf("%d",&num);
 	   p=reverse(num);
-	   printf("%d\n",p);
+	   my_printf("%d\n",p);
 	}return 0;
 }
 int reverse(int x)

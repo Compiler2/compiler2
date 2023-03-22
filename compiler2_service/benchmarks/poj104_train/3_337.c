@@ -4,13 +4,13 @@
 int main_bench()
 {
 	int n,k,a[1000],t,j,p=0,i;
-	scanf("%d%d",&n,&k);
-	scanf("%d",&a[0]);
+	my_scanf("%d%d",&n,&k);
+	my_scanf("%d",&a[0]);
 	
 	
 	for(i=1;i<n;i++){
     t=i;
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 for(j=0;j<t;j++){
 	if(a[j]==k-a[i]){
@@ -18,8 +18,8 @@ for(j=0;j<t;j++){
 		break;}
 }
 	}
-if(p==0)printf("no");
-if(p==1)printf("yes");	
+if(p==0)my_printf("no");
+if(p==1)my_printf("yes");	
 	
 	
 	

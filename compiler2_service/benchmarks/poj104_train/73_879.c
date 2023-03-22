@@ -7,7 +7,7 @@ main_bench()
       {
           for(j=0;j<5;j++)
           {
-               scanf("%d",&a[i][j]);   
+               my_scanf("%d",&a[i][j]);   
           }
       }
       for(i=0;i<5;i++)
@@ -24,12 +24,12 @@ main_bench()
           }
           if ((a[m][n]<=a[0][n])&&(a[m][n]<=a[1][n])&&(a[m][n]<=a[2][n])&&(a[m][n]<=a[3][n])&&(a[m][n]<=a[4][n]))
           {
-               printf("%d %d %d",m+1,n+1,p);
+               my_printf("%d %d %d",m+1,n+1,p);
                t++;
           }
           n=0;  
       } 
       if (t==0)
-      printf("not found");
+      my_printf("not found");
       
 }

@@ -11,7 +11,7 @@ int main_bench(){
 	}
 	zfc2[m1-1]=zfc1[m1-1]+zfc1[0];
 	for(i=0;i<m1;i++){
-		printf("%c",zfc2[i]);
+		my_printf("%c",zfc2[i]);
 	}
 	return 0;
 }

@@ -40,7 +40,7 @@ int scan(int n)
 main_bench()
 {
       int a,b,i,p=0,q=0,z=0;
-      scanf("%d %d",&a,&b);
+      my_scanf("%d %d",&a,&b);
       for(i=a;i<=b;i++)
       {
                   p=pan(i);
@@ -48,18 +48,18 @@ main_bench()
                   if(p==1 && q==1 && z!=0)
                   {
                                           z++;
-                                          printf(",%d",i);
+                                          my_printf(",%d",i);
                   }
                   if(p==1 && q==1 && z==0)
                   {
-                                          printf("%d",i);
+                                          my_printf("%d",i);
                                           z++;
                   }
       }
       if(z!=0)
-      printf("\n");
+      my_printf("\n");
       else 
-      printf("no\n");
+      my_printf("no\n");
       getchar();
       getchar();
       return 0;

@@ -11,18 +11,18 @@ for(i=0;i<12;i++){
 			f2[i]+=e2[j];
 	}
 }
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&y,&m1,&m2);
+		my_scanf("%d %d %d",&y,&m1,&m2);
 		if(y%400==0||(y%4==0&&y%100!=0)){
 			int t1=(f1[m1-1]-f1[m2-1]>=0)?(f1[m1-1]-f1[m2-1]):(f1[m2-1]-f1[m1-1]);
-			if(t1%7==0) printf("YES\n");
-			else printf("NO\n");
+			if(t1%7==0) my_printf("YES\n");
+			else my_printf("NO\n");
 		}
 		else{
 			int t2=(f2[m1-1]-f2[m2-1]>=0)?(f2[m1-1]-f2[m2-1]):(f2[m2-1]-f2[m1-1]);
-			if(t2%7==0) printf("YES\n");
-			else printf("NO\n");
+			if(t2%7==0) my_printf("YES\n");
+			else my_printf("NO\n");
 		}
 	}
 	return 0;

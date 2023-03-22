@@ -5,8 +5,8 @@ int main_bench()
 	char a[200],b[200],c[200],d[200];
     int ai=0,lb,la,lc,bi=0,ci=0,di=0,k;
     gets(a);
-	scanf("%s",&b);
-	scanf("%s",&c);
+	my_scanf("%s",&b);
+	my_scanf("%s",&c);
 	lb=strlen(b);la=strlen(a);lc=strlen(c);
     while (ai!=la)
 	{

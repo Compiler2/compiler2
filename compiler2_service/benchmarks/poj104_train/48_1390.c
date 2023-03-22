@@ -8,7 +8,7 @@ int main_bench(){
             a[i][j]=b[i][j]=0;
         }
     }
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     a[5][5]=m;
     for(day=1;day<=n;day++){
         for(i=1;i<=9;i++){
@@ -33,9 +33,9 @@ int main_bench(){
     }
     for(i=1;i<=9;i++){
         for(j=1;j<=8;j++){
-            printf("%d ",a[i][j]);
+            my_printf("%d ",a[i][j]);
         }
-        printf("%d\n",a[i][9]);
+        my_printf("%d\n",a[i][9]);
     }
     return 0;
 

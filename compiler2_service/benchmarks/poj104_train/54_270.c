@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,i,k,n;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	b=n-1;
 	a=n-1;
 	for(i=1;i<=n-1;i++)
@@ -17,5 +17,5 @@ int main_bench()
 		else
 		{a=a*n/(n-1)+k;}
 	}
-	printf("%d",a*n/(n-1)+k);
+	my_printf("%d",a*n/(n-1)+k);
 } 

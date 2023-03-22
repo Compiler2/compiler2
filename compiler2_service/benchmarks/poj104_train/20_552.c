@@ -7,7 +7,7 @@ int main_bench()
 	int i, lenth;
 	int maxAsc=0;
 	char maxChar=0;
-	while(scanf("%s%s",str,substr)==2)
+	while(my_scanf("%s%s",str,substr)==2)
 	{
 		maxAsc=0;
 		maxChar=0;
@@ -29,6 +29,6 @@ int main_bench()
 		{
 			*(str+maxAsc+i+1)=*(substr+i);
 		}
-		printf("%s\n",str);
+		my_printf("%s\n",str);
 	}
 }

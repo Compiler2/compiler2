@@ -8,8 +8,8 @@ int main_bench()
   char c[100];
   char d[100];
   gets(a);
-  scanf("%s",&c);
-  scanf("%s",&d);
+  my_scanf("%s",&c);
+  my_scanf("%s",&d);
   n=strlen(a);
   for(i=0;i<n;i++)
    {
@@ -21,7 +21,7 @@ int main_bench()
       if (strcmp(b[i],c)==0) strcpy(b[i],d);
      }
   for(i=0;i<j;i++)
-   printf("%s ",b[i]);
-   printf("%s",b[i]);
+   my_printf("%s ",b[i]);
+   my_printf("%s",b[i]);
   
 }

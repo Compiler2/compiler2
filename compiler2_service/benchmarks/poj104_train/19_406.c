@@ -40,6 +40,6 @@ int main_bench()
 		}
 	}
 	for (i=p;i<=p+n-1;i++)
-		printf("%c",*i);
-	printf("\n");
+		my_printf("%c",*i);
+	my_printf("\n");
 }

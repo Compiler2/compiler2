@@ -5,8 +5,8 @@ int main_bench()
     int n[100],m[100],i;
     int cho(int m,int n);n[0]=1;m[0]=1;
     for (i=1;n[i-1]!=0&&m[i-1]!=0;i++)
-    scanf("%d %d",&n[i],&m[i]);
-    for (i=1;n[i]!=0&&m[i]!=0;i++) printf("%d\n",cho(m[i],n[i]));
+    my_scanf("%d %d",&n[i],&m[i]);
+    for (i=1;n[i]!=0&&m[i]!=0;i++) my_printf("%d\n",cho(m[i],n[i]));
 }
 int cho(int m,int n)
 {   

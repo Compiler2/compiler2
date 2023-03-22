@@ -10,12 +10,12 @@ int main_bench(){
 		}
 		else{
 			if(a[i-1]!=32){
-				printf("%d,",len);
+				my_printf("%d,",len);
 				len=0;
 			}
 		}
 		i++;
 	}
-	printf("%d",len);
+	my_printf("%d",len);
 	return 0;
 }

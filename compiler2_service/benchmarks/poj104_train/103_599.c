@@ -7,14 +7,14 @@ main_bench()
       int i,m;
       char c;
       m=1;
-      scanf("%s",str);
+      my_scanf("%s",str);
       for(i=0;(c=str[i])!='\0';i++)
         str[i]=f(str[i]);
       for(i=0;(c=str[i])!='\0';i++)
         if(str[i+1]==str[i])
         m=m+1;
         else {
-             printf("(%c,%d)",str[i],m);
+             my_printf("(%c,%d)",str[i],m);
              m=1;
              }
 }

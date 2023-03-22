@@ -20,11 +20,11 @@ int zhishu(int a)
 main_bench()
 {
       int i,n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=1;i<=n/2;i++)
       {
                          if(zhishu(i)==1 && zhishu(n-i)==1)
-                         printf("%d %d\n",i,n-i);
+                         my_printf("%d %d\n",i,n-i);
                          }
       getchar();
       getchar();

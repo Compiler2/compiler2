@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,j=0,a[100],b[100],s=0,c[100]={0},e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90&&i!=n-1){
 			s++;
 		}
@@ -27,6 +27,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
     int i,n,a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		a[i-1]=i;
 	for(i=0;i<n;i++)
@@ -16,7 +16,7 @@ int main_bench()
 	{
 		sum=sum+a[i]*a[i];
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 
 
 }

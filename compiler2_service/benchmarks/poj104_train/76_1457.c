@@ -3,10 +3,10 @@
 int main_bench(){
     int i,m,k,n,t;
     double d;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int a[n],b[n],A[n],B[n];
     for(i=0;i<n;i++){
-        scanf("%d%d\n",&a[i],&b[i]);
+        my_scanf("%d%d\n",&a[i],&b[i]);
 }
     for(i=0;i<n;i++){
             A[i]=a[i];
@@ -37,12 +37,12 @@ int main_bench(){
 }
 }
         if(i==n){
-printf("no");
+my_printf("no");
    break;  
 }  
 }
     if(d==B[n-1]+0.5){
-   printf("%d %d",A[0],B[n-1]); 
+   my_printf("%d %d",A[0],B[n-1]); 
 }
 return 0;
 }

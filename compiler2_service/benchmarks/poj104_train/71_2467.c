@@ -4,14 +4,14 @@ int main_bench()
 {
 	int tianshu(int nian,int yue);
 	int i,n,nian,yue1,yue2,dur;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&nian,&yue1,&yue2);
+		my_scanf("%d%d%d",&nian,&yue1,&yue2);
 		dur=tianshu(nian,yue2)-tianshu(nian,yue1);
 		if(dur%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

@@ -14,9 +14,9 @@ if (len1>=len2) i=len2;
 for (j=0;j<=i-1;j++)
  {if (a[1][j]>=65&&a[1][j]<=90) a[1][j]=a[1][j]+32;
  	if (a[2][j]>=65&&a[2][j]<=90) a[2][j]=a[2][j]+32;
-      if (a[1][j]>a[2][j]) {printf(">");p=1;break;}
-        else if (a[1][j]<a[2][j]) {p=1;printf("<");break;}
+      if (a[1][j]>a[2][j]) {my_printf(">");p=1;break;}
+        else if (a[1][j]<a[2][j]) {p=1;my_printf("<");break;}
            else p=0;
   }
-if (p==0&&len1==len2) printf("=");
+if (p==0&&len1==len2) my_printf("=");
 }

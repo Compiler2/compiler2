@@ -3,7 +3,7 @@
 int main_bench()
 {
      char s[100]={0};
-     scanf("%s",s);   
+     my_scanf("%s",s);   
      int a[100],b;
      int c,d,e;
      c=s[0]-'0';
@@ -12,14 +12,14 @@ int main_bench()
      int l=strlen(s);
      if(l==1)
      {
-             printf("0\n");
-             printf("%c",s[0]);
+             my_printf("0\n");
+             my_printf("%c",s[0]);
      }
      else if((e<13)&&(l==2))
      {
-          printf("0");
-          printf("\n");
-          printf("%d",e);
+          my_printf("0");
+          my_printf("\n");
+          my_printf("%d",e);
      }
      else
      {
@@ -33,13 +33,13 @@ int main_bench()
          for(int q=0;q<l-1;q++)
          {
                   if((q==0)&&(a[q]!=0))
-                  printf("%d",a[q]);
+                  my_printf("%d",a[q]);
                   else if(q!=0)
-                  printf("%d",a[q]);
+                  my_printf("%d",a[q]);
          }
         
-         printf("\n");
-         printf("%d\n",c);
+         my_printf("\n");
+         my_printf("%d\n",c);
      }
   
 }

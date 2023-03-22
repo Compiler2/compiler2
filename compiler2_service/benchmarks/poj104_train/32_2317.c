@@ -34,27 +34,27 @@ void print(int a[],int na)
 	for(j=0;a[j]==0;j++)
 		i++;
 	for(i=j;i<na;i++)
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 }
 int main_bench()
 {
 	int a[100],b[100];
 	char c[100];
 	int n,i,j,na,nb;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",c);
+		my_scanf("%s",c);
 		na=strlen(c);
 		change(c,a);
 		for(j=0;j<100;j++)
 			c[j]='\0';
-		scanf("%s",c);
+		my_scanf("%s",c);
 		nb=strlen(c);
 		change(c,b);
 		minus(a,b,na,nb);
 		print(a,na);
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

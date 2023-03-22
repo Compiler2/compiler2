@@ -26,7 +26,7 @@ void compare(char c1[],char c2[])
 	len1=strlen(c1);
 	len2=strlen(c2);
 	if(len1!=len2)
-		printf("NO");
+		my_printf("NO");
 	else if(len1==len2)
 	{
 		for(i=0;i<len1;i++)
@@ -35,16 +35,16 @@ void compare(char c1[],char c2[])
 				total++;
 		}
 		if(total==len1)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }
 
 int main_bench()
 {
 	char c1[100],c2[100];
-	scanf("%s%s",c1,c2);
+	my_scanf("%s%s",c1,c2);
 	rearrange(c1);
 	rearrange(c2);
 	compare(c1,c2);

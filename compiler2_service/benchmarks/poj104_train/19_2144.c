@@ -29,8 +29,8 @@ int main_bench(){
 			}
 		}
 		for(a=0;a<sum;a++){
-		    printf("%s ",str[a]);
+		    my_printf("%s ",str[a]);
 		}
-	    printf("%s",str[sum]);
+	    my_printf("%s",str[sum]);
 return 0;
 }

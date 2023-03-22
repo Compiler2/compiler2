@@ -2,9 +2,9 @@
 
 int main_bench(){
    int A[1000],n,k,b=0,i;
-   scanf("%d%d",&n,&k);
+   my_scanf("%d%d",&n,&k);
    for(int i=0;i<n;i++){
-       scanf("%d",&(A[i]));    
+       my_scanf("%d",&(A[i]));    
           A[i]=A[i];
            }
    for(i=0;i<n-1;i++){
@@ -13,7 +13,7 @@ int main_bench(){
            if((A[i]+A[i+j])==k){b=1;}    
                }             
                     }  
-    if(b==1){printf("yes");}
-    else{printf("no");}      
+    if(b==1){my_printf("yes");}
+    else{my_printf("no");}      
 return 0;
 }

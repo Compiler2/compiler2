@@ -3,11 +3,11 @@
 main_bench()
 {
       int n,c=0,f=1;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       char  p[1000][41];  
       for(int i=0;i<n;i++)
       { 
-              scanf("%s",p[i]); 
+              my_scanf("%s",p[i]); 
       }
       for(int j=0;j<n;j++)
       { 
@@ -16,16 +16,16 @@ main_bench()
                    {
                             if(f==1)
                             {
-                              printf("%s",p[j]); 
+                              my_printf("%s",p[j]); 
                               f=0;
                               } 
                               else
-                              printf(" %s",p[j]);
+                              my_printf(" %s",p[j]);
                           c++; 
                    }
                    else
                    {
-                       printf("\n");
+                       my_printf("\n");
                        f=1;
                        c=0;
                        j--;

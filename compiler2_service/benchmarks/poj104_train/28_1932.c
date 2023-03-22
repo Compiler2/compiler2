@@ -23,11 +23,11 @@ int main_bench()
 		sz[s]=m;
 		s++;
 	}
-	printf("%d",sz[0]);
+	my_printf("%d",sz[0]);
 	for(i=1;i<s;i++)
 	{
 		if(sz[i]!=0)
-		printf(",%d",sz[i]);
+		my_printf(",%d",sz[i]);
 	}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,*p,a[100000],m,chongfu=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(p=a;p<a+n;p++)
-	scanf("%d",p);
-	scanf("%d",&m);
+	my_scanf("%d",p);
+	my_scanf("%d",&m);
 	for(p=a;p<a+n;p++)
 	{
 	
@@ -16,6 +16,6 @@ int main_bench()
 		 
 	}
 	for(p=a;p<a+n-chongfu-1;p++)
-		printf("%d ",*p);
-	printf("%d",*(a+n-chongfu-1));
+		my_printf("%d ",*p);
+	my_printf("%d",*(a+n-chongfu-1));
 }   

@@ -4,7 +4,7 @@ main_bench()
 {
 int i,a,b,len,len2,x,de=0;
 char str[1025],str2[1025];
-scanf("%d%s%d",&a,str,&b);
+my_scanf("%d%s%d",&a,str,&b);
 len=strlen(str);
 
 for(i=0;i<len;i++)
@@ -25,7 +25,7 @@ if(de==0) {str2[i+1]='\0';break;}
 len2=strlen(str2);
 for(i=0;i<len2;i++)
 {
-printf("%c",str2[len2-i-1]);
+my_printf("%c",str2[len2-i-1]);
 }
-printf("\n");
+my_printf("\n");
 }

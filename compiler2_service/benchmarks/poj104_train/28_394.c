@@ -10,13 +10,13 @@ int main_bench()
 		if(*p==' ')
 		{
 			if(n!=0)
-				printf("%d,",n);
+				my_printf("%d,",n);
 			n=0;
 		}
 		else
 			n++;
 		p++;
 	}
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 	return 0;
 }

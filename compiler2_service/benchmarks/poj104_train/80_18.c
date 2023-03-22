@@ -32,7 +32,7 @@ int main_bench()
 	int j,a,b,c,d,e,f,sum=0;
 	int leapyear(int n);
 	int count(int a,int b,int c);
-	scanf("%d %d %d\n%d %d %d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d %d %d\n%d %d %d",&a,&b,&c,&d,&e,&f);
 	if (a<d)
 	{
 	    for (j=a;j<d;j++)
@@ -52,6 +52,6 @@ int main_bench()
 	{
 		sum=count(d,e,f)-count(a,b,c);
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

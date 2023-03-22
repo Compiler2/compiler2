@@ -7,7 +7,7 @@ int main_bench()
 	int nbegin,ncounted;
 	while(m!=0&&n!=0)
 	{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		for(i=0;i<n;i++)
 		{
 			a[i]=1;
@@ -28,7 +28,7 @@ int main_bench()
 			if(i==n-1)
 			{
 				nbegin=(nbegin+n-1)%n;
-				printf("%d\n",nbegin+1);
+				my_printf("%d\n",nbegin+1);
 			}
 		}
 	}

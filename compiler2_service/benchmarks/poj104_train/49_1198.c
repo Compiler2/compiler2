@@ -41,14 +41,14 @@ for (j=0;j<e[i];j=j+1)
 if (i % 2==0)
 {
 for(t=(d[i][j]-i/2+1);t<=(d[i][j]+i/2); t=t+1)
-printf("%c",s[t]);
-printf("\n");
+my_printf("%c",s[t]);
+my_printf("\n");
 }
 else
 {
 for(t=(d[i][j]-i/2);t<=(d[i][j]+i/2);t=t+1)
-printf("%c",s[t]);
-printf("\n");
+my_printf("%c",s[t]);
+my_printf("\n");
 }
 }
 }

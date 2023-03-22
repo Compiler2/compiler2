@@ -32,5 +32,5 @@ int main_bench()
 	    strcat(f," ");
 	    strcat(f,e[i]);
 	}
-	printf("%s",f);
+	my_printf("%s",f);
 }

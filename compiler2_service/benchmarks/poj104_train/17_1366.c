@@ -25,11 +25,11 @@ int main_bench()
         puts(c);
         for (i=0;i<len;i++)
         {
-            if (a[i]==0) printf(" ");
-            else if (a[i]==1) printf("$");
-            else printf("?");
+            if (a[i]==0) my_printf(" ");
+            else if (a[i]==1) my_printf("$");
+            else my_printf("?");
         }
-        printf("\n");
+        my_printf("\n");
     }
     return 0;
 }

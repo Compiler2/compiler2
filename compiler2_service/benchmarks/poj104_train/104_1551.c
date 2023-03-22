@@ -30,7 +30,7 @@ void array(int a[],int number,int n)
 int main_bench()
 {
 	int m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	int m1,n1,k=0;
 
 	m1=number(m);
@@ -45,7 +45,7 @@ int main_bench()
 		{
 			if(a[i]==b[j])
 			{
-				printf("%d\n",a[i]);
+				my_printf("%d\n",a[i]);
 				k=1;
 				break;
 			}

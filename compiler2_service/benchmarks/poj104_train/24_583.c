@@ -37,13 +37,13 @@ int main_bench()
 		 }
 	 }
 	 for ( i = t[y2] - l[y2]; i < t[y2]; i++ ){
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	 }
-     printf("\n");
+     my_printf("\n");
  
      for ( i = t[y1] - l[y1]; i < t[y1]; i++ ){
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	 }
-	 printf("\n");
+	 my_printf("\n");
  return 0;
 }

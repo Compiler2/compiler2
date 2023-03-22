@@ -50,8 +50,8 @@ int main_bench()
 	
 			
 	}
-	printf("%s\n",word[maxlength]);
-	printf("%s\n",word[minlength]);
+	my_printf("%s\n",word[maxlength]);
+	my_printf("%s\n",word[minlength]);
 
 
 

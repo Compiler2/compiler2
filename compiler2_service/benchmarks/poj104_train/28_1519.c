@@ -51,10 +51,10 @@ int main_bench(){
 				
 	for(i=1;i<=j-1;i++)
 	{
-		printf("%d",s[i]);
-		printf(",");
+		my_printf("%d",s[i]);
+		my_printf(",");
 	}
-	printf("%d",s[j]);
+	my_printf("%d",s[j]);
 	
 	
 	

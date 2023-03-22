@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a1,a2,b1,b2;
 	int i,j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[1000][1000];
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	int tag=0;
@@ -34,6 +34,6 @@ int main_bench()
 	b=b2-b1-1;
 	int s;
 	s=a*b;
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

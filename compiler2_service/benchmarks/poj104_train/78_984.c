@@ -42,7 +42,7 @@ int main_bench()
 		
 		}
 		for(i=1;i<=4;i++)
-		printf("%c %d\n",name[i],weight[i]*10);	
+		my_printf("%c %d\n",name[i],weight[i]*10);	
 		
 		return 0;
 

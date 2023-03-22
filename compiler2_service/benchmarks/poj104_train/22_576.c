@@ -6,10 +6,10 @@ int main_bench()
 	int a[300],i=0,k,j,t,m=0;
 	while(c==',')
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		i++;
 	}
-	if(i==0) printf("No");
+	if(i==0) my_printf("No");
 	else{
 		for(k=0;k<i-1;k++)
 			for(j=0;j<i-1-k;j++)
@@ -22,8 +22,8 @@ int main_bench()
 				}
 			}
 	for(k=1;k<i;k++)
-		if(a[k]<a[0]) {printf("%d",a[k]);m=1;break;}
-	if(m!=1) printf("No");
+		if(a[k]<a[0]) {my_printf("%d",a[k]);m=1;break;}
+	if(m!=1) my_printf("No");
 
 	
 	}

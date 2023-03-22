@@ -4,11 +4,11 @@ int a[400],b[200],n,m;
 void run1()
 {
      int i;
-     scanf("%d%d",&n,&m);
+     my_scanf("%d%d",&n,&m);
      for (i=1;i<=n;i++)
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
      for (i=1;i<=m;i++)
-         scanf("%d",&b[i]);
+         my_scanf("%d",&b[i]);
 }
 void sort(int a[],int n)
 {
@@ -35,8 +35,8 @@ void run4()
 {
      int i;
      for (i=1;i<n+m;i++)
-         printf("%d ",a[i]);
-     printf("%d",a[n+m]);
+         my_printf("%d ",a[i]);
+     my_printf("%d",a[n+m]);
 }
 int main_bench()
 {

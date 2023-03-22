@@ -41,6 +41,6 @@ main_bench()
 		if(t[i]>max)
 			max=t[i];
 	}
-	printf("%d %d\n",k,max);
+	my_printf("%d %d\n",k,max);
 	return 0;
 }

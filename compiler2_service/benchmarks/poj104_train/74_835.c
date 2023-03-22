@@ -6,7 +6,7 @@
      int m,n,a,b,c,k,i,p,t,num;
 
      num=0;
-     scanf("%d %d",&m,&n);
+     my_scanf("%d %d",&m,&n);
     for (k=m;k<=n;k++)
    {
       p=0;
@@ -43,9 +43,9 @@ if ( num!=0 )
 {
  for (i=1;i<num;i++)
     {
-     printf ("%d,",aim[i]);
+     my_printf ("%d,",aim[i]);
      }
-     printf("%d",aim[num]);
+     my_printf("%d",aim[num]);
  }
-else printf ("no");
+else my_printf ("no");
 }

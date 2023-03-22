@@ -7,18 +7,18 @@ int main_bench()
 	int s[5][5],b,c,i,j;
     for(i=0;i<5;i++)
 	{for(j=0;j<5;j++)
-	scanf("%d", &s[i][j]);}
-	scanf("%d %d",&b,&c);
+	my_scanf("%d", &s[i][j]);}
+	my_scanf("%d %d",&b,&c);
 	if (juzhen(s,b,c))
 	{
 		for(i=0;i<5;i++)
 		{for(j=0;j<4;j++)
-		printf("%d ",s[i][j]);
-		printf("%d",s[i][4]);
-		printf("\n");}
+		my_printf("%d ",s[i][j]);
+		my_printf("%d",s[i][4]);
+		my_printf("\n");}
 	}
 	
-	else printf("error");
+	else my_printf("error");
 }	
 
 int juzhen(int a[5][5],int m,int n)

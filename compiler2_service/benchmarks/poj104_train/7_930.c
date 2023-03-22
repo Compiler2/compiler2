@@ -36,20 +36,20 @@ int main_bench()
 	{
 			for(i=0;i<b;i++)
 			{
-				printf("%c",s1[i]);
+				my_printf("%c",s1[i]);
 			}
 	        for(i=0;s3[i]!=0;i++)
 			{
-		        printf("%c",s3[i]);
+		        my_printf("%c",s3[i]);
 			}
 	        for(i=0;i<d-b-c;i++)
 			{
-				printf("%c",s1[i+c+b]);
+				my_printf("%c",s1[i+c+b]);
 			}
 	}
 	else
 	{
-		printf("%s",s1);
+		my_printf("%s",s1);
 	}
 	return 0;
 }

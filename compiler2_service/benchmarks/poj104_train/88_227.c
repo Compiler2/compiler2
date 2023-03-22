@@ -12,9 +12,9 @@ int main_bench()
 	gets(p);
 	for(a=p;*a!='\0';a++)
 	{
-       if(pd(a)) printf("%c",*a);
+       if(pd(a)) my_printf("%c",*a);
 	   else if(pd(a-1)&&(pd(a)!=1))
-		   printf("\n");
+		   my_printf("\n");
 	   }
 }
     

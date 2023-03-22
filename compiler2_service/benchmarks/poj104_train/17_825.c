@@ -50,10 +50,10 @@ char investigate(char a[])
 	}
 	
     for(i=0;i<n;i++)
-		printf("%c",a[i]);
-		printf("\n");
+		my_printf("%c",a[i]);
+		my_printf("\n");
 	for(i=0;i<n;i++)
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 
 	return 0;
 }
@@ -65,7 +65,7 @@ int main_bench()
 	while(gets(a))
 	{
 		investigate(a);
-		printf("\n");
+		my_printf("\n");
 
 		
 	}

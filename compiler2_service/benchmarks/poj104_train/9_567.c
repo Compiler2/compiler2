@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,i,j,s=-1,t=-1,k,age[100],e[100],h[100];
     char a[100][10],b[100][10],c[100][10],f[10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<=(n-1);i++)
       { 
-       scanf("%s %d",a[i],&age[i]);
+       my_scanf("%s %d",a[i],&age[i]);
        }
     for(i=0;i<=(n-1);i++)
     {
@@ -44,11 +44,11 @@ int main_bench()
                          }
       for(i=0;i<=s;i++)
       {
-        printf("%s\n",b[i]);                   
+        my_printf("%s\n",b[i]);                   
                            }
       for(i=0;i<=t;i++)
       {
-        printf("%s\n",c[i]);                   
+        my_printf("%s\n",c[i]);                   
                            }
                            getchar();
                            getchar();

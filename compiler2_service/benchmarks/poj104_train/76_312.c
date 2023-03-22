@@ -5,10 +5,10 @@ int main_bench(){
    int a[50000][2];
     t=0;
     p=20000;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
 	  for(j=0;j<2;j++){
-		  scanf("%d",&a[i][j]);
+		  my_scanf("%d",&a[i][j]);
 	  }
   }
   for(i=0;i<n;i++){
@@ -39,7 +39,7 @@ int main_bench(){
 	  }
   }
 if(a[0][0]==p&&a[0][1]==t)
-{printf("%d %d",a[0][0],a[0][1]);}
-else {printf("no\n");}
+{my_printf("%d %d",a[0][0],a[0][1]);}
+else {my_printf("no\n");}
 return 0;
 }

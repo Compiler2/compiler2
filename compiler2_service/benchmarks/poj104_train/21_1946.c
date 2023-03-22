@@ -5,10 +5,10 @@ int main_bench()
 {
 	double a[300],sum=0,aver,b[300],max;
 	int i,k,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 		sum=sum+a[i];
 	}
 	aver=sum/n;
@@ -27,8 +27,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<k-1;i++)
-		printf("%d,",(int)b[i]);
-	printf("%d",(int)b[k-1]);
+		my_printf("%d,",(int)b[i]);
+	my_printf("%d",(int)b[k-1]);
 }
 
 

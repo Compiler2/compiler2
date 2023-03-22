@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,i=1,a;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=1;i<=n;i++){
 		char sz[21];
-		scanf ("%s",sz);
+		my_scanf ("%s",sz);
 		int j;
 		if (sz[0]=='_'||(sz[0]<='z'&&sz[0]>='a')||(sz[0]<='Z'&&sz[0]>='A')){
 			a=1;
@@ -19,14 +19,14 @@ int main_bench(){
 				}
 			}
             if (a==1){
-				printf ("yes\n");
+				my_printf ("yes\n");
 			}
 			if (a==0){
-				printf ("no\n");
+				my_printf ("no\n");
 			}
 		}
 		else {
-		printf ("no\n");
+		my_printf ("no\n");
 		}
 	}
 return 0;

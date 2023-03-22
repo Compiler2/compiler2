@@ -8,11 +8,11 @@ struct pa
 int main_bench()
 {
 	int i,k,n,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	k=0;
 	for(i=0;i+k<n;)
 	{
-		scanf("%s%d",p[i].num,&p[i].age);
+		my_scanf("%s%d",p[i].num,&p[i].age);
 		if(p[i].age>=60) {a[k]=p[i];k++;}
 		else i++;
 	}
@@ -26,8 +26,8 @@ int main_bench()
 	}
 
 	if(k>=0){k--;
-	for(c=0;c<=k;c++) printf("%s\n",a[c].num);}
+	for(c=0;c<=k;c++) my_printf("%s\n",a[c].num);}
 if(i>=0){i--;
-	for(d=0;d<=i;d++) printf("%s\n",p[d].num);}
+	for(d=0;d<=i;d++) my_printf("%s\n",p[d].num);}
 	return 0;
 }
