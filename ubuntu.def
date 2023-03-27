@@ -1,0 +1,23 @@
+Bootstrap: docker
+From: ghcr.io/spack/ubuntu-focal
+
+# singularity build --remote ./ubuntu.sif ./ubuntu.def
+# singularity shell -e ./ubuntu.sif
+
+%post
+
+    apt-get update
+    
+    apt-get install -y \
+    clang-12 \
+    linux-tools-common linux-tools-generic \
+    python \
+    build-essential \
+    wget \
+    vim \
+    git 
+
+%runscript
+    echo "Starting install of compiler2"
+    sh ./setup.sh
+    

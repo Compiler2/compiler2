@@ -91,16 +91,26 @@ python compiler2_service/demo_programl_hpctoolkit.py
 
 ```
 Bootstrap: docker
-From: ubuntu:20.04
+From: ghcr.io/spack/ubuntu-focal
 
 %post
-    apt-get update && apt-get install -y openssh-server
-    apt-get install -y python
+    apt-get update
+    
+    apt-get install -y \
+    clang-12 \
+    linux-tools-common linux-tools-generic \
+    python \
+    build-essential \
+    wget \
+    vim \
+    git 
 
 %runscript
-python -c 'print("Hello World! Hello from our custom Singularity image!")'
+    echo "Starting install of compiler2"
+    sh ./setup.sh
 ```
 
-singularity build --remote ./ubuntu.sif ./ubuntu.def
-singularity build --sandbox ubuntu_sandbox ./ubuntu.sif 
-singularity shell --writable ubuntu_sandbox
+```shell
+$ singularity pull --arch amd64 library://dejang96/compiler2/ubuntu.sif:undefined # or $ singularity build --remote ./ubuntu.sif ./ubuntu.def
+$ singularity shell -e ./ubuntu.sif
+```
