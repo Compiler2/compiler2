@@ -72,12 +72,6 @@ parser.add_argument(
     "--sweep",  type=int, nargs='?', const=1, default=0, help="Run with wandb sweeps."
 )
 parser.add_argument(
-    "--slurm", 
-    default=False, 
-    action="store_true",
-    help="Run on slurm."
-)
-parser.add_argument(
     "--iter", type=int, default=1, help="Number of iterations to train."
 )
 

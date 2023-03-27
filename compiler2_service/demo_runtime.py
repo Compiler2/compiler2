@@ -30,57 +30,36 @@ from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
 
-from agent_py.rewards import runtime_reward
-from compiler2_service.agent_py.datasets import hpctoolkit_cpu
-
-
-def register_env():
-    register(
-        id="hpctoolkit-llvm-v0",
-        entry_point=compiler2_service.HPCToolkitCompilerEnv,
-        kwargs={
-            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [ runtime_reward.RewardScalar()],
-            "datasets": [hpctoolkit_cpu.Dataset()],
-        },
-    )
-
-
 def main():
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.DEBUG)
-    register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("hpctoolkit-llvm-v0") as env:
-        try:
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
-            env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
-        except ServiceError:
-            print("AGENT: Timeout Error Reset")
-                
-        for i in range(2):
-            print("Main: step = ", i)
+    with compiler2_service.make("compiler2-v0", datasets=['poj104_small']) as env:
+        for bench in sorted(env.datasets.benchmarks()):
+
             try:
-                observation, reward, done, info = env.step(
-                    action=env.action_space.sample(),
-                    observation_spaces=["runtime"],
-                    reward_spaces=["runtime"],
-                )
+                env.reset(benchmark=bench)
             except ServiceError:
-                print("AGENT: Timeout Error Step")
-                continue
+                print("AGENT: Timeout Error Reset")
+                    
+            for i in range(2):
+                print("Main: step = ", i)
+                try:
+                    observation, reward, done, info = env.step(
+                        action=env.action_space.sample(),
+                        observation_spaces=["runtime"],
+                        reward_spaces=["runtime"],
+                    )
+                except ServiceError:
+                    print("AGENT: Timeout Error Step")
+                    continue
 
-            print(reward)
-            print(observation)
-            print(info)
-        
-
-            pdb.set_trace()
-            if done:
-                env.reset()
-
+                print(reward)
+                print(observation)
+                print(info)
+            
+                breakpoint()
 
 if __name__ == "__main__":
     main()

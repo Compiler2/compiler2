@@ -336,8 +336,8 @@ def register_env(datasets):
         kwargs={    # check ClientServiceCompilerEnv for possible arguments
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
-                perf_reward.RewardCycles(),
-                # runtime_reward.RewardTensor()
+                # perf_reward.RewardCycles(),
+                runtime_reward.Reward()
             ],
             "datasets": [
                 importlib.import_module(f"compiler2_service.agent_py.datasets.{dataset}").Dataset() for dataset in datasets 

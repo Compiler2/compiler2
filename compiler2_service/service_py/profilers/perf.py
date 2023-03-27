@@ -101,6 +101,7 @@ class Profiler:
             "metric_value",
             "metric_unit",
         ]
+        breakpoint()
         df = pd.concat([pd.read_csv(f_path, names=column_names) for f_path in csv_names ])
         assert len(column_names) == df.shape[1]
         df = df[df["counter_value"] != "<not supported>"][df["event_name"].notnull()]

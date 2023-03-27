@@ -47,7 +47,7 @@ setuptools.setup(
         "compiler2_service.model.mlp",
         "compiler2_service.model.transformer",
         "compiler2_service.model.transformer.graph_encoder",
-
+        "compiler2_service.launcher",
         # "compiler2_service.benchmarks.poj104_test",
         # "compiler2_service.benchmarks.poj104_training",
         # "compiler2_service.benchmarks.poj104_small",

@@ -46,7 +46,7 @@ from compiler_gym.spaces import Scalar
 
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
-from compiler2_service.service_py.utils import MAX_PICKLE64_SIZE
+from compiler2_service.service_py.utils import MAX_PICKLE64_SIZE, get_passes
 import signal
 import sys
 import time
@@ -59,7 +59,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
     compiler_version: str = "1.0.0"
 
-    llvm_env = gym.make("llvm-v0")
+    # llvm_env = gym.make("llvm-v0")
 
     action_spaces = [
         ActionSpace(
@@ -67,7 +67,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             space=Space(
                 named_discrete=NamedDiscreteSpace(
                     # Use all flags from the llvm_env.
-                    name=['start'] + llvm_env.action_space.flags[:2],
+                    name=['start'] + get_passes()[:2],
                     # Interpret NamedDiscrete as CommandLine.
                     # is_commandline=True
                 )
@@ -85,6 +85,17 @@ class HPCToolkitCompilationSession(CompilationSession):
         #####################################################################################################
         # DoubleTensor Observation Spaces
         #####################################################################################################        
+        ObservationSpace(
+            name="runtime",
+            space=Space(
+                double_value=DoubleRange(min=0),
+            ),
+            deterministic=False,
+            platform_dependent=True,
+            default_observation=Event(
+                double_value=0            
+            ),
+        ),
 
         ObservationSpace( # Note: Be CAREFUL with dimensions, they need to be exactly the same like in perf.py
             name="perf",
@@ -281,7 +292,12 @@ class HPCToolkitCompilationSession(CompilationSession):
             return self.prev_observation[observation_space.name]
 
         if self.profiler == None or observation_space.name != self.profiler.name:
-            if observation_space.name == "perf":
+            if observation_space.name == "runtime":
+                self.profiler = runtime.Profiler(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec)                                              
+            
+            elif observation_space.name == "perf":
                 self.profiler = perf.ProfilerTensor(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec)                                              

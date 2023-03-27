@@ -3,6 +3,7 @@ import numpy as np
 import pdb
 from compiler2_service.service_py.utils import run_command, run_command_get_stderr
 import re
+import time
 
 from compiler_gym.service.proto import (
     Event,
@@ -27,20 +28,12 @@ class Profiler:
         exec_times = []
         
         breakpoint()
-        for _ in range(1):
-            stderr = run_command_get_stderr(
-                ['time', '-p'] + self.run_cmd,
-                timeout=self.timeout_sec,
-            )
-            print(stderr)
-            try:
-                realtime_str = re.findall('real [\d|.]+', stderr)[0].lstrip('real ')
-                exec_times.append(float(realtime_str))
-            except ValueError:
-                raise ValueError(
-                    f"Error in getting time from stderr of command\n"                        
-                    f"Stderr of the program: {stderr}"
-                )
+        for _ in range(3):
+            start = time.time() 
+            run_command( self.run_cmd, timeout=self.timeout_sec)
+            end = time.time() 
+            exec_times.append(end - start)
+            
         return np.mean(exec_times)
 
 

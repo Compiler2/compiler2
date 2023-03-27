@@ -14,8 +14,7 @@ from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
 
-BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/code"
-INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/input"
+BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small"
 
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):
@@ -36,7 +35,7 @@ class Dataset(Dataset):
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(
-                        argument=["./a.out"], #, "<", str(INPUT_PATH / "in.txt")],
+                        argument=["./a.out"],
                         timeout_seconds=300,
                         infile=["a.out"],
                     )

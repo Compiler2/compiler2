@@ -84,15 +84,23 @@ python compiler2_service/demo_programl_hpctoolkit.py
 ```
 
 
-# Overrinding `scanf` and `printf` for poj4 benchamrks.
 
-Since the poj4 benchmarks depends on the `scanf` and `printf`, we could prelod custom wrappers for
-the functions that will avoid systemd calls, so we could measure more representable resuts.
-To do this, preload the following .so object that overrides `stdio.h`:
 
-```sh
-# Replace program executable with the corresponding poj4 executable
-LD_PRELOAD="$COMPILER2_ROOT/external/poj4-preloader/bin/stdio-wrapper.so" <program-executable-to-run> 
+
+# Singularity container
+
+```
+Bootstrap: docker
+From: ubuntu:20.04
+
+%post
+    apt-get update && apt-get install -y openssh-server
+    apt-get install -y python
+
+%runscript
+python -c 'print("Hello World! Hello from our custom Singularity image!")'
 ```
 
-
+singularity build --remote ./ubuntu.sif ./ubuntu.def
+singularity build --sandbox ubuntu_sandbox ./ubuntu.sif 
+singularity shell --writable ubuntu_sandbox

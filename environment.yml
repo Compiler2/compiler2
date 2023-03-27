@@ -42,12 +42,11 @@ dependencies:
     - colorama==0.4.6
     - colorful==0.5.5
     - compiler-gym==0.2.5
-    - compiler-gym-compiler2==0.2.3
     - contourpy==1.0.7
     - cycler==0.11.0
     - cython==0.29.33
     - deprecated==1.2.13
-    - dgl==0.7.2
+    - dgl==0.9.1 #0.7.2
     - dill==0.3.6
     - distlib==0.3.6
     - dm-tree==0.1.8
@@ -78,7 +77,6 @@ dependencies:
     - littleutils==0.2.2
     - llnl-hatchet==2022.2.0
     - lmdb==1.4.0
-    - loop-tool-py==0.0.7
     - lxml==4.9.2
     - lz4==4.3.2
     - markdown==3.4.1
@@ -147,14 +145,14 @@ dependencies:
     - tensorboard-data-server==0.6.1
     - tensorboard-plugin-wit==1.8.1
     - tensorboardx==2.4.1
-    - tensorflow==2.6.1
+    # - tensorflow==2.6.1
     - textx==3.1.1
     - threadpoolctl==3.1.0
     - tifffile==2023.2.3
-    - torch==1.9.1+cu111
+    # - torch==1.9.1+cu111
     - torch-geometric==1.7.2
-    - torch-scatter==2.0.9
-    - torch-sparse==0.6.12
+    # - torch-scatter==2.0.9
+    # - torch-sparse==0.6.12
     - torchaudio==0.9.1
     - tqdm==4.64.1
     - typer==0.7.0
