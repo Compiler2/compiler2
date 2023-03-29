@@ -99,7 +99,7 @@ def main():
                         action=action,
                         observation_spaces=[observation_spaces],
                         timeout=1500,
-                        # reward_spaces=["perf_reward"],
+                        reward_spaces=["runtime"],
                     )
                 except:# ServiceError:
                     pass

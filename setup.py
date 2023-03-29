@@ -14,7 +14,7 @@ from Cython.Build import cythonize
 import numpy
 
 
-version = "0.2.3"
+version = "0.0.1"
 
 with open("requirements.txt") as f:
     requirements = [ln.split("#")[0].rstrip() for ln in f.readlines()]
@@ -57,7 +57,8 @@ setuptools.setup(
         "llvm_rl.model",
     ],
     include_dirs=[numpy.get_include()],
-    ext_modules=cythonize(f"{Path(__file__).parent}/compiler2_service/model/transformer/graph_encoder/algos.pyx"),
+    # ext_modules=cythonize(f"{Path(__file__).parent}/compiler2_service/model/transformer/graph_encoder/algos.pyx"),
+    ext_modules=cythonize([Extension(name="algos", sources= [ f"{Path(__file__).parent}/compiler2_service/model/transformer/graph_encoder/algos.pyx"]) ]),
     python_requires=">=3.8",
     platforms=[distutils.util.get_platform()],
     zip_safe=False,

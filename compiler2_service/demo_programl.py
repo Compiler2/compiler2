@@ -58,7 +58,7 @@ def main():
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
                         observation_spaces=["programl"],
-                        reward_spaces=["perf_cycles"],
+                        reward_spaces=["runtime"],
                         timeout=10000,
                     )
                     

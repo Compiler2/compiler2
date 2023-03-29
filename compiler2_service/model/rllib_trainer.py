@@ -81,7 +81,7 @@ def make_env():
         "compiler2-v0",
         datasets=[os.environ["dataset"]],
         observation_space=os.environ["obs_space"],#"perf",
-        reward_space="perf_cycles",
+        reward_space="runtime",
     )
 
     env = TimeLimit(env, max_episode_steps=int(os.environ["steps"])) # <<<< Must be here

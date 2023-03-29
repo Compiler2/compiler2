@@ -82,7 +82,7 @@ class Profiler:
                     timeout=self.timeout_sec,
                 )
         print('2++++++++++')          
-        breakpoint()
+
         try:  
             g_hatchet = ht.GraphFrame.from_hpctoolkit("db")
         except:

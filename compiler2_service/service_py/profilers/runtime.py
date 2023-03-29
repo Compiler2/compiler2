@@ -27,7 +27,6 @@ class Profiler:
     def runtime_get_average(self) -> DoubleTensor:
         exec_times = []
         
-        breakpoint()
         for _ in range(3):
             start = time.time() 
             run_command( self.run_cmd, timeout=self.timeout_sec)
