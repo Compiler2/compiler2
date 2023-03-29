@@ -1,8 +1,0 @@
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
-benchmark://poj104_small-v0/1_79
