@@ -5,16 +5,29 @@ This tool uses CompilerGym reinforcement learning framework to train neural netw
 # Start
 
 ```shell
-git clone https://github.com/Compiler2/compiler2.git && cd compiler2 
+$ git clone https://github.com/Compiler2/compiler2.git && cd compiler2 
+```
 
 # Singularity container
-singularity pull --arch amd64 library://dejang96/compiler2/ubuntu:20.04
-# if previous command doesn't work try:
-# singularity build --remote ./ubuntu.sif ./ubuntu.def
 
-singularity shell -e ./ubuntu_20.04.sif
-Singularity> source ./setup.sh
+We provide option to set COMPILER2_SANDBOX_PATH as argument to download, since you might have memory restriction to compiler2 directory, while you can install sandbox somewhere else such as /scratch where memory restrictions could be relaxed.
+```bash
+$ source ./create_container/download_container.sh [COMPILER2_SANDBOX_PATH]
 ```
+If previous command doesn't work read: ./create_container/create_container.md
+
+```bash
+$ singularity shell --writable --nv -e $COMPILER2_SANDBOX
+Singularity> . ./setup.sh
+```
+
+
+If you want to change the code, it is enough to run.
+
+```bash
+Singularity> python ./setup.py install
+```
+
 
 # WANDB
 Copy your wandb token to $COMPILER2_ROOT/wandb_key.txt. And set WANB_PROJECT_URL environment variable.
@@ -22,15 +35,14 @@ Copy your wandb token to $COMPILER2_ROOT/wandb_key.txt. And set WANB_PROJECT_URL
 export WANDB_PROJECT_URL=username/project
 ```
 
-If you change the code in compiler2, make sure you run:
-```
-python setup.py install
-```
 
 
 # Examples:
+If you run python compiler2_service/demo_hpctoolkit.py make sure you are running on compute nodes on cluster, since on login nodes you might not have priviledges.
 
 ```
+python compiler2_service/demo_programl.py
+
 python  compiler2_service/model/transformer/graphormer_transformer.py
 
 python  compiler2_service/model/transformer/graphormer_encoder.py
