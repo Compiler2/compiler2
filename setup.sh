@@ -1,8 +1,13 @@
 #!/bin/bash
 
-echo "Make sure you are in COMPILER2_ROOT directory"
+
+if [ "compiler2" != $(basename $PWD) ]; then
+    echo "Make sure you are in COMPILER2_ROOT directory"
+    return
+fi
 
 export COMPILER2_ROOT=$PWD
+export PATH=/opt/miniconda3/envs/compiler2/bin:$PATH
 
 export PATH=/opt/spack/bin:$PATH
 eval `spack load --sh hpctoolkit`  # bash/zsh/sh

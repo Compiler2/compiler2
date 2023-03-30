@@ -1,0 +1,24 @@
+Bootstrap: docker
+From: nvidia/cuda:11.6.0-devel-ubuntu20.04
+
+# singularity build --remote ./ubuntu.sif ./ubuntu.def
+# singularity shell -e ./ubuntu.sif
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    export TZ="Etc/UTC"
+    apt-get update && apt-get install -y openssh-server
+    
+    apt-get install -y \
+    clang \
+    llvm  \
+    libtinfo5 \
+    libncurses5 \
+    python \
+    build-essential \
+    wget \
+    vim \
+    git 
+
+%runscript
+    python -c 'print("Hello World! Hello from our custom Singularity image!")
