@@ -33,6 +33,9 @@ from compiler2_service.service_py.utils import from_int64_tensor
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
+    '--profiler', type=str, choices=['hpctoolkit', 'programl', 'programl_hpctoolkit'], default='hpctoolkit', help='Profiler for creating representation.'
+)
+parser.add_argument(
     '--arch', type=str, default='transformer', help='Architecture transformer or encoder.'
 )
 parser.add_argument(
@@ -68,7 +71,7 @@ def main():
 
     dataset = {'graphs':[], 'labels':[]}
 
-    observation_spaces = 'hpctoolkit' # 'hpctoolkit_pickle'
+    observation_spaces = args.profiler #'programl'# 'hpctoolkit' # 'hpctoolkit_pickle'
 
     bad_banchmarks_file = open('bad_banch.txt', 'w')
 
@@ -77,7 +80,7 @@ def main():
 
         print("Make hpctoolkit")
         for bench in sorted(env.datasets.benchmarks()):
-            bench = 'benchmark://poj104_small-v0/1_79'
+            # bench = 'benchmark://poj104_small-v0/1_79'
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", bench)
 
             # if not str(bench).endswith('2_5'): continue
@@ -117,7 +120,7 @@ def main():
                     gf = pickle.loads(observation[0])
                     print(gf.tree(metric_column=reward_metric))
                     print(gf.dataframe[[reward_metric, "line", "llvm_ins"]])
-                elif observation_spaces == 'hpctoolkit':
+                elif observation_spaces in ['hpctoolkit', 'programl']:
                     dgl = from_int64_tensor(observation[0])
                     print(dgl)
 

@@ -77,7 +77,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
 
     def forward(self, input_dict, state, seq_lens):
         self.device = next(self.parameters()).device
-
+        print(self.device, '_________________________')
         # print( '1____________________________', {k: v.shape for k, v in sorted(input_dict['obs'].items())} )
         batch_size = input_dict['obs'].shape[0]
         # print(self.device)
@@ -97,6 +97,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
                 axis=1, 
                 arr=int64_tensor
             )
+            # breakpoint()
 
             dgl_dataset = GraphormerDGLDataset(graphs=graphs, train_idx=np.arange(batch_size), device=self.device)
             input_obs_dict = dgl_dataset.get_train()['x']
@@ -130,6 +131,10 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         return fc_out, []
 
     def value_function(self):
+        # self.device = next(self.parameters()).device
+        # # if self.device.type != 'cpu':
+        # #     breakpoint()
+
         return self.torch_sub_model.value_function()
 
 

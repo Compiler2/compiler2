@@ -40,7 +40,8 @@ class Profiler:
             # breakpoint()
             # g_nx = pg.to_networkx(g_programl)
             g_dgl = pg.to_dgl(g_programl)
-            # breakpoint()
             # dot = pg.to_dot(g_programl)
+            # with open('/home/dx4/g_programl.txt', 'w') as writer: writer.write(dot)
+            # breakpoint()
 
         return g_dgl

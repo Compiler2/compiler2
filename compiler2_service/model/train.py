@@ -44,9 +44,6 @@ import compiler2_service
 from compiler2_service.model.evaluator import Evaluator
 from compiler2_service.model.rllib_trainer import RLlibTrainer
 
-from ray.tune.integration.wandb import WandbLoggerCallback
-from compiler2_service.paths import COMPILER2_ROOT
-
 from os.path import exists
 
 import tempfile
@@ -57,10 +54,10 @@ import tempfile
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '--profiler', type=str, choices=['perf', 'hpctoolkit', 'programl', 'programl_hpctoolkit'], default='perf', help='Profiler for creating representation.'
+    '--profiler', type=str, choices=['runtime_tensor', 'hpctoolkit', 'programl', 'programl_hpctoolkit'], default='perf', help='Profiler for creating representation.'
 )
 parser.add_argument(
-    '--trainer', type=str, choices=['apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='apex_dqn.ApexDQN', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
+    '--trainer', type=str, choices=['dqn.ApexTrainer', 'ppo.PPOTrainer', 'apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='apex_dqn.ApexDQN', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
 )
 parser.add_argument(
     "--wandb_url",  type=str, nargs='?', default='', help="Wandb uri to load policy network."
@@ -100,7 +97,7 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    "--stop_reward", type=float, default=1, help="Reward at which we stop training."
+    "--stop_reward", type=float, default=10000, help="Reward at which we stop training."
 )
 
 parser.add_argument(
@@ -141,15 +138,17 @@ if __name__ == '__main__':
     if args.wandb_url:
         agent = trainer.load_model(args.wandb_url)
 
+    breakpoint()
     agent = trainer.train(
         train_iter=args.iter, 
         stop_reward=args.stop_reward,
         sweep_count=args.sweep,
     )
-    breakpoint()
+    # breakpoint()
 
     # Implement evaluate
     trainer.evaluate(agent)
     
+    ray.timeline(filename="timeline.json")
     ray.shutdown()
     print("Return from train!")

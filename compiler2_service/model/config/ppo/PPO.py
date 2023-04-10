@@ -2,7 +2,7 @@ import ray
 import os
 
 def get_config(profiler, sweep=False):
-    num_workers = 2#int(ray.cluster_resources()['CPU']  - 10) // 2
+    num_workers = int(ray.cluster_resources()['CPU']  - 10) // 2
     rollout_fragment_length = 1
     return {
         "log_level": "CRITICAL",

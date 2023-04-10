@@ -47,7 +47,7 @@ class Evaluator:
         self.df.to_csv(csv_file)
         self.plot_actions(csv_file)
 
-        return float(np.mean(self.df['O3_cycles'] / self.df['cycles'].str.split(',').str[-1].astype(float)))
+        return float(np.mean(self.df['O3_sec'] / self.df['sec'].str.split(',').str[-1].astype(float)))
 
 
     def evaluate_single_benchmark(self, env, agent, benchmark, observation):
@@ -65,9 +65,9 @@ class Evaluator:
         benchmark_name = str(benchmark).split('/')[-1]
         results = {'benchmark': [benchmark_name]}
         env.reset(benchmark=benchmark)
-        results['O3_cycles'], results['O3_compile_time'] = [float(x) for x in env.send_param("eval_O3", "").split(',')]
+        results['O3_sec'], results['O3_compile_time'] = [float(x) for x in env.send_param("eval_O3", "").split(',')]
         env.reset(benchmark=benchmark)
-        results['actions'], results['cycles'], results['compile_time'] = self.rllib_search(env, agent, observation)
+        results['actions'], results['sec'], results['compile_time'] = self.rllib_search(env, agent, observation)
         
         return pd.DataFrame.from_dict(results)
 
@@ -81,12 +81,12 @@ class Evaluator:
         for i, row in df.iterrows():
             benchmark = row['benchmark']
             actions_list = row['actions'].split(',')
-            cycles_list = [ float(x) for x in row['cycles'].split(',')]
+            sec_list = [ float(x) for x in row['sec'].split(',')]
             compile_list = [ float(x) for x in row['compile_time'].split(',')] 
 
-            plt.plot(compile_list, cycles_list, marker='o', label=benchmark)
+            plt.plot(compile_list, sec_list, marker='o', label=benchmark)
 
-            for i, (x, y) in enumerate(zip(compile_list, cycles_list)):
+            for i, (x, y) in enumerate(zip(compile_list, sec_list)):
                 plt.annotate(actions_list[i],
                     (x, y), 
                     textcoords="offset points",
@@ -97,7 +97,7 @@ class Evaluator:
             plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
         
         plt.xlabel('compile_time')
-        plt.ylabel('cycles')
+        plt.ylabel('seconds')
         plt.savefig(plot_path, bbox_inches = 'tight')
 
 
@@ -105,7 +105,7 @@ class Evaluator:
     # Private
     #############################################################
     def rllib_search(self, env, agent, observation):
-        actions, action_cycles, action_compile_time = [], [], []
+        actions, action_sec, action_compile_time = [], [], []
         start_time = time.time()
         obs = env.observation[observation]
 
@@ -116,7 +116,7 @@ class Evaluator:
 
             action = env.action_space.to_string(a_id)
             actions.append(action)
-            action_cycles.append(env.observation['perf_cycles'])
+            action_sec.append(env.observation['runtime'])
             action_compile_time.append(time.time() - start_time)
 
-        return ', '.join(actions), ', '.join(str(x) for x in action_cycles), ', '.join(str(x) for x in action_compile_time)
+        return ', '.join(actions), ', '.join(str(x) for x in action_sec), ', '.join(str(x) for x in action_compile_time)

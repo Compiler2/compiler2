@@ -64,10 +64,15 @@ conda env create -f environment.yml
 export PATH=/opt/miniconda3/envs/compiler2/bin:$PATH
 
 # Stuff we couldn't install through conda
-pip install torch==1.9.1
-pip install torch-scatter==2.0.9
-pip install torch-sparse==0.6.12
+# pip install torch==1.9.1
+# pip install torch-scatter==2.0.9
+# pip install torch-sparse==0.6.12
+
+pip install wandb==0.13.10
 pip install algos==0.0.5
+pip install torch==1.13.0+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.13.0+cu116.html
+# pip install torch-geometric==2.3.0
 
 
 cd $COMPILER2_ROOT

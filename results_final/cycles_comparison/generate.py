@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 
 def extend_df(df_large, df, column, profiler):
-    dec = 0 if column == 'cycles' else 6
+    dec = 0 if column == 'seconds' else 6
 
     if df_large.empty:
         df_large = df[['benchmark', f'O3_{column}']]
@@ -33,9 +33,9 @@ def main():
     dir = pathlib.Path(__file__).parent.resolve()
 
     df_dict = {
-        'train_cycles': pd.DataFrame(),
+        'train_seconds': pd.DataFrame(),
         'train_compile': pd.DataFrame(),
-        'test_cycles': pd.DataFrame(),
+        'test_seconds': pd.DataFrame(),
         'test_compile': pd.DataFrame(),
     }
     
@@ -51,10 +51,10 @@ def main():
 
                 profiler, dataset_kind = file.rstrip('.csv').split('_')
                 if dataset_kind == 'train':
-                    df_dict['train_cycles'] = extend_df(df_dict['train_cycles'], df, 'cycles', profiler)
+                    df_dict['train_seconds'] = extend_df(df_dict['train_seconds'], df, 'seconds', profiler)
                     df_dict['train_compile'] = extend_df(df_dict['train_compile'], df, 'compile_time', profiler)
                 elif dataset_kind == 'test':
-                    df_dict['test_cycles'] = extend_df(df_dict['test_cycles'], df, 'cycles', profiler)
+                    df_dict['test_seconds'] = extend_df(df_dict['test_seconds'], df, 'seconds', profiler)
                     df_dict['test_compile'] = extend_df(df_dict['test_compile'], df, 'compile_time', profiler)                
                 else:
                     print('Dataset is not train/test.')
@@ -69,7 +69,7 @@ def main():
 
     for i, (name, df) in enumerate(df_dict.items()):
         # breakpoint()
-        # if 'cycles' in name:
+        # if 'seconds' in name:
         #     df.loc[:, df.columns != 'benchmark'] = df.loc[:, df.columns != 'benchmark'].apply(lambda x: '{0:.0f}'.format(float(x)))
         # else:
         #     df.loc[:, df.columns != 'benchmark'].apply(lambda x: '{0:.6f}'.format(float(x)))
@@ -84,7 +84,7 @@ def main():
 
         fig.tight_layout()
 
-    plot_path = dir.parent/'cycles_comparison.png'
+    plot_path = dir.parent/'seconds_comparison.png'
     # fig.patch.set_facecolor("lightslategray")
     plt.savefig(plot_path, transparent=False, bbox_inches = 'tight')
 

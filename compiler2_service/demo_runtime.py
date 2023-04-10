@@ -48,7 +48,7 @@ def main():
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observation_spaces=["runtime"],
+                        observation_spaces=["runtime_tensor"],
                         reward_spaces=["runtime"],
                     )
                 except ServiceError:

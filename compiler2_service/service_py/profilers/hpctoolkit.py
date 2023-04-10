@@ -13,6 +13,9 @@ from compiler_gym.service.proto import Event, ByteTensor
 # from compiler_gym.util.commands import run_command
 from compiler2_service.service_py.utils import run_command, print_list
 
+import signal
+
+
 class Profiler:
     def __init__(self, name, run_cmd, timeout_sec, src_path=None):
         self.name = name
@@ -76,7 +79,8 @@ class Profiler:
                     timeout=self.timeout_sec,
                 )
             except:
-                breakpoint()
+                print(f'Failed command: {cmd}')
+                # breakpoint()
                 run_command( # BUG: sometimes hpcrun fails for the first time, but terminates well when repeated 
                     cmd,
                     timeout=self.timeout_sec,
@@ -86,6 +90,7 @@ class Profiler:
         try:  
             g_hatchet = ht.GraphFrame.from_hpctoolkit("db")
         except:
+            print(f'Failed command:  g_hatchet = ht.GraphFrame.from_hpctoolkit')
             breakpoint()
             return None
 

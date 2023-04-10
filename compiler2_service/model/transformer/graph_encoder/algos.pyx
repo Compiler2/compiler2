@@ -29,7 +29,7 @@ def floyd_warshall(adjacency_matrix):
             if i == j:
                 M[i][j] = 0
             elif M[i][j] == 0:
-                M[i][j] = 510
+                M[i][j] = 200
 
     # floyed algo
     for k in range(n):
@@ -47,9 +47,9 @@ def floyd_warshall(adjacency_matrix):
     # set unreachable path to 510
     for i in range(n):
         for j in range(n):
-            if M[i][j] >= 510:
-                path[i][j] = 510
-                M[i][j] = 510
+            if M[i][j] >= 200:
+                path[i][j] = 200
+                M[i][j] = 200
 
     return M, path
 
@@ -81,7 +81,38 @@ def gen_edge_input(max_dist, path, edge_feat):
         for j in range(n):
             if i == j:
                 continue
-            if path_copy[i][j] == 510:
+            if path_copy[i][j] == 200:
+                continue
+            path = [i] + get_all_edges(path_copy, i, j) + [j]
+            num_path = len(path) - 1
+            for k in range(num_path):
+                edge_fea_all[i, j, k, :] = edge_feat_copy[path[k], path[k+1], :]
+
+    return edge_fea_all
+
+
+def gen_edge_input_1(max_dist, path, edge_feat, edge_fea_all):
+
+    (nrows, ncols) = path.shape
+    assert nrows == ncols
+    cdef unsigned int n = nrows
+    cdef unsigned int max_dist_copy = max_dist
+
+    path_copy = path.astype(long, order='C', casting='safe', copy=True)
+    edge_feat_copy = edge_feat.astype(long, order='C', casting='safe', copy=True)
+    assert path_copy.flags['C_CONTIGUOUS']
+    assert edge_feat_copy.flags['C_CONTIGUOUS']
+
+    # edge_fea_all = -1 * numpy.ones([n, n, max_dist_copy, edge_feat.shape[-1]], dtype=numpy.int32)
+
+
+    cdef unsigned int i, j, k, num_path, cur
+
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                continue
+            if path_copy[i][j] == 200:
                 continue
             path = [i] + get_all_edges(path_copy, i, j) + [j]
             num_path = len(path) - 1

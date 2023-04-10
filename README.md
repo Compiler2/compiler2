@@ -30,8 +30,10 @@ Singularity> python ./setup.py install
 
 
 # WANDB
-Copy your wandb token to $COMPILER2_ROOT/wandb_key.txt. And set WANB_PROJECT_URL environment variable.
+Start container. Login to wandb. And set WANB_PROJECT_URL environment variable.
 ```bash
+./singularity_start.sh
+wandb login
 export WANDB_PROJECT_URL=username/project
 ```
 

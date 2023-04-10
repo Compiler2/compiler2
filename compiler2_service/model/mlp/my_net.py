@@ -38,6 +38,10 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             )
 
     def forward(self, input_dict, state, seq_lens):
+        self.device = next(self.parameters()).device
+        print(self.device, '_________________________')
+
+
         input_dict["obs"] = input_dict["obs"].float()
         
         if input_dict['obs'].count_nonzero() == 0:
@@ -53,7 +57,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         return fc_out, []
 
     def value_function(self):
-        breakpoint()
+        # breakpoint()
         return torch.reshape(self.torch_sub_model.value_function(), [-1])
 
 

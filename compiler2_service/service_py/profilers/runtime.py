@@ -39,5 +39,5 @@ class Profiler:
 class ProfilerTensor(Profiler):
     def get_observation(self) -> Event:
         avg_exec_time = self.runtime_get_average()
-        tensor = DoubleTensor(shape = [1], value=[avg_exec_time])
+        tensor = DoubleTensor(shape = [1, 1], value=[avg_exec_time])
         return Event(double_tensor=tensor)

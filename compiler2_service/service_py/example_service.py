@@ -67,7 +67,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             space=Space(
                 named_discrete=NamedDiscreteSpace(
                     # Use all flags from the llvm_env.
-                    name=['start'] + get_passes()[:2],
+                    name=['start'] + get_passes()[:1000],
                     # Interpret NamedDiscrete as CommandLine.
                     # is_commandline=True
                 )
@@ -89,6 +89,20 @@ class HPCToolkitCompilationSession(CompilationSession):
             name="runtime",
             space=Space(
                 double_value=DoubleRange(min=0),
+            ),
+            deterministic=False,
+            platform_dependent=True,
+            default_observation=Event(
+                double_value=0            
+            ),
+        ),
+        ObservationSpace(
+            name="runtime_tensor",
+            space=Space(
+                double_box=DoubleBox(
+                    low = DoubleTensor(shape = [1, 1], value=[0] ),
+                    high = DoubleTensor(shape = [1, 1], value=[float("inf")]),
+                )
             ),
             deterministic=False,
             platform_dependent=True,
@@ -217,11 +231,15 @@ class HPCToolkitCompilationSession(CompilationSession):
             self.benchmark.compile_O3()
             compile_time = time.time() - start
 
-            cycles = perf.CycleProfiler('perf_cycles',
-                                    self.benchmark.run_cmd,
-                                    self.timeout_sec).get_observation().double_value
+            seconds = runtime.Profiler('runtime',
+                self.benchmark.run_cmd,
+                self.timeout_sec
+            ).get_observation().float_value
+            # cycles =  perf.CycleProfiler('perf_cycles',
+            #                         self.benchmark.run_cmd,
+            #                         self.timeout_sec).get_observation().double_value
 
-            return f'{cycles}, {compile_time}'
+            return f'{seconds}, {compile_time}'
 
         elif key == "search": # value = "walk_count, step_count, search_depth, search_width"
             walk_count, step_count, search_depth, search_width = value.split(',')
@@ -297,6 +315,10 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec)                                              
             
+            elif observation_space.name == "runtime_tensor":
+                self.profiler = runtime.ProfilerTensor(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec)
             elif observation_space.name == "perf":
                 self.profiler = perf.ProfilerTensor(observation_space.name,
                                                     self.benchmark.run_cmd,

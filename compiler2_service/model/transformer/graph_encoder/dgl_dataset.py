@@ -143,7 +143,7 @@ def collator(items, multi_hop_max_dist=20, spatial_pos_max=20, device='cpu'):
     in_degree = torch.cat([pad_1d_unsqueeze(i, max_node_num) for i in in_degrees])
 
     return dict(
-        idx=torch.LongTensor(idxs).to(device),
+        idx=torch.IntTensor(idxs).to(device),
         attn_bias=attn_bias.to(device),
         attn_edge_type=attn_edge_type.to(device),
         spatial_pos=spatial_pos.to(device),
@@ -227,20 +227,19 @@ class GraphormerDGLDataset(Dataset):
             size = len(dataset)
 
         # breakpoint()
-        xy = self.remove_large_graphs(dataset, max_node=1024000)[:size]
-        try:
-            x, y = zip(*xy)
-        except:
-            breakpoint()
-            
-        y = torch.stack(y)
-        return {'x':collator(x, device=self.device), 'y':y.clone().detach().to(self.device)}
+        xy = self.remove_large_graphs(dataset, max_node=100000)[:size]
+        if len(xy):        
+            x, y = zip(*xy)    
+            y = torch.stack(y)
+            return {'x':collator(x, device=self.device), 'y':y.clone().detach().to(self.device)}
+        else:
+            return {}
 
     def remove_large_graphs(self, dataset, max_node=512):
         items = []
         for i in range(len(dataset)):
-            x, y = dataset[i]
-            if x['x'].size(0) <= max_node:
+            if dataset.graphs[i].number_of_nodes() <= max_node:
+                x, y = dataset[i]
                 items.append([x, y])
         
         return items
@@ -354,6 +353,7 @@ class GraphormerDGLDataset(Dataset):
         pyg_graph.spatial_pos = spatial_pos
         pyg_graph.in_degree = dense_adj.long().sum(dim=1).view(-1)
         pyg_graph.out_degree = pyg_graph.in_degree
+        # breakpoint()
         pyg_graph.edge_input = torch.from_numpy(edge_input).long()
         if y.dim() == 0:
             y = y.unsqueeze(-1)
@@ -389,6 +389,6 @@ if __name__ == '__main__':
     for i, graph in enumerate(dgl_dataset):
         print(i, graph)
 
-    encoder_dict = dgl_dataset.collate()
+    encoder_dict = dgl_dataset.get_train()
     print(encoder_dict.keys())
 
