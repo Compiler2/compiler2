@@ -18,15 +18,16 @@ class Reward(Reward):
         self.prev_runtime = 0
 
     def reset(self, benchmark: str, observation_view):
-        print("Reward Runtime: reset")
+        # print("Reward Runtime: reset")
         del benchmark  # unused
         self.prev_runtime = observation_view["runtime"]
 
     def update(self, action, observations, observation_view):
-        print("Reward Runtime: update")
+        # print("Reward Runtime: update")
         del action
         del observation_view
         new_runtime = observations[0]
         reward = float(self.prev_runtime - new_runtime) / self.prev_runtime
         self.prev_runtime = new_runtime
+        print(f'-------------------------------------- reward = {reward}')
         return reward

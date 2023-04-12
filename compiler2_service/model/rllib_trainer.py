@@ -209,7 +209,7 @@ class RLlibTrainer:
             ray.init(local_mode=True, _temp_dir=f"/scratch/dx4/tmp")
         elif ray_mode == 'non-local':
             # ray.init(local_mode=False, num_cpus=os.cpu_count(), num_gpus=torch.cuda.device_count(), object_store_memory=100 * 1024 * 1024, ignore_reinit_error=True)
-            ray.init(local_mode=False, num_cpus=65, num_gpus=1, object_store_memory=100 * 1024 * 1024, ignore_reinit_error=True)
+            ray.init(local_mode=False, num_cpus=65, num_gpus=1, object_store_memory=1500 * 1024 * 1024, ignore_reinit_error=True)
         else:
             print('Ray mode must be: slurm, local, non-local')
 
@@ -322,11 +322,11 @@ class RLlibTrainer:
         os.makedirs(policy_path)#.parent)
         my_artifacts_checkpoint_dir = self.my_artifacts_end/trial_id/checkpoint_path.name # parent.
 
-        if checkpoint_path.is_file():
-            shutil.copyfile(checkpoint_path, my_artifacts_checkpoint_dir)
-        else:
-            shutil.copytree(checkpoint_path, my_artifacts_checkpoint_dir)
-            with open(my_artifacts_checkpoint_dir/'config.json', "w") as f: json.dump(config, f)
+        # if checkpoint_path.is_file():
+        #     shutil.copyfile(checkpoint_path, my_artifacts_checkpoint_dir)
+        # else:
+        shutil.copytree(checkpoint_path.parent, my_artifacts_checkpoint_dir)
+        with open(my_artifacts_checkpoint_dir/'config.json', "w") as f: json.dump(config, f)
 
         self.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_end/trial_id)
 

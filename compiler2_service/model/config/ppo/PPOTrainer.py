@@ -15,18 +15,17 @@ def get_config(profiler, sweep=False):
             # '_disable_preprocessor_api': True,
             # '_disable_action_flattening': True,
             'custom_model': 'my_model',
-            "custom_model_config": {'a': 4},
+            "custom_model_config": {
+                "num_nodes": 400,
+                "dim_model": 64,
+                "num_heads": 8,
+                "num_encoder_layers": 2,
+                "num_decoder_layers": 2,
+                "dropout_p": 0.1,
+            },
             "attention_use_n_prev_actions": 2,
-            # "custom_action_dist": None,
-            # "vf_share_layers": True,
             "fcnet_hiddens": [64, 64],
-            # "post_fcnet_hiddens":
-            # "fcnet_activation": 
-            # "post_fcnet_activation":
-            # "no_final_linear":
-            # "free_log_std":
         },
-        # 'disable_env_checking': True,
         # Use GPUs iff `RLLIB_NUM_GPUS` env var set to > 0.
         "num_gpus": 1, #int(ray.cluster_resources()['GPU']), #torch.cuda.device_count(),
         'num_workers': num_workers,

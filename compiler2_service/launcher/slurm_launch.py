@@ -1,6 +1,6 @@
 '''
 Usage:
-python compiler2_service/launcher/slurm_launch.py -nc=40 -ng=4 -p=interactive -t=30 --profiler=runtime_tensor --trainer=dqn.ApexTrainer --iter=1 --steps=2 --dataset=poj104_small
+python compiler2_service/launcher/slurm_launch.py -nc=40 -ng=1 -p=interactive -t=30 --profiler=hpctoolkit --trainer=ppo.PPOTrainer --iter=10 --steps=2 --dataset=poj104_small
 '''
 
 import argparse
@@ -83,7 +83,7 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    "--stop_reward", type=float, default=1, help="Reward at which we stop training."
+    "--stop_reward", type=float, default=10000, help="Reward at which we stop training."
 )
 # SLURM options
 parser.add_argument(

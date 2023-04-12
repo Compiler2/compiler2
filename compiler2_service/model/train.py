@@ -14,7 +14,7 @@ For CLI options:
 $ python custom_env.py --help
 
 Reproduce results from wandb:
-python compiler2_service/model/train.py --dataset=poj104_small --steps=2 --wandb_url=dejang/compiler2/40200_00000 --iter=0
+python compiler2_service/model/train.py --profiler=programl --trainer=dqn.ApexTrainer --dataset=poj104_small --steps=2 --iter=1 --ray-mode=non-local
 python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=mm64_256_16_range --sweep  --steps=3
 """
 import argparse
@@ -57,7 +57,7 @@ parser.add_argument(
     '--profiler', type=str, choices=['runtime_tensor', 'hpctoolkit', 'programl', 'programl_hpctoolkit'], default='perf', help='Profiler for creating representation.'
 )
 parser.add_argument(
-    '--trainer', type=str, choices=['dqn.ApexTrainer', 'ppo.PPOTrainer', 'apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='apex_dqn.ApexDQN', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
+    '--trainer', type=str, choices=['dqn.ApexTrainer', 'ppo.PPOTrainer', 'apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='ppo.PPOTrainer', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
 )
 parser.add_argument(
     "--wandb_url",  type=str, nargs='?', default='', help="Wandb uri to load policy network."
@@ -138,7 +138,7 @@ if __name__ == '__main__':
     if args.wandb_url:
         agent = trainer.load_model(args.wandb_url)
 
-    breakpoint()
+    # breakpoint()
     agent = trainer.train(
         train_iter=args.iter, 
         stop_reward=args.stop_reward,

@@ -204,7 +204,6 @@ class GraphormerTransformer(nn.Module):
 
 
     def train_loop(self, opt, loss_fn, dataloader, backprop=True):
-        breakpoint()
         if len(dataloader) == 0: return -1
         
         if backprop: self.train()

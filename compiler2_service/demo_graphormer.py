@@ -36,6 +36,9 @@ parser.add_argument(
     '--profiler', type=str, choices=['hpctoolkit', 'programl', 'programl_hpctoolkit'], default='hpctoolkit', help='Profiler for creating representation.'
 )
 parser.add_argument(
+    '--dataset', type=str, choices=['poj104_small', 'poj104_train', 'poj104_test'], default='poj104_small', help='Dataset for example.'
+)
+parser.add_argument(
     '--arch', type=str, default='transformer', help='Architecture transformer or encoder.'
 )
 parser.add_argument(
@@ -76,7 +79,7 @@ def main():
     bad_banchmarks_file = open('bad_banch.txt', 'w')
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make("compiler2-v0", datasets=['poj104_small']) as env:
+    with compiler2_service.make("compiler2-v0", datasets=[args.dataset]) as env:
 
         print("Make hpctoolkit")
         for bench in sorted(env.datasets.benchmarks()):
@@ -92,10 +95,10 @@ def main():
                 continue
                 
             actions = [0]
-            for i in range(5):
+            for i in range(1):
                 print("Main: step = ", i)
                 try:
-                    action = 1 #env.action_space.sample() 
+                    action = env.action_space.sample() 
                     print(f'{action}-----------------------------------------------------')
 
                     observation, reward, done, info = env.step(
@@ -105,12 +108,9 @@ def main():
                         reward_spaces=["runtime"],
                     )
                 except:# ServiceError:
-                    pass
-
-                if 'error_type' in info:
-                    print(f"AGENT: Error Step {info['error_details']}")
-                    bad_banchmarks_file.write(f'{bench}\n')
+                    print('ServiceError :/')
                     continue
+
                 actions.append(action)
 
                 print(reward)

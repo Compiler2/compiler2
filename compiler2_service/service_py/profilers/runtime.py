@@ -32,7 +32,8 @@ class Profiler:
             run_command( self.run_cmd, timeout=self.timeout_sec)
             end = time.time() 
             exec_times.append(end - start)
-            
+        
+        print(f'Measured runtime = {np.mean(exec_times)}')
         return np.mean(exec_times)
 
 
