@@ -272,28 +272,25 @@ class HPCToolkitCompilationSession(CompilationSession):
 
 
     def apply_action(self, action: Event) -> Tuple[bool, Optional[ActionSpace], bool]:
-        num_choices = len(self.action_spaces[0].space.named_discrete.name)
+        # num_choices = len(self.action_spaces[0].space.named_discrete.name)
 
-        choice_index = action.int64_value
-        if choice_index < 0 or choice_index >= num_choices:
-            breakpoint()
-            raise ValueError("Out-of-range")
+        # choice_index = action.int64_value
+        action = action.string_value
+
+        # if choice_index < 0 or choice_index >= num_choices:
+        #     breakpoint()
+        #     raise ValueError("Out-of-range")
 
         # Compile benchmark with given optimization
-        opt = self._action_space.space.named_discrete.name[choice_index]
-        if opt in self.blacklisted_actions:
+        # opt = self._action_space.space.named_discrete.name[choice_index]
+        if action in self.blacklisted_actions:
             logging.info(f"Info: action {self.blacklisted_actions} is blacklisted")
             action_had_no_effect = True
         else:
-            print(
-                f"Applying action {choice_index}, equivalent command-line arguments: '{opt}'"
-            )
-
-            self.benchmark.apply_action(opt=opt, save_state=self.save_state)
+            self.benchmark.apply_action(opt=action, save_state=self.save_state)
             action_had_no_effect = not self.benchmark.is_action_effective            
 
-        logging.info(f"\naction_had_no_effect ({opt}) = {action_had_no_effect}\n")
-
+        logging.info(f"\naction_had_no_effect ({action}) = {action_had_no_effect}\n")
         if action_had_no_effect == False:
             self.prev_observation = {} # Clear cache if action had an effect
 
@@ -303,10 +300,9 @@ class HPCToolkitCompilationSession(CompilationSession):
 
 
     def get_observation(self, observation_space: ObservationSpace) -> Event:
-        logging.info(f"Computing observation from space {observation_space.name}")  
         # breakpoint()
         if observation_space.name in self.prev_observation:            
-            logging.info(f"get_observation: Fast return prev_observation {self.prev_observation}")
+            logging.info(f"get_observation: Fast return from {observation_space.name} => {self.prev_observation}")
             return self.prev_observation[observation_space.name]
 
         if self.profiler == None or observation_space.name != self.profiler.name:

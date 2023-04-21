@@ -27,7 +27,19 @@ class Profiler:
 
         self.metrics_list = [
             # "REALTIME@10",
-            "cycles"
+            "cycles",
+            "ix86arch::INSTRUCTION_RETIRED",
+            "ix86arch::LLC_REFERENCES",
+            "ix86arch::LLC_MISSES",
+            "ix86arch::BRANCH_INSTRUCTIONS_RETIRED",
+            "ix86arch::MISPREDICTED_BRANCH_RETIRED",
+            "perf::CPU-CYCLES",
+            "perf::CACHE-REFERENCES",
+            "perf::CACHE-MISSES",
+            "perf::PERF_COUNT_HW_INSTRUCTIONS",
+            "perf::BRANCH-MISSES",
+            "perf::BRANCH-INSTRUCTIONS",
+            "perf::CONTEXT-SWITCHES"
         ]
 
     def get_observation(self) -> Event:        

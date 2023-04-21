@@ -95,8 +95,13 @@ class Profiler:
         dgl_graph = dgl.graph((torch.tensor(e_src), torch.tensor(e_tgt)))
         dgl_graph.ndata['x'] = features_tensor
 
-        # TODO Dejan: we can extend this with edge weights, Enable edge_type=multi_hop in Graphormer 
+        # # TODO Dejan: we can extend this with edge weights, Enable edge_type=multi_hop in Graphormer 
+        # def foo(block):
+        #     for n in graph.node: 
+        #         if n.block == block: 
+        #             print(n.features.feature['full_text'].bytes_list.value[0])
 
+        # breakpoint()
         # Print graph
         # print(nx.drawing.nx_pydot.to_pydot(dgl_graph.to_networkx()))
         del graph

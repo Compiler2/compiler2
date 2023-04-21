@@ -315,17 +315,14 @@ class RLlibTrainer:
             self.wandb_dict['layers_num'] = len(config['model']['fcnet_hiddens'])
             self.wandb_dict['layers_width'] = config['model']['fcnet_hiddens'][0]
         
-        self.wandb_dict['checkpoint'] = os.path.relpath(checkpoint_path, checkpoint_path.parent)#.parent)
+        checkpoint_dir_path = checkpoint_path.parent
+        self.wandb_dict['checkpoint'] = os.path.relpath(checkpoint_path, checkpoint_dir_path.parent)
 
         # Save policy and checkpoint for wandb
         policy_path = self.my_artifacts_end/trial_id#/'policy_model.pt'
         os.makedirs(policy_path)#.parent)
-        my_artifacts_checkpoint_dir = self.my_artifacts_end/trial_id/checkpoint_path.name # parent.
-
-        # if checkpoint_path.is_file():
-        #     shutil.copyfile(checkpoint_path, my_artifacts_checkpoint_dir)
-        # else:
-        shutil.copytree(checkpoint_path.parent, my_artifacts_checkpoint_dir)
+        my_artifacts_checkpoint_dir = self.my_artifacts_end/trial_id/checkpoint_dir_path.name # parent.
+        shutil.copytree(checkpoint_dir_path, my_artifacts_checkpoint_dir)
         with open(my_artifacts_checkpoint_dir/'config.json', "w") as f: json.dump(config, f)
 
         self.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_end/trial_id)

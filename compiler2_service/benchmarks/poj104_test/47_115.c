@@ -15,7 +15,7 @@ int main_bench()
 	for(i=0;i<n-1;i++)
 		my_printf("%d ",b[i]);
 	my_printf("%d\n",b[n-1]);
-	return;
+	return 0;
 }
 
 		

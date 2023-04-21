@@ -2,7 +2,7 @@ import ray
 import os
 
 def get_config(profiler, sweep=False):
-    num_workers = 32 #int(ray.cluster_resources()['CPU'] * 0.9 - 1)
+    num_workers = 10 #int(ray.cluster_resources()['CPU'] * 0.9 - 1)
     rollout_fragment_length = 5
     return {
         "log_level": "ERROR",
@@ -27,10 +27,10 @@ def get_config(profiler, sweep=False):
         "hiddens": [512],        
         "target_network_update_freq": 20e3,
         "num_envs_per_worker": 1,
-        # "compress_observations": True,
+        "compress_observations": True,
         "training_intensity": 1000.0,
         "buffer_size": 2000,
-        "learning_starts": 20, # NOTE: Must be low!
+        "learning_starts": 10, # NOTE: Must be low!
         "min_iter_time_s": 1,
         "timesteps_per_iteration": 1, # NOTE: memory sensitive
         # Use GPUs iff `RLLIB_NUM_GPUS` env var set to > 0.
