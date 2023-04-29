@@ -178,6 +178,48 @@ class HPCToolkitCompilationSession(CompilationSession):
             ),
         ),
         ObservationSpace(
+            name="programl_pca100",
+            space=Space(
+                int64_box=Int64Box(
+                    low = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[-sys.maxsize] * MAX_PICKLE64_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[sys.maxsize] * MAX_PICKLE64_SIZE),
+                )
+            ),
+            deterministic=True,
+            platform_dependent=False,
+            default_observation=Event(
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
+            ),
+        ),
+                ObservationSpace(
+            name="programl_pca50",
+            space=Space(
+                int64_box=Int64Box(
+                    low = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[-sys.maxsize] * MAX_PICKLE64_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[sys.maxsize] * MAX_PICKLE64_SIZE),
+                )
+            ),
+            deterministic=True,
+            platform_dependent=False,
+            default_observation=Event(
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
+            ),
+        ),
+                ObservationSpace(
+            name="programl_pca10",
+            space=Space(
+                int64_box=Int64Box(
+                    low = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[-sys.maxsize] * MAX_PICKLE64_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[sys.maxsize] * MAX_PICKLE64_SIZE),
+                )
+            ),
+            deterministic=True,
+            platform_dependent=False,
+            default_observation=Event(
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
+            ),
+        ),
+        ObservationSpace(
             name="programl_hpctoolkit",
             space=Space(
                 int64_box=Int64Box(
@@ -200,14 +242,14 @@ class HPCToolkitCompilationSession(CompilationSession):
         benchmark: Benchmark,
     ):
         super().__init__(working_directory, action_space, benchmark)
-        logging.info(f"Started a compilation session for {benchmark.uri}")
+        logging.debug(f"Started a compilation session for {benchmark.uri}")
         self._action_space = action_space
 
         os.chdir(str(working_directory))
         logging.critical(f"\n\nWorking_dir = {str(working_directory)}\n")
         # breakpoint()
 
-        self.save_state = False
+        self.save_state = True
         self.timeout_sec = 30.0
 
         self.benchmark = benchmark_builder.BenchmarkBuilder(
@@ -274,23 +316,21 @@ class HPCToolkitCompilationSession(CompilationSession):
     def apply_action(self, action: Event) -> Tuple[bool, Optional[ActionSpace], bool]:
         # num_choices = len(self.action_spaces[0].space.named_discrete.name)
 
-        # choice_index = action.int64_value
-        action = action.string_value
-
-        # if choice_index < 0 or choice_index >= num_choices:
-        #     breakpoint()
-        #     raise ValueError("Out-of-range")
+        action_str = action.string_value
+        if action_str == '':
+            choice_index = action.int64_value
+            action_str = self._action_space.space.named_discrete.name[choice_index]
 
         # Compile benchmark with given optimization
-        # opt = self._action_space.space.named_discrete.name[choice_index]
-        if action in self.blacklisted_actions:
-            logging.info(f"Info: action {self.blacklisted_actions} is blacklisted")
+            
+        if action_str in self.blacklisted_actions:
+            logging.debug(f"Info: action {self.blacklisted_actions} is blacklisted")
             action_had_no_effect = True
         else:
-            self.benchmark.apply_action(opt=action, save_state=self.save_state)
+            self.benchmark.apply_action(opt=action_str, save_state=self.save_state)
             action_had_no_effect = not self.benchmark.is_action_effective            
 
-        logging.info(f"\naction_had_no_effect ({action}) = {action_had_no_effect}\n")
+        logging.debug(f"\naction_had_no_effect ({action_str}) = {action_had_no_effect}\n")
         if action_had_no_effect == False:
             self.prev_observation = {} # Clear cache if action had an effect
 
@@ -302,7 +342,7 @@ class HPCToolkitCompilationSession(CompilationSession):
     def get_observation(self, observation_space: ObservationSpace) -> Event:
         # breakpoint()
         if observation_space.name in self.prev_observation:            
-            logging.info(f"get_observation: Fast return from {observation_space.name} => {self.prev_observation}")
+            logging.debug(f"get_observation: Fast return from {observation_space.name} => {self.prev_observation}")
             return self.prev_observation[observation_space.name]
 
         if self.profiler == None or observation_space.name != self.profiler.name:
@@ -345,6 +385,27 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                   self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
+            elif observation_space.name == "programl_pca100":
+                self.profiler = programl.Profiler(observation_space.name,
+                                                  self.benchmark.run_cmd,
+                                                  self.timeout_sec,
+                                                  self.benchmark.llvm_path,
+                                                  pca_size=100)
+
+            elif observation_space.name == "programl_pca50":
+                self.profiler = programl.Profiler(observation_space.name,
+                                                  self.benchmark.run_cmd,
+                                                  self.timeout_sec,
+                                                  self.benchmark.llvm_path,
+                                                  pca_size=50)
+
+            elif observation_space.name == "programl_pca10":
+                self.profiler = programl.Profiler(observation_space.name,
+                                                  self.benchmark.run_cmd,
+                                                  self.timeout_sec,
+                                                  self.benchmark.llvm_path,
+                                                  pca_size=10)
+
             elif observation_space.name == "programl_hpctoolkit":
                 self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
                                                              self.benchmark.run_cmd,
@@ -359,7 +420,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         self.prev_observation[observation_space.name] = self.profiler.get_observation()
 
-        logging.info(f"get_observation: Slow return prev_observation {self.prev_observation}")
+        logging.debug(f"get_observation: Slow return prev_observation {self.prev_observation}")
         return self.prev_observation[observation_space.name]
 
 

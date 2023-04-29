@@ -13,10 +13,10 @@ SANDBOX_DIR=$(dirname $COMPILER2_SANDBOX)
 
 cd $SANDBOX_DIR
 
-singularity pull --arch amd64 library://dejang_96/compiler2/ubuntu_cuda:20.04
+singularity pull --arch amd64 library://dejang96/compiler2/ubuntu_cuda:20.04
 singularity build --sandbox $SANDBOX_NAME ubuntu_20.04.sif
 
-# singularity build --sandbox $SANDBOX_NAME library://dejang_96/compiler2/ubuntu_cuda:20.04 # once https://github.com/sylabs/singularity/issues/1497 is resolved
+# singularity build --sandbox $SANDBOX_NAME library://dejang96/compiler2/ubuntu_cuda:20.04 # once https://github.com/sylabs/singularity/issues/1497 is resolved
 cd ..
 
 

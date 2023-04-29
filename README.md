@@ -53,3 +53,14 @@ python compiler2_service/demo_programl_hpctoolkit.py
 
 ```
 
+
+
+# Programl PCA
+
+Programl enables us to comprehend llvm IR as graph with nodes(instructions or data) and edges(control flow, data flow and function calls). In our dataset this included over 1000 nodes that was too big for training with Graphormer. To make graph manageble, we merge all nodes that belong to same LLVM block to single node putting their encoding of as features of larger, block node. The number of instructions per node is variable in range from few instructions (majority of nodes) up to 200 instructions. Padding these instructions to say 256 and listing them as a feature vector would result in sparse representation. Instead, we create histogram of frequencies of each instruction/data kind (381), and use PCA to reduce dimensions further to 100, 50, 20. Encodings of instructions are listed at compiler2_service/service_py/profilers/programl_encodings.csv.
+
+To train PCA, run:
+```
+python compiler2_service/service_py/profilers/programl_pca.py
+```
+This will be used in programl_pca_X observation space, where X is [100, 50, 20].

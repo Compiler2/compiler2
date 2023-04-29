@@ -24,10 +24,10 @@ class Reward(Reward):
 
     def update(self, action, observations, observation_view):
         # print("Reward Runtime: update")
-        del action
-        del observation_view
         new_runtime = observations[0]
         reward = float(self.prev_runtime - new_runtime) / self.prev_runtime
         self.prev_runtime = new_runtime
-        print(f'-------------------------------------- reward = {reward}')
+        print(f'-------------------------------------- Reward: {action} = {reward}')
+        del action
+        del observation_view
         return reward

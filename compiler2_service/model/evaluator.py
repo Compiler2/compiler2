@@ -45,7 +45,7 @@ class Evaluator:
             self.df = pd.concat([self.df, df_single], axis=0)
 
         self.df.to_csv(csv_file)
-        self.plot_actions(csv_file)
+        self.plot_actions(env, csv_file)
 
         return float(np.mean(self.df['O3_sec'] / self.df['sec'].str.split(',').str[-1].astype(float)))
 
@@ -71,7 +71,7 @@ class Evaluator:
         
         return pd.DataFrame.from_dict(results)
 
-    def plot_actions(self, csv_path):
+    def plot_actions(self, env, csv_path):
         df = pd.read_csv(csv_path)
         if type(df) == None: 
             return
@@ -80,14 +80,15 @@ class Evaluator:
 
         for i, row in df.iterrows():
             benchmark = row['benchmark']
-            actions_list = row['actions'].split(',')
+            actions_list = row['actions'].replace(' ', '').split(',')
             sec_list = [ float(x) for x in row['sec'].split(',')]
             compile_list = [ float(x) for x in row['compile_time'].split(',')] 
 
             plt.plot(compile_list, sec_list, marker='o', label=benchmark)
 
             for i, (x, y) in enumerate(zip(compile_list, sec_list)):
-                plt.annotate(actions_list[i],
+                action_id = str(env.action_space.from_string(actions_list[i]))
+                plt.annotate(action_id,
                     (x, y), 
                     textcoords="offset points",
                     xytext=(0,10),

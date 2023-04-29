@@ -38,29 +38,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
     '--dataset', type=str, choices=['poj104_small', 'poj104_train', 'poj104_test'], default='poj104_small', help='Dataset for example.'
 )
-parser.add_argument(
-    '--arch', type=str, default='transformer', help='Architecture transformer or encoder.'
-)
-parser.add_argument(
-    "--dim_emb", type=int, default=64, help="Embedding dimension."
-)
-parser.add_argument(
-    "--heads", type=int, default=2, help="Number of heads."
-)
-parser.add_argument(
-    "--encoder_layers", type=int, default=3, help="Number of encoder layers."
-)
-parser.add_argument(
-    "--decoder_layers", type=int, default=3, help="Number of decoder layers."
-)
-parser.add_argument(
-    "--dropout", type=float, default=0.1, help="Dropout."
-)
-parser.add_argument(
-    "--epochs", type=int, default=500, help="Number of decoder layers."
-)
-
-
 
 
 def main():
@@ -79,8 +56,8 @@ def main():
         df = pd.DataFrame(columns = benchmarks, index = action_space)
         run = False
         for benchmark in tqdm(benchmarks):
-            if benchmark != 'benchmark://poj104_test-v0/79_1216' and run == False:
-                continue
+            # if benchmark != 'benchmark://poj104_test-v0/79_1216' and run == False:
+            #     continue
             run = True
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", benchmark)
             try:

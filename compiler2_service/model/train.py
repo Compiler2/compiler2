@@ -54,7 +54,7 @@ import tempfile
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '--profiler', type=str, choices=['runtime_tensor', 'hpctoolkit', 'programl', 'programl_hpctoolkit'], default='perf', help='Profiler for creating representation.'
+    '--profiler', type=str, choices=['runtime_tensor', 'hpctoolkit', 'programl', 'programl_pca100', 'programl_pca50', 'programl_pca10', 'programl_hpctoolkit'], default='perf', help='Profiler for creating representation.'
 )
 parser.add_argument(
     '--trainer', type=str, choices=['dqn.ApexTrainer', 'ppo.PPOTrainer', 'apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='ppo.PPOTrainer', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
@@ -120,6 +120,7 @@ if __name__ == '__main__':
 
     os.environ["obs_space"] = args.profiler
     os.environ["dataset"] = args.dataset
+    os.environ["size"] = str(args.size)
     os.environ["steps"] = str(args.steps)
 
     trainer = RLlibTrainer(

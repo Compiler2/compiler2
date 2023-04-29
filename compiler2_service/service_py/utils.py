@@ -32,7 +32,9 @@ def to_int64_tensor(object):
     
     orig_size = len(base_observation)
     if MAX_PICKLE8_SIZE < orig_size:
-        breakpoint()
+        print('MAX_PICKLE8_SIZE < orig_size: ', MAX_PICKLE8_SIZE, orig_size)
+        raise NotImplementedError
+        # breakpoint()
     padded = np.append(base_observation, np.zeros(MAX_PICKLE8_SIZE - orig_size, dtype=np.int8))
     padded.dtype = np.int64 # shrink to int64 form
     padded[-1] = orig_size
@@ -47,6 +49,7 @@ def from_int64_tensor(int64_tensor):
     try:
         aa = pickle.loads(tensor[:size])
     except:
+        print('from_int64_tensor(int64_tensor)')
         breakpoint()
     return aa
 

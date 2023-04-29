@@ -7,7 +7,6 @@ if [ "$ARGS" != "" ]; then
     echo "SLURM starts..."
     echo "CMD = $@"
     singularity exec --writable --nv -e $COMPILER2_SANDBOX $@
-    return
 else
     echo "SHELL starts..."
     singularity shell --writable --nv -e $COMPILER2_SANDBOX

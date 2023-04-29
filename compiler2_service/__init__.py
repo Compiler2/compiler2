@@ -327,7 +327,7 @@ def pickle_to_dict(base_observation):
 
 
 # register perf session
-def register_env(datasets):
+def register_env(datasets, size):
     register(
         id="compiler2-v0",
         # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
@@ -340,7 +340,7 @@ def register_env(datasets):
                 runtime_reward.Reward()
             ],
             "datasets": [
-                importlib.import_module(f"compiler2_service.agent_py.datasets.{dataset}").Dataset() for dataset in datasets 
+                importlib.import_module(f"compiler2_service.agent_py.datasets.{dataset}").Dataset(size=size) for dataset in datasets 
             ],
         #     "derived_observation_spaces": [
         #         {
@@ -380,16 +380,16 @@ def get_globals():
     
 
 
-def make(id: str, datasets, **kwargs):
+def make(id: str, datasets, size=1000000, **kwargs):
     """Equivalent to :code:`compiler_gym.make()`."""
     if len(datasets):
-        register_env(datasets=datasets)
+        register_env(datasets=datasets, size=size)
 
     import compiler_gym
     return compiler_gym.make(id, **kwargs)
 
 
-def make_env(id, datasets, logging=False, **kwargs):
-    return HPCToolkitCompilerEnvWrapper(make(id, datasets, **kwargs), logging=logging)
+def make_env(id, datasets, size=1000000, logging=False, **kwargs):
+    return HPCToolkitCompilerEnvWrapper(make(id, datasets, size, **kwargs), logging=logging)
 
 

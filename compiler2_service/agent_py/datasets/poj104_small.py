@@ -45,7 +45,13 @@ class Dataset(Dataset):
         benchmark_prefix = "benchmark://poj104_small-v0"
 
         example_files = os.listdir(BENCHMARKS_PATH)
-        for example_filename in example_files:
+        if 'size' in kwargs:
+            bench_num = int(kwargs['size'])
+        else:
+            bench_num = 100000000
+        
+        for i, example_filename in enumerate(example_files):
+            if i == bench_num: break 
             example_uri = benchmark_prefix + '/' + example_filename.rstrip('.c')
             self._benchmarks[example_uri] = \
                 benchmark_from_file_contents(
@@ -75,6 +81,7 @@ class Dataset(Dataset):
             "-I",
             str(compiler2_service.paths.BENCHMARKS_PATH/"utils"),
             src,
+            "-Wno-everything",
         ]
         # for directory in get_system_library_flags():
         #     cmd += ["-isystem", str(directory)]

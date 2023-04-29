@@ -40,7 +40,7 @@ parser = argparse.ArgumentParser(description="Slurm launcher")
 # )
 
 parser.add_argument(
-    '--profiler', type=str, choices=['runtime_tensor', 'hpctoolkit', 'programl', 'programl_hpctoolkit'], default='runtime_tensor', help='Profiler for creating representation.'
+    '--profiler', type=str, choices=['runtime_tensor', 'hpctoolkit', 'programl', 'programl_pca100', 'programl_pca50', 'programl_pca10', 'programl_hpctoolkit'], default='runtime_tensor', help='Profiler for creating representation.'
 )
 parser.add_argument(
     '--trainer', type=str, choices=['ppo.PPOTrainer', 'dqn.ApexTrainer', 'apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='ppo.PPOTrainer', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'

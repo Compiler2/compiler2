@@ -1,7 +1,7 @@
 # This script downloads the environment and creates container. 
 
 # This needs to be done only if there is no container available on
-# singularity pull --arch amd64 library://dejang_96/compiler2/ubuntu_cuda:20.04
+# singularity pull --arch amd64 library://dejang96/compiler2/ubuntu_cuda:20.04
 
 Building container is done in 3 steps, as follows:
 

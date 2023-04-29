@@ -78,10 +78,11 @@ torch, nn = try_import_torch()
 def make_env():
     """Make the reinforcement learning environment for this experiment."""
     # print(os.environ["dataset"], os.environ["steps"])
-
+    # breakpoint()
     env = compiler2_service.make(
         "compiler2-v0",
         datasets=[os.environ["dataset"]],
+        size=int(os.environ["size"]),
         observation_space=os.environ["obs_space"],#"perf",
         reward_space="runtime",
     )
@@ -196,7 +197,7 @@ class RLlibTrainer:
 
     def ray_start(self, ray_mode):
         if ray.is_initialized(): ray.shutdown()
-        # breakpoint()
+        # breakpoint()  
         if ray_mode == 'slurm':
             ray_address = os.environ["RAY_ADDRESS"] if "RAY_ADDRESS" in os.environ else "auto"
             head_node_ip = os.environ["HEAD_NODE_IP"] if "HEAD_NODE_IP" in os.environ else "127.0.0.1"

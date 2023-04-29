@@ -73,15 +73,11 @@ def main():
 
     # Create the environment using the regular gym.make(...) interface.
     # with gym.make("hpctoolkit-llvm-v0") as env:
-    with compiler2_service.make("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
-        breakpoint()
+    with compiler2_service.make("compiler2-v0", datasets=['poj104_small']) as env:
+        
         for benchmark in env.datasets.benchmarks():
             try:
-                env.reset(benchmark=benchmark)
-                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
-                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
-                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
-                
+                env.reset(benchmark=benchmark)                
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
 
@@ -89,23 +85,23 @@ def main():
             actions = [0]
             for i in range(2):
                 print("Main: step = ", i)
-                try:
-                    action = 9
-                    while action in [0, 9, 13, 23, 31, 45, 46, 62, 65, 76, 70, 71, 99, 102, 106, 107, 120]:
-                        action = env.action_space.sample() 
+                # try:
+                action = 9
+                while action in [0, 9, 13, 23, 31, 45, 46, 62, 65, 76, 70, 71, 99, 102, 106, 107, 120]:
+                    action = env.action_space.sample() 
 
-                    print(f'{action}-----------------------------------------------------')
+                print(f'{action}-----------------------------------------------------')
 
-                    observation, reward, done, info = env.step(
-                        action=action,
-                        observation_spaces=["programl_hpctoolkit"],
-                        reward_spaces=["perf_cycles"],
-                    )
-                except:
-                    print("AGENT: Timeout Error Step")
-                    continue       
+                observation, reward, done, info = env.step(
+                    action=action,
+                    observation_spaces=["programl_hpctoolkit"],
+                    reward_spaces=["runtime"],
+                )
+                # except:
+                #     print("AGENT: Timeout Error Step")
+                #     continue       
                 
-                actions.append(action + 2) # + 2 for start/end token
+                actions.append(action)
                 print(reward)
 
                 g = from_int64_tensor(observation[0])
